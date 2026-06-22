@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KD | Aruba Real Estate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ===== LANDING PAGE ===== -->
+    <div id="landing-page" class="landing-screen">
+        <div class="landing-content">
+            <div class="landing-badge">KD</div>
+            <h1 class="landing-title">Kan Damen</h1>
+            <p class="landing-subtitle">Aruba Real Estate Intelligence</p>
+            <p class="landing-desc">Internal dashboard for monitoring property opportunities, analyzing market data, and tracking your acquisition pipeline in Aruba.</p>
+            <button class="landing-btn" onclick="showLogin()">Get Started <span class="landing-arrow">→</span></button>
+        </div>
+        <div class="landing-footer">Internal use only &mdash; KD Team</div>
+    </div>
+
+    <!-- ===== LOGIN PAGE ===== -->
+    <div id="login-page" class="login-screen" style="display:none">
+        <div class="login-card">
+            <div class="login-logo">
+                <div class="logo-badge">KD</div>
+                <div>
+                    <div class="logo-name">Kan Damen</div>
+                    <div class="logo-sub">Aruba Real Estate</div>
+                </div>
+            </div>
+            <h2 class="login-heading">Welcome back</h2>
+            <p class="login-sub">Sign in with your username and password</p>
+            <div class="login-form">
+                <div class="login-field">
+                    <label for="login-username">Username</label>
+                    <input type="text" id="login-username" placeholder="Your initials (e.g. AK)" onkeydown="if(event.key==='Enter')document.getElementById('login-password').focus()" autocomplete="username" autocapitalize="characters">
+                </div>
+                <div class="login-field">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Password" onkeydown="if(event.key==='Enter')doLogin()" autocomplete="current-password">
+                </div>
+                <div class="login-error" id="login-error"></div>
+                <button class="login-btn" onclick="doLogin()">Sign In</button>
+            </div>
+            <button class="login-back-btn" onclick="showLanding()">← Back</button>
+        </div>
+    </div>
+
+    <!-- ===== APP SHELL ===== -->
+    <div id="app-shell" style="display:none">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <div class="logo-badge">KD</div>
+            <div class="logo-text">
+                <span class="logo-name">Kan Damen</span>
+                <span class="logo-sub">Aruba Real Estate</span>
+            </div>
+        </div>
+        <button class="sidebar-collapse-btn" id="sidebar-collapse-btn" onclick="toggleSidebarCollapse()" title="Collapse sidebar">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 3L5 8l5 5"/></svg>
+        </button>
+
+        <nav class="sidebar-nav">
+            <span class="nav-label">Menu</span>
+            <button class="nav-item active" data-page="home">
+                <span class="nav-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="1" width="6" height="6" rx="1"/><rect x="9" y="1" width="6" height="6" rx="1"/><rect x="1" y="9" width="6" height="6" rx="1"/><rect x="9" y="9" width="6" height="6" rx="1"/></svg></span>
+                <span>Dashboard</span>
+            </button>
+            <button class="nav-item" data-page="listings">
+                <span class="nav-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 14V7l6-5 6 5v7H2z"/><rect x="6" y="9" width="4" height="5"/></svg></span>
+                <span>Market Listings</span>
+            </button>
+            <button class="nav-item" data-page="tracker">
+                <span class="nav-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="13" rx="1"/><path d="M5 6h6M5 9h6M5 12h4"/><path d="M6 0h4v3H6z"/></svg></span>
+                <span>Deal Tracker</span>
+            </button>
+            <button class="nav-item" data-page="market">
+                <span class="nav-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12h14M3 12V8M6 12V5M9 12V7M12 12V3"/></svg></span>
+                <span>Market Analysis</span>
+            </button>
+            <button class="nav-item" data-page="portfolio">
+                <span class="nav-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="6" r="4"/><path d="M5 13h6M8 10v3"/></svg></span>
+                <span>Portfolio</span>
+            </button>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="agent-status" id="agent-status">
+                <span class="agent-dot"></span>
+                <span id="agent-status-text">Awaiting agent</span>
+            </div>
+            <div class="last-updated" id="last-updated-label"></div>
+            <!-- Theme Switcher -->
+            <div class="theme-switcher" id="theme-switcher">
+                <div class="theme-swatch-btn" id="theme-swatch-btn" onclick="toggleThemePanel()" title="Change theme">
+                    <div class="theme-mini-swatch" id="theme-mini-swatch"></div>
+                </div>
+                <div class="theme-panel" id="theme-panel">
+                    <div class="theme-panel-label">Theme</div>
+                    <div class="theme-options-grid" id="theme-options-grid"></div>
+                </div>
+            </div>
+
+            <div class="internal-chip">Internal Dashboard</div>
+            <div class="sidebar-date" id="sidebar-date"></div>
+            <button class="sidebar-logout-btn" onclick="doLogout()">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3H3a1 1 0 00-1 1v8a1 1 0 001 1h3M10 11l3-3-3-3M13 8H6"/></svg>
+                Sign Out
+            </button>
+        </div>
+    </aside>
+
+    <!-- User badge (top right) -->
+    <div class="user-badge" id="user-badge"></div>
+
+    <!-- ===== MAIN ===== -->
+    <div class="main-wrap">
+
+        <!-- ========== DASHBOARD ========== -->
+        <section id="page-home" class="page active">
+            <div class="page-header">
+                <div>
+                    <h1>Good <span id="greeting-time"></span>, <span id="greeting-user">KD Team</span></h1>
+                    <p class="page-sub">Aruba real estate market overview — listings updated by your monitoring agent.</p>
+                </div>
+            </div>
+
+            <div class="home-stats">
+                <div class="home-stat-card">
+                    <div class="home-stat-icon blue-bg">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 14V7l6-5 6 5v7H2z"/><rect x="6" y="9" width="4" height="5"/></svg>
+                    </div>
+                    <div>
+                        <div class="home-stat-value" id="hs-total">—</div>
+                        <div class="home-stat-label">Listings Tracked</div>
+                    </div>
+                </div>
+                <div class="home-stat-card">
+                    <div class="home-stat-icon green-bg">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 8l4 4 8-7"/></svg>
+                    </div>
+                    <div>
+                        <div class="home-stat-value green" id="hs-active">—</div>
+                        <div class="home-stat-label">Active on Market</div>
+                    </div>
+                </div>
+                <div class="home-stat-card">
+                    <div class="home-stat-icon amber-bg">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="13" rx="1"/><path d="M5 6h6M5 9h6M5 12h4"/></svg>
+                    </div>
+                    <div>
+                        <div class="home-stat-value amber" id="hs-watching">—</div>
+                        <div class="home-stat-label">In Deal Tracker</div>
+                    </div>
+                </div>
+                <div class="home-stat-card">
+                    <div class="home-stat-icon purple-bg">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 2v12M3 7l5 5 5-5"/></svg>
+                    </div>
+                    <div>
+                        <div class="home-stat-value" id="hs-reduced">—</div>
+                        <div class="home-stat-label">Price Reductions</div>
+                    </div>
+                </div>
+                <div class="home-stat-card">
+                    <div class="home-stat-icon teal-bg">
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12h14M3 12V8M6 12V5M9 12V7M12 12V3"/></svg>
+                    </div>
+                    <div>
+                        <div class="home-stat-value">85%</div>
+                        <div class="home-stat-label">High Season Occ.</div>
+                    </div>
+                </div>
+                <div class="home-stat-card">
+                    <div class="home-stat-icon navy-bg">$</div>
+                    <div>
+                        <div class="home-stat-value">$352</div>
+                        <div class="home-stat-label">High Season ADR</div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="home-section-title">Navigate to</h2>
+            <div class="home-cards">
+                <div class="home-nav-card" onclick="goToPage('listings')">
+                    <div class="home-nav-card-top listings-gradient"></div>
+                    <div class="home-nav-card-body">
+                        <div class="home-nav-card-title">Market Listings</div>
+                        <div class="home-nav-card-desc">Live listings pulled from Aruba RE agency websites. Updated automatically by your monitoring agent.</div>
+                        <div class="home-nav-card-meta">
+                            <span id="hc-listings-count"></span>
+                            <span class="home-nav-card-link">Open →</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-nav-card" onclick="goToPage('tracker')">
+                    <div class="home-nav-card-top tracker-gradient"></div>
+                    <div class="home-nav-card-body">
+                        <div class="home-nav-card-title">Deal Tracker</div>
+                        <div class="home-nav-card-desc">Your personal pipeline of listings you're actively evaluating, visiting, or negotiating on.</div>
+                        <div class="home-nav-card-meta">
+                            <span id="hc-tracker-count"></span>
+                            <span class="home-nav-card-link">Open →</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-nav-card" onclick="goToPage('portfolio')">
+                    <div class="home-nav-card-top portfolio-gradient"></div>
+                    <div class="home-nav-card-body">
+                        <div class="home-nav-card-title">Portfolio</div>
+                        <div class="home-nav-card-desc">Properties you have acquired. Track purchase price, current value, rental income, and returns.</div>
+                        <div class="home-nav-card-meta">
+                            <span>0 properties owned</span>
+                            <span class="home-nav-card-link">Open →</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-nav-card" onclick="goToPage('market')">
+                    <div class="home-nav-card-top market-gradient"></div>
+                    <div class="home-nav-card-body">
+                        <div class="home-nav-card-title">Market Analysis</div>
+                        <div class="home-nav-card-desc">Occupancy, ADR and RevPAR by area — Noord, Palm Beach, Malmok and more. Includes full area comparison.</div>
+                        <div class="home-nav-card-meta">
+                            <span>Noord ★ · 6 areas tracked</span>
+                            <span class="home-nav-card-link">Open →</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Recent listings snapshot -->
+            <h2 class="home-section-title" style="margin-top:40px;">Recent Listings</h2>
+            <div class="listings-grid" id="home-listings-grid"></div>
+        </section>
+
+
+        <!-- ========== MARKET LISTINGS ========== -->
+        <section id="page-listings" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>Market Listings</h1>
+                    <p class="page-sub">Properties currently listed on Aruba RE agency websites — monitored by your agent</p>
+                </div>
+                <div class="header-stats">
+                    <div class="stat-pill"><span class="stat-label">Total</span><span class="stat-value" id="l-total">—</span></div>
+                    <div class="stat-pill"><span class="stat-label">Active</span><span class="stat-value green" id="l-active">—</span></div>
+                    <div class="stat-pill"><span class="stat-label">Price Reduced</span><span class="stat-value green" id="l-reduced">—</span></div>
+                    <div class="stat-pill"><span class="stat-label">Under Offer</span><span class="stat-value yellow" id="l-offer">—</span></div>
+                </div>
+            </div>
+
+            <!-- Agent feed banner -->
+            <div class="agent-banner" id="agent-banner">
+                <span class="agent-banner-dot" id="agent-banner-dot"></span>
+                <span class="agent-banner-status" id="agent-banner-status">Inactive</span>
+                <span class="agent-banner-divider">·</span>
+                <span class="agent-banner-sync">Last updated: <span id="last-sync-time">never</span></span>
+            </div>
+
+            <div class="filter-bar">
+                <div class="filter-types">
+                    <button class="filter-btn active" data-lfilter="all">All</button>
+                    <button class="filter-btn" data-lfilter="land">Land</button>
+                    <button class="filter-btn" data-lfilter="house">Houses</button>
+                    <button class="filter-btn" data-lfilter="condo">Condos</button>
+                    <button class="filter-btn" data-lfilter="commercial">Commercial</button>
+                </div>
+                <div class="filter-right">
+                    <select id="l-status-filter">
+                        <option value="all">All Statuses</option>
+                        <option value="active">Active</option>
+                        <option value="price reduced">Price Reduced</option>
+                        <option value="under offer">Under Offer</option>
+                        <option value="sold">Sold</option>
+                    </select>
+                    <select id="l-area-filter">
+                        <option value="all">All Areas</option>
+                        <option value="Palm Beach">Palm Beach</option>
+                        <option value="Eagle Beach">Eagle Beach</option>
+                        <option value="Noord">Noord</option>
+                        <option value="Malmok">Malmok</option>
+                        <option value="Oranjestad">Oranjestad</option>
+                        <option value="Savaneta">Savaneta</option>
+                    </select>
+                    <div class="m2-range">
+                        <input type="number" id="l-m2-min" placeholder="Min m²" min="0">
+                        <span class="m2-sep">–</span>
+                        <input type="number" id="l-m2-max" placeholder="Max m²" min="0">
+                    </div>
+                    <input type="text" id="l-search" placeholder="Search listings...">
+                </div>
+            </div>
+
+            <div class="results-meta"><span id="l-results-count"></span></div>
+            <div class="listings-grid" id="listings-grid"></div>
+        </section>
+
+
+        <!-- ========== DEAL TRACKER ========== -->
+        <section id="page-tracker" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>Deal Tracker</h1>
+                    <p class="page-sub">Listings you're actively evaluating — your personal acquisition pipeline</p>
+                </div>
+                <div class="header-stats">
+                    <div class="stat-pill"><span class="stat-label">Active</span><span class="stat-value amber" id="tracker-active-count">—</span></div>
+                    <div class="stat-pill"><span class="stat-label">Total</span><span class="stat-value" id="tracker-total-count">—</span></div>
+                </div>
+            </div>
+
+            <div class="filter-bar">
+                <div class="filter-types" id="tracker-filters">
+                    <button class="filter-btn active" data-tfilter="all">All</button>
+                    <button class="filter-btn" data-tfilter="watching">Watching</button>
+                    <button class="filter-btn" data-tfilter="viewing">Viewing</button>
+                    <button class="filter-btn" data-tfilter="offer">Offer Pending</button>
+                    <button class="filter-btn" data-tfilter="due diligence">Due Diligence</button>
+                    <button class="filter-btn" data-tfilter="passed">Passed</button>
+                </div>
+            </div>
+
+            <div class="tracker-table-wrap">
+                <table class="tracker-table">
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Type</th>
+                            <th>Area</th>
+                            <th>Asking Price</th>
+                            <th>Agency</th>
+                            <th>Stage</th>
+                            <th>Priority</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tracker-table-body"></tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <!-- ========== PORTFOLIO ========== -->
+        <section id="page-portfolio" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>Portfolio</h1>
+                    <p class="page-sub">Properties you have acquired — track value, rental income, and returns</p>
+                </div>
+            </div>
+
+            <div class="portfolio-empty">
+                <div class="portfolio-empty-icon">
+                    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="18" r="12"/><path d="M16 38h16M24 30v8"/></svg>
+                </div>
+                <h2>No properties acquired yet</h2>
+                <p>Once you close on a deal, add it here to track purchase price, current market value, rental income, occupancy, and overall portfolio performance.</p>
+                <div class="portfolio-preview">
+                    <div class="portfolio-preview-label">When populated, this page will show:</div>
+                    <div class="portfolio-preview-grid">
+                        <div class="portfolio-preview-item">📍 Property details & acquisition date</div>
+                        <div class="portfolio-preview-item">💰 Purchase price vs. current value</div>
+                        <div class="portfolio-preview-item">📈 Rental income & occupancy</div>
+                        <div class="portfolio-preview-item">📊 IRR, cash-on-cash & MOIC to date</div>
+                        <div class="portfolio-preview-item">🔄 Total portfolio value & equity</div>
+                        <div class="portfolio-preview-item">📋 Expense tracking & NOI</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========== MARKET ANALYSIS ========== -->
+        <section id="page-market" class="page">
+
+            <div class="page-header">
+                <div>
+                    <h1>Market Analysis</h1>
+                    <p class="page-sub">Short-term rental performance & market benchmarks by area</p>
+                </div>
+                <div class="header-stats">
+                    <div class="stat-pill accent"><span class="stat-label">High Season</span><span class="stat-value">Dec – Apr</span></div>
+                    <div class="stat-pill"><span class="stat-label">Low Season</span><span class="stat-value">May – Nov</span></div>
+                </div>
+            </div>
+
+            <!-- Area tabs -->
+            <div class="area-tabs-bar">
+                <button class="area-tab active" data-area="all">All Aruba</button>
+                <button class="area-tab" data-area="Noord">Noord <span class="fav-btn" data-fav="Noord" onclick="toggleFav(event,'Noord')" title="Favorite this area">☆</span></button>
+                <button class="area-tab" data-area="Palm Beach">Palm Beach <span class="fav-btn" data-fav="Palm Beach" onclick="toggleFav(event,'Palm Beach')" title="Favorite this area">☆</span></button>
+                <button class="area-tab" data-area="Eagle Beach">Eagle Beach <span class="fav-btn" data-fav="Eagle Beach" onclick="toggleFav(event,'Eagle Beach')" title="Favorite this area">☆</span></button>
+                <button class="area-tab" data-area="Malmok">Malmok <span class="fav-btn" data-fav="Malmok" onclick="toggleFav(event,'Malmok')" title="Favorite this area">☆</span></button>
+                <button class="area-tab" data-area="Oranjestad">Oranjestad <span class="fav-btn" data-fav="Oranjestad" onclick="toggleFav(event,'Oranjestad')" title="Favorite this area">☆</span></button>
+                <button class="area-tab" data-area="Savaneta">Savaneta <span class="fav-btn" data-fav="Savaneta" onclick="toggleFav(event,'Savaneta')" title="Favorite this area">☆</span></button>
+            </div>
+
+            <!-- Area-specific content (filled by JS) -->
+            <div id="area-overview"></div>
+
+            <!-- ---- Area Comparison ---- -->
+            <div class="comparison-divider">
+                <h2 class="sub-heading">All Areas — Side by Side</h2>
+            </div>
+
+            <div class="area-grid" id="area-grid"></div>
+
+            <div class="table-wrapper" style="margin-top:16px;">
+                <table class="market-table">
+                    <thead>
+                        <tr>
+                            <th>Area</th>
+                            <th>Avg Land / m²</th>
+                            <th>Avg Villa</th>
+                            <th>Occ. High</th>
+                            <th>Occ. Low</th>
+                            <th>ADR High</th>
+                            <th>ADR Low</th>
+                            <th>RevPAR High</th>
+                            <th>Profile</th>
+                        </tr>
+                    </thead>
+                    <tbody id="area-table-body"></tbody>
+                </table>
+            </div>
+
+            <!-- Notes -->
+            <h2 class="sub-heading" style="margin-top:40px;">Market Notes</h2>
+            <div class="notes-box">
+                <textarea id="market-notes" placeholder="Add observations, data sources, competitor insights per area..."></textarea>
+                <div style="display:flex;align-items:center;gap:12px;margin-top:10px;">
+                    <button class="save-notes-btn" onclick="saveNotes()">Save Notes</button>
+                    <span class="notes-saved" id="notes-saved-msg"></span>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </div><!-- /main-wrap -->
+
+    </div><!-- /app-shell -->
+
+    <!-- Listing Detail Modal -->
+    <div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
+        <div class="modal" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()">&#x2715;</button>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
