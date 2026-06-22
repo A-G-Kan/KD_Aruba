@@ -1,163 +1,1000 @@
 {
   "listings": [
     {
-      "id": 1,
-      "name": "Lot in Malmok",
-      "type": "land",
-      "image": "",
-      "area": "Malmok",
-      "location": "Malmok, Noord",
-      "askPrice": 450000,
-      "size": "1,200 m²",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "RE/MAX Aruba",
-      "listedDate": "2026-01-08",
-      "sourceUrl": "",
-      "status": "active",
-      "priceHistory": [{ "date": "2026-01-08", "price": 450000 }],
-      "notes": "Ocean view plot. Prime location near high-end residences. Flat terrain."
-    },
-    {
-      "id": 2,
-      "name": "Villa in Noord",
+      "id": 1161398,
+      "name": "Spaans Lagoenweg 38",
       "type": "house",
-      "image": "",
-      "area": "Noord",
-      "location": "Noord, Aruba",
-      "askPrice": 850000,
-      "size": "320 m²",
-      "bedrooms": 4,
+      "image": "https://century21aruba.com/images/udx/1161398/w780/1778160273685837.jpg?vno=1778175433",
+      "area": "Savaneta",
+      "location": "Pos Chiquito (Savaneta)",
+      "askPrice": 2995000,
+      "size": "1,055 m²",
+      "bedrooms": 5,
       "bathrooms": 3,
       "agency": "Century 21 Aruba",
-      "listedDate": "2026-01-15",
-      "sourceUrl": "",
-      "status": "price reduced",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/spaans-lagoenweg-38-home-for-sale-aruba-1161398",
+      "status": "active",
       "priceHistory": [
-        { "date": "2026-01-15", "price": 890000 },
-        { "date": "2026-02-20", "price": 850000 }
+        {
+          "date": "2026-06-22",
+          "price": 2995000
+        }
       ],
-      "notes": "Private pool. 5 min from Palm Beach. Recently renovated kitchen."
+      "notes": "Oceanfront home in Savaneta for sale!Located in the serene coastal area of Savaneta, this spacious oceanfront residence offers a unique opportunity to enjoy Aruba’s laid-back lifestyle right by the water. Situated on 1,055 m² of lease land along Spaans Lagoenweg, the property combines privacy, space, and stunning sea views in one exceptional setting. The home features 5 bedrooms and 3 bathrooms, with a functional layout designed for comfortable living and entertaining. Large windows and open living spaces allow for plenty of natural light and create a seamless connection to the outdoor areas and surrounding scenery.Outside, the property offers a generous pool, multiple areas to relax or entertain, and direct access to the beach, where you can enjoy calm mornings, sunset views, and the refreshing Caribbean breeze just steps from your home. This property is ideal as a full-time residence, vacation getaway, or investment opportunity in one of Aruba’s most peaceful beachfront communities. Conveniently located near well-known restaurants, beaches, and essential amenities, while still offering the tranquility and charm that make Savaneta so desirable.Contact us for more information or to schedule a viewing."
     },
     {
-      "id": 3,
-      "name": "Beachfront Condo – Palm Beach",
+      "id": 1161251,
+      "name": "Saliña Cerca 25 - I",
+      "type": "house",
+      "image": "https://century21aruba.com/images/udx/1161251/w780/1776970655166175.jpg?vno=1776973149",
+      "area": "Noord",
+      "location": "Bakval (Noord)",
+      "askPrice": 2900000,
+      "size": "1,147 m²",
+      "bedrooms": 10,
+      "bathrooms": 10,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/salina-cerca-25-i-home-for-sale-aruba-1161251",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 2900000
+        }
+      ],
+      "notes": "Exceptional villa with 10 suites in prime location for sale!Located in the highly desirable neighborhood of Salinja Cerca, this exceptional villa enjoys a prime position directly behind the Marriott Stellaris and diagonally across from the Ritz-Carlton Aruba, placing it at the very heart of Aruba’s most prestigious resort corridor. Nestled in Noord, just minutes from the island’s renowned beaches, fine dining, and vibrant hotel strip, the property offers a rare combination of elevated privacy, breathtaking views, and unmatched versatility. This unique location captures the essence of upscale island living while also delivering outstanding potential for high-end rental income.Set on an expansive 1,147 m² of long lease land, the villa is uniquely positioned along the edge of the salinja, offering sweeping panoramic views over the salinja and beyond. The location offers ultimate privacy, creating a serene retreat with a constant connection to Aruba’s dynamic coastline.The residence is thoughtfully designed and currently configured with 10 modern suites, each featuring its own en-suite bathroom. The villa also includes 5 fully equipped cooking kitchens and is currently set up for rentals, offering immediate income potential. While seamlessly integrated within one cohesive villa, the layout allows for flexible use, making it ideal for boutique hospitality, extended family living, or a high-performing rental investment.The outdoor living experience is where this property truly stands apart. Designed for both relaxation and entertainment, the villa boasts multiple inviting spaces, including shaded lounge areas, a stylish pergola with outdoor dining, and a dedicated grilling area, all perfectly oriented to take in the sweeping views. A large swimming pool and jacuzzi complete the setting, creating a resort-style ambiance that guests and owners alike will appreciate.This is a rare opportunity to own a distinctive, income-generating villa in one of Aruba’s most sought-after locations, where luxury, lifestyle, and investment potential come together effortlessly"
+    },
+    {
+      "id": 1157134,
+      "name": "Saliña Cerca Villa",
+      "type": "house",
+      "image": "https://century21aruba.com/images/udx/1157134/w780/1735851820623841.jpg?vno=1765917428",
+      "area": "Noord",
+      "location": "Bakval (Noord)",
+      "askPrice": 2250000,
+      "size": "781 m²",
+      "bedrooms": 8,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/salina-cerca-villa-home-for-sale-aruba-1157134",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 2250000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1160948,
+      "name": "Bubali 123 - E",
+      "type": "house",
+      "image": "https://century21aruba.com/images/udx/1160948/w780/1773336116879023.jpg?vno=1773418261",
+      "area": "Noord",
+      "location": "Bubali (Noord)",
+      "askPrice": 1795000,
+      "size": "943 m²",
+      "bedrooms": 5,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/bubali-123-e-home-for-sale-aruba-1160948",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 1795000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1161620,
+      "name": "Palm Beach 98 - F",
+      "type": "house",
+      "image": "https://century21aruba.com/images/udx/1161620/w780/1721669792696072.jpg?vno=1781105447",
+      "area": "Noord",
+      "location": "Palm Beach (Noord)",
+      "askPrice": 1795000,
+      "size": "742 m²",
+      "bedrooms": 5,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/palm-beach-98-f-home-for-sale-aruba-1161620",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 1795000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1158842,
+      "name": "Kamay 23 - H",
+      "type": "house",
+      "image": "https://century21aruba.com/images/udx/1158842/w780/1762465805955401.jpg?vno=1780682147",
+      "area": "Noord",
+      "location": "Kamay (Noord)",
+      "askPrice": 1699000,
+      "size": "611 m²",
+      "bedrooms": 5,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/kamay-23-h-home-for-sale-aruba-1158842",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 1699000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1160316,
+      "name": "Mesa Vista 49 Tierra Del Sol",
+      "type": "house",
+      "image": "https://century21aruba.com/images/udx/1160316/w780/1734353110312920.jpg?vno=1765372957",
+      "area": "Noord",
+      "location": "Westpunt (Noord)",
+      "askPrice": 1625000,
+      "size": "979 m²",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/mesa-vista-49-tierra-del-sol-home-for-sale-aruba-1160316",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 1625000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1151937,
+      "name": "Caya Bunita Bista 8",
+      "type": "house",
+      "image": "https://century21aruba.com/images/udx/1151937/w780/1771864460311858.jpg?vno=1771864683",
+      "area": "Noord",
+      "location": "Malmok (Noord)",
+      "askPrice": 1500000,
+      "size": "1,831 m²",
+      "bedrooms": 9,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/caya-bunita-bista-8-home-for-sale-aruba-1151937",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 1500000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1161403,
+      "name": "Spaans Lagoenweg 79",
+      "type": "house",
+      "image": "https://century21aruba.com/images/udx/1161403/w780/1778182634658975.jpg?vno=1778183010",
+      "area": "Savaneta",
+      "location": "Pos Chiquito (Savaneta)",
+      "askPrice": 1450000,
+      "size": "440 m²",
+      "bedrooms": 7,
+      "bathrooms": 9,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/spaans-lagoenweg-79-home-for-sale-aruba-1161403",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 1450000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1161561,
+      "name": "Zoutmanstraat Studios",
+      "type": "house",
+      "image": "https://century21aruba.com/images/udx/1161561/w780/1780335441873752.jpg?vno=1780601934",
+      "area": "Oranjestad East",
+      "location": "Renaissance (Oranjestad East)",
+      "askPrice": 985000,
+      "size": "205 m²",
+      "bedrooms": 5,
+      "bathrooms": 5,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/zoutmanstraat-studios-home-for-sale-aruba-1161561",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 985000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1159254,
+      "name": "Coudacarie Luxury Villas",
+      "type": "house",
+      "image": "https://century21aruba.com/images/udx/1159254/w780/1753968842151640.jpg?vno=1753970843",
+      "area": "Noord",
+      "location": "Bakval (Noord)",
+      "askPrice": 945000,
+      "size": "260 m²",
+      "bedrooms": 3,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/coudacarie-luxury-villas-home-for-sale-aruba-1159254",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 945000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1160082,
+      "name": "Opal 35",
+      "type": "house",
+      "image": "https://century21aruba.com/images/udx/1160082/w780/1762808450913570.jpg?vno=1763755039",
+      "area": "Noord",
+      "location": "Rooi Santo (Noord)",
+      "askPrice": 935000,
+      "size": "525 m²",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/opal-35-home-for-sale-aruba-1160082",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 935000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1160613,
+      "name": "Daher Residence",
       "type": "condo",
-      "image": "",
-      "area": "Palm Beach",
-      "location": "Palm Beach, Noord",
-      "askPrice": 620000,
-      "size": "145 m²",
+      "image": "https://century21aruba.com/images/udx/1160613/w780/1769718014286126.jpg?vno=1775160932",
+      "area": "Noord",
+      "location": "Rooi Santo (Noord)",
+      "askPrice": 2475000,
+      "size": "",
+      "bedrooms": 4,
+      "bathrooms": 7,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/daher-residence-condo-for-sale-aruba-1160613",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 2475000
+        }
+      ],
+      "notes": "The Daher Residence, a property like no other on the island!Introducing The Daher Residence, a one-of-a-kind, 3-story luxury masterpiece located in the prestigious neighborhood of Opal in Noord, one of Aruba’s most sought-after high-end communities. Positioned just minutes from Aruba’s world-famous beaches, the vibrant High-Rise Hotel Area, and a short drive to premier shopping malls, fine dining restaurants, and lively entertainment, this exceptional property offers the perfect balance of privacy and prime location. This fully customized designer townhouse features an ultra-luxury interior finished with top-quality furniture, high-end appliances, and curated details throughout. Every space has been thoughtfully designed to display elegance, comfort, and sophistication.The expansive open-concept living area seamlessly connects the living room, dining space, and chef’s kitchen, creating an impressive setting for both intimate living and grand entertaining. The fully equipped gourmet kitchen showcases premium appliances and sleek finishes that meet the highest standards of modern luxury.Property highlights:3 stories of refined architectural design4 spacious bedrooms6 full bathrooms + 2 guest bathroomsFully furnished with designer-selected piecesHigh-end appliances throughoutStep outside into your own private resort-style outdoor patio where you will find:A sparkling private poolLarge BBQ areaMultiple lounge and entertainment spacesThe atmosphere is reminiscent of a boutique luxury resort, ideal for hosting, relaxing, or simply enjoying Aruba’s year-round sunshine in complete privacy.Daher Residence Private Amenities:Gated private parking spotsPrivate entrance into residencePrivate fitness centerConcierge lobby and meeting roomAruba Racquet Club amenities (access for owners):Enjoy exclusive access to 7 lighted world-class tennis courts, 2 swimming pools, a fully equipped gym and fitness center, coffee shop & bar, free tennis clinics, playground areas, sport packages, private and guest parking, shower facilities, and complimentary WiFi.This is not simply a property, it's a statement. A residence crafted for discerning buyers seeking exclusivity, comfort, and a luxurious lifestyle in one of Aruba’s most prestigious settings. Opportunities like this are exceptionally rare. The Daher Residence represents luxury island living at its absolute finest.Contact us for more information or to schedule a viewing!"
+    },
+    {
+      "id": 1161126,
+      "name": "Blue Residences Unit 326",
+      "type": "condo",
+      "image": "https://century21aruba.com/images/udx/1161126/w780/1774987539755436.jpg?vno=1775146214",
+      "area": "Oranjestad West",
+      "location": "Eagle Beach (Oranjestad West)",
+      "askPrice": 1695000,
+      "size": "150 m²",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/blue-residences-unit-326-condo-for-sale-aruba-1161126",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 1695000
+        }
+      ],
+      "notes": "Luxury Oceanfront Condo at Blue Residences!Welcome to this stunning oceanfront condo located in the prestigious Blue Residences, offering breathtaking, unobstructed views of the Caribbean Sea.This spacious residence spans 150 m² (1,614 sq ft) and features 3 bedrooms and 3 bathrooms, designed with an open-concept layout that creates a bright, comfortable, and relaxing atmosphere. Large windows and sliding doors invite natural light throughout the living space while seamlessly connecting indoor and outdoor living.The fully equipped modern kitchen is ideal for cooking and entertaining, complete with high-end appliances and ample storage. The entire condo is fully air-conditioned, ensuring comfort year-round in Aruba’s tropical climate.The master suite serves as a private sanctuary, featuring an en-suite bathroom and direct access to the balcony, where you can enjoy your morning coffee or unwind while watching Aruba’s signature tangerine sunsets over the ocean.Perfectly situated, this property is just minutes from the world-famous Eagle Beach and close to top restaurants, cafés, and shopping destinations offering both convenience and lifestyle.Residents of Blue Residences enjoy premium, resort-style amenities, including:• A resort-style swimming pool with natural stone decks• Lush tropical landscaping• A modern fitness center and spa• Secure gated parking• 24/7 securityWhether you’re looking for a dream home for your family or a high-potential investment property, this exceptional condo offers the perfect blend of luxury, comfort, and location.Contact us Today for more information or to schedule a viewing!"
+    },
+    {
+      "id": 1158332,
+      "name": "Harbour House Unit 209",
+      "type": "condo",
+      "image": "https://century21aruba.com/images/udx/1158332/w780/1744382147619452.jpg?vno=1775764345",
+      "area": "Oranjestad East",
+      "location": "Renaissance (Oranjestad East)",
+      "askPrice": 1500000,
+      "size": "197 m²",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/harbour-house-unit-209-condo-for-sale-aruba-1158332",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 1500000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1156531,
+      "name": "Azure Beach Residences 325",
+      "type": "condo",
+      "image": "https://century21aruba.com/images/udx/1156531/w780/1731435141838576.jpg?vno=1778004764",
+      "area": "Oranjestad West",
+      "location": "Eagle Beach (Oranjestad West)",
+      "askPrice": 999500,
+      "size": "",
       "bedrooms": 2,
       "bathrooms": 2,
-      "agency": "Coldwell Banker Aruba",
-      "listedDate": "2026-02-01",
-      "sourceUrl": "",
-      "status": "under offer",
-      "priceHistory": [{ "date": "2026-02-01", "price": 620000 }],
-      "notes": "Direct ocean view, fully furnished. Strong rental history on Airbnb."
-    },
-    {
-      "id": 4,
-      "name": "Commercial Space – Oranjestad",
-      "type": "commercial",
-      "image": "",
-      "area": "Oranjestad",
-      "location": "Lloyd G. Smith Blvd, Oranjestad",
-      "askPrice": 780000,
-      "size": "400 m²",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "ERA Aruba",
-      "listedDate": "2026-01-22",
-      "sourceUrl": "",
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/azure-beach-residences-325-condo-for-sale-aruba-1156531",
       "status": "active",
-      "priceHistory": [{ "date": "2026-01-22", "price": 780000 }],
-      "notes": "Ground-floor retail near cruise terminal. High foot traffic."
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 999500
+        }
+      ],
+      "notes": ""
     },
     {
-      "id": 5,
-      "name": "Land Parcel – Savaneta",
-      "type": "land",
-      "image": "",
-      "area": "Savaneta",
-      "location": "Savaneta",
-      "askPrice": 310000,
-      "size": "2,500 m²",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "RE/MAX Aruba",
-      "listedDate": "2025-12-10",
-      "sourceUrl": "",
-      "status": "active",
-      "priceHistory": [{ "date": "2025-12-10", "price": 310000 }],
-      "notes": "Flat parcel near waterfront. Residential zoning. Quiet area."
-    },
-    {
-      "id": 6,
-      "name": "Studio Condo – Eagle Beach",
+      "id": 1161695,
+      "name": "Sunset Residence Unit 15 | Near Eagle Beach",
       "type": "condo",
-      "image": "",
-      "area": "Eagle Beach",
-      "location": "Eagle Beach",
-      "askPrice": 295000,
-      "size": "58 m²",
-      "bedrooms": 0,
+      "image": "https://century21aruba.com/images/udx/1161695/w780/1781805964967514.jpg?vno=1781903309",
+      "area": "Oranjestad West",
+      "location": "Eagle Beach (Oranjestad West)",
+      "askPrice": 849000,
+      "size": "114 m²",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/sunset-residence-unit-15-near-eagle-beach-condo-for-sale-1161695",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 849000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1156171,
+      "name": "Arashi Boutique Condominiums",
+      "type": "condo",
+      "image": "https://century21aruba.com/images/udx/1156171/w780/1726774826820891.jpg?vno=1726777751",
+      "area": "Noord",
+      "location": "Bakval (Noord)",
+      "askPrice": 616000,
+      "size": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/arashi-boutique-condominiums-for-sale-aruba-1156171",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 616000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1160589,
+      "name": "Palm Aruba 316",
+      "type": "condo",
+      "image": "https://century21aruba.com/images/udx/1160589/w780/1769434572811828.jpg?vno=1769440497",
+      "area": "Noord",
+      "location": "Palm Beach (Noord)",
+      "askPrice": 615000,
+      "size": "",
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/palm-aruba-316-condo-for-sale-1160589",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 615000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1161367,
+      "name": "Palm Aruba Condo",
+      "type": "condo",
+      "image": "https://century21aruba.com/images/udx/1161367/w780/1777559326137990.jpg?vno=1777560418",
+      "area": "Noord",
+      "location": "Palm Beach (Noord)",
+      "askPrice": 595000,
+      "size": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/palm-aruba-condo-for-sale-1161367",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 595000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1150633,
+      "name": "Nanki Boutique Condos (Pre - Construction)",
+      "type": "condo",
+      "image": "https://century21aruba.com/images/udx/1150633/w780/1781889090267948.jpg?vno=1781889208",
+      "area": "San Nicolas",
+      "location": "Seroe Colorado (San Nicolas)",
+      "askPrice": 553875,
+      "size": "",
+      "bedrooms": 1,
       "bathrooms": 1,
       "agency": "Century 21 Aruba",
-      "listedDate": "2026-02-14",
-      "sourceUrl": "",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/nanki-boutique-condos-pre-construction-for-sale-1150633",
       "status": "active",
-      "priceHistory": [{ "date": "2026-02-14", "price": 295000 }],
-      "notes": "Studio in well-managed complex. High STR demand year-round."
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 553875
+        }
+      ],
+      "notes": ""
     },
     {
-      "id": 7,
-      "name": "Luxury Villa – Malmok",
-      "type": "house",
-      "image": "",
-      "area": "Malmok",
-      "location": "Malmok, Noord",
-      "askPrice": 1750000,
-      "size": "520 m²",
-      "bedrooms": 5,
-      "bathrooms": 4,
-      "agency": "Sotheby's Aruba",
-      "listedDate": "2026-01-30",
-      "sourceUrl": "",
+      "id": 1153894,
+      "name": "Casa Playa Downtown Condos",
+      "type": "condo",
+      "image": "https://century21aruba.com/images/udx/1153894/w780/1781889503847544.jpg?vno=1781889635",
+      "area": "Oranjestad East",
+      "location": "Renaissance (Oranjestad East)",
+      "askPrice": 394554,
+      "size": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/casa-playa-downtown-condos-for-sale-aruba-1153894",
       "status": "active",
-      "priceHistory": [{ "date": "2026-01-30", "price": 1750000 }],
-      "notes": "Infinity pool, ocean views, smart home. New build 2024."
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 394554
+        }
+      ],
+      "notes": ""
     },
     {
-      "id": 8,
-      "name": "Corner Lot – Bubali",
-      "type": "land",
-      "image": "",
+      "id": 1161380,
+      "name": "Noord 100 - S Unit 16",
+      "type": "condo",
+      "image": "https://century21aruba.com/images/udx/1161380/w780/1778006313780363.jpg?vno=1778014334",
       "area": "Noord",
-      "location": "Bubali, Noord",
-      "askPrice": 360000,
-      "size": "980 m²",
+      "location": "Alto Vista (Noord)",
+      "askPrice": 375000,
+      "size": "130 m²",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/noord-100-s-unit-16-condo-for-sale-aruba-1161380",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 375000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1156399,
+      "name": "Moon Condos Aruba (Pre - Construction)",
+      "type": "condo",
+      "image": "https://century21aruba.com/images/udx/1156399/w780/1729690009176307.jpg?vno=1729690810",
+      "area": "Noord",
+      "location": "Rooi Santo (Noord)",
+      "askPrice": 340600,
+      "size": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/moon-condos-aruba-pre-construction-for-sale-1156399",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 340600
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1153782,
+      "name": "San Fuego Full Ownership Land",
+      "type": "land",
+      "image": "https://century21aruba.com/images/udx/1153782/w780/1704289460195839.jpg?vno=1775137459",
+      "area": "Santa Cruz",
+      "location": "San Fuego (Santa Cruz)",
+      "askPrice": 900000,
+      "size": "13,585 m²",
       "bedrooms": null,
       "bathrooms": null,
-      "agency": "ERA Aruba",
-      "listedDate": "2026-03-01",
-      "sourceUrl": "",
-      "status": "price reduced",
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/san-fuego-full-ownership-land-for-sale-aruba-1153782",
+      "status": "active",
       "priceHistory": [
-        { "date": "2026-03-01", "price": 390000 },
-        { "date": "2026-03-10", "price": 360000 }
+        {
+          "date": "2026-06-22",
+          "price": 900000
+        }
       ],
-      "notes": "Corner plot, good access. Zoning: residential. 10 min from beaches."
+      "notes": "PRICE REDUCED from USD$ 955.000 to USD$ 900.000!!Prime central land for sale: ideal for a residential development!Nestled within the tranquil area of San Fuego, this expansive 13.585 m2 (146,227 sq.ft.) plot of property land offers a rare opportunity for visionary investors. San Fuego is a quiet and friendly neighborhood where you can enjoy living in a natural environment. It's strategically positioned to offer effortless connectivity to various districts and is just a few minutes away from the Arikok National Park. This parcel presents a prime canvas for a residential development.Divided thoughtfully into 13 individual lots, ranging in size from 636 m2 to 1395 m2, this property sets the stage for a meticulously planned community. Each distinct lot offers a unique prospect, allowing for diverse architectural designs and layouts tailored to foster a cohesive yet diverse neighborhood.Don't miss out on this fantastic investment opportunity!Contact us for more information."
+    },
+    {
+      "id": 1161590,
+      "name": "Catalina Estates Land",
+      "type": "land",
+      "image": "https://century21aruba.com/images/udx/1161590/w780/1780607753885450.jpg?vno=1780608064",
+      "area": "Noord",
+      "location": "Westpunt (Noord)",
+      "askPrice": 879000,
+      "size": "879 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/catalina-estates-land-for-sale-aruba-1161590",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 879000
+        }
+      ],
+      "notes": "Catalina Estates Lot 1 | Premium land in Tierra del Sol, ArubaWelcome to Catalina Estates Lot 1, a rare opportunity to own a beautiful 879 m² lot within the prestigious Tierra del Sol Resort & Golf Community, Aruba's premier gated residential destination, owned and operated by Iberostar.Situated in a highly sought-after location, this spacious parcel offers the perfect foundation for creating a custom residence tailored to your lifestyle. Surrounded by elegant homes, lush landscapes, and the natural beauty of Aruba's northern coastline, the property combines privacy, security, and exclusivity in one exceptional setting. As a homeowner within Tierra del Sol, you'll enjoy access to a world-class lifestyle centered around the community's championship golf course and resort amenities. Whether you're planning a permanent residence, a vacation retreat, or an investment property,Catalina Estates Lot 1 presents an outstanding opportunity in one of Aruba's most desirable communities!Property highlights:• 879 m² (9,462 sq. ft.) lot• Located within the exclusive Tierra del Sol gated community owned and operated by Iberostar• Existing perimeter walls already constructed• Surrounded by upscale residences and beautifully maintained grounds• Conveniently located near Aruba's renowned beaches, Malmok, Arashi Beach, and the California Lighthouse• Ideal for a luxury primary residence, vacation home, or investment propertyExperience the unique combination of luxury, security, and island living that makes Tierra del Sol one of Aruba's most prestigious residential communities.Contact us for more information!"
+    },
+    {
+      "id": 1160933,
+      "name": "Kamay Full Ownership Land",
+      "type": "land",
+      "image": "https://century21aruba.com/images/udx/1160933/w780/1773170414626636.jpg?vno=1773170917",
+      "area": "Noord",
+      "location": "Kamay (Noord)",
+      "askPrice": 625000,
+      "size": "1,134 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/kamay-full-ownership-land-for-sale-aruba-1160933",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 625000
+        }
+      ],
+      "notes": "Spacious 1,134 m² property land in a quiet cul-de-sac in Kamay for sale!Located in the highly sought-after residential neighborhood of Kamay, Aruba, this spacious parcel of 1,134 m² of property land (eigendom) offers an excellent opportunity to build your dream home or investment property in one of the island’s most desirable areas. The lot is situated in a quiet cul-de-sac, providing added privacy, minimal traffic, and a peaceful living environment, ideal for a private residence.Kamay is known for its quiet, upscale residential atmosphere, well-maintained homes, and convenient location close to Aruba’s top beaches, restaurants, supermarkets, and the vibrant Palm Beach area. The generous size of this lot provides ample space for a large private residence, landscaped gardens, a pool, and outdoor living areas. With full property ownership (eigendom) and a large 1134 m² footprint, this lot offers flexibility for a custom home design while enjoying the privacy and exclusivity that make Kamay such a desirable place to live.Don’t miss the opportunity to secure a spacious property lot in one of Aruba’s most sought-after residential neighborhoods.Contact us for more information!"
+    },
+    {
+      "id": 1161591,
+      "name": "Paseo De Playa Land",
+      "type": "land",
+      "image": "https://century21aruba.com/images/udx/1161591/w780/1781558203793720.jpg?vno=1781558571",
+      "area": "Noord",
+      "location": "Westpunt (Noord)",
+      "askPrice": 615000,
+      "size": "712 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/paseo-de-playa-land-for-sale-aruba-1161591",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 615000
+        }
+      ],
+      "notes": "Paseo de Playa Lot 29 | Premium land in Tierra del Sol, ArubaWelcome to Paseo de playa Lot 29, a rare opportunity to own a beautiful 712 m² (7,664 sq.ft.)lot within the prestigious Tierra del Sol Resort & Golf Community, Aruba's premier gated residential destination, owned and operated by Iberostar. This parcel offers an exceptional opportunity to design and build the home you've always envisioned. With the possibility of constructing a spacious two-story residence, you'll have the opportunity to enjoy beautiful ocean views from a second level, adding even more value and appeal to this prime property. Surrounded by elegant homes, manicured landscapes, and the tranquility that defines Tierra del Sol, this property provides the perfect balance of privacy, security, and luxury. Whether you're seeking a permanent residence, a vacation retreat, or a valuable investment property, this lot offers endless potential in one of Aruba's most desirable residential communities.As a homeowner within Tierra del Sol, you'll enjoy access to a premier lifestyle centered around the community's golf course, resort amenities, and stunning northern coastal setting.Property Highlights:• 712 m² (7,664 sq. ft.) lot• Located within the exclusive Tierra del Sol gated community, owned and operated by Iberostar• Suitable for the construction of a two-story residence• Surrounded by luxury homes and beautifully maintained landscaping• Secure, gated community with 24/7 controlled access• Close to Aruba's renowned beaches, Malmok, Arashi Beach, and the California Lighthouse• Ideal for a primary residence, vacation home, or investment propertyExperience the unmatched combination of luxury, security, and resort-style living that makes Tierra del Sol so exclusive.Contact us directly for more information!"
+    },
+    {
+      "id": 1159472,
+      "name": "Bona Vista Hills Full Ownership Land With Distant Ocean Views",
+      "type": "land",
+      "image": "https://century21aruba.com/images/udx/1159472/w780/1756127712630419.jpg?vno=1758910837",
+      "area": "Noord",
+      "location": "Alto Vista (Noord)",
+      "askPrice": 495000,
+      "size": "1,187 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/bona-vista-hills-full-ownership-land-with-distant-ocean-views-1159472",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 495000
+        }
+      ],
+      "notes": "Bona Vista Hills – Exclusive property land with distant ocean view for sale!Discover the perfect balance of modern living and natural beauty with this spacious 1,187 m² lot in the prestigious Bona Vista Hills project. Nestled in the serene surroundings of Alto Vista, this community offers a unique lifestyle where comfort meets tranquility. Bona Vista Hills is designed for those who appreciate exclusivity, privacy, and the charm of Aruba’s natural landscape. With sweeping views and a peaceful atmosphere, it’s the ideal setting to build your dream home, whether as a private retreat or a modern residence.This neighborhood combines contemporary living with the beauty of its natural environment, creating a harmonious space for families, retirees, and investors alike. Secure your place in this desirable development and enjoy the lifestyle you’ve always envisioned.Contact us for more information!"
+    },
+    {
+      "id": 1160495,
+      "name": "Turibana Dreams - Lot 4 Full Ownership Land",
+      "type": "land",
+      "image": "https://century21aruba.com/images/udx/1160495/w780/1767903859354993.jpg?vno=1767903997",
+      "area": "Noord",
+      "location": "Alto Vista (Noord)",
+      "askPrice": 458006,
+      "size": "1,087 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/turibana-dreams-lot-4-full-ownership-land-for-sale-1160495",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 458006
+        }
+      ],
+      "notes": "Turibana Dreams – Full Ownership Lot for Sale (1,087 m²)Discover this 1,087 m² (11,700 sq. ft.) full-ownership lot located in the desirable Turibana Dreams residential community. This well-planned neighborhood offers an excellent opportunity to build your dream home or secure a smart long-term investment in one of Aruba’s most convenient locations.Turibana Dreams is centrally located in Noord, with easy access to major roads, supermarkets, schools, shopping areas. Aruba’s most popular beaches are just minutes away, making this an ideal location for both living and investing.Whether you plan to build a private residence or hold the property as an investment, this lot offers accessibility, value, and the security of full ownership in a growing residential area.Key Features:• Full ownership land (property land)• Lot size: 1,087 m² / 11,700 sq. ft.• Price: USD 458,006 | Afl. 815,250• Located in Turibana, Noord• Centrally located near daily amenities• Ideal for residential development or investmentContact us today for more information."
+    },
+    {
+      "id": 1160497,
+      "name": "Turibana Dreams - Lot 9 Full Ownership Land",
+      "type": "land",
+      "image": "https://century21aruba.com/images/udx/1160497/w780/1767905496004651.jpg?vno=1767962009",
+      "area": "Noord",
+      "location": "Alto Vista (Noord)",
+      "askPrice": 446742,
+      "size": "994 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/turibana-dreams-lot-9-full-ownership-land-for-sale-1160497",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 446742
+        }
+      ],
+      "notes": "Turibana Dreams – Full Ownership Lot for Sale (994 m²)Discover this 994 m² (10,699 sq. ft.) full-ownership lot located in the desirable Turibana Dreams residential community. This well-planned neighborhood offers an excellent opportunity to build your dream home or secure a smart long-term investment in one of Aruba’s most convenient locations.Turibana Dreams is centrally located in Noord, with easy access to major roads, supermarkets, schools, shopping areas. Aruba’s most popular beaches are just minutes away, making this an ideal location for both living and investing.Whether you plan to build a private residence or hold the property as an investment, this lot offers accessibility, value, and the security of full ownership in a growing residential area.Key Features:• Full ownership land (property land)• Lot size: 994 m² / 10,699 sq. ft.• Price: USD 446,742 | Afl. 795,200• Located in Turibana, Noord• Centrally located near daily amenities• Ideal for residential development or investmentContact us today for more information."
+    },
+    {
+      "id": 1160493,
+      "name": "Turibana Dreams - Lot 3 Full Ownership Land",
+      "type": "land",
+      "image": "https://century21aruba.com/images/udx/1160493/w780/1767903176711604.jpg?vno=1767905096",
+      "area": "Noord",
+      "location": "Alto Vista (Noord)",
+      "askPrice": 445787,
+      "size": "1,058 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/turibana-dreams-lot-3-full-ownership-land-for-sale-1160493",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 445787
+        }
+      ],
+      "notes": "Turibana Dreams – Full Ownership Lot for Sale (1,058 m²)Discover this 1,058 m² (11,388 sq. ft.) full-ownership lot located in the desirable Turibana Dreams residential community. This well-planned neighborhood offers an excellent opportunity to build your dream home or secure a smart long-term investment in one of Aruba’s most convenient locations.Turibana Dreams is centrally located in Noord, with easy access to major roads, supermarkets, schools, shopping areas. Aruba’s most popular beaches are just minutes away, making this an ideal location for both living and investing.Whether you plan to build a private residence or hold the property as an investment, this lot offers accessibility, value, and the security of full ownership in a growing residential area.Key Features:• Full ownership land (property land)• Lot size: 1,058 m² / 11,388 sq. ft.• Price: USD 445,787 | Afl. 793,500• Located in Turibana, Noord• Centrally located near daily amenities• Ideal for residential development or investmentContact us today for more information."
+    },
+    {
+      "id": 1160496,
+      "name": "Turibana Dreams - Lot 5 Full Ownership Land",
+      "type": "land",
+      "image": "https://century21aruba.com/images/udx/1160496/w780/1767904868023728.jpg?vno=1767905006",
+      "area": "Noord",
+      "location": "Alto Vista (Noord)",
+      "askPrice": 440730,
+      "size": "1,046 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/turibana-dreams-lot-5-full-ownership-land-for-sale-1160496",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 440730
+        }
+      ],
+      "notes": "Turibana Dreams – Full Ownership Lot for Sale (1,046 m²)Discover this 1,046 m² (11,259 sq. ft.) full-ownership lot located in the desirable Turibana Dreams residential community. This well-planned neighborhood offers an excellent opportunity to build your dream home or secure a smart long-term investment in one of Aruba’s most convenient locations.Turibana Dreams is centrally located in Noord, with easy access to major roads, supermarkets, schools, shopping areas. Aruba’s most popular beaches are just minutes away, making this an ideal location for both living and investing.Whether you plan to build a private residence or hold the property as an investment, this lot offers accessibility, value, and the security of full ownership in a growing residential area.Key Features:• Full ownership land (property land)• Lot size: 1,046 m² / 11,259 sq. ft.• Price: USD 440,730 | Afl. 784,500• Located in Turibana, Noord• Centrally located near daily amenities• Ideal for residential development or investmentContact us today for more information."
+    },
+    {
+      "id": 1161589,
+      "name": "Marawiel 1294m2 Full Ownership Land",
+      "type": "land",
+      "image": "https://century21aruba.com/images/udx/1161589/w780/1780604575704959.jpg?vno=1780605222",
+      "area": "Paradera",
+      "location": "Marawiel (Paradera)",
+      "askPrice": 421640,
+      "size": "1,294 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/marawiel-1294m2-full-ownership-land-for-sale-aruba-1161589",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 421640
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1158924,
+      "name": "Curiburi Estates Full Ownership Land Lot 8",
+      "type": "land",
+      "image": "https://century21aruba.com/images/udx/1158924/w780/1749760238743240.jpg?vno=1749823735",
+      "area": "Paradera",
+      "location": "Babijn (Paradera)",
+      "askPrice": 391118,
+      "size": "1,535 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/curiburi-estates-full-ownership-land-lot-8-for-sale-1158924",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 391118
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1158925,
+      "name": "Curiburi Estates Full Ownership Land Lot 9",
+      "type": "land",
+      "image": "https://century21aruba.com/images/udx/1158925/w780/1749760704516052.jpg?vno=1749823605",
+      "area": "Paradera",
+      "location": "Babijn (Paradera)",
+      "askPrice": 385003,
+      "size": "1,511 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/curiburi-estates-full-ownership-land-lot-9-for-sale-1158925",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 385003
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": 1147823,
+      "name": "Weststraat",
+      "type": "commercial",
+      "image": "https://century21aruba.com/images/udx/1147823/w780/1741186100340867.jpg?vno=1741188419",
+      "area": "Oranjestad East",
+      "location": "Renaissance (Oranjestad East)",
+      "askPrice": 5519101,
+      "size": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/weststraat-cbo-for-sale-aruba-1147823",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 5519101
+        }
+      ],
+      "notes": "Investment opportunity in the heart of Oranjestad!Surrounded by new and existing commercial establishments such as restaurants, retail stores, casinos, bars, and more...the building is right next to the Aruba cruise terminal, Harbour House and only a few minutes away from the Renaissance hotel, mall and marketplace. A great location for any enterprising business or investor interested in owning commercial property in Aruba. The ground floor consists of 9 commercial spaces which can be used for shops, bars, restaurants etc. The first floor has fantastic ocean views and would be ideal for a bar/restaurant, but it could be used for anything. There are several parking spaces in front of the building, as well as a large parking lot in the back. The property is freely accessible through the highly trafficked L.G. Smith Boulevard.Contact us if you have any questions or to schedule a viewing!"
+    },
+    {
+      "id": 1158935,
+      "name": "Schotlandstraat 63",
+      "type": "commercial",
+      "image": "https://century21aruba.com/images/udx/1158935/w780/1749843740463194.jpg?vno=1749845081",
+      "area": "Oranjestad West",
+      "location": "Bushiri (Oranjestad West)",
+      "askPrice": 2752808,
+      "size": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/schotlandstraat-63-cbo-for-sale-aruba-1158935",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 2752808
+        }
+      ],
+      "notes": "Commercial property in prime location on high-traffic road for sale!This commercial property is ideally located on a busy main road, surrounded by other established businesses, ensuring excellent exposure and accessibility. The property spans 2,880 m² of land and offers a versatile layout suitable for a variety of business operations.Main building layout:- Ground floor features a storeroom, kitchen, toilet, and multiple spacious storage areas- First floor includes several well-sized office spaces- Additional detached storage area- Ample load and unload space on-siteStrategically positioned with easy access to both Noord and Oranjestad, this property offers a central location ideal for reaching clients and suppliers across the island. Well-suited for distribution centers, logistics companies, wholesale operations, construction suppliers, or any commercial activity requiring office, storage, and delivery access. The property will be delivered completely empty. Any racks or equipment seen in the photos are not included in the sale.Contact us today to schedule a viewing and explore the full potential of this property!"
+    },
+    {
+      "id": 1158897,
+      "name": "De La Sallestraat 60",
+      "type": "commercial",
+      "image": "https://century21aruba.com/images/udx/1158897/w780/1765305362709320.jpg?vno=1765312511",
+      "area": "Oranjestad West",
+      "location": "Sero Blanco (Oranjestad West)",
+      "askPrice": 1787640,
+      "size": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/de-la-sallestraat-60-cbo-for-sale-aruba-1158897",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 1787640
+        }
+      ],
+      "notes": "Iconic Commercial Building “Sucu” in Sero Blanco, Oranjestad for sale!Introducing “Sucu”, a well-known commercial property that captures the charm of traditional Aruban architecture while offering all the space and functionality your business needs. Formerly a notary office, this beautiful building is located in a high-traffic area of Sero Blanco, Oranjestad, making it ideal for visibility and easy access. The property spans two spacious plots totaling 1,871 m², providing ample parking space for staff and clients alike. Inside, you'll find a warm and welcoming interior with multiple large office spaces, three toilet rooms, and several smaller rooms that can be used as a pantry, storage, printing area, or utility space, providing great flexibility for a variety of business needs. On the lower level, there's a spacious file room, a fully equipped kitchen with a dining area, and an additional multi-use room, ideal for personal use, extra storage, or private work area.Layout:- Beautiful reception area- 10 spacious office spaces- Several smaller rooms- 3 toilet rooms and 1 full bathroom- Spacious file/storage room- Fully equipped kitchen with dining area“Sucu” is a rare opportunity to own a distinctive, functional, and centrally located commercial property in Oranjestad. Whether you’re expanding, relocating, or investing, this building offers the ideal foundation for your next business move!Contact us for more information or to schedule a viewing."
+    },
+    {
+      "id": 1157767,
+      "name": "Avenida Milio Croes 57 - 57a",
+      "type": "commercial",
+      "image": "https://century21aruba.com/images/udx/1157767/w780/1740512055150469.jpg?vno=1740513137",
+      "area": "Oranjestad East",
+      "location": "Dakota (Oranjestad East)",
+      "askPrice": 1657304,
+      "size": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/avenida-milio-croes-57-comm-res-for-sale-aruba-1157767",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 1657304
+        }
+      ],
+      "notes": "Prime commercial property for sale – strategic industrial locationAn excellent investment opportunity awaits with this commercial property, situated at Avenida Milo Croes on a spacious 3,088 m² of property land. Ideally located in a central and industrial area, this property offers significant potential for redevelopment to suit a variety of commercial and industrial uses.While the property requires some renovation, its spacious layout, strategic positioning, and investment potential make it a valuable asset for businesses looking to establish or expand their operations. Whether you're an investor or an owner-occupier, this is your chance to capitalize on a prime location with long-term growth opportunities!Contact us for more information or to schedule a viewing."
+    },
+    {
+      "id": 1161288,
+      "name": "Tanki Leendert Commercial Property",
+      "type": "commercial",
+      "image": "https://century21aruba.com/images/udx/1161288/w780/1777057244559589.jpg?vno=1777058492",
+      "area": "Oranjestad West",
+      "location": "Tanki Leendert (Oranjestad West)",
+      "askPrice": 1495000,
+      "size": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/tanki-leendert-commercial-property-bui-land-for-sale-1161288",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 1495000
+        }
+      ],
+      "notes": "Commercial investment opportunity in Tanki Leendert - Prime high traffic locationPositioned in the highly accessible and rapidly developing area of Tanki Leendert, this exceptional commercial property presents a rare opportunity for investors seeking immediate income and long-term growth. Strategically located alongside a highly trafficked main road with direct connection to the highway, the property benefits from excellent visibility, accessibility, and consistent exposure. Set on 2 parcels of property land totaling 3,132 m², this asset offers both security of ownership and future development potential, an increasingly valuable combination in Aruba’s commercial landscape.The property comprises a total of 18 commercial units, of which 17 are currently in use and generating a stable and active income stream. The existing mix of tenants contributes to a consistent occupancy rate, making this an attractive, turnkey investment with minimal vacancy.Key highlights include:- Prime location with strong daily traffic flow and easy highway access- Generous land size of 3,132 m² (full ownership land)- 18 commercial units with 17 currently in operation- Immediate rental income with potential for optimization- Excellent visibility ideal for a wide range of businesses- Opportunity for future expansion or redevelopmentWhether you are looking to expand your commercial portfolio or secure a high-performing asset in a central location, this property delivers on both location and return potential.Contact us directly for more information."
+    },
+    {
+      "id": 1161544,
+      "name": "Zoutmanstraat Studios",
+      "type": "commercial",
+      "image": "https://century21aruba.com/images/udx/1161544/w780/1763055719347419.jpg?vno=1780078271",
+      "area": "Oranjestad East",
+      "location": "Renaissance (Oranjestad East)",
+      "askPrice": 985000,
+      "size": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/zoutmanstraat-studios-comm-res-for-sale-aruba-1161544",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 985000
+        }
+      ],
+      "notes": "Charming studios in the heart of Oranjestad for sale!Discover a unique investment opportunity in the vibrant city center of Oranjestad! This charming property features 5 spacious, fully furnished studio apartments, each thoughtfully designed with a cozy and inviting interior. With a good track record in short-term rentals, this property offers excellent income potential and versatility, ideal for both vacation rentals and long-term tenants. The property exudes a warm, intimate atmosphere that instantly makes guests feel at home, a perfect blend of comfort and Caribbean charm.Perfectly situated within walking distance of the beach and Oranjestad’s Main Street, residents and guests can easily explore nearby shops, restaurants, cafés, casinos, and hotels, enjoying the best of city life just steps from their door. Offering both great returns and endless convenience, this property lets you enjoy the best of daily life with a tropical twist right in the heart of Oranjestad.Contact us for more information or to schedule a viewing."
+    },
+    {
+      "id": 1146963,
+      "name": "Piedra Plat 104 - B",
+      "type": "commercial",
+      "image": "https://century21aruba.com/images/udx/1146963/w780/1625839532977622.jpg?vno=1723228208",
+      "area": "Paradera",
+      "location": "Piedra Plat (Paradera)",
+      "askPrice": 575000,
+      "size": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Century 21 Aruba",
+      "listedDate": "2026-06-22",
+      "sourceUrl": "https://century21aruba.com/en/d/piedra-plat-104-b-for-sale-aruba-1146963",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-22",
+          "price": 575000
+        }
+      ],
+      "notes": "MOTIVATED SELLERVirtually new garage, with all permits, including inventory and skilled personnel. The company can be taken over right away and run immediately. No investment necessary, and a direct return on your investment.The building has an office, bathroom, 2 separate storage spaces, very large work floor (approx. 336 m2) completely finished with polished cement. The company is offered in a public limited company (N.V) of which this property is part. One of the great advantages is that no transfer tax is payable. The company has a very good reputation and does work for several insurance companies and recognized car dealers.Would you like more information or would you like to arrange a viewing, please call us."
     }
   ],
-
   "agentMeta": {
-    "lastSync": null,
-    "agentActive": false,
-    "totalSyncCount": 0
+    "lastSync": "2026-06-22",
+    "agentActive": true,
+    "totalSyncCount": 3
   },
-
   "trackerItems": [
     {
       "id": 1,
@@ -208,28 +1045,164 @@
       "notes": "Too far from tourist belt for our strategy. Passed."
     }
   ],
-
   "monthlyData": [
-    { "month": "January",   "season": "high", "occupancy": 88, "adr": 365, "notes": "New Year + winter escape demand." },
-    { "month": "February",  "season": "high", "occupancy": 91, "adr": 380, "notes": "Peak month. Festival season." },
-    { "month": "March",     "season": "high", "occupancy": 89, "adr": 360, "notes": "Spring break drives occupancy." },
-    { "month": "April",     "season": "high", "occupancy": 83, "adr": 335, "notes": "Easter week spike mid-month." },
-    { "month": "May",       "season": "low",  "occupancy": 68, "adr": 230, "notes": "Start of shoulder season." },
-    { "month": "June",      "season": "low",  "occupancy": 62, "adr": 215, "notes": "" },
-    { "month": "July",      "season": "low",  "occupancy": 71, "adr": 225, "notes": "Family travel bumps July." },
-    { "month": "August",    "season": "low",  "occupancy": 66, "adr": 210, "notes": "" },
-    { "month": "September", "season": "low",  "occupancy": 54, "adr": 192, "notes": "Softest month of the year." },
-    { "month": "October",   "season": "low",  "occupancy": 58, "adr": 200, "notes": "" },
-    { "month": "November",  "season": "low",  "occupancy": 63, "adr": 212, "notes": "Pickup as high season approaches." },
-    { "month": "December",  "season": "high", "occupancy": 86, "adr": 350, "notes": "Christmas & New Year demand." }
+    {
+      "month": "January",
+      "season": "high",
+      "occupancy": 88,
+      "adr": 365,
+      "notes": "New Year + winter escape demand."
+    },
+    {
+      "month": "February",
+      "season": "high",
+      "occupancy": 91,
+      "adr": 380,
+      "notes": "Peak month. Festival season."
+    },
+    {
+      "month": "March",
+      "season": "high",
+      "occupancy": 89,
+      "adr": 360,
+      "notes": "Spring break drives occupancy."
+    },
+    {
+      "month": "April",
+      "season": "high",
+      "occupancy": 83,
+      "adr": 335,
+      "notes": "Easter week spike mid-month."
+    },
+    {
+      "month": "May",
+      "season": "low",
+      "occupancy": 68,
+      "adr": 230,
+      "notes": "Start of shoulder season."
+    },
+    {
+      "month": "June",
+      "season": "low",
+      "occupancy": 62,
+      "adr": 215,
+      "notes": ""
+    },
+    {
+      "month": "July",
+      "season": "low",
+      "occupancy": 71,
+      "adr": 225,
+      "notes": "Family travel bumps July."
+    },
+    {
+      "month": "August",
+      "season": "low",
+      "occupancy": 66,
+      "adr": 210,
+      "notes": ""
+    },
+    {
+      "month": "September",
+      "season": "low",
+      "occupancy": 54,
+      "adr": 192,
+      "notes": "Softest month of the year."
+    },
+    {
+      "month": "October",
+      "season": "low",
+      "occupancy": 58,
+      "adr": 200,
+      "notes": ""
+    },
+    {
+      "month": "November",
+      "season": "low",
+      "occupancy": 63,
+      "adr": 212,
+      "notes": "Pickup as high season approaches."
+    },
+    {
+      "month": "December",
+      "season": "high",
+      "occupancy": 86,
+      "adr": 350,
+      "notes": "Christmas & New Year demand."
+    }
   ],
-
   "areaData": [
-    { "name": "Palm Beach",  "color": "#1565A7", "tag": "Tourist Core",  "landPerSqm": 850,  "avgVilla": 1100000, "occHigh": 90, "occLow": 68, "adrHigh": 380, "adrLow": 230, "profile": "Highest demand, premium rates" },
-    { "name": "Eagle Beach", "color": "#0E7490", "tag": "Upscale",       "landPerSqm": 780,  "avgVilla": 980000,  "occHigh": 87, "occLow": 65, "adrHigh": 355, "adrLow": 215, "profile": "Quieter, strong luxury demand" },
-    { "name": "Noord",       "color": "#1B2B4B", "tag": "Residential",   "landPerSqm": 420,  "avgVilla": 750000,  "occHigh": 83, "occLow": 60, "adrHigh": 320, "adrLow": 190, "profile": "Good value, close to beaches" },
-    { "name": "Oranjestad",  "color": "#C4622D", "tag": "Commercial",    "landPerSqm": 600,  "avgVilla": 680000,  "occHigh": 75, "occLow": 55, "adrHigh": 280, "adrLow": 165, "profile": "Capital city, cruise traffic" },
-    { "name": "Savaneta",    "color": "#3D8B5E", "tag": "Emerging",      "landPerSqm": 200,  "avgVilla": 480000,  "occHigh": 72, "occLow": 50, "adrHigh": 250, "adrLow": 145, "profile": "Authentic feel, lower prices" },
-    { "name": "Malmok",      "color": "#5B21B6", "tag": "Premium",       "landPerSqm": 700,  "avgVilla": 1250000, "occHigh": 88, "occLow": 62, "adrHigh": 400, "adrLow": 240, "profile": "Exclusive, ocean views, high-end" }
+    {
+      "name": "Palm Beach",
+      "color": "#1565A7",
+      "tag": "Tourist Core",
+      "landPerSqm": 850,
+      "avgVilla": 1100000,
+      "occHigh": 90,
+      "occLow": 68,
+      "adrHigh": 380,
+      "adrLow": 230,
+      "profile": "Highest demand, premium rates"
+    },
+    {
+      "name": "Eagle Beach",
+      "color": "#0E7490",
+      "tag": "Upscale",
+      "landPerSqm": 780,
+      "avgVilla": 980000,
+      "occHigh": 87,
+      "occLow": 65,
+      "adrHigh": 355,
+      "adrLow": 215,
+      "profile": "Quieter, strong luxury demand"
+    },
+    {
+      "name": "Noord",
+      "color": "#1B2B4B",
+      "tag": "Residential",
+      "landPerSqm": 420,
+      "avgVilla": 750000,
+      "occHigh": 83,
+      "occLow": 60,
+      "adrHigh": 320,
+      "adrLow": 190,
+      "profile": "Good value, close to beaches"
+    },
+    {
+      "name": "Oranjestad",
+      "color": "#C4622D",
+      "tag": "Commercial",
+      "landPerSqm": 600,
+      "avgVilla": 680000,
+      "occHigh": 75,
+      "occLow": 55,
+      "adrHigh": 280,
+      "adrLow": 165,
+      "profile": "Capital city, cruise traffic"
+    },
+    {
+      "name": "Savaneta",
+      "color": "#3D8B5E",
+      "tag": "Emerging",
+      "landPerSqm": 200,
+      "avgVilla": 480000,
+      "occHigh": 72,
+      "occLow": 50,
+      "adrHigh": 250,
+      "adrLow": 145,
+      "profile": "Authentic feel, lower prices"
+    },
+    {
+      "name": "Malmok",
+      "color": "#5B21B6",
+      "tag": "Premium",
+      "landPerSqm": 700,
+      "avgVilla": 1250000,
+      "occHigh": 88,
+      "occLow": 62,
+      "adrHigh": 400,
+      "adrLow": 240,
+      "profile": "Exclusive, ocean views, high-end"
+    }
   ]
 }
