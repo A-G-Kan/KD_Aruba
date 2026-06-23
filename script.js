@@ -448,7 +448,8 @@ function renderListingsGrid(list, gridId, limit = null) {
         const priceReduced = l.priceHistory.length > 1;
         const prevPrice    = priceReduced ? l.priceHistory[l.priceHistory.length - 2].price : null;
         const card = document.createElement('div');
-        const inTracker = trackerItems.some(t => t.listingId === l.id);
+        const inTracker   = trackerItems.some(t => t.listingId === l.id);
+        const trackerItem = trackerItems.find(t => t.listingId === l.id);
         card.className = 'listing-card' + (inTracker ? ' in-tracker' : '');
         card.onclick = () => openListingModal(l);
         card.innerHTML = `
@@ -468,12 +469,16 @@ function renderListingsGrid(list, gridId, limit = null) {
                     <span class="status-badge ${l.status.replace(' ', '-')}">${l.status}</span>
                 </div>
                 <div class="card-location">${l.location}</div>
-                ${l.bedrooms !== null
-                    ? `<div class="card-specs">${l.bedrooms === 0 ? 'Studio' : l.bedrooms + ' bed'} · ${l.bathrooms} bath · ${l.size}</div>`
-                    : `<div class="card-specs">${l.size}</div>`}
+                ${(() => {
+                    const beds  = l.bedrooms  != null ? (l.bedrooms === 0 ? 'Studio' : `${l.bedrooms} bed`) : null;
+                    const baths = l.bathrooms != null ? `${l.bathrooms} bath` : null;
+                    const sz    = l.size || null;
+                    const parts = [beds, baths, sz].filter(Boolean);
+                    return parts.length ? `<div class="card-specs">${parts.join(' · ')}</div>` : '';
+                })()}
                 <div class="card-meta">
                     <div>
-                        <div class="card-price">$${l.askPrice.toLocaleString()}</div>
+                        <div class="card-price">${l.askPrice != null ? '$' + l.askPrice.toLocaleString() : 'Price on request'}</div>
                         ${priceReduced ? `<div class="card-prev-price">was $${prevPrice.toLocaleString()}</div>` : ''}
                     </div>
                     <div class="card-agency-block">
@@ -481,10 +486,13 @@ function renderListingsGrid(list, gridId, limit = null) {
                         <div class="card-dom">${dom}d on market</div>
                     </div>
                 </div>
-                <button class="add-to-tracker-btn ${inTracker ? 'already-tracking' : ''}"
-                    onclick="event.stopPropagation(); ${inTracker ? `goToPage('tracker')` : `openAddToTrackerModal(${l.id})`}">
-                    ${inTracker ? 'View in Tracker' : '+ Add to Tracker'}
-                </button>
+                ${inTracker
+                    ? `<div class="tracker-btn-group">
+                        <button class="add-to-tracker-btn already-tracking" onclick="event.stopPropagation(); goToPage('tracker')">View in Tracker</button>
+                        <button class="remove-from-tracker-btn" onclick="event.stopPropagation(); removeDeal(${trackerItem.id})">× Remove</button>
+                       </div>`
+                    : `<button class="add-to-tracker-btn" onclick="event.stopPropagation(); openAddToTrackerModal(${l.id})">+ Add to Tracker</button>`
+                }
             </div>`;
         grid.appendChild(card);
     });
@@ -588,12 +596,12 @@ function openListingModal(l) {
                 </div>
                 <div class="modal-field">
                     <div class="modal-field-label">Size</div>
-                    <div class="modal-field-value">${l.size}</div>
+                    <div class="modal-field-value">${l.size || 'N/A'}</div>
                 </div>
-                ${l.bedrooms !== null ? `
+                ${l.bedrooms != null ? `
                 <div class="modal-field">
                     <div class="modal-field-label">Beds / Baths</div>
-                    <div class="modal-field-value">${l.bedrooms === 0 ? 'Studio' : l.bedrooms} / ${l.bathrooms}</div>
+                    <div class="modal-field-value">${l.bedrooms === 0 ? 'Studio' : l.bedrooms} / ${l.bathrooms != null ? l.bathrooms : 'N/A'}</div>
                 </div>` : ''}
             </div>
             <div class="modal-row">
@@ -616,10 +624,15 @@ function openListingModal(l) {
 
             <!-- Tracker & Files section -->
             <div class="modal-actions-bar">
-                ${trackerItems.some(t => t.listingId === l.id)
-                    ? `<button class="modal-tracker-btn already" onclick="closeModal(); goToPage('tracker')">📋 Already in Tracker — View</button>`
-                    : `<button class="modal-tracker-btn" onclick="closeModal(); openAddToTrackerModal(${l.id})">+ Add to Deal Tracker</button>`
-                }
+                ${(() => {
+                    const ti = trackerItems.find(t => t.listingId === l.id);
+                    return ti
+                        ? `<div style="display:flex;gap:8px;">
+                            <button class="modal-tracker-btn already" style="flex:1;" onclick="closeModal(); goToPage('tracker')">📋 Already in Tracker — View</button>
+                            <button class="modal-tracker-btn danger" onclick="removeDeal(${ti.id})">× Remove</button>
+                           </div>`
+                        : `<button class="modal-tracker-btn" onclick="closeModal(); openAddToTrackerModal(${l.id})">+ Add to Deal Tracker</button>`;
+                })()}
             </div>
 
         </div>`;
@@ -642,15 +655,6 @@ function openAddToTrackerModal(listingId) {
 
             <div class="tracker-form">
                 <div class="tform-row">
-                    <div class="tform-field">
-                        <label>Stage</label>
-                        <select id="tf-stage">
-                            <option value="watching">Watching</option>
-                            <option value="viewing">Viewing</option>
-                            <option value="offer">Offer Pending</option>
-                            <option value="due diligence">Due Diligence</option>
-                        </select>
-                    </div>
                     <div class="tform-field">
                         <label>Priority</label>
                         <select id="tf-priority">
@@ -675,7 +679,7 @@ function openAddToTrackerModal(listingId) {
 
 function confirmAddToTracker(listingId) {
     const l       = listings.find(x => x.id === listingId);
-    const stage    = document.getElementById('tf-stage').value;
+    const stage    = 'viewing';
     const priority = document.getElementById('tf-priority').value;
     const notes    = document.getElementById('tf-notes').value.trim();
 
@@ -750,11 +754,15 @@ function openDealDetailModal(item) {
 
             <!-- Stage -->
             <div class="dm-section-label">Stage</div>
-            <select id="dm-stage-select" onchange="updateDealStage(${item.id}, this.value)">
-                ${Object.entries(stageLabels).map(([val, label]) =>
-                    `<option value="${val}" ${item.stage === val ? 'selected' : ''}>${label}</option>`
-                ).join('')}
-            </select>
+            ${(() => {
+                const idx = stageOrder.indexOf(item.stage);
+                const hasNext = item.stage !== 'passed' && idx >= 0 && idx < stageOrder.length - 1;
+                return hasNext
+                    ? `<button class="dm-action-btn" id="dm-advance-btn" onclick="advanceStage(${item.id})">→ Advance to ${stageLabels[stageOrder[idx + 1]]}</button>`
+                    : item.stage !== 'passed'
+                        ? `<span style="font-size:12px;color:#6B7280;">At final active stage — mark as passed or close the deal below.</span>`
+                        : ``;
+            })()}
 
             <!-- Comments -->
             <div class="dm-section-label">Notes & Comments <span style="font-weight:400;color:#9CA3AF;text-transform:none;letter-spacing:0;">(${comments.length})</span></div>
@@ -785,12 +793,13 @@ function openDealDetailModal(item) {
             <!-- Quick Actions -->
             <div class="dm-actions-bar">
                 ${item.stage !== 'passed'
-                    ? `<button class="dm-action-btn danger" onclick="updateDealStage(${item.id},'passed');closeModal()">Mark as Passed</button>`
-                    : `<button class="dm-action-btn" onclick="updateDealStage(${item.id},'watching');closeModal()">Reactivate</button>`
+                    ? `<button class="dm-action-btn" onclick="updateDealStage(${item.id},'passed');closeModal()">Mark as Passed</button>`
+                    : `<button class="dm-action-btn" onclick="updateDealStage(${item.id},'viewing');closeModal()">Reactivate</button>`
                 }
                 ${item.listingId
                     ? `<button class="dm-action-btn" onclick="closeModal();goToPage('listings')">View Listing</button>`
                     : ''}
+                <button class="dm-action-btn danger" onclick="removeDeal(${item.id})">Remove</button>
             </div>
 
         </div>`;
@@ -973,7 +982,6 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal()
 // ============================================================
 
 const stageLabels = {
-    'watching':      'Watching',
     'viewing':       'Viewing',
     'offer':         'Offer Pending',
     'due diligence': 'Due Diligence',
@@ -981,12 +989,14 @@ const stageLabels = {
 };
 
 const stageCss = {
-    'watching':      'stage-watching',
     'viewing':       'stage-viewing',
     'offer':         'stage-offer',
     'due diligence': 'stage-due-diligence',
     'passed':        'stage-passed'
 };
+
+// Forward progression order (passed is a terminal state set separately)
+const stageOrder = ['viewing', 'offer', 'due diligence'];
 
 function updateDealStage(dealId, newStage) {
     const item = trackerItems.find(t => t.id === dealId);
@@ -1001,6 +1011,66 @@ function updateDealStage(dealId, newStage) {
     renderTrackerStats();
     renderDashboardStats();
     showToast(`Stage updated to "${stageLabels[newStage]}"`);
+}
+
+function advanceStage(dealId) {
+    const item = trackerItems.find(t => t.id === dealId);
+    if (!item) return;
+    const idx = stageOrder.indexOf(item.stage);
+    if (idx < 0 || idx >= stageOrder.length - 1) return;
+    const nextStage = stageOrder[idx + 1];
+    updateDealStage(dealId, nextStage);
+    const advBtn = document.getElementById('dm-advance-btn');
+    if (advBtn) {
+        const newIdx = idx + 1;
+        if (newIdx >= stageOrder.length - 1) {
+            advBtn.style.display = 'none';
+        } else {
+            advBtn.textContent = `→ Advance to ${stageLabels[stageOrder[newIdx + 1]]}`;
+        }
+    }
+}
+
+function removeDeal(dealId) {
+    const item = trackerItems.find(t => t.id === dealId);
+    if (!item) return;
+    if (item.stage === 'viewing') {
+        doRemoveDeal(dealId);
+    } else {
+        showRemoveConfirmation(dealId);
+    }
+}
+
+function showRemoveConfirmation(dealId) {
+    const item = trackerItems.find(t => t.id === dealId);
+    if (!item) return;
+    document.getElementById('modal-content').innerHTML = `
+        <div class="modal-body" style="padding:40px 24px;text-align:center;">
+            <div style="font-size:28px;margin-bottom:14px;">⚠️</div>
+            <div class="modal-title" style="margin-bottom:10px;">Remove from Tracker?</div>
+            <div style="font-size:13px;color:#6B7280;margin-bottom:28px;">
+                <strong>${item.name}</strong> is at <strong>${stageLabels[item.stage] || item.stage}</strong>.
+                Removing it will permanently delete it from your deal tracker.
+            </div>
+            <div style="display:flex;gap:12px;justify-content:center;">
+                <button class="dm-action-btn" style="min-width:90px;" onclick="closeModal()">Keep</button>
+                <button class="dm-action-btn danger" style="min-width:90px;" onclick="doRemoveDeal(${dealId})">Remove</button>
+            </div>
+        </div>`;
+    document.getElementById('modal-overlay').classList.add('open');
+}
+
+function doRemoveDeal(dealId) {
+    const item = trackerItems.find(t => t.id === dealId);
+    const name = item ? item.name : '';
+    trackerItems = trackerItems.filter(t => t.id !== dealId);
+    closeModal();
+    renderTrackerTable(trackerItems);
+    renderTrackerStats();
+    renderDashboardStats();
+    renderListingsGrid(listings, 'listings-grid');
+    renderListingsGrid(listings, 'home-listings-grid', 4);
+    showToast(`"${name}" removed from tracker`);
 }
 
 function renderTrackerStats() {
@@ -1042,6 +1112,7 @@ function renderTrackerTable(list) {
                     ${commentCount > 0 ? `<span class="row-hint">${commentCount} note${commentCount > 1 ? 's' : ''}</span>` : ''}
                     <span class="row-open-hint">Open →</span>
                 </div>
+                <button class="row-remove-btn" onclick="event.stopPropagation(); removeDeal(${item.id})" title="Remove">×</button>
             </td>`;
         tbody.appendChild(tr);
     });

@@ -62,6 +62,20 @@ def parse_area(location_text):
     return clean(location_text)
 
 
+ARE_STATUS_MAP = {
+    "for sale": "active",
+    "new":      "active",
+    "reduced":  "price reduced",
+    "sold":     "sold",
+}
+
+def parse_status(result_div):
+    el = result_div.find(class_="status")
+    if not el:
+        return "active"
+    return ARE_STATUS_MAP.get(el.get_text(strip=True).lower(), "active")
+
+
 # ── card parser ───────────────────────────────────────────────────────────────
 
 def parse_card(result_div, listing_type):
@@ -107,6 +121,7 @@ def parse_card(result_div, listing_type):
         "size":      size,
         "bedrooms":  beds,
         "bathrooms": baths,
+        "status":    parse_status(result_div),
         "excerpt":   excerpt,
         "sourceUrl": href,
     }
@@ -192,7 +207,7 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
                 "agency":       "Aruba Real Estate",
                 "listedDate":   TODAY,
                 "sourceUrl":    listing_url,
-                "status":       "active",
+                "status":       data["status"],
                 "priceHistory": [{"date": TODAY, "price": data["askPrice"]}],
                 "notes":        desc,
             })

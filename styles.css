@@ -1165,6 +1165,29 @@ body {
     opacity: 1;
 }
 
+.row-remove-btn {
+    display: none;
+    background: none;
+    border: 1px solid #FECACA;
+    border-radius: 5px;
+    color: #EF4444;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 1px 7px;
+    margin-top: 4px;
+    transition: all 0.15s;
+}
+
+.tracker-row-clickable:hover .row-remove-btn {
+    display: inline-block;
+}
+
+.row-remove-btn:hover {
+    background: #FEF2F2;
+    border-color: #EF4444;
+}
+
 /* Deal detail modal */
 .dm-section-label {
     font-size: 11px;
@@ -1245,6 +1268,11 @@ body {
     background: var(--accent-light);
     border-color: var(--accent);
     color: var(--accent);
+}
+
+.dm-action-btn.danger {
+    color: #EF4444;
+    border-color: #FECACA;
 }
 
 .dm-action-btn.danger:hover {
@@ -1768,6 +1796,37 @@ body {
     background: #F0FDF4;
 }
 
+.tracker-btn-group {
+    display: flex;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.tracker-btn-group .add-to-tracker-btn {
+    margin-top: 0;
+    flex: 1;
+}
+
+.remove-from-tracker-btn {
+    padding: 8px 10px;
+    border: 1px solid #FECACA;
+    border-radius: 8px;
+    background: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #EF4444;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.remove-from-tracker-btn:hover {
+    background: #FEF2F2;
+    border-color: #EF4444;
+}
+
 .in-tracker-tag {
     position: absolute;
     bottom: 8px;
@@ -1811,6 +1870,18 @@ body {
 .modal-tracker-btn:hover  { background: var(--accent); }
 .modal-tracker-btn.already { background: #15803D; }
 .modal-tracker-btn.already:hover { background: #166534; }
+.modal-tracker-btn.danger {
+    background: none;
+    border: 1px solid #FECACA;
+    color: #EF4444;
+    width: auto;
+    padding: 10px 14px;
+    flex-shrink: 0;
+}
+.modal-tracker-btn.danger:hover {
+    background: #FEF2F2;
+    border-color: #EF4444;
+}
 
 .modal-files-section {
     margin-top: 18px;
