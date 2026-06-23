@@ -6147,56 +6147,7 @@
     "agentActive": true,
     "totalSyncCount": 6
   },
-  "trackerItems": [
-    {
-      "id": 1,
-      "listingId": 2,
-      "name": "Villa in Noord",
-      "type": "house",
-      "area": "Noord",
-      "askPrice": 850000,
-      "agency": "Century 21 Aruba",
-      "stage": "viewing",
-      "priority": "high",
-      "notes": "Price was reduced from $890k. Viewing scheduled for next week. Pool condition unknown."
-    },
-    {
-      "id": 2,
-      "listingId": 1,
-      "name": "Lot in Malmok",
-      "type": "land",
-      "area": "Malmok",
-      "askPrice": 450000,
-      "agency": "RE/MAX Aruba",
-      "stage": "watching",
-      "priority": "high",
-      "notes": "Ocean view is excellent. Need to verify buildable area and permit process."
-    },
-    {
-      "id": 3,
-      "listingId": null,
-      "name": "2BR Condo – Casa del Mar",
-      "type": "condo",
-      "area": "Palm Beach",
-      "askPrice": 540000,
-      "agency": "Coldwell Banker Aruba",
-      "stage": "watching",
-      "priority": "medium",
-      "notes": "Not in listings yet — heard about it through agent contact. Waiting for official listing."
-    },
-    {
-      "id": 4,
-      "listingId": 5,
-      "name": "Land Parcel – Savaneta",
-      "type": "land",
-      "area": "Savaneta",
-      "askPrice": 310000,
-      "agency": "RE/MAX Aruba",
-      "stage": "passed",
-      "priority": "low",
-      "notes": "Too far from tourist belt for our strategy. Passed."
-    }
-  ],
+  "trackerItems": [],
   "monthlyData": [
     {
       "month": "January",
