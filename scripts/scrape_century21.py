@@ -74,9 +74,26 @@ def parse_beds(text):
 def parse_baths(text):
     parts = [p.strip() for p in text.split("·")]
     if len(parts) >= 2:
-        m = re.match(r"^(\d+)$", parts[1].strip())
+        # drop $ anchor so "8½+" and "8.5+" still yield 8
+        m = re.match(r"^(\d+)", parts[1].strip())
         return int(m.group(1)) if m else None
     return None
+
+
+C21_STATUS_MAP = {
+    "sold":            "sold",
+    "under contract":  "under offer",
+    "pending offers":  "under offer",
+    "price reduced":   "price reduced",
+}
+
+def parse_status(article):
+    """Read the ribbon label on a C21 search card and map it to our status vocab."""
+    ribbon = article.find(class_=lambda c: c and "ribbon" in " ".join(c) if c else False)
+    if not ribbon:
+        return "active"
+    text = ribbon.get_text(strip=True).lower()
+    return C21_STATUS_MAP.get(text, "active")
 
 
 def parse_area(location_text):
@@ -159,6 +176,7 @@ def parse_card(article, listing_type):
         "size": size or "",
         "bedrooms": beds,
         "bathrooms": baths,
+        "status": parse_status(article),
         "sourceUrl": source_url,
     }
 
@@ -242,7 +260,7 @@ def scrape_section(browser, section_path, listing_type, seen_ids):
                     "agency":       "Century 21 Aruba",
                     "listedDate":   TODAY,
                     "sourceUrl":    data["sourceUrl"],
-                    "status":       "active",
+                    "status":       data["status"],
                     "priceHistory": [{"date": TODAY, "price": data["askPrice"]}],
                     "notes":        data.get("notes", ""),
                 })
@@ -268,14 +286,16 @@ def scrape_all():
 
 # ── save to data.json ─────────────────────────────────────────────────────────
 
-def save(listings):
-    # Load existing data.json so we don't wipe other sections
+def save(new_listings):
     existing = {}
     if DATA_JSON.exists():
         with open(DATA_JSON) as f:
             existing = json.load(f)
 
-    existing["listings"]          = listings
+    current  = existing.get("listings", [])
+    kept     = [l for l in current if l.get("agency") != "Century 21 Aruba"]
+    merged   = kept + new_listings
+    existing["listings"] = merged
     existing["agentMeta"]         = {
         "lastSync":       TODAY,
         "agentActive":    True,
@@ -285,7 +305,7 @@ def save(listings):
     with open(DATA_JSON, "w") as f:
         json.dump(existing, f, indent=2, ensure_ascii=False)
 
-    print(f"\n✓  Saved {len(listings)} listings → {DATA_JSON}")
+    print(f"\n✓  Saved {len(new_listings)} C21 listings → {DATA_JSON} ({len(merged)} total)")
 
 
 # ── entry point ───────────────────────────────────────────────────────────────

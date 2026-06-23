@@ -62,6 +62,21 @@ def parse_area(location_text):
     return clean(location_text.split(",")[0]) if location_text else ""
 
 
+KW_STATUS_MAP = {
+    "under contract":   "under offer",
+    "sold":             "sold",
+    "sale in progress": "under offer",
+    "reduced in price": "price reduced",
+    "on hold":          "on hold",
+}
+
+def parse_status(card):
+    label = card.find(class_="card__label")
+    if not label:
+        return "active"
+    return KW_STATUS_MAP.get(label.get_text(strip=True).lower(), "active")
+
+
 # ── card parser ───────────────────────────────────────────────────────────────
 
 def parse_card(card, listing_type):
@@ -92,6 +107,7 @@ def parse_card(card, listing_type):
         "askPrice":   parse_price(price_el.get_text() if price_el else ""),
         "size":       size_text,
         "bedrooms":   beds,
+        "status":     parse_status(card),
         "sourceUrl":  BASE_URL + href if href.startswith("/") else href,
     }
 
@@ -181,7 +197,7 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
                 "agency":       "Keller Williams Aruba",
                 "listedDate":   TODAY,
                 "sourceUrl":    url,
-                "status":       "active",
+                "status":       data["status"],
                 "priceHistory": [{"date": TODAY, "price": data["askPrice"]}],
                 "notes":        data["notes"],
             })

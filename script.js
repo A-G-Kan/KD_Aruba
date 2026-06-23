@@ -469,12 +469,16 @@ function renderListingsGrid(list, gridId, limit = null) {
                     <span class="status-badge ${l.status.replace(' ', '-')}">${l.status}</span>
                 </div>
                 <div class="card-location">${l.location}</div>
-                ${l.bedrooms !== null
-                    ? `<div class="card-specs">${l.bedrooms === 0 ? 'Studio' : l.bedrooms + ' bed'} · ${l.bathrooms} bath · ${l.size}</div>`
-                    : `<div class="card-specs">${l.size}</div>`}
+                ${(() => {
+                    const beds  = l.bedrooms  != null ? (l.bedrooms === 0 ? 'Studio' : `${l.bedrooms} bed`) : null;
+                    const baths = l.bathrooms != null ? `${l.bathrooms} bath` : null;
+                    const sz    = l.size || null;
+                    const parts = [beds, baths, sz].filter(Boolean);
+                    return parts.length ? `<div class="card-specs">${parts.join(' · ')}</div>` : '';
+                })()}
                 <div class="card-meta">
                     <div>
-                        <div class="card-price">$${l.askPrice.toLocaleString()}</div>
+                        <div class="card-price">${l.askPrice != null ? '$' + l.askPrice.toLocaleString() : 'Price on request'}</div>
                         ${priceReduced ? `<div class="card-prev-price">was $${prevPrice.toLocaleString()}</div>` : ''}
                     </div>
                     <div class="card-agency-block">
@@ -592,12 +596,12 @@ function openListingModal(l) {
                 </div>
                 <div class="modal-field">
                     <div class="modal-field-label">Size</div>
-                    <div class="modal-field-value">${l.size}</div>
+                    <div class="modal-field-value">${l.size || 'N/A'}</div>
                 </div>
-                ${l.bedrooms !== null ? `
+                ${l.bedrooms != null ? `
                 <div class="modal-field">
                     <div class="modal-field-label">Beds / Baths</div>
-                    <div class="modal-field-value">${l.bedrooms === 0 ? 'Studio' : l.bedrooms} / ${l.bathrooms}</div>
+                    <div class="modal-field-value">${l.bedrooms === 0 ? 'Studio' : l.bedrooms} / ${l.bathrooms != null ? l.bathrooms : 'N/A'}</div>
                 </div>` : ''}
             </div>
             <div class="modal-row">
