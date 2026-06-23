@@ -23,6 +23,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
+from deduplicate import dedup_within_site
 
 BASE_URL  = "https://kw-aruba.com"
 DATA_JSON = Path("/Users/alan/Desktop/KD/Website/data.json")
@@ -222,6 +223,7 @@ def scrape_all():
 # ── save ──────────────────────────────────────────────────────────────────────
 
 def save(new_listings):
+    new_listings, _ = dedup_within_site(new_listings, "Keller Williams Aruba")
     existing = {}
     if DATA_JSON.exists():
         with open(DATA_JSON) as f:

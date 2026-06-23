@@ -22,6 +22,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
+from deduplicate import dedup_within_site
 
 BASE_URL   = "https://www.ccrealestatearuba.com"
 AGENCY     = "CC Real Estate Aruba"
@@ -188,6 +189,7 @@ def scrape_all():
 
 
 def save(new_listings):
+    new_listings, _ = dedup_within_site(new_listings, AGENCY)
     existing = {}
     if DATA_JSON.exists():
         with open(DATA_JSON) as f:

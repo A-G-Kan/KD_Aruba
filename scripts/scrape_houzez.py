@@ -7,9 +7,12 @@ scrape_arubapalms.py, scrape_res_aruba.py.
 DO NOT run this file directly.
 """
 
-import json, re, time
+import json, re, time, sys
 from datetime import date
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+from deduplicate import dedup_within_site
 
 DATA_JSON = Path("/Users/alan/Desktop/KD/Website/data.json")
 TODAY     = date.today().isoformat()
@@ -188,6 +191,7 @@ def scrape_houzez_site(browser, base_url, agency, listing_pages, user_agent, see
 
 
 def save_houzez(new_listings, agency):
+    new_listings, _ = dedup_within_site(new_listings, agency)
     existing = {}
     if DATA_JSON.exists():
         with open(DATA_JSON) as f:
