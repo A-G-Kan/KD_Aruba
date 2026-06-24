@@ -90,7 +90,7 @@ C21_STATUS_MAP = {
 
 def parse_status(article):
     """Read the ribbon label on a C21 search card and map it to our status vocab."""
-    ribbon = article.find(class_=lambda c: c and "ribbon" in " ".join(c) if c else False)
+    ribbon = article.find(class_=lambda c: c and "ribbon" in c if c else False)
     if not ribbon:
         return "active"
     text = ribbon.get_text(strip=True).lower()

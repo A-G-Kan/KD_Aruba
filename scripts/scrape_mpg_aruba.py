@@ -139,7 +139,7 @@ def scrape_detail(page, url):
 
         # MPG description is usually in a div with class containing "description" or "about"
         for cls in ["property-description", "listing-description", "about-property", "description"]:
-            el = soup.find(class_=lambda c: c and cls in " ".join(c).lower() if c else False)
+            el = soup.find(class_=lambda c: c and cls in c.lower() if c else False)
             if el and len(el.get_text(strip=True)) > 80:
                 return clean(el.get_text())
 

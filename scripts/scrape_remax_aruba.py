@@ -73,26 +73,26 @@ def parse_card(card):
     image  = (source["srcset"] if source else None) or (img_el["src"] if img_el else "")
 
     # Link + name
-    link_el = card.find("a", class_=lambda c: c and "font-bold" in " ".join(c) if c else False)
+    link_el = card.find("a", class_="font-bold")
     if not link_el:
         link_el = card.find("a")
     name = clean(link_el.get_text()) if link_el else "Unknown"
     href = link_el["href"] if link_el else ""
 
     # Location: div with "grow" and "mb-1"
-    loc_el = card.find("div", class_=lambda c: c and "grow" in c and "mb-1" in c if c else False)
+    loc_el = card.select_one("div.grow.mb-1")
     location = clean(loc_el.get_text()) if loc_el else ""
 
     # Price: div with "mb-3" containing "USD"
     price_el = None
-    for div in card.find_all("div", class_=lambda c: c and "mb-3" in c if c else False):
+    for div in card.find_all("div", class_="mb-3"):
         if "USD" in div.get_text():
             price_el = div
             break
     price = parse_price(price_el.get_text() if price_el else "")
 
     # Size + beds from icon rows
-    icon_rows = card.find_all("div", class_=lambda c: c and "text-xs" in " ".join(c) and "items-center" in " ".join(c) if c else False)
+    icon_rows = card.select("div.text-xs.items-center")
     size = ""
     beds = None
     if len(icon_rows) > 0:
@@ -103,7 +103,7 @@ def parse_card(card):
 
     # Status from tag classes
     status = "active"
-    for tag in card.find_all("div", class_=lambda c: c and "tag-" in " ".join(c) if c else False):
+    for tag in card.find_all("div", class_=lambda c: c and "tag-" in c if c else False):
         tag_classes = " ".join(tag.get("class", []))
         for key, val in REMAX_STATUS_MAP.items():
             if key.replace(" ", "-") in tag_classes:

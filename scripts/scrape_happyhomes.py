@@ -88,11 +88,11 @@ def scrape_detail(page, url):
         time.sleep(0.8)
         soup = BeautifulSoup(page.content(), "html.parser")
 
-        # Image: first listing photo
-        img = soup.find("img", class_=lambda c: c and "listing" in " ".join(c) if c else False)
+        # Image: first listing photo (handles lazy-load data-src)
+        img = soup.find("img", class_="listing")
         if not img:
             img = soup.select_one(".gallery img, .slider img, .photo img, article img")
-        image_url = img["src"] if img else ""
+        image_url = (img.get("src") or img.get("data-src") or "") if img else ""
 
         # Bathrooms
         baths = None

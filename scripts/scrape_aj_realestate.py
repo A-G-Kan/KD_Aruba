@@ -34,10 +34,10 @@ USER_AGENT = (
 TODAY = date.today().isoformat()
 
 SEARCH_SECTIONS = [
-    ("/property-type/house-for-sale/",       "house"),
-    ("/property-type/condominium-for-sale/", "condo"),
-    ("/property-type/land-for-sale/",        "land"),
-    ("/property-type/commercial-for-sale/",  "commercial"),
+    ("/property-type/house-for-sale/",        "house"),
+    ("/property-type/condominium/",           "condo"),
+    ("/property-type/land/",                  "land"),
+    ("/property-type/commercial-properties/", "commercial"),
 ]
 
 AJ_STATUS_MAP = {

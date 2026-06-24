@@ -69,11 +69,11 @@ def parse_card(info_div):
     location = clean(loc_el.get_text()) if loc_el else ""
 
     # Price: bold coloured div
-    price_el = info_div.find("div", class_=lambda c: c and "font-bold" in " ".join(c) if c else False)
+    price_el = info_div.find("div", class_="font-bold")
     price = parse_price(price_el.get_text() if price_el else "")
 
     # Size + beds from icon rows
-    icon_rows = info_div.find_all("div", class_=lambda c: c and "text-xs" in " ".join(c) and "items-center" in " ".join(c) if c else False)
+    icon_rows = info_div.select("div.text-xs.items-center")
     size = ""
     beds = None
     if len(icon_rows) > 0:
@@ -100,7 +100,7 @@ def scrape_detail(page, url):
 
         # Image
         source = soup.find("source", srcset=True)
-        img_el = soup.find("img", class_=lambda c: c and "object-cover" in " ".join(c) if c else False)
+        img_el = soup.find("img", class_="object-cover")
         image  = (source["srcset"].split(",")[0].split()[0] if source else None) or (img_el["src"] if img_el else "")
 
         # Bathrooms
@@ -133,7 +133,7 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
         info_divs = [
             el for el in soup.find_all("div")
             if el.get("class") and "items-start" in el.get("class")
-            and el.find("a") and el.find("div", class_=lambda c: c and "font-bold" in " ".join(c) if c else False)
+            and el.find("a") and el.find("div", class_="font-bold")
         ]
         print(f"   {len(info_divs)} cards")
 

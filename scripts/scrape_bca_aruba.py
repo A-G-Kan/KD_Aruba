@@ -79,8 +79,8 @@ def parse_card(card):
     if image and not image.startswith("http"):
         image = BASE_URL + "/" + image.lstrip("/")
 
-    # Name (title)
-    h3 = card.find("h3") or card.find("h2")
+    # Name (title) — BCA uses h4
+    h3 = card.find("h4") or card.find("h3") or card.find("h2")
     name_link = h3.find("a") if h3 else None
     name = clean(name_link.get_text() if name_link else (h3.get_text() if h3 else "Unknown"))
 

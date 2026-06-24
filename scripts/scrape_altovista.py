@@ -80,54 +80,55 @@ def scrape_listing_page(browser, url, listing_type, seen_urls):
 
         soup = BeautifulSoup(page.content(), "html.parser")
 
-        # WPL property rows
-        rows = soup.find_all(class_=re.compile(r"wpl_property_listing_row|wpl-listing-row|property_row", re.I))
-        if not rows:
-            # Try generic list items with price info
-            rows = [el for el in soup.find_all(["div", "article", "li"])
-                    if el.find(class_=re.compile(r"wpl-listing-tags|price", re.I))]
-
+        # WPL plugin uses wpl_prp_cont as the card container
+        rows = soup.find_all(class_="wpl_prp_cont")
         print(f"   {len(rows)} cards")
 
         for row in rows:
-            # Link
-            link_el = row.find("a", href=True)
-            href    = link_el["href"] if link_el else ""
+            # Link (view_detail anchor has the property URL and name)
+            link_el = row.find("a", class_="view_detail", href=lambda h: h and "/properties/" in h)
+            if not link_el:
+                link_el = row.find("a", href=lambda h: h and "/properties/" in h)
+            href = link_el["href"] if link_el else ""
             if href and not href.startswith("http"):
                 href = BASE_URL + href
-            if not href or href in seen_urls:
+            if not href or href == BASE_URL or href in seen_urls:
                 continue
             seen_urls.add(href)
 
-            # Image
+            # Image — WPL stores the gallery image as a background or img inside the flip card
             img_el = row.find("img")
             image  = (img_el.get("src") or img_el.get("data-src") or "") if img_el else ""
 
             # Name
-            h = row.find(["h2", "h3", "h4"])
-            name = clean(h.get_text() if h else link_el.get_text())
+            h = row.find("h3", class_="wpl_prp_title") or row.find(["h2", "h3", "h4"])
+            name = clean(h.get_text() if h else (link_el.get_text() if link_el else "Unknown"))
 
             # Price
-            price_el = row.find(class_=re.compile(r"wpl-price|price", re.I))
-            price = parse_price(price_el.get_text() if price_el else row.get_text())
+            price_el = row.find(class_="price_box")
+            price = parse_price(price_el.get_text() if price_el else "")
 
-            # Beds / baths / size
+            # Size from built_up_area
+            size_el = row.find(class_="built_up_area")
+            size_raw = clean(size_el.get_text()) if size_el else ""
+            m = re.search(r"([\d,.]+)\s*(m²|m2|sqm|sq\.?\s*ft)", size_raw or row.get_text(), re.I)
+            size = m.group(0).strip() if m else ""
+
+            # Beds / baths from text
             text = row.get_text(" ")
             beds  = parse_int(re.search(r"(\d+)\s*[Bb]ed", text).group(1) if re.search(r"(\d+)\s*[Bb]ed", text) else "")
             baths = parse_int(re.search(r"(\d+)\s*[Bb]ath", text).group(1) if re.search(r"(\d+)\s*[Bb]ath", text) else "")
-            m = re.search(r"([\d,.]+)\s*(m²|m2|sqm|sq\.?\s*ft)", text, re.I)
-            size = m.group(0).strip() if m else ""
 
             # Status from tag
             status = "active"
-            for tag in row.find_all(class_=re.compile(r"wpl-listing-tags|status-tag|label", re.I)):
+            for tag in row.find_all(class_="wpl-listing-tag"):
                 st = clean(tag.get_text()).lower()
                 if st in ALTOVISTA_STATUS_MAP:
                     status = ALTOVISTA_STATUS_MAP[st]
                     break
 
             # Location
-            loc_el = row.find(class_=re.compile(r"location|address|area", re.I))
+            loc_el = row.find("h4", class_="wpl_prp_listing_location")
             location = clean(loc_el.get_text()) if loc_el else ""
 
             print(f"     → {name[:50]}")
