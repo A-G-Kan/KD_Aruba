@@ -1708,6 +1708,204 @@ body {
 .area-row-value { font-weight: 600; color: var(--primary); }
 
 /* ===========================
+   MARKET ANALYSIS — PPSM
+   =========================== */
+
+.analysis-band {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.analysis-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.analysis-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 3px;
+}
+
+.fav-toggle-btn {
+    flex-shrink: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 7px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+}
+.fav-toggle-btn:hover { background: var(--bg); border-color: var(--primary); }
+
+.fav-summary {
+    font-size: 13px;
+    color: var(--text-muted);
+    background: #FFFBEB;
+    border: 1px solid #FDE68A;
+    border-radius: var(--radius);
+    padding: 8px 14px;
+    margin-bottom: 14px;
+}
+.fav-summary.muted {
+    background: var(--surface);
+    border-color: var(--border);
+    color: var(--text-muted);
+}
+
+.ppsm-legend {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.legend-ok    { color: #059669; font-size: 16px; }
+.legend-ltd   { color: #D97706; font-size: 16px; }
+.legend-empty { color: var(--text-muted); font-size: 14px; }
+
+/* PPSM Matrix Table */
+.ppsm-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+.ppsm-table th {
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    border-bottom: 2px solid var(--border);
+    background: var(--bg);
+}
+.ppsm-table th:first-child { text-align: left; }
+.ppsm-table tr:hover td { background: var(--bg); }
+.ppsm-table tr.focus-row td { background: #FFFBEB; }
+.ppsm-table tr.focus-row:hover td { background: #FEF3C7; }
+
+.ppsm-area-name {
+    padding: 9px 12px;
+    font-weight: 600;
+    color: var(--primary);
+    white-space: nowrap;
+    border-bottom: 1px solid var(--border);
+    min-width: 110px;
+}
+
+.ppsm-cell {
+    padding: 9px 12px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid var(--border);
+    min-width: 90px;
+}
+
+.ppsm-val {
+    display: block;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--primary);
+}
+
+.ppsm-n {
+    display: block;
+    font-size: 10px;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+.ppsm-ok   .ppsm-val { color: var(--primary); }
+.ppsm-limited .ppsm-val { color: #B45309; }
+
+.ppsm-empty { opacity: 0.45; }
+.ppsm-dash  { font-size: 16px; color: var(--text-muted); }
+
+/* $/m² Bar Charts */
+.bar-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.bar-row {
+    display: grid;
+    grid-template-columns: 110px 1fr auto;
+    align-items: center;
+    gap: 10px;
+}
+.bar-row.bar-highlight .bar-label { font-weight: 700; color: var(--primary); }
+
+.bar-label {
+    font-size: 13px;
+    color: var(--text);
+    text-align: right;
+    white-space: nowrap;
+}
+
+.bar-track {
+    height: 22px;
+    background: var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+.bar-fill.type-house      { background: #3B82F6; }
+.bar-fill.type-condo      { background: #8B5CF6; }
+.bar-fill.type-land       { background: #10B981; }
+.bar-fill.type-commercial { background: #F59E0B; }
+.bar-fill.type-timeshare  { background: #EC4899; }
+.bar-fill.bar-limited     { opacity: 0.6; background-image: repeating-linear-gradient(
+    45deg, transparent, transparent 4px, rgba(255,255,255,0.3) 4px, rgba(255,255,255,0.3) 8px
+); }
+
+.bar-val {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--primary);
+    white-space: nowrap;
+    min-width: 120px;
+}
+
+.bar-n {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-left: 5px;
+}
+
+.tilde {
+    color: #D97706;
+    margin-right: 1px;
+}
+
+.no-data-note, .ppsm-limited-note {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 8px;
+}
+.ppsm-limited-note { color: #D97706; }
+
+/* ===========================
    ROI CALCULATOR
    =========================== */
 

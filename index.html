@@ -228,7 +228,7 @@
                     <div class="home-nav-card-top market-gradient"></div>
                     <div class="home-nav-card-body">
                         <div class="home-nav-card-title">Market Analysis</div>
-                        <div class="home-nav-card-desc">Occupancy, ADR and RevPAR by area — Noord, Palm Beach, Malmok and more. Includes full area comparison.</div>
+                        <div class="home-nav-card-desc">Median $/m² by area and property type — Noord, Palm Beach, Malmok and more. Real data from live listings.</div>
                         <div class="home-nav-card-meta">
                             <span>Noord ★ · 6 areas tracked</span>
                             <span class="home-nav-card-link">Open →</span>
@@ -412,53 +412,23 @@
             <div class="page-header">
                 <div>
                     <h1>Market Analysis</h1>
-                    <p class="page-sub">Short-term rental performance & market benchmarks by area</p>
-                </div>
-                <div class="header-stats">
-                    <div class="stat-pill accent"><span class="stat-label">High Season</span><span class="stat-value">Dec – Apr</span></div>
-                    <div class="stat-pill"><span class="stat-label">Low Season</span><span class="stat-value">May – Nov</span></div>
+                    <p class="page-sub">Median price per m² from live listing data — updated each scrape run</p>
                 </div>
             </div>
 
-            <!-- Area tabs -->
-            <div class="area-tabs-bar">
+            <!-- Area tabs — populated dynamically by JS; static ones shown as fallback -->
+            <div class="area-tabs-bar" id="area-tabs-bar">
                 <button class="area-tab active" data-area="all">All Aruba</button>
-                <button class="area-tab" data-area="Noord">Noord <span class="fav-btn" data-fav="Noord" onclick="toggleFav(event,'Noord')" title="Favorite this area">☆</span></button>
-                <button class="area-tab" data-area="Palm Beach">Palm Beach <span class="fav-btn" data-fav="Palm Beach" onclick="toggleFav(event,'Palm Beach')" title="Favorite this area">☆</span></button>
-                <button class="area-tab" data-area="Eagle Beach">Eagle Beach <span class="fav-btn" data-fav="Eagle Beach" onclick="toggleFav(event,'Eagle Beach')" title="Favorite this area">☆</span></button>
-                <button class="area-tab" data-area="Malmok">Malmok <span class="fav-btn" data-fav="Malmok" onclick="toggleFav(event,'Malmok')" title="Favorite this area">☆</span></button>
-                <button class="area-tab" data-area="Oranjestad">Oranjestad <span class="fav-btn" data-fav="Oranjestad" onclick="toggleFav(event,'Oranjestad')" title="Favorite this area">☆</span></button>
-                <button class="area-tab" data-area="Savaneta">Savaneta <span class="fav-btn" data-fav="Savaneta" onclick="toggleFav(event,'Savaneta')" title="Favorite this area">☆</span></button>
+                <button class="area-tab" data-area="Noord">Noord <span class="fav-btn" data-fav="Noord" onclick="toggleFav(event,'Noord')" title="Watch this area">☆</span></button>
+                <button class="area-tab" data-area="Palm Beach">Palm Beach <span class="fav-btn" data-fav="Palm Beach" onclick="toggleFav(event,'Palm Beach')" title="Watch this area">☆</span></button>
+                <button class="area-tab" data-area="Eagle Beach">Eagle Beach <span class="fav-btn" data-fav="Eagle Beach" onclick="toggleFav(event,'Eagle Beach')" title="Watch this area">☆</span></button>
+                <button class="area-tab" data-area="Malmok">Malmok <span class="fav-btn" data-fav="Malmok" onclick="toggleFav(event,'Malmok')" title="Watch this area">☆</span></button>
+                <button class="area-tab" data-area="Oranjestad">Oranjestad <span class="fav-btn" data-fav="Oranjestad" onclick="toggleFav(event,'Oranjestad')" title="Watch this area">☆</span></button>
+                <button class="area-tab" data-area="Savaneta">Savaneta <span class="fav-btn" data-fav="Savaneta" onclick="toggleFav(event,'Savaneta')" title="Watch this area">☆</span></button>
             </div>
 
-            <!-- Area-specific content (filled by JS) -->
+            <!-- Filled by renderAnalysisTab() -->
             <div id="area-overview"></div>
-
-            <!-- ---- Area Comparison ---- -->
-            <div class="comparison-divider">
-                <h2 class="sub-heading">All Areas — Side by Side</h2>
-            </div>
-
-            <div class="area-grid" id="area-grid"></div>
-
-            <div class="table-wrapper" style="margin-top:16px;">
-                <table class="market-table">
-                    <thead>
-                        <tr>
-                            <th>Area</th>
-                            <th>Avg Land / m²</th>
-                            <th>Avg Villa</th>
-                            <th>Occ. High</th>
-                            <th>Occ. Low</th>
-                            <th>ADR High</th>
-                            <th>ADR Low</th>
-                            <th>RevPAR High</th>
-                            <th>Profile</th>
-                        </tr>
-                    </thead>
-                    <tbody id="area-table-body"></tbody>
-                </table>
-            </div>
 
             <!-- Notes -->
             <h2 class="sub-heading" style="margin-top:40px;">Market Notes</h2>

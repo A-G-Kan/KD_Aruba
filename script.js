@@ -113,8 +113,6 @@ function updateUserUI() {
 let listings     = [];
 let agentMeta    = { lastSync: null, agentActive: false, totalSyncCount: 0 };
 let trackerItems = [];
-let monthlyData  = [];
-let areaData     = [];
 
 // ── Currency toggle ────────────────────────────────────────────────────────
 const AWG_PER_USD = 1.79;
@@ -141,6 +139,9 @@ function refreshPriceDisplays() {
     // Re-render the paginated listings grid and home snapshot
     if (typeof applyListingFilters === 'function') applyListingFilters();
     renderListingsGrid(listings.slice(0, 4), 'home-listings-grid');
+    // Re-render analysis tab so $/m² figures switch currency
+    const activeAreaTab = document.querySelector('.area-tab.active');
+    if (activeAreaTab) renderAnalysisTab(activeAreaTab.dataset.area);
 }
 
 
@@ -287,8 +288,6 @@ document.addEventListener('DOMContentLoaded', () => {
             listings     = data.listings     || [];
             agentMeta    = data.agentMeta    || agentMeta;
             trackerItems = data.trackerItems || [];
-            monthlyData  = data.monthlyData  || [];
-            areaData     = data.areaData     || [];
             initApp();
         })
         .catch(() => initApp());
@@ -301,11 +300,10 @@ function initApp() {
     renderListingStats();
     renderTrackerTable(trackerItems);
     renderTrackerStats();
+    buildPpsmData();
     loadFavorites();
     initAreaTabs();
-    renderAreaOverview('all');
-    renderAreaCards();
-    renderAreaTable();
+    renderAnalysisTab('all');
     initListingFilters();
     initTrackerFilters();
     setAgentStatus();
@@ -1289,7 +1287,7 @@ function saveFavorites() {
 }
 
 function toggleFav(event, areaName) {
-    event.stopPropagation(); // don't trigger tab switch
+    event.stopPropagation();
     if (favorites.has(areaName)) {
         favorites.delete(areaName);
     } else {
@@ -1297,14 +1295,8 @@ function toggleFav(event, areaName) {
     }
     saveFavorites();
     updateFavStars();
-    // Re-render comparison cards/table so stars update there too
-    renderAreaCards();
-    renderAreaTable();
-    // If currently viewing this area, re-render its header
     const activeTab = document.querySelector('.area-tab.active');
-    if (activeTab && activeTab.dataset.area === areaName) {
-        renderAreaOverview(areaName);
-    }
+    if (activeTab) renderAnalysisTab(activeTab.dataset.area);
 }
 
 function updateFavStars() {
@@ -1318,313 +1310,210 @@ function updateFavStars() {
 
 
 // ============================================================
-//  MARKET ANALYSIS — AREA TABS
+//  MARKET ANALYSIS — PPSM DATA + RENDERING
 // ============================================================
+
+const PPSM_TYPES   = ['house', 'condo', 'land', 'commercial', 'timeshare'];
+const PPSM_LABELS  = { house: 'Houses', condo: 'Condos', land: 'Land', commercial: 'Commercial', timeshare: 'Timeshare' };
+const MIN_LISTINGS = 5;   // below this: flag as limited data
+
+let ppsmData  = {};   // { [area]: { [type]: [usd_per_sqm, ...] } }
+let ppsmAreas = [];   // areas sorted by listing count with valid data
+
+function buildPpsmData() {
+    ppsmData = {};
+    const areaCounts = {};
+    for (const l of listings) {
+        const area  = (l.area || '').trim();
+        const price = l.askPrice;
+        const sqm   = parseSqm(l.size);
+        if (!area || !price || !sqm || sqm < 10) continue;
+        if (!ppsmData[area]) { ppsmData[area] = {}; areaCounts[area] = 0; }
+        if (!ppsmData[area][l.type]) ppsmData[area][l.type] = [];
+        ppsmData[area][l.type].push(price / sqm);
+        areaCounts[area]++;
+    }
+    ppsmAreas = Object.entries(areaCounts)
+        .sort((a, b) => b[1] - a[1])
+        .filter(([, n]) => n >= 3)
+        .map(([a]) => a)
+        .slice(0, 14);
+}
+
+function medianOf(values) {
+    if (!values || !values.length) return null;
+    const sv = [...values].sort((a, b) => a - b);
+    const mid = Math.floor(sv.length / 2);
+    return sv.length % 2 ? sv[mid] : (sv[mid - 1] + sv[mid]) / 2;
+}
+
+function ppsmDisplay(usdVal) {
+    if (activeCurrency === 'AWG')
+        return 'Afl. ' + Math.round(usdVal * AWG_PER_USD).toLocaleString();
+    return '$' + Math.round(usdVal).toLocaleString();
+}
+
+function buildPpsmCell(vals) {
+    if (!vals || !vals.length)
+        return '<td class="ppsm-cell ppsm-empty"><span class="ppsm-dash">—</span></td>';
+    const n       = vals.length;
+    const limited = n < MIN_LISTINGS;
+    const med     = medianOf(vals);
+    return `<td class="ppsm-cell ${limited ? 'ppsm-limited' : 'ppsm-ok'}">
+        <span class="ppsm-val">${limited ? '~' : ''}${ppsmDisplay(med)}/m²</span>
+        <span class="ppsm-n">${n}&nbsp;listing${n !== 1 ? 's' : ''}${limited ? ' ⚠' : ''}</span>
+    </td>`;
+}
+
+function renderAnalysisTab(areaName) {
+    if (areaName === 'all') renderAllArubaAnalysis();
+    else                    renderAreaAnalysis(areaName);
+}
 
 function initAreaTabs() {
     document.querySelectorAll('.area-tab').forEach(btn => {
         btn.addEventListener('click', () => {
             document.querySelectorAll('.area-tab').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            renderAreaOverview(btn.dataset.area);
+            renderAnalysisTab(btn.dataset.area);
         });
     });
 }
 
-// Derive area-specific monthly estimates by scaling Aruba-wide data
-// using each area's performance ratio relative to the Aruba average
-const ARUBA_AVG = { adrHigh: 352, adrLow: 213, occHigh: 85, occLow: 62 };
+function renderAllArubaAnalysis() {
+    const el = document.getElementById('area-overview');
+    if (!el) return;
 
-function getAreaMonthly(area) {
-    const adrHighRatio = area.adrHigh / ARUBA_AVG.adrHigh;
-    const adrLowRatio  = area.adrLow  / ARUBA_AVG.adrLow;
-    const occHighRatio = area.occHigh  / ARUBA_AVG.occHigh;
-    const occLowRatio  = area.occLow   / ARUBA_AVG.occLow;
+    const totalListings  = listings.length;
+    const totalWithPpsm  = ppsmAreas.reduce((s, a) =>
+        s + PPSM_TYPES.reduce((t, tp) => t + (ppsmData[a]?.[tp]?.length || 0), 0), 0);
+    const favAreas       = ppsmAreas.filter(a => favorites.has(a));
+    const cur            = activeCurrency === 'AWG' ? 'Afl.' : '$';
 
-    return monthlyData.map(m => ({
-        ...m,
-        adr:       Math.round(m.adr       * (m.season === 'high' ? adrHighRatio : adrLowRatio)),
-        occupancy: Math.round(m.occupancy * (m.season === 'high' ? occHighRatio : occLowRatio))
-    }));
-}
+    const favBanner = favAreas.length
+        ? `<div class="fav-summary">★ Watching: ${favAreas.map(a => `<strong>${a}</strong>`).join(', ')}</div>`
+        : `<div class="fav-summary muted">Click ☆ on an area tab to add it to your watchlist.</div>`;
 
-function renderAllArubaOverview() {
-    const overviewEl = document.getElementById('area-overview');
+    // Build matrix
+    let thead = `<tr><th>Area</th>${PPSM_TYPES.map(t => `<th>${PPSM_LABELS[t]}</th>`).join('')}</tr>`;
+    let tbody = ppsmAreas.map(area => {
+        const isFav = favorites.has(area);
+        const cells = PPSM_TYPES.map(t => buildPpsmCell(ppsmData[area]?.[t])).join('');
+        return `<tr class="${isFav ? 'focus-row' : ''}">
+            <td class="ppsm-area-name">${isFav ? '★ ' : ''}${area}</td>${cells}
+        </tr>`;
+    }).join('');
 
-    // Compute averages across all areas for the summary row
-    const avg = (key) => Math.round(areaData.reduce((s, a) => s + a[key], 0) / areaData.length);
-    const revparHigh = Math.round((ARUBA_AVG.occHigh / 100) * ARUBA_AVG.adrHigh);
-    const revparLow  = Math.round((ARUBA_AVG.occLow  / 100) * ARUBA_AVG.adrLow);
-
-    // Favorited areas summary
-    const favAreas = areaData.filter(a => favorites.has(a.name));
-    const favSummary = favAreas.length > 0
-        ? `<div class="fav-summary">⭐ Favorited: ${favAreas.map(a =>
-            `<span style="color:${a.color};font-weight:600;">${a.name}</span>`).join(', ')}</div>`
-        : `<div class="fav-summary" style="color:#9CA3AF;">No areas favorited yet — click ☆ on any tab to save your focus areas.</div>`;
-
-    overviewEl.innerHTML = `
-        <div class="area-identity" style="border-left: 4px solid #1B2B4B;">
-            <div class="area-identity-left">
-                <div class="area-identity-name">All Aruba — Market Overview</div>
-                <div class="area-identity-tag">Island-wide averages across all tracked areas</div>
-            </div>
-            <div class="area-identity-prices">
-                <div class="area-price-item">
-                    <span class="area-price-label">Avg Land / m²</span>
-                    <span class="area-price-val">$${avg('landPerSqm')}</span>
-                </div>
-                <div class="area-price-item">
-                    <span class="area-price-label">Avg Villa</span>
-                    <span class="area-price-val">$${avg('avgVilla').toLocaleString()}</span>
-                </div>
+    el.innerHTML = `
+        <div class="analysis-band">
+            <div>
+                <div class="analysis-title">All Aruba — Median ${cur}/m² by Area &amp; Category</div>
+                <div class="analysis-sub">${totalWithPpsm} of ${totalListings} listings have both price and size · medians computed in USD, displayed in selected currency</div>
             </div>
         </div>
-
-        ${favSummary}
-
-        <h2 class="sub-heading" style="margin-top:24px;">Key Metrics — All Aruba</h2>
-        <div class="metrics-grid">
-            <div class="metric-card season-high">
-                <div class="metric-season-tag">High Season</div>
-                <div class="metric-label">Occupancy Rate</div>
-                <div class="metric-value">${ARUBA_AVG.occHigh}%</div>
-                <div class="metric-sub">Dec – Apr avg</div>
-            </div>
-            <div class="metric-card season-low">
-                <div class="metric-season-tag">Low Season</div>
-                <div class="metric-label">Occupancy Rate</div>
-                <div class="metric-value">${ARUBA_AVG.occLow}%</div>
-                <div class="metric-sub">May – Nov avg</div>
-            </div>
-            <div class="metric-card season-high">
-                <div class="metric-season-tag">High Season</div>
-                <div class="metric-label">ADR</div>
-                <div class="metric-value">$${ARUBA_AVG.adrHigh}</div>
-                <div class="metric-sub">Avg Daily Rate</div>
-            </div>
-            <div class="metric-card season-low">
-                <div class="metric-season-tag">Low Season</div>
-                <div class="metric-label">ADR</div>
-                <div class="metric-value">$${ARUBA_AVG.adrLow}</div>
-                <div class="metric-sub">Avg Daily Rate</div>
-            </div>
-            <div class="metric-card neutral">
-                <div class="metric-season-tag">High Season</div>
-                <div class="metric-label">RevPAR</div>
-                <div class="metric-value">$${revparHigh}</div>
-                <div class="metric-sub">Revenue per Avail. Room</div>
-            </div>
-            <div class="metric-card neutral">
-                <div class="metric-season-tag">Low Season</div>
-                <div class="metric-label">RevPAR</div>
-                <div class="metric-value">$${revparLow}</div>
-                <div class="metric-sub">Revenue per Avail. Room</div>
-            </div>
+        ${favBanner}
+        <div class="ppsm-legend">
+            <span class="legend-ok">■</span> ≥${MIN_LISTINGS} listings — reliable &nbsp;
+            <span class="legend-ltd">■</span> &lt;${MIN_LISTINGS} listings ⚠ — limited, treat with caution &nbsp;
+            <span class="legend-empty">—</span> no data
         </div>
-
-        <h2 class="sub-heading" style="margin-top:36px;">Monthly Breakdown — All Aruba</h2>
         <div class="table-wrapper">
-            <table class="market-table">
-                <thead>
-                    <tr><th>Month</th><th>Season</th><th>Occupancy</th><th>ADR</th><th>RevPAR</th><th>Notes</th></tr>
-                </thead>
-                <tbody>
-                    ${monthlyData.map(row => {
-                        const revpar = Math.round((row.occupancy / 100) * row.adr);
-                        return `<tr>
-                            <td><strong>${row.month}</strong></td>
-                            <td><span class="season-chip ${row.season}">${row.season === 'high' ? 'High' : 'Low'}</span></td>
-                            <td>
-                                <div class="occ-bar-wrap">
-                                    <div class="occ-bar ${row.season}" style="width:${row.occupancy * 0.8}px;max-width:80px;"></div>
-                                    <span>${row.occupancy}%</span>
-                                </div>
-                            </td>
-                            <td>$${row.adr}</td>
-                            <td>$${revpar}</td>
-                            <td style="color:#6B7280;font-style:italic;font-size:12px;">${row.notes}</td>
-                        </tr>`;
-                    }).join('')}
-                </tbody>
+            <table class="ppsm-table">
+                <thead>${thead}</thead>
+                <tbody>${tbody}</tbody>
             </table>
-        </div>
-
-        <div class="comparison-divider"></div>
-    `;
+        </div>`;
 }
 
-function renderAreaOverview(areaName) {
-    if (areaName === 'all') {
-        renderAllArubaOverview();
-        return;
-    }
+function renderAreaAnalysis(areaName) {
+    const el = document.getElementById('area-overview');
+    if (!el) return;
 
-    const area = areaData.find(a => a.name === areaName);
-    if (!area) return;
+    const isFav         = favorites.has(areaName);
+    const areaListings  = listings.filter(l => (l.area || '').trim() === areaName);
+    const withPpsm      = areaListings.filter(l => l.askPrice && parseSqm(l.size) >= 10).length;
 
-    const revparHigh = Math.round((area.occHigh / 100) * area.adrHigh);
-    const revparLow  = Math.round((area.occLow  / 100) * area.adrLow);
-    const monthly    = getAreaMonthly(area);
-    const isFav      = favorites.has(areaName);
+    // Bar chart data — only types with at least one listing
+    const bars = PPSM_TYPES
+        .map(t => ({ type: t, label: PPSM_LABELS[t], vals: ppsmData[areaName]?.[t] }))
+        .filter(d => d.vals && d.vals.length);
 
-    const overviewEl = document.getElementById('area-overview');
-    overviewEl.innerHTML = `
-        <!-- Area identity bar -->
-        <div class="area-identity" style="border-left: 4px solid ${area.color};">
-            <div class="area-identity-left">
-                <div class="area-identity-name">${area.name} ${isFav ? '<span class="focus-label">★ Favorited</span>' : ''}</div>
-                <div class="area-identity-tag">${area.tag} · ${area.profile}</div>
-            </div>
-            <div class="area-identity-prices">
-                <div class="area-price-item">
-                    <span class="area-price-label">Avg Land / m²</span>
-                    <span class="area-price-val">$${area.landPerSqm}</span>
+    let barsHtml;
+    if (!bars.length) {
+        barsHtml = `<p class="no-data-note">No listings in ${areaName} have both a valid price and size — nothing to chart yet.</p>`;
+    } else {
+        const maxMed = Math.max(...bars.map(d => medianOf(d.vals)));
+        barsHtml = `<div class="bar-chart">` + bars.map(d => {
+            const med     = medianOf(d.vals);
+            const limited = d.vals.length < MIN_LISTINGS;
+            const pct     = Math.max(4, Math.round((med / maxMed) * 100));
+            const dispVal = ppsmDisplay(med);
+            return `<div class="bar-row">
+                <div class="bar-label">${d.label}</div>
+                <div class="bar-track">
+                    <div class="bar-fill type-${d.type}${limited ? ' bar-limited' : ''}" style="width:${pct}%"></div>
                 </div>
-                <div class="area-price-item">
-                    <span class="area-price-label">Avg Villa Price</span>
-                    <span class="area-price-val">$${area.avgVilla.toLocaleString()}</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Key metrics -->
-        <h2 class="sub-heading" style="margin-top:24px;">Key Metrics — ${area.name}</h2>
-        <div class="metrics-grid">
-            <div class="metric-card season-high">
-                <div class="metric-season-tag">High Season</div>
-                <div class="metric-label">Occupancy Rate</div>
-                <div class="metric-value">${area.occHigh}%</div>
-                <div class="metric-sub">Dec – Apr avg</div>
-            </div>
-            <div class="metric-card season-low">
-                <div class="metric-season-tag">Low Season</div>
-                <div class="metric-label">Occupancy Rate</div>
-                <div class="metric-value">${area.occLow}%</div>
-                <div class="metric-sub">May – Nov avg</div>
-            </div>
-            <div class="metric-card season-high">
-                <div class="metric-season-tag">High Season</div>
-                <div class="metric-label">ADR</div>
-                <div class="metric-value">$${area.adrHigh}</div>
-                <div class="metric-sub">Avg Daily Rate</div>
-            </div>
-            <div class="metric-card season-low">
-                <div class="metric-season-tag">Low Season</div>
-                <div class="metric-label">ADR</div>
-                <div class="metric-value">$${area.adrLow}</div>
-                <div class="metric-sub">Avg Daily Rate</div>
-            </div>
-            <div class="metric-card neutral">
-                <div class="metric-season-tag">High Season</div>
-                <div class="metric-label">RevPAR</div>
-                <div class="metric-value">$${revparHigh}</div>
-                <div class="metric-sub">Revenue per Avail. Room</div>
-            </div>
-            <div class="metric-card neutral">
-                <div class="metric-season-tag">Low Season</div>
-                <div class="metric-label">RevPAR</div>
-                <div class="metric-value">$${revparLow}</div>
-                <div class="metric-sub">Revenue per Avail. Room</div>
-            </div>
-        </div>
-
-        <!-- Monthly breakdown -->
-        <h2 class="sub-heading" style="margin-top:36px;">Monthly Breakdown — ${area.name}</h2>
-        <p style="font-size:12px;color:#9CA3AF;margin-bottom:12px;margin-top:-10px;">Estimates derived from Aruba-wide data scaled to ${area.name} performance ratios.</p>
-        <div class="table-wrapper">
-            <table class="market-table">
-                <thead>
-                    <tr><th>Month</th><th>Season</th><th>Occupancy</th><th>ADR</th><th>RevPAR</th></tr>
-                </thead>
-                <tbody>
-                    ${monthly.map(row => {
-                        const revpar = Math.round((row.occupancy / 100) * row.adr);
-                        return `<tr>
-                            <td><strong>${row.month}</strong></td>
-                            <td><span class="season-chip ${row.season}">${row.season === 'high' ? 'High' : 'Low'}</span></td>
-                            <td>
-                                <div class="occ-bar-wrap">
-                                    <div class="occ-bar ${row.season}" style="width:${row.occupancy * 0.8}px;max-width:80px;"></div>
-                                    <span>${row.occupancy}%</span>
-                                </div>
-                            </td>
-                            <td>$${row.adr}</td>
-                            <td>$${revpar}</td>
-                        </tr>`;
-                    }).join('')}
-                </tbody>
-            </table>
-        </div>
-
-        <div class="comparison-divider"></div>
-    `;
-}
-
-
-// ============================================================
-//  AREA COMPARISON (shown below area overview)
-// ============================================================
-
-function renderAreaCards() {
-    const grid = document.getElementById('area-grid');
-    if (!grid) return;
-    grid.innerHTML = '';
-    areaData.forEach(area => {
-        const revparHigh = Math.round((area.occHigh / 100) * area.adrHigh);
-        const isFav = favorites.has(area.name);
-        const card = document.createElement('div');
-        card.className = 'area-card' + (isFav ? ' area-card-focus' : '');
-        card.innerHTML = `
-            <div class="area-card-header" style="background:${area.color};">
-                <h3>${area.name}</h3>
-                <span class="area-tag">${isFav ? '★ · ' : ''}${area.tag}</span>
-            </div>
-            <div class="area-body">
-                <div class="area-row"><span class="area-row-label">Land / m²</span><span class="area-row-value">$${area.landPerSqm}</span></div>
-                <div class="area-row"><span class="area-row-label">Avg villa</span><span class="area-row-value">$${area.avgVilla.toLocaleString()}</span></div>
-                <div class="area-row"><span class="area-row-label">Occ. high</span><span class="area-row-value">${area.occHigh}%</span></div>
-                <div class="area-row"><span class="area-row-label">ADR high</span><span class="area-row-value">$${area.adrHigh}</span></div>
-                <div class="area-row"><span class="area-row-label">RevPAR high</span><span class="area-row-value">$${revparHigh}</span></div>
-                <div class="area-row" style="border-bottom:none;padding-top:8px;">
-                    <span style="font-size:11px;color:#6B7280;font-style:italic;">${area.profile}</span>
+                <div class="bar-val">
+                    ${limited ? '<span class="tilde">~</span>' : ''}${dispVal}/m²
+                    <span class="bar-n">${d.vals.length}&nbsp;listing${d.vals.length !== 1 ? 's' : ''}${limited ? ' ⚠' : ''}</span>
                 </div>
             </div>`;
-        card.addEventListener('click', () => {
-            document.querySelectorAll('.area-tab').forEach(b =>
-                b.classList.toggle('active', b.dataset.area === area.name));
-            renderAreaOverview(area.name);
-            document.getElementById('area-overview').scrollIntoView({ behavior: 'smooth' });
-        });
-        grid.appendChild(card);
-    });
-}
+        }).join('') + `</div>`;
+        if (bars.some(d => d.vals.length < MIN_LISTINGS))
+            barsHtml += `<p class="ppsm-limited-note">⚠ Limited data (&lt;${MIN_LISTINGS} listings) — treat with caution.</p>`;
+    }
 
-function renderAreaTable() {
-    const tbody = document.getElementById('area-table-body');
-    if (!tbody) return;
-    tbody.innerHTML = '';
-    areaData.forEach(area => {
-        const revparHigh = Math.round((area.occHigh / 100) * area.adrHigh);
-        const isFav = favorites.has(area.name);
-        const tr = document.createElement('tr');
-        if (isFav) tr.classList.add('focus-row');
-        tr.innerHTML = `
-            <td>
-                <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${area.color};margin-right:8px;vertical-align:middle;"></span>
-                <strong>${area.name}</strong>
-                ${isFav ? `<span style="font-size:10px;color:#D97706;font-weight:600;margin-left:6px;">★</span>` : ''}
-            </td>
-            <td>$${area.landPerSqm}/m²</td>
-            <td>$${area.avgVilla.toLocaleString()}</td>
-            <td>${area.occHigh}%</td>
-            <td>${area.occLow}%</td>
-            <td>$${area.adrHigh}</td>
-            <td>$${area.adrLow}</td>
-            <td><strong>$${revparHigh}</strong></td>
-            <td style="font-size:12px;color:#6B7280;">${area.profile}</td>`;
-        tbody.appendChild(tr);
-    });
+    // Mini cross-area reference for this type (houses across all areas)
+    const dominantType = bars.length ? bars.reduce((a, b) => (a.vals.length >= b.vals.length ? a : b)).type : null;
+    let refHtml = '';
+    if (dominantType) {
+        const refLabel = PPSM_LABELS[dominantType];
+        const refRows  = ppsmAreas
+            .filter(a => ppsmData[a]?.[dominantType]?.length)
+            .map(a => {
+                const vals    = ppsmData[a][dominantType];
+                const med     = medianOf(vals);
+                const limited = vals.length < MIN_LISTINGS;
+                const isThis  = a === areaName;
+                return { area: a, med, n: vals.length, limited, isThis };
+            })
+            .sort((a, b) => b.med - a.med);
+
+        if (refRows.length > 1) {
+            const maxMed = refRows[0].med;
+            refHtml = `
+                <h2 class="sub-heading" style="margin-top:28px;">${refLabel} — All Areas (for context)</h2>
+                <div class="bar-chart">` +
+                refRows.map(r => {
+                    const pct  = Math.max(4, Math.round((r.med / maxMed) * 100));
+                    const disp = ppsmDisplay(r.med);
+                    return `<div class="bar-row${r.isThis ? ' bar-highlight' : ''}">
+                        <div class="bar-label">${r.isThis ? '▶ ' : ''}${r.area}</div>
+                        <div class="bar-track">
+                            <div class="bar-fill type-${dominantType}${r.limited ? ' bar-limited' : ''}" style="width:${pct}%"></div>
+                        </div>
+                        <div class="bar-val">
+                            ${r.limited ? '<span class="tilde">~</span>' : ''}${disp}/m²
+                            <span class="bar-n">${r.n}&nbsp;listing${r.n !== 1 ? 's' : ''}${r.limited ? ' ⚠' : ''}</span>
+                        </div>
+                    </div>`;
+                }).join('') + `</div>`;
+        }
+    }
+
+    el.innerHTML = `
+        <div class="analysis-band">
+            <div>
+                <div class="analysis-title">${areaName} ${isFav ? '★' : ''}</div>
+                <div class="analysis-sub">${areaListings.length} total listings · ${withPpsm} with valid price + size</div>
+            </div>
+            <button class="fav-toggle-btn" onclick="toggleFav(event,'${areaName}')" data-fav="${areaName}">
+                ${isFav ? '★ Watching' : '☆ Watch area'}
+            </button>
+        </div>
+        <h2 class="sub-heading" style="margin-top:20px;">Median $/m² by Property Type — ${areaName}</h2>
+        ${barsHtml}
+        ${refHtml}`;
 }
 
 
