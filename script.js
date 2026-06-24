@@ -517,11 +517,8 @@ function renderListingsGrid(list, gridId, limit = null) {
                     </div>
                 </div>
                 ${inTracker
-                    ? `<div class="tracker-btn-group">
-                        <button class="add-to-tracker-btn already-tracking" onclick="event.stopPropagation(); goToPage('tracker')">View in Tracker</button>
-                        <button class="remove-from-tracker-btn" onclick="event.stopPropagation(); removeDeal(${trackerItem.id})">× Remove</button>
-                       </div>`
-                    : `<button class="add-to-tracker-btn" onclick="event.stopPropagation(); openAddToTrackerModal(${l.id})">+ Add to Tracker</button>`
+                    ? `<button class="add-to-tracker-btn already-tracking" onclick="event.stopPropagation(); removeDeal(${trackerItem.id})">✓ Tracking — Remove</button>`
+                    : `<button class="add-to-tracker-btn" onclick="event.stopPropagation(); openAddToTrackerModal('${l.id}')">+ Add to Tracker</button>`
                 }
             </div>`;
         grid.appendChild(card);
@@ -775,7 +772,7 @@ function openListingModal(l) {
                             <button class="modal-tracker-btn already" style="flex:1;" onclick="closeModal(); goToPage('tracker')">📋 Already in Tracker — View</button>
                             <button class="modal-tracker-btn danger" onclick="removeDeal(${ti.id})">× Remove</button>
                            </div>`
-                        : `<button class="modal-tracker-btn" onclick="closeModal(); openAddToTrackerModal(${l.id})">+ Add to Deal Tracker</button>`;
+                        : `<button class="modal-tracker-btn" onclick="closeModal(); openAddToTrackerModal('${l.id}')">+ Add to Deal Tracker</button>`;
                 })()}
             </div>
 
@@ -814,7 +811,7 @@ function openAddToTrackerModal(listingId) {
                 </div>
                 <div class="tform-actions">
                     <button class="tform-cancel" onclick="closeModal()">Cancel</button>
-                    <button class="tform-submit" onclick="confirmAddToTracker(${l.id})">Add to Tracker →</button>
+                    <button class="tform-submit" onclick="confirmAddToTracker('${l.id}')">Add to Tracker →</button>
                 </div>
             </div>
         </div>`;
@@ -848,8 +845,8 @@ function confirmAddToTracker(listingId) {
     renderTrackerTable(trackerItems);
     renderTrackerStats();
     renderDashboardStats();
-    renderListingsGrid(listings, 'listings-grid');
-    renderListingsGrid(listings, 'home-listings-grid', 4);
+    renderPage(currentPage);
+    renderListingsGrid(listings.slice(0, 4), 'home-listings-grid');
 
     // Confirm toast
     showToast(`"${l.name}" added to Deal Tracker`);
@@ -1212,8 +1209,8 @@ function doRemoveDeal(dealId) {
     renderTrackerTable(trackerItems);
     renderTrackerStats();
     renderDashboardStats();
-    renderListingsGrid(listings, 'listings-grid');
-    renderListingsGrid(listings, 'home-listings-grid', 4);
+    renderPage(currentPage);
+    renderListingsGrid(listings.slice(0, 4), 'home-listings-grid');
     showToast(`"${name}" removed from tracker`);
 }
 
