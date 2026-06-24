@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site
+from deduplicate import dedup_within_site, parse_price_robust
 
 BASE_URL   = "https://ajrealestatearuba.com"
 AGENCY     = "AJ Real Estate Aruba"
@@ -54,17 +54,7 @@ def clean(text):
 
 
 def parse_price(text):
-    text = text or ""
-    # AWG format: AWG1,700,000.00 or $944.000,00
-    m = re.search(r"AWG\s*([\d,]+)", text)
-    if m:
-        return int(m.group(1).replace(",", ""))
-    m = re.search(r"\$\s*([\d.,]+)", text)
-    if m:
-        raw = m.group(1).replace(",", "").replace(".", "")
-        return int(raw) if raw.isdigit() else None
-    digits = re.sub(r"[^\d]", "", text)
-    return int(digits) if digits and len(digits) > 3 else None
+    return parse_price_robust(text)
 
 
 def parse_int(text):
@@ -136,7 +126,11 @@ def scrape_detail(page, url):
         soup = BeautifulSoup(page.content(), "html.parser")
         text = soup.get_text(" ", strip=True)
 
-        price = parse_price(re.search(r"(AWG\s*[\d,]+|\$\s*[\d,.]+)", text).group(0) if re.search(r"(AWG\s*[\d,]+|\$\s*[\d,.]+)", text) else "")
+        # og:image is the canonical primary photo set by the site owner
+        og = soup.find("meta", property="og:image")
+        image = og["content"] if og and og.get("content") else ""
+
+        price = parse_price(text)
 
         beds = baths = None
         m = re.search(r"(\d+)\s*[Bb]edroom", text)
@@ -151,10 +145,10 @@ def scrape_detail(page, url):
         paras = [p.get_text(strip=True) for p in soup.find_all("p") if len(p.get_text(strip=True)) > 60]
         desc = max(paras, key=len, default="")
 
-        return price, beds, baths, size, desc
+        return price, beds, baths, size, desc, image
     except Exception as e:
         print(f"    ⚠  Detail failed ({url}): {e}")
-        return None, None, None, "", ""
+        return None, None, None, "", "", ""
 
 
 def scrape_section(browser, section_path, listing_type, seen_urls):
@@ -186,7 +180,7 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
                 seen_urls.add(href)
 
                 print(f"     → {data['name'][:50]}")
-                price, beds, baths, size, desc = scrape_detail(page, href)
+                price, beds, baths, size, desc, detail_image = scrape_detail(page, href)
                 time.sleep(0.4)
 
                 slug = href.rstrip("/").split("/")[-1]
@@ -194,7 +188,7 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
                     "id":           slug,
                     "name":         data["name"],
                     "type":         listing_type,
-                    "image":        data["image"],
+                    "image":        detail_image or data["image"],
                     "area":         data["area"],
                     "location":     data["location"],
                     "askPrice":     price or data["askPrice"],

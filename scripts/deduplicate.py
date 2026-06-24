@@ -24,6 +24,76 @@ from collections import Counter
 DATA_JSON = Path("/Users/alan/Desktop/KD/Website/data.json")
 
 
+# ── shared price parsing ────────────────────────────────────────────────────
+
+AWG_TO_USD = 1.79  # fixed peg: 1 USD = 1.79 AWG
+
+
+def _parse_numeric(raw: str):
+    """Detect US ($1,234,567) vs Dutch ($1.234.567,00) number format → int."""
+    raw = (raw or "").strip().rstrip(".,")
+    if not raw:
+        return None
+    # Dutch decimal: comma + 1-2 digits at end, with dot thousands
+    if re.search(r",\d{1,2}$", raw) and "." in raw:
+        integer_part = raw.rsplit(",", 1)[0].replace(".", "")
+        return int(integer_part) if integer_part.isdigit() else None
+    # US decimal: dot + 2 digits at end, with comma thousands
+    if re.search(r"\.\d{2}$", raw) and "," in raw:
+        integer_part = raw.rsplit(".", 1)[0].replace(",", "")
+        return int(integer_part) if integer_part.isdigit() else None
+    # Dutch thousands: multiple dots, no comma (1.234.567)
+    if raw.count(".") >= 2:
+        clean = raw.replace(".", "")
+        return int(clean) if clean.isdigit() else None
+    # Dutch thousands: single dot + exactly 3 trailing digits (944.000)
+    if re.search(r"\.\d{3}$", raw) and "," not in raw:
+        clean = raw.replace(".", "")
+        return int(clean) if clean.isdigit() else None
+    # US thousands: commas only (1,234,567)
+    if "," in raw:
+        clean = raw.replace(",", "")
+        return int(clean) if clean.isdigit() else None
+    # Plain digits or single-dot decimal
+    try:
+        return int(float(raw)) if raw else None
+    except ValueError:
+        return None
+
+
+def parse_price_robust(text: str, prefer_usd: bool = True):
+    """
+    Extract a price from text and return an integer USD value.
+
+    Handles both US ($1,234,567) and Dutch/European ($1.234.567,00) number
+    formats. When prefer_usd=True (default), tries $ / USD / US$ first, then
+    AWG / Afl as a fallback (converting to USD at the fixed 1 USD = 1.79 AWG
+    rate). When prefer_usd=False, tries AWG/Afl first and returns the raw AWG
+    integer without conversion, falling back to USD.
+    """
+    text = (text or "").strip()
+    if re.search(r"price\s*(upon|on)\s*request|upon\s*request|on\s*request",
+                 text, re.I):
+        return None
+
+    if prefer_usd:
+        m = re.search(r"(?:US\$|USD|\$)\s*([\d.,]+)", text)
+        if m:
+            return _parse_numeric(m.group(1))
+        m = re.search(r"(?:AWG|Afl\.?)\s*([\d.,]+)", text)
+        if m:
+            awg = _parse_numeric(m.group(1))
+            return round(awg / AWG_TO_USD) if awg else None
+    else:
+        m = re.search(r"(?:AWG|Afl\.?)\s*([\d.,]+)", text)
+        if m:
+            return _parse_numeric(m.group(1))
+        m = re.search(r"(?:US\$|USD|\$)\s*([\d.,]+)", text)
+        if m:
+            return _parse_numeric(m.group(1))
+    return None
+
+
 # ── normalisation helpers ────────────────────────────────────────────────────
 
 def _norm_loc(text: str) -> str:

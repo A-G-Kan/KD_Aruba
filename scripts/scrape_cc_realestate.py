@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site
+from deduplicate import dedup_within_site, parse_price_robust
 
 BASE_URL   = "https://www.ccrealestatearuba.com"
 AGENCY     = "CC Real Estate Aruba"
@@ -46,19 +46,7 @@ def clean(text):
 
 
 def parse_price(text):
-    text = text or ""
-    # AWG format: AWG 7.185.492 or $4.185.492
-    m = re.search(r"AWG\s*([\d.,]+)", text)
-    if m:
-        raw = m.group(1).replace(".", "").replace(",", "")
-        return int(raw) if raw.isdigit() else None
-    m = re.search(r"\$\s*([\d.,]+)", text)
-    if m:
-        raw = m.group(1).replace(",", "").replace(".", "")
-        return int(raw) if raw.isdigit() else None
-    digits = re.sub(r"[^\d]", "", text)
-    return int(digits) if digits and len(digits) > 4 else None
-
+    return parse_price_robust(text)
 
 def parse_int(text):
     m = re.search(r"\d+", text or "")
@@ -87,9 +75,7 @@ def parse_card(item):
     if img_el:
         image = img_el.get("src") or img_el.get("data-src") or ""
 
-    # Price: AWG first, then USD
-    price_match = re.search(r"AWG\s*([\d.,]+)|\$\s*([\d.,]+)", text)
-    price = parse_price(price_match.group(0) if price_match else "")
+    price = parse_price(text)
 
     # Beds / baths / size
     beds  = parse_int(re.search(r"(\d+)\s*[Bb]ed", text).group(1) if re.search(r"(\d+)\s*[Bb]ed", text) else "")

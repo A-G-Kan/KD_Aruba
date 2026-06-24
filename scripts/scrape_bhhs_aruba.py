@@ -23,7 +23,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site
+from deduplicate import dedup_within_site, parse_price_robust
 
 BASE_URL   = "https://www.bhhsaruba.com"
 AGENCY     = "BHHS Aruba"
@@ -54,16 +54,7 @@ def clean(text):
 
 
 def parse_price(text):
-    text = text or ""
-    m = re.search(r"\$\s*([\d,]+)", text)
-    if m:
-        return int(m.group(1).replace(",", ""))
-    # European format: 1.234.567
-    m = re.search(r"([\d.]+)", text)
-    if m:
-        raw = m.group(1).replace(".", "")
-        return int(raw) if raw.isdigit() else None
-    return None
+    return parse_price_robust(text)
 
 
 def parse_int(text):
@@ -78,10 +69,7 @@ def scrape_detail(page, url):
         soup = BeautifulSoup(page.content(), "html.parser")
         text = soup.get_text(" ", strip=True)
 
-        price = None
-        m = re.search(r"\$\s*([\d,]+)", text)
-        if m:
-            price = int(m.group(1).replace(",", ""))
+        price = parse_price_robust(text)
 
         beds = baths = None
         m = re.search(r"(\d+)\s*bed", text, re.I)

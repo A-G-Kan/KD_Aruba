@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site
+from deduplicate import dedup_within_site, parse_price_robust
 
 BASE_URL   = "https://bcarubarealty.com"
 AGENCY     = "Bon Choice Aruba Realty"
@@ -49,17 +49,7 @@ def clean(text):
 
 
 def parse_price(text):
-    text = text or ""
-    m = re.search(r"Afl\.?\s*([\d.,]+)", text)
-    if m:
-        raw = m.group(1).replace(".", "").replace(",", "")
-        return int(raw) if raw.isdigit() else None
-    m = re.search(r"\$\s*([\d,]+)", text)
-    if m:
-        return int(m.group(1).replace(",", ""))
-    digits = re.sub(r"[^\d]", "", text)
-    return int(digits) if digits and len(digits) > 3 else None
-
+    return parse_price_robust(text)
 
 def parse_int(text):
     m = re.search(r"\d+", text or "")

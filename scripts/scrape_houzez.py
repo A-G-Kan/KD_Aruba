@@ -12,7 +12,7 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from deduplicate import dedup_within_site
+from deduplicate import dedup_within_site, parse_price_robust
 
 DATA_JSON = Path("/Users/alan/Desktop/KD/Website/data.json")
 TODAY     = date.today().isoformat()
@@ -33,15 +33,7 @@ def clean(text):
 
 
 def parse_price(text):
-    text = text or ""
-    m = re.search(r"\$\s*([\d,]+)", text)
-    if m:
-        return int(m.group(1).replace(",", ""))
-    m = re.search(r"([\d.]+)\s*(?:AWG|Afl)", text)
-    if m:
-        return int(float(m.group(1).replace(".", "").replace(",", ""))) if m else None
-    digits = re.sub(r"[^\d]", "", text)
-    return int(digits) if digits and len(digits) > 3 else None
+    return parse_price_robust(text)
 
 
 def parse_int(text):
