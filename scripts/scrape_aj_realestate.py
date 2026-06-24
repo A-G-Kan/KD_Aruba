@@ -126,9 +126,20 @@ def scrape_detail(page, url):
         soup = BeautifulSoup(page.content(), "html.parser")
         text = soup.get_text(" ", strip=True)
 
-        # og:image is the canonical primary photo set by the site owner
-        og = soup.find("meta", property="og:image")
-        image = og["content"] if og and og.get("content") else ""
+        # First photo from the swiper gallery (mh-popup-group).
+        # og:image is unreliable — it reflects a manually-pinned featured image,
+        # not necessarily the first gallery photo.
+        image = ""
+        gallery = soup.find(class_="mh-popup-group")
+        if gallery:
+            img = gallery.find("img")
+            if img:
+                image = img.get("src") or img.get("data-src") or ""
+        if not image:
+            # Fallback: first popup link href (full-res URL)
+            link = soup.find(class_="mh-popup-group__element")
+            if link:
+                image = link.get("href", "")
 
         price = parse_price(text)
 

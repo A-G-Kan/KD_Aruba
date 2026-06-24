@@ -2610,12 +2610,23 @@ body {
 .modal-close:hover { background: var(--bg); }
 
 .modal-banner {
-    height: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
+    height: 200px;
     border-radius: 16px 16px 0 0;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(160deg, #1B2B4B, #2E4A7A);
+}
+.modal-banner.house      { background: linear-gradient(160deg, #1B2B4B, #2E4A7A); }
+.modal-banner.condo      { background: linear-gradient(160deg, #1565A7, #2E86C1); }
+.modal-banner.land       { background: linear-gradient(160deg, #2D6A4F, #52B788); }
+.modal-banner.commercial { background: linear-gradient(160deg, #A84315, #E07B39); }
+.modal-banner.timeshare  { background: linear-gradient(160deg, #6B21A8, #9333EA); }
+
+.modal-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .modal-body { padding: 22px 24px; }

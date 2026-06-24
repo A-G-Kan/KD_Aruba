@@ -713,7 +713,9 @@ function openListingModal(l) {
           </div>` : '';
 
     document.getElementById('modal-content').innerHTML = `
-        <div class="modal-banner ${l.type}">${l.emoji}</div>
+        <div class="modal-banner ${l.type}">
+            ${l.image ? `<img src="${l.image}" alt="" class="modal-hero-img" onerror="this.style.display='none'">` : ''}
+        </div>
         <div class="modal-body">
             <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:4px;">
                 <div class="modal-title">${l.name}</div>
