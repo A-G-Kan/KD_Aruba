@@ -596,6 +596,17 @@ function initListingFilters() {
                 const bV = (b.askPrice != null && bSqm) ? b.askPrice / bSqm : null;
                 return nullsLast(aV, bV, sortBy === 'ppsm-asc' ? 'asc' : 'desc');
             });
+        } else if (sortBy === 'size-asc' || sortBy === 'size-desc') {
+            result.sort((a, b) => nullsLast(parseSqm(a.size), parseSqm(b.size), sortBy === 'size-asc' ? 'asc' : 'desc'));
+        } else if (sortBy === 'dom-asc' || sortBy === 'dom-desc') {
+            // dom-asc = fewest days on market first (newest listing)
+            // dom-desc = most days on market first (oldest listing)
+            // achieved by sorting listedDate descending / ascending respectively
+            result.sort((a, b) => {
+                const aV = a.listedDate ? new Date(a.listedDate).getTime() : null;
+                const bV = b.listedDate ? new Date(b.listedDate).getTime() : null;
+                return nullsLast(aV, bV, sortBy === 'dom-asc' ? 'desc' : 'asc');
+            });
         }
 
         filteredListings = result;
