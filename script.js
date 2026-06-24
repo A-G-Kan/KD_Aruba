@@ -1330,7 +1330,7 @@ function buildPpsmData() {
         if (!area || !price || !sqm || sqm < 10) continue;
         if (!ppsmData[area]) { ppsmData[area] = {}; areaCounts[area] = 0; }
         if (!ppsmData[area][l.type]) ppsmData[area][l.type] = [];
-        ppsmData[area][l.type].push(price / sqm);
+        ppsmData[area][l.type].push({ l, ppsm: price / sqm });
         areaCounts[area]++;
     }
     ppsmAreas = Object.entries(areaCounts)
@@ -1353,15 +1353,16 @@ function ppsmDisplay(usdVal) {
     return '$' + Math.round(usdVal).toLocaleString();
 }
 
-function buildPpsmCell(vals) {
-    if (!vals || !vals.length)
+function buildPpsmCell(entries, area, type) {
+    if (!entries || !entries.length)
         return '<td class="ppsm-cell ppsm-empty"><span class="ppsm-dash">—</span></td>';
-    const n       = vals.length;
+    const n       = entries.length;
     const limited = n < MIN_LISTINGS;
-    const med     = medianOf(vals);
+    const med     = medianOf(entries.map(e => e.ppsm));
+    const aEsc    = (area || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'");
     return `<td class="ppsm-cell ${limited ? 'ppsm-limited' : 'ppsm-ok'}">
         <span class="ppsm-val">${limited ? '~' : ''}${ppsmDisplay(med)}/m²</span>
-        <span class="ppsm-n">${n}&nbsp;listing${n !== 1 ? 's' : ''}${limited ? ' ⚠' : ''}</span>
+        <button class="ppsm-n-btn" onclick="openPpsmDrilldown('${aEsc}','${type}')">${n}&nbsp;listing${n !== 1 ? 's' : ''}${limited ? ' ⚠' : ''}</button>
     </td>`;
 }
 
@@ -1398,7 +1399,7 @@ function renderAllArubaAnalysis() {
     let thead = `<tr><th>Area</th>${PPSM_TYPES.map(t => `<th>${PPSM_LABELS[t]}</th>`).join('')}</tr>`;
     let tbody = ppsmAreas.map(area => {
         const isFav = favorites.has(area);
-        const cells = PPSM_TYPES.map(t => buildPpsmCell(ppsmData[area]?.[t])).join('');
+        const cells = PPSM_TYPES.map(t => buildPpsmCell(ppsmData[area]?.[t], area, t)).join('');
         return `<tr class="${isFav ? 'focus-row' : ''}">
             <td class="ppsm-area-name">${isFav ? '★ ' : ''}${area}</td>${cells}
         </tr>`;
@@ -1442,12 +1443,13 @@ function renderAreaAnalysis(areaName) {
     if (!bars.length) {
         barsHtml = `<p class="no-data-note">No listings in ${areaName} have both a valid price and size — nothing to chart yet.</p>`;
     } else {
-        const maxMed = Math.max(...bars.map(d => medianOf(d.vals)));
+        const maxMed = Math.max(...bars.map(d => medianOf(d.vals.map(e => e.ppsm))));
         barsHtml = `<div class="bar-chart">` + bars.map(d => {
-            const med     = medianOf(d.vals);
+            const med     = medianOf(d.vals.map(e => e.ppsm));
             const limited = d.vals.length < MIN_LISTINGS;
             const pct     = Math.max(4, Math.round((med / maxMed) * 100));
             const dispVal = ppsmDisplay(med);
+            const aEsc    = areaName.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
             return `<div class="bar-row">
                 <div class="bar-label">${d.label}</div>
                 <div class="bar-track">
@@ -1455,7 +1457,7 @@ function renderAreaAnalysis(areaName) {
                 </div>
                 <div class="bar-val">
                     ${limited ? '<span class="tilde">~</span>' : ''}${dispVal}/m²
-                    <span class="bar-n">${d.vals.length}&nbsp;listing${d.vals.length !== 1 ? 's' : ''}${limited ? ' ⚠' : ''}</span>
+                    <button class="ppsm-n-btn" onclick="openPpsmDrilldown('${aEsc}','${d.type}')">${d.vals.length}&nbsp;listing${d.vals.length !== 1 ? 's' : ''}${limited ? ' ⚠' : ''}</button>
                 </div>
             </div>`;
         }).join('') + `</div>`;
@@ -1472,7 +1474,7 @@ function renderAreaAnalysis(areaName) {
             .filter(a => ppsmData[a]?.[dominantType]?.length)
             .map(a => {
                 const vals    = ppsmData[a][dominantType];
-                const med     = medianOf(vals);
+                const med     = medianOf(vals.map(e => e.ppsm));
                 const limited = vals.length < MIN_LISTINGS;
                 const isThis  = a === areaName;
                 return { area: a, med, n: vals.length, limited, isThis };
@@ -1515,6 +1517,55 @@ function renderAreaAnalysis(areaName) {
         ${barsHtml}
         ${refHtml}`;
 }
+
+// ============================================================
+//  PPSM DRILLDOWN MODAL
+// ============================================================
+
+function jumpToListing(id) {
+    const l = listings.find(lx => lx.id === id);
+    if (!l) return;
+    goToPage('listings');
+    openListingModal(l);
+}
+
+function openPpsmDrilldown(area, type) {
+    const entries = ppsmData[area]?.[type];
+    if (!entries || !entries.length) return;
+
+    const sorted = [...entries].sort((a, b) => b.ppsm - a.ppsm);
+    const med    = medianOf(sorted.map(e => e.ppsm));
+    const n      = sorted.length;
+
+    document.getElementById('ppsm-drilldown-title').textContent =
+        `${area} — ${PPSM_LABELS[type]}`;
+    document.getElementById('ppsm-drilldown-sub').textContent =
+        `${n} listing${n !== 1 ? 's' : ''} · Median ${ppsmDisplay(med)}/m² · Sorted by $/m² high → low`;
+
+    const listEl  = document.getElementById('ppsm-drilldown-list');
+    const halfIdx = Math.ceil(n / 2) - 1;  // index of the median row
+
+    listEl.innerHTML = sorted.map((e, i) => {
+        const isMedian = i === halfIdx && n >= 3;
+        const idEsc    = e.l.id.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+        return `<div class="drill-row${isMedian ? ' drill-median-row' : ''}"
+                     onclick="closePpsmDrilldown(); jumpToListing('${idEsc}')">
+            <span class="drill-rank">${i + 1}</span>
+            <span class="drill-name">${e.l.name}</span>
+            <span class="drill-agency">${e.l.agency.replace(/Real Estate.*/, 'RE').replace(/Realtors?/, '').trim()}</span>
+            <span class="drill-price">${formatPrice(e.l.askPrice)}</span>
+            <span class="drill-ppsm${isMedian ? ' drill-median-val' : ''}">${ppsmDisplay(e.ppsm)}/m²</span>
+        </div>`;
+    }).join('');
+
+    document.getElementById('ppsm-drilldown-overlay').classList.add('open');
+}
+
+function closePpsmDrilldown() {
+    document.getElementById('ppsm-drilldown-overlay').classList.remove('open');
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closePpsmDrilldown(); });
 
 
 // ============================================================

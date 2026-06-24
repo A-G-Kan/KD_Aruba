@@ -448,6 +448,28 @@
 
     </div><!-- /app-shell -->
 
+    <!-- $/m² Drilldown Modal -->
+    <div id="ppsm-drilldown-overlay" onclick="if(event.target===this)closePpsmDrilldown()">
+        <div class="ppsm-drilldown-panel" onclick="event.stopPropagation()">
+            <div class="ppsm-drilldown-header">
+                <div>
+                    <div class="ppsm-drilldown-title" id="ppsm-drilldown-title"></div>
+                    <div class="ppsm-drilldown-sub" id="ppsm-drilldown-sub"></div>
+                </div>
+                <button class="ppsm-drilldown-close" onclick="closePpsmDrilldown()">&#x2715;</button>
+            </div>
+            <div class="ppsm-drilldown-col-headers">
+                <span class="drill-rank">#</span>
+                <span class="drill-name">Property</span>
+                <span class="drill-agency">Agency</span>
+                <span class="drill-price">Price</span>
+                <span class="drill-ppsm">$/m²</span>
+            </div>
+            <div class="ppsm-drilldown-list" id="ppsm-drilldown-list"></div>
+            <div class="ppsm-drilldown-footer">Click any row to open that listing in Market Listings</div>
+        </div>
+    </div>
+
     <!-- Listing Detail Modal -->
     <div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
         <div class="modal" onclick="event.stopPropagation()">

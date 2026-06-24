@@ -1827,6 +1827,22 @@ body {
     margin-top: 2px;
 }
 
+.ppsm-n-btn {
+    display: inline-block;
+    font-size: 10px;
+    color: var(--accent, #2563EB);
+    background: none;
+    border: none;
+    padding: 0;
+    margin-top: 2px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-style: dotted;
+    font-family: inherit;
+}
+.ppsm-n-btn:hover { color: #1D4ED8; text-decoration-style: solid; }
+
 .ppsm-ok   .ppsm-val { color: var(--primary); }
 .ppsm-limited .ppsm-val { color: #B45309; }
 
@@ -1904,6 +1920,161 @@ body {
     margin-top: 8px;
 }
 .ppsm-limited-note { color: #D97706; }
+
+/* ===========================
+   PPSM DRILLDOWN MODAL
+   =========================== */
+
+#ppsm-drilldown-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 1100;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 48px 16px 16px;
+    overflow-y: auto;
+}
+#ppsm-drilldown-overlay.open { display: flex; }
+
+.ppsm-drilldown-panel {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    width: 100%;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 80px);
+}
+
+.ppsm-drilldown-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 18px 20px 14px;
+    border-bottom: 1px solid var(--border);
+    flex-shrink: 0;
+}
+
+.ppsm-drilldown-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.ppsm-drilldown-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 3px;
+}
+
+.ppsm-drilldown-close {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 2px 6px;
+    border-radius: 4px;
+    flex-shrink: 0;
+    line-height: 1;
+}
+.ppsm-drilldown-close:hover { background: var(--border); color: var(--primary); }
+
+.ppsm-drilldown-col-headers {
+    display: grid;
+    grid-template-columns: 28px 1fr 100px 90px 80px;
+    gap: 8px;
+    padding: 7px 16px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+
+.ppsm-drilldown-list {
+    overflow-y: auto;
+    flex: 1;
+}
+
+.drill-row {
+    display: grid;
+    grid-template-columns: 28px 1fr 100px 90px 80px;
+    gap: 8px;
+    padding: 9px 16px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    align-items: center;
+    transition: background 0.1s;
+}
+.drill-row:last-child { border-bottom: none; }
+.drill-row:hover { background: var(--bg); }
+
+.drill-row.drill-median-row {
+    background: #F0FDF4;
+    border-left: 3px solid #059669;
+    padding-left: 13px;
+}
+.drill-row.drill-median-row:hover { background: #DCFCE7; }
+
+.drill-rank {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}
+
+.drill-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.drill-agency {
+    font-size: 11px;
+    color: var(--text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.drill-price {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    text-align: right;
+    white-space: nowrap;
+}
+
+.drill-ppsm {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-align: right;
+    white-space: nowrap;
+}
+.drill-ppsm.drill-median-val { color: #059669; font-weight: 700; }
+
+.ppsm-drilldown-footer {
+    padding: 10px 16px;
+    font-size: 11px;
+    color: var(--text-muted);
+    text-align: center;
+    border-top: 1px solid var(--border);
+    flex-shrink: 0;
+    font-style: italic;
+}
 
 /* ===========================
    ROI CALCULATOR
