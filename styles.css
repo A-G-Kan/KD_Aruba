@@ -574,8 +574,120 @@ body {
 .results-meta {
     font-size: 12px;
     color: var(--text-muted);
-    margin-bottom: 18px;
+    margin-bottom: 10px;
     padding-left: 2px;
+}
+
+/* ── Listings controls bar (currency toggle + page size) ── */
+.listings-controls-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.currency-toggle,
+.page-size-ctrl {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.ctrl-label {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.currency-btn,
+.page-size-btn {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 5px 11px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.currency-btn:hover,
+.page-size-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.currency-btn.active,
+.page-size-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.currency-rate-note {
+    font-size: 11px;
+    color: var(--text-muted);
+    opacity: 0.7;
+    margin-left: 4px;
+}
+
+/* ── Pagination controls ── */
+.pagination-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.pg-btn {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-muted);
+    cursor: pointer;
+    min-width: 34px;
+    text-align: center;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.pg-btn:hover:not(:disabled) {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.pg-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.pg-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+.pg-ellipsis {
+    font-size: 13px;
+    color: var(--text-muted);
+    padding: 0 4px;
+    user-select: none;
+}
+
+.pg-label {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-left: 8px;
+    white-space: nowrap;
 }
 
 /* ===========================

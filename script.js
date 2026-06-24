@@ -116,6 +116,33 @@ let trackerItems = [];
 let monthlyData  = [];
 let areaData     = [];
 
+// ── Currency toggle ────────────────────────────────────────────────────────
+const AWG_PER_USD = 1.79;
+let activeCurrency = 'USD';
+
+function formatPrice(usdPrice) {
+    if (usdPrice == null) return 'Price on request';
+    if (activeCurrency === 'AWG') {
+        const awg = Math.round(usdPrice * AWG_PER_USD);
+        return 'Afl. ' + awg.toLocaleString();
+    }
+    return '$' + usdPrice.toLocaleString();
+}
+
+function setCurrency(cur) {
+    activeCurrency = cur;
+    document.getElementById('btn-usd').classList.toggle('active', cur === 'USD');
+    document.getElementById('btn-awg').classList.toggle('active', cur === 'AWG');
+    // Re-render all current views that show prices
+    refreshPriceDisplays();
+}
+
+function refreshPriceDisplays() {
+    // Re-render the paginated listings grid and home snapshot
+    if (typeof applyListingFilters === 'function') applyListingFilters();
+    renderListingsGrid(listings.slice(0, 4), 'home-listings-grid');
+}
+
 
 // ============================================================
 //  INIT
@@ -271,7 +298,6 @@ function initApp() {
     initSidebarNav();
     renderDashboardStats();
     renderListingsGrid(listings, 'home-listings-grid', 4);
-    renderListingsGrid(listings, 'listings-grid');
     renderListingStats();
     renderTrackerTable(trackerItems);
     renderTrackerStats();
@@ -478,8 +504,8 @@ function renderListingsGrid(list, gridId, limit = null) {
                 })()}
                 <div class="card-meta">
                     <div>
-                        <div class="card-price">${l.askPrice != null ? '$' + l.askPrice.toLocaleString() : 'Price on request'}</div>
-                        ${priceReduced ? `<div class="card-prev-price">was $${prevPrice.toLocaleString()}</div>` : ''}
+                        <div class="card-price">${formatPrice(l.askPrice)}</div>
+                        ${priceReduced ? `<div class="card-prev-price">was ${formatPrice(prevPrice)}</div>` : ''}
                     </div>
                     <div class="card-agency-block">
                         <div class="card-agency">${l.agency}</div>
@@ -503,6 +529,12 @@ function parseSqm(sizeStr) {
     const n = parseFloat(sizeStr.replace(/[^0-9.]/g, ''));
     return isNaN(n) ? null : n;
 }
+
+// Pagination + filter state (module-level so renderPage can access)
+let filteredListings = [];
+let currentPage  = 1;
+let pageSize     = 50;
+let applyListingFilters = null; // set by initListingFilters, used by setCurrency
 
 function initListingFilters() {
     const typeButtons = document.querySelectorAll('[data-lfilter]');
@@ -532,10 +564,15 @@ function initListingFilters() {
             l.location.toLowerCase().includes(searchTerm) ||
             l.agency.toLowerCase().includes(searchTerm));
 
-        renderListingsGrid(result, 'listings-grid');
+        filteredListings = result;
+        currentPage = 1;
+        renderPage(1);
         document.getElementById('l-results-count').textContent =
-            `Showing ${result.length} of ${listings.length} listings`;
+            `${result.length} listing${result.length !== 1 ? 's' : ''} found`;
     }
+
+    // expose for currency toggle refresh
+    applyListingFilters = apply;
 
     typeButtons.forEach(btn => btn.addEventListener('click', () => {
         typeButtons.forEach(b => b.classList.remove('active'));
@@ -548,11 +585,68 @@ function initListingFilters() {
     areaSel.addEventListener('change',     () => { activeArea   = areaSel.value;     apply(); });
     m2MinInput.addEventListener('input',   () => apply());
     m2MaxInput.addEventListener('input',   () => apply());
-    searchInput.addEventListener('input',  () => { searchTerm   = searchInput.value.trim().toLowerCase(); apply(); });
+    searchInput.addEventListener('input',  () => { searchTerm = searchInput.value.trim().toLowerCase(); apply(); });
 
-    // Set initial count
-    document.getElementById('l-results-count').textContent =
-        `Showing ${listings.length} of ${listings.length} listings`;
+    // Page size buttons
+    document.querySelectorAll('.page-size-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.page-size-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            pageSize = parseInt(btn.dataset.size, 10);
+            currentPage = 1;
+            renderPage(1);
+        });
+    });
+
+    // Initial render
+    apply();
+}
+
+function renderPage(page) {
+    currentPage = page;
+    const start = (page - 1) * pageSize;
+    const pageItems = filteredListings.slice(start, start + pageSize);
+    renderListingsGrid(pageItems, 'listings-grid');
+    const totalPages = Math.ceil(filteredListings.length / pageSize);
+    renderPagination(page, totalPages, 'pagination-top');
+    renderPagination(page, totalPages, 'pagination-bottom');
+}
+
+function renderPagination(page, totalPages, containerId) {
+    const el = document.getElementById(containerId);
+    if (!el) return;
+    if (totalPages <= 1) { el.innerHTML = ''; return; }
+
+    const start = (page - 1) * pageSize + 1;
+    const end   = Math.min(page * pageSize, filteredListings.length);
+    let html = '';
+
+    html += `<button class="pg-btn" onclick="renderPage(${page - 1})" ${page === 1 ? 'disabled' : ''}>&#8592; Prev</button>`;
+
+    // Page number buttons with ellipsis for large page counts
+    const pages = [];
+    if (totalPages <= 7) {
+        for (let i = 1; i <= totalPages; i++) pages.push(i);
+    } else {
+        pages.push(1);
+        if (page > 3) pages.push('…');
+        for (let i = Math.max(2, page - 1); i <= Math.min(totalPages - 1, page + 1); i++) pages.push(i);
+        if (page < totalPages - 2) pages.push('…');
+        pages.push(totalPages);
+    }
+
+    pages.forEach(p => {
+        if (p === '…') {
+            html += `<span class="pg-ellipsis">…</span>`;
+        } else {
+            html += `<button class="pg-btn${p === page ? ' active' : ''}" onclick="renderPage(${p})">${p}</button>`;
+        }
+    });
+
+    html += `<button class="pg-btn" onclick="renderPage(${page + 1})" ${page === totalPages ? 'disabled' : ''}>Next &#8594;</button>`;
+    html += `<span class="pg-label">${start}–${end} of ${filteredListings.length}</span>`;
+
+    el.innerHTML = html;
 }
 
 
@@ -572,7 +666,7 @@ function openListingModal(l) {
                 ${l.priceHistory.map((h, i) => `
                     <div style="display:flex;justify-content:space-between;font-size:12px;padding:4px 0;border-bottom:1px solid #E5E9F0;">
                         <span style="color:#6B7280;">${h.date}</span>
-                        <strong${i === l.priceHistory.length - 1 ? '' : ' style="color:#6B7280;text-decoration:line-through"'}>$${h.price.toLocaleString()}</strong>
+                        <strong${i === l.priceHistory.length - 1 ? '' : ' style="color:#6B7280;text-decoration:line-through"'}>${formatPrice(h.price)}</strong>
                     </div>`).join('')}
             </div>
           </div>` : '';
@@ -588,7 +682,7 @@ function openListingModal(l) {
             <div class="modal-row">
                 <div class="modal-field">
                     <div class="modal-field-label">Ask Price</div>
-                    <div class="modal-field-value">$${l.askPrice.toLocaleString()}</div>
+                    <div class="modal-field-value">${formatPrice(l.askPrice)}</div>
                 </div>
                 <div class="modal-field">
                     <div class="modal-field-label">Type</div>
@@ -736,7 +830,7 @@ function openDealDetailModal(item) {
             <div class="modal-row" style="margin-top:14px;">
                 <div class="modal-field">
                     <div class="modal-field-label">Ask Price</div>
-                    <div class="modal-field-value">$${item.askPrice.toLocaleString()}</div>
+                    <div class="modal-field-value">${formatPrice(item.askPrice)}</div>
                 </div>
                 <div class="modal-field">
                     <div class="modal-field-label">Type</div>
@@ -1102,7 +1196,7 @@ function renderTrackerTable(list) {
             </td>
             <td>${formatType(item.type)}</td>
             <td>📍 ${item.area}</td>
-            <td>$${item.askPrice.toLocaleString()}</td>
+            <td>${formatPrice(item.askPrice)}</td>
             <td style="font-size:12px;color:#6B7280;">${item.agency}</td>
             <td><span class="stage-badge ${stageCss[item.stage]}">${stageLabels[item.stage]}</span></td>
             <td><span class="priority-badge priority-${item.priority}">${item.priority === 'high' ? '▲ High' : item.priority === 'medium' ? '● Med' : '▼ Low'}</span></td>

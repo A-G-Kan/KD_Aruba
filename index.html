@@ -267,6 +267,20 @@
                 <span class="agent-banner-sync">Last updated: <span id="last-sync-time">never</span></span>
             </div>
 
+            <div class="listings-controls-bar">
+                <div class="currency-toggle">
+                    <span class="ctrl-label">Price:</span>
+                    <button class="currency-btn active" id="btn-usd" onclick="setCurrency('USD')">$ USD</button>
+                    <button class="currency-btn" id="btn-awg" onclick="setCurrency('AWG')">Afl. AWG</button>
+                    <span class="currency-rate-note">1 USD = 1.79 AWG</span>
+                </div>
+                <div class="page-size-ctrl">
+                    <span class="ctrl-label">Per page:</span>
+                    <button class="page-size-btn active" data-size="50">50</button>
+                    <button class="page-size-btn" data-size="100">100</button>
+                </div>
+            </div>
+
             <div class="filter-bar">
                 <div class="filter-types">
                     <button class="filter-btn active" data-lfilter="all">All</button>
@@ -302,7 +316,9 @@
             </div>
 
             <div class="results-meta"><span id="l-results-count"></span></div>
+            <div id="pagination-top" class="pagination-controls"></div>
             <div class="listings-grid" id="listings-grid"></div>
+            <div id="pagination-bottom" class="pagination-controls"></div>
         </section>
 
 
