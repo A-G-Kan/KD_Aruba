@@ -1144,6 +1144,12 @@ body {
     margin-top: 1px;
 }
 
+.card-ppsm {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 3px;
+}
+
 /* Status badges — extra statuses */
 .status-badge.active        { background: #DCFCE7; color: var(--available); }
 .status-badge.price-reduced { background: #FEF3C7; color: var(--contract); }

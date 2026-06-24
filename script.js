@@ -509,6 +509,7 @@ function renderListingsGrid(list, gridId, limit = null) {
                     <div>
                         <div class="card-price">${formatPrice(l.askPrice)}</div>
                         ${priceReduced ? `<div class="card-prev-price">was ${formatPrice(prevPrice)}</div>` : ''}
+                        <div class="card-ppsm">${formatPricePerSqm(l.askPrice, l.size)}</div>
                     </div>
                     <div class="card-agency-block">
                         <div class="card-agency">${l.agency}</div>
@@ -533,6 +534,16 @@ function parseSqm(sizeStr) {
     return isNaN(n) ? null : n;
 }
 
+function formatPricePerSqm(usdPrice, sizeStr) {
+    const sqm = parseSqm(sizeStr);
+    if (usdPrice == null || sqm == null || sqm === 0) return 'N/A';
+    const usdPerSqm = usdPrice / sqm;
+    if (activeCurrency === 'AWG') {
+        return 'Afl. ' + Math.round(usdPerSqm * AWG_PER_USD).toLocaleString() + '/m²';
+    }
+    return '$' + Math.round(usdPerSqm).toLocaleString() + '/m²';
+}
+
 // Pagination + filter state (module-level so renderPage can access)
 let filteredListings = [];
 let currentPage  = 1;
@@ -543,6 +554,7 @@ function initListingFilters() {
     const typeButtons = document.querySelectorAll('[data-lfilter]');
     const statusSel   = document.getElementById('l-status-filter');
     const areaSel     = document.getElementById('l-area-filter');
+    const sortSel     = document.getElementById('l-sort');
     const searchInput = document.getElementById('l-search');
     const m2MinInput  = document.getElementById('l-m2-min');
     const m2MaxInput  = document.getElementById('l-m2-max');
@@ -553,8 +565,9 @@ function initListingFilters() {
     let searchTerm   = '';
 
     function apply() {
-        const m2Min = m2MinInput.value !== '' ? parseFloat(m2MinInput.value) : null;
-        const m2Max = m2MaxInput.value !== '' ? parseFloat(m2MaxInput.value) : null;
+        const m2Min  = m2MinInput.value !== '' ? parseFloat(m2MinInput.value) : null;
+        const m2Max  = m2MaxInput.value !== '' ? parseFloat(m2MaxInput.value) : null;
+        const sortBy = sortSel ? sortSel.value : 'default';
 
         let result = [...listings];
         if (activeType   !== 'all') result = result.filter(l => l.type === activeType);
@@ -566,6 +579,24 @@ function initListingFilters() {
             l.name.toLowerCase().includes(searchTerm) ||
             l.location.toLowerCase().includes(searchTerm) ||
             l.agency.toLowerCase().includes(searchTerm));
+
+        // Sort — nulls always go to the bottom regardless of direction
+        const nullsLast = (aV, bV, dir) => {
+            if (aV == null && bV == null) return 0;
+            if (aV == null) return 1;
+            if (bV == null) return -1;
+            return dir === 'asc' ? aV - bV : bV - aV;
+        };
+        if (sortBy === 'price-asc' || sortBy === 'price-desc') {
+            result.sort((a, b) => nullsLast(a.askPrice, b.askPrice, sortBy === 'price-asc' ? 'asc' : 'desc'));
+        } else if (sortBy === 'ppsm-asc' || sortBy === 'ppsm-desc') {
+            result.sort((a, b) => {
+                const aSqm = parseSqm(a.size), bSqm = parseSqm(b.size);
+                const aV = (a.askPrice != null && aSqm) ? a.askPrice / aSqm : null;
+                const bV = (b.askPrice != null && bSqm) ? b.askPrice / bSqm : null;
+                return nullsLast(aV, bV, sortBy === 'ppsm-asc' ? 'asc' : 'desc');
+            });
+        }
 
         filteredListings = result;
         currentPage = 1;
@@ -586,6 +617,7 @@ function initListingFilters() {
 
     statusSel.addEventListener('change',   () => { activeStatus = statusSel.value;   apply(); });
     areaSel.addEventListener('change',     () => { activeArea   = areaSel.value;     apply(); });
+    if (sortSel) sortSel.addEventListener('change', () => apply());
     m2MinInput.addEventListener('input',   () => apply());
     m2MaxInput.addEventListener('input',   () => apply());
     searchInput.addEventListener('input',  () => { searchTerm = searchInput.value.trim().toLowerCase(); apply(); });
@@ -694,6 +726,10 @@ function openListingModal(l) {
                 <div class="modal-field">
                     <div class="modal-field-label">Size</div>
                     <div class="modal-field-value">${l.size || 'N/A'}</div>
+                </div>
+                <div class="modal-field">
+                    <div class="modal-field-label">Price / m²</div>
+                    <div class="modal-field-value">${formatPricePerSqm(l.askPrice, l.size)}</div>
                 </div>
                 ${l.bedrooms != null ? `
                 <div class="modal-field">
