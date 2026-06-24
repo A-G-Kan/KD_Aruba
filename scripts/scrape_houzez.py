@@ -8,7 +8,7 @@ DO NOT run this file directly.
 """
 
 import json, re, time, sys
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -195,7 +195,7 @@ def save_houzez(new_listings, agency):
 
     existing["listings"] = merged
     existing["agentMeta"] = {
-        "lastSync":       TODAY,
+        "lastSync":       datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
         "agentActive":    True,
         "totalSyncCount": existing.get("agentMeta", {}).get("totalSyncCount", 0) + 1,
     }

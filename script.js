@@ -400,7 +400,10 @@ function setAgentStatus() {
     }
 
     const syncLabel = agentMeta.lastSync
-        ? new Date(agentMeta.lastSync).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })
+        ? new Date(agentMeta.lastSync).toLocaleString('en-US', {
+            timeZone: 'America/Aruba',
+            month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'
+          })
         : 'never';
 
     if (lastUpdated) lastUpdated.textContent = agentMeta.lastSync ? `Updated ${syncLabel}` : '';

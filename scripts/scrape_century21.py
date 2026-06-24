@@ -15,7 +15,7 @@ Requirements:
 """
 
 import sys, json, re, time
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 # ── path setup for locally-installed packages ──────────────────────────────
@@ -296,7 +296,7 @@ def save(new_listings):
     merged   = kept + new_listings
     existing["listings"] = merged
     existing["agentMeta"]         = {
-        "lastSync":       TODAY,
+        "lastSync":       datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
         "agentActive":    True,
         "totalSyncCount": existing.get("agentMeta", {}).get("totalSyncCount", 0) + 1,
     }

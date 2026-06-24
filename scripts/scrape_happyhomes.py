@@ -15,7 +15,7 @@ Requirements:
 """
 
 import sys, json, re, time
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-packages"))
@@ -180,7 +180,7 @@ def save(new_listings):
 
     existing["listings"] = merged
     existing["agentMeta"] = {
-        "lastSync":       TODAY,
+        "lastSync":       datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
         "agentActive":    True,
         "totalSyncCount": existing.get("agentMeta", {}).get("totalSyncCount", 0) + 1,
     }
