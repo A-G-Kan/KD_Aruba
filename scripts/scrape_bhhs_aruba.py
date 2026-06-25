@@ -62,6 +62,20 @@ def parse_int(text):
     return int(m.group()) if m else None
 
 
+def _valid_size(s):
+    """Return s if it parses to ≥ 10 m², otherwise '' (rejects floor counts etc.)."""
+    if not s:
+        return ""
+    m = re.search(r"[\d,.]+", s)
+    if not m:
+        return ""
+    try:
+        v = float(m.group().replace(",", ""))
+        return s if v >= 10 else ""
+    except ValueError:
+        return ""
+
+
 def scrape_detail(page, url):
     try:
         page.goto(url, timeout=20000, wait_until="domcontentloaded")
@@ -80,6 +94,8 @@ def scrape_detail(page, url):
             baths = int(m.group(1))
 
         building_size, lot_size = parse_two_sizes(text)
+        building_size = _valid_size(building_size)
+        lot_size      = _valid_size(lot_size)
 
         # Status tag
         status = "active"

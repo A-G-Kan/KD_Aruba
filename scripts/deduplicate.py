@@ -153,9 +153,18 @@ def parse_two_sizes(text):
         _sqft(r"(?:built[\s\-]?up|floor|interior|living)\s*(?:area)?\s*[:\-]?\s*([0-9,.]+)\s*(?:sq\.?\s*ft|sqft)")
     )
 
-    # Fallback: single unlabelled m² → treat as building_size
+    # Fallback: single unlabelled m² → treat as building_size.
+    # Negative lookbehind prevents matching the trailing digit of a UI token
+    # like "M2 M2 SQ FT" (unit switcher) → would otherwise yield "2 m²".
+    # Minimum 10 m² guards against floor counts and other stray small numbers.
     if not building_size and not lot_size:
-        building_size = _m2(r"([0-9,.]+)\s*m[²2]")
+        candidate = _m2(r"(?<![A-Za-z])([0-9,.]+)\s*m[²2]")
+        if candidate:
+            try:
+                v = float(re.sub(r"[^\d.]", "", candidate.split()[0]))
+                building_size = candidate if v >= 10 else ""
+            except (ValueError, IndexError):
+                pass
 
     return building_size, lot_size
 
