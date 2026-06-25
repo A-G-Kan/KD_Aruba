@@ -23,7 +23,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site, parse_price_robust
+from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes
 
 BASE_URL   = "https://www.bhhsaruba.com"
 AGENCY     = "BHHS Aruba"
@@ -79,10 +79,7 @@ def scrape_detail(page, url):
         if m:
             baths = int(m.group(1))
 
-        size = ""
-        m = re.search(r"([\d,.]+)\s*(m²|m2|sqm|sq\.?\s*ft)", text, re.I)
-        if m:
-            size = m.group(0).strip()
+        building_size, lot_size = parse_two_sizes(text)
 
         # Status tag
         status = "active"
@@ -93,10 +90,10 @@ def scrape_detail(page, url):
         paras = [p.get_text(strip=True) for p in soup.find_all("p") if len(p.get_text(strip=True)) > 60]
         desc = max(paras, key=len, default="")
 
-        return price, beds, baths, size, status, desc
+        return price, beds, baths, building_size, lot_size, status, desc
     except Exception as e:
         print(f"    ⚠  Detail failed ({url}): {e}")
-        return None, None, None, "", "active", ""
+        return None, None, None, "", "", "active", ""
 
 
 def scrape_section(browser, section_path, listing_type, seen_urls):
@@ -125,7 +122,7 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
             name   = (link_el.get("title") or "").strip() or "Unknown"
 
             print(f"     → {name[:50]}")
-            price, beds, baths, size, status, desc = scrape_detail(page, href)
+            price, beds, baths, building_size, lot_size, status, desc = scrape_detail(page, href)
             time.sleep(0.4)
 
             slug = href.rstrip("/").split("/")[-1]
@@ -137,7 +134,9 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
                 "area":         "",
                 "location":     "",
                 "askPrice":     price,
-                "size":         size,
+                "size":         building_size or lot_size,
+                "buildingSize": building_size,
+                "lotSize":      lot_size,
                 "bedrooms":     beds,
                 "bathrooms":    baths,
                 "agency":       AGENCY,

@@ -308,6 +308,27 @@ function initApp() {
     initTrackerFilters();
     setAgentStatus();
     loadNotes();
+    initPpsmInteractions();
+}
+
+function initPpsmInteractions() {
+    // Single delegate for all "N listings" buttons — fixes alternating-row click bug
+    document.getElementById('page-market').addEventListener('click', e => {
+        const btn = e.target.closest('.ppsm-n-btn');
+        if (btn) openPpsmDrilldown(btn.dataset.area, btn.dataset.type);
+    });
+
+    // Single delegate for drilldown list: row → view listing, excl-btn → toggle exclusion
+    document.querySelector('.ppsm-drilldown-panel').addEventListener('click', e => {
+        const exclBtn = e.target.closest('.drill-excl-btn');
+        if (exclBtn) {
+            e.stopPropagation();
+            togglePpsmExclusion(exclBtn.dataset.area, exclBtn.dataset.type, exclBtn.dataset.listingId);
+            return;
+        }
+        const row = e.target.closest('.drill-row:not(.drill-excluded)');
+        if (row && row.dataset.listingId) jumpToListing(row.dataset.listingId);
+    });
 }
 
 
@@ -499,7 +520,8 @@ function renderListingsGrid(list, gridId, limit = null) {
                 ${(() => {
                     const beds  = l.bedrooms  != null ? (l.bedrooms === 0 ? 'Studio' : `${l.bedrooms} bed`) : null;
                     const baths = l.bathrooms != null ? `${l.bathrooms} bath` : null;
-                    const sz    = l.size || null;
+                    const szStr = displaySize(l);
+                    const sz    = szStr || null;
                     const parts = [beds, baths, sz].filter(Boolean);
                     return parts.length ? `<div class="card-specs">${parts.join(' · ')}</div>` : '';
                 })()}
@@ -507,7 +529,7 @@ function renderListingsGrid(list, gridId, limit = null) {
                     <div>
                         <div class="card-price">${formatPrice(l.askPrice)}</div>
                         ${priceReduced ? `<div class="card-prev-price">was ${formatPrice(prevPrice)}</div>` : ''}
-                        <div class="card-ppsm">${formatPricePerSqm(l.askPrice, l.size)}</div>
+                        <div class="card-ppsm">${formatPricePerSqm(l.askPrice, l)}</div>
                     </div>
                     <div class="card-agency-block">
                         <div class="card-agency">${l.agency}</div>
@@ -526,12 +548,50 @@ function renderListingsGrid(list, gridId, limit = null) {
 function parseSqm(sizeStr) {
     if (!sizeStr) return null;
     const n = parseFloat(sizeStr.replace(/[^0-9.]/g, ''));
-    return isNaN(n) ? null : n;
+    return isNaN(n) || n === 0 ? null : n;
 }
 
-function formatPricePerSqm(usdPrice, sizeStr) {
-    const sqm = parseSqm(sizeStr);
-    if (usdPrice == null || sqm == null || sqm === 0) return 'N/A';
+// Returns the m² to use for $/m² calculations.
+// Land → lot size.  Houses/condos/commercial/timeshare → building area only.
+// Lot size is NEVER substituted into a house/condo calculation.
+function ppsmSqm(l) {
+    if (l.type === 'land') {
+        const s = parseSqm(l.lotSize) || (!l.buildingSize && !l.lotSize ? parseSqm(l.size) : null);
+        return s && s >= 10 ? s : null;
+    }
+    // Non-land: use building area only; fall back to legacy `size` only when
+    // neither new field exists (i.e. data pre-dates the two-field schema).
+    const s = parseSqm(l.buildingSize) || (!l.buildingSize && !l.lotSize ? parseSqm(l.size) : null);
+    return s && s >= 10 ? s : null;
+}
+
+// Returns the best available m² for size filtering/sorting (building > lot > legacy).
+function primarySqm(l) {
+    return parseSqm(l.buildingSize) || parseSqm(l.lotSize) || parseSqm(l.size) || null;
+}
+
+// Returns a human-readable size string with "interior" / "lot" labels as needed.
+// Returns '' (not 'N/A') when no size data exists, so callers can substitute.
+function displaySize(l) {
+    const bStr = (l.buildingSize || '').trim();
+    const lStr = (l.lotSize      || '').trim();
+    const bSqm = parseSqm(bStr);
+    const lSqm = parseSqm(lStr);
+
+    if (bSqm && lSqm) return `${bStr} interior · ${lStr} lot`;
+    if (bSqm)         return bStr;      // standard interior area — label not needed
+    if (lSqm)         return `${lStr} lot`;
+
+    // Legacy: l.size field (pre-dates the two-field schema)
+    const legSqm = parseSqm(l.size || '');
+    return legSqm ? l.size : '';
+}
+
+function formatPricePerSqm(usdPrice, listingOrStr) {
+    const sqm = (listingOrStr && typeof listingOrStr === 'object')
+        ? ppsmSqm(listingOrStr)
+        : parseSqm(listingOrStr);
+    if (usdPrice == null || !sqm) return 'N/A';
     const usdPerSqm = usdPrice / sqm;
     if (activeCurrency === 'AWG') {
         return 'Afl. ' + Math.round(usdPerSqm * AWG_PER_USD).toLocaleString() + '/m²';
@@ -568,8 +628,8 @@ function initListingFilters() {
         if (activeType   !== 'all') result = result.filter(l => l.type === activeType);
         if (activeStatus !== 'all') result = result.filter(l => l.status === activeStatus);
         if (activeArea   !== 'all') result = result.filter(l => l.area === activeArea);
-        if (m2Min !== null) result = result.filter(l => { const s = parseSqm(l.size); return s !== null && s >= m2Min; });
-        if (m2Max !== null) result = result.filter(l => { const s = parseSqm(l.size); return s !== null && s <= m2Max; });
+        if (m2Min !== null) result = result.filter(l => { const s = primarySqm(l); return s !== null && s >= m2Min; });
+        if (m2Max !== null) result = result.filter(l => { const s = primarySqm(l); return s !== null && s <= m2Max; });
         if (searchTerm)             result = result.filter(l =>
             l.name.toLowerCase().includes(searchTerm) ||
             l.location.toLowerCase().includes(searchTerm) ||
@@ -586,13 +646,13 @@ function initListingFilters() {
             result.sort((a, b) => nullsLast(a.askPrice, b.askPrice, sortBy === 'price-asc' ? 'asc' : 'desc'));
         } else if (sortBy === 'ppsm-asc' || sortBy === 'ppsm-desc') {
             result.sort((a, b) => {
-                const aSqm = parseSqm(a.size), bSqm = parseSqm(b.size);
+                const aSqm = ppsmSqm(a), bSqm = ppsmSqm(b);
                 const aV = (a.askPrice != null && aSqm) ? a.askPrice / aSqm : null;
                 const bV = (b.askPrice != null && bSqm) ? b.askPrice / bSqm : null;
                 return nullsLast(aV, bV, sortBy === 'ppsm-asc' ? 'asc' : 'desc');
             });
         } else if (sortBy === 'size-asc' || sortBy === 'size-desc') {
-            result.sort((a, b) => nullsLast(parseSqm(a.size), parseSqm(b.size), sortBy === 'size-asc' ? 'asc' : 'desc'));
+            result.sort((a, b) => nullsLast(primarySqm(a), primarySqm(b), sortBy === 'size-asc' ? 'asc' : 'desc'));
         } else if (sortBy === 'dom-asc' || sortBy === 'dom-desc') {
             // dom-asc = fewest days on market first (newest listing)
             // dom-desc = most days on market first (oldest listing)
@@ -733,11 +793,11 @@ function openListingModal(l) {
                 </div>
                 <div class="modal-field">
                     <div class="modal-field-label">Size</div>
-                    <div class="modal-field-value">${l.size || 'N/A'}</div>
+                    <div class="modal-field-value">${displaySize(l) || 'N/A'}</div>
                 </div>
                 <div class="modal-field">
                     <div class="modal-field-label">Price / m²</div>
-                    <div class="modal-field-value">${formatPricePerSqm(l.askPrice, l.size)}</div>
+                    <div class="modal-field-value">${formatPricePerSqm(l.askPrice, l)}</div>
                 </div>
                 ${l.bedrooms != null ? `
                 <div class="modal-field">
@@ -1319,8 +1379,11 @@ const PPSM_TYPES   = ['house', 'condo', 'land', 'commercial', 'timeshare'];
 const PPSM_LABELS  = { house: 'Houses', condo: 'Condos', land: 'Land', commercial: 'Commercial', timeshare: 'Timeshare' };
 const MIN_LISTINGS = 5;   // below this: flag as limited data
 
-let ppsmData  = {};   // { [area]: { [type]: [usd_per_sqm, ...] } }
+let ppsmData  = {};   // { [area]: { [type]: [{l, ppsm}] } }
 let ppsmAreas = [];   // areas sorted by listing count with valid data
+
+const ppsmExclusions   = new Set();  // keys: "area:type:listingId" — view-only, resets on reload
+let   ppsmDrilldownCtx = null;       // { area, type } while drilldown is open
 
 function buildPpsmData() {
     ppsmData = {};
@@ -1328,8 +1391,8 @@ function buildPpsmData() {
     for (const l of listings) {
         const area  = (l.area || '').trim();
         const price = l.askPrice;
-        const sqm   = parseSqm(l.size);
-        if (!area || !price || !sqm || sqm < 10) continue;
+        const sqm   = ppsmSqm(l);
+        if (!area || !price || !sqm) continue;
         if (!ppsmData[area]) { ppsmData[area] = {}; areaCounts[area] = 0; }
         if (!ppsmData[area][l.type]) ppsmData[area][l.type] = [];
         ppsmData[area][l.type].push({ l, ppsm: price / sqm });
@@ -1357,14 +1420,23 @@ function ppsmDisplay(usdVal) {
 
 function buildPpsmCell(entries, area, type) {
     if (!entries || !entries.length)
-        return '<td class="ppsm-cell ppsm-empty"><span class="ppsm-dash">—</span></td>';
+        return `<td class="ppsm-cell ppsm-empty" data-area="${area}" data-type="${type}"><span class="ppsm-dash">—</span></td>`;
     const n       = entries.length;
-    const limited = n < MIN_LISTINGS;
-    const med     = medianOf(entries.map(e => e.ppsm));
-    const aEsc    = (area || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'");
-    return `<td class="ppsm-cell ${limited ? 'ppsm-limited' : 'ppsm-ok'}">
+    const active  = entries.filter(e => !ppsmExclusions.has(`${area}:${type}:${e.l.id}`));
+    const nActive = active.length;
+    const hasExcl = nActive < n;
+    const limited = nActive < MIN_LISTINGS;
+    if (!nActive) {
+        return `<td class="ppsm-cell ppsm-limited has-exclusions" data-area="${area}" data-type="${type}">
+            <span class="ppsm-val">—</span>
+            <button class="ppsm-n-btn" data-area="${area}" data-type="${type}">0 of ${n} listing${n !== 1 ? 's' : ''}</button>
+        </td>`;
+    }
+    const med       = medianOf(active.map(e => e.ppsm));
+    const countText = hasExcl ? `${nActive} of ${n}` : `${n}`;
+    return `<td class="ppsm-cell ${limited ? 'ppsm-limited' : 'ppsm-ok'}${hasExcl ? ' has-exclusions' : ''}" data-area="${area}" data-type="${type}">
         <span class="ppsm-val">${limited ? '~' : ''}${ppsmDisplay(med)}/m²</span>
-        <button class="ppsm-n-btn" onclick="openPpsmDrilldown('${aEsc}','${type}')">${n}&nbsp;listing${n !== 1 ? 's' : ''}${limited ? ' ⚠' : ''}</button>
+        <button class="ppsm-n-btn" data-area="${area}" data-type="${type}">${countText}&nbsp;listing${n !== 1 ? 's' : ''}${limited ? ' ⚠' : ''}</button>
     </td>`;
 }
 
@@ -1434,7 +1506,7 @@ function renderAreaAnalysis(areaName) {
 
     const isFav         = favorites.has(areaName);
     const areaListings  = listings.filter(l => (l.area || '').trim() === areaName);
-    const withPpsm      = areaListings.filter(l => l.askPrice && parseSqm(l.size) >= 10).length;
+    const withPpsm      = areaListings.filter(l => l.askPrice && ppsmSqm(l) !== null).length;
 
     // Bar chart data — only types with at least one listing
     const bars = PPSM_TYPES
@@ -1445,13 +1517,21 @@ function renderAreaAnalysis(areaName) {
     if (!bars.length) {
         barsHtml = `<p class="no-data-note">No listings in ${areaName} have both a valid price and size — nothing to chart yet.</p>`;
     } else {
-        const maxMed = Math.max(...bars.map(d => medianOf(d.vals.map(e => e.ppsm))));
+        const maxMed = Math.max(...bars.map(d => {
+            const act = d.vals.filter(e => !ppsmExclusions.has(`${areaName}:${d.type}:${e.l.id}`));
+            return act.length ? medianOf(act.map(e => e.ppsm)) : medianOf(d.vals.map(e => e.ppsm));
+        }));
         barsHtml = `<div class="bar-chart">` + bars.map(d => {
-            const med     = medianOf(d.vals.map(e => e.ppsm));
-            const limited = d.vals.length < MIN_LISTINGS;
-            const pct     = Math.max(4, Math.round((med / maxMed) * 100));
-            const dispVal = ppsmDisplay(med);
-            const aEsc    = areaName.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+            const allVals  = d.vals;
+            const actVals  = allVals.filter(e => !ppsmExclusions.has(`${areaName}:${d.type}:${e.l.id}`));
+            const nAll     = allVals.length;
+            const nAct     = actVals.length;
+            const hasExcl  = nAct < nAll;
+            const med      = nAct ? medianOf(actVals.map(e => e.ppsm)) : medianOf(allVals.map(e => e.ppsm));
+            const limited  = nAct < MIN_LISTINGS;
+            const pct      = Math.max(4, Math.round((med / maxMed) * 100));
+            const dispVal  = ppsmDisplay(med);
+            const cntText  = hasExcl ? `${nAct} of ${nAll}` : `${nAll}`;
             return `<div class="bar-row">
                 <div class="bar-label">${d.label}</div>
                 <div class="bar-track">
@@ -1459,7 +1539,7 @@ function renderAreaAnalysis(areaName) {
                 </div>
                 <div class="bar-val">
                     ${limited ? '<span class="tilde">~</span>' : ''}${dispVal}/m²
-                    <button class="ppsm-n-btn" onclick="openPpsmDrilldown('${aEsc}','${d.type}')">${d.vals.length}&nbsp;listing${d.vals.length !== 1 ? 's' : ''}${limited ? ' ⚠' : ''}</button>
+                    <button class="ppsm-n-btn${hasExcl ? ' has-excl' : ''}" data-area="${areaName}" data-type="${d.type}">${cntText}&nbsp;listing${nAll !== 1 ? 's' : ''}${limited ? ' ⚠' : ''}</button>
                 </div>
             </div>`;
         }).join('') + `</div>`;
@@ -1526,45 +1606,74 @@ function renderAreaAnalysis(areaName) {
 
 function jumpToListing(id) {
     const l = listings.find(lx => lx.id === id);
-    if (!l) return;
-    goToPage('listings');
-    openListingModal(l);
+    if (l) openListingModal(l);  // stay on current tab — modal is position:fixed
 }
 
 function openPpsmDrilldown(area, type) {
     const entries = ppsmData[area]?.[type];
     if (!entries || !entries.length) return;
+    ppsmDrilldownCtx = { area, type };
+    document.getElementById('ppsm-drilldown-title').textContent = `${area} — ${PPSM_LABELS[type]}`;
+    renderDrilldownList();
+    document.getElementById('ppsm-drilldown-overlay').classList.add('open');
+}
 
-    const sorted = [...entries].sort((a, b) => b.ppsm - a.ppsm);
-    const med    = medianOf(sorted.map(e => e.ppsm));
-    const n      = sorted.length;
+function renderDrilldownList() {
+    if (!ppsmDrilldownCtx) return;
+    const { area, type } = ppsmDrilldownCtx;
+    const entries = ppsmData[area]?.[type] || [];
 
-    document.getElementById('ppsm-drilldown-title').textContent =
-        `${area} — ${PPSM_LABELS[type]}`;
+    const exclKey  = e => `${area}:${type}:${e.l.id}`;
+    const active   = entries.filter(e => !ppsmExclusions.has(exclKey(e))).sort((a, b) => b.ppsm - a.ppsm);
+    const excluded = entries.filter(e =>  ppsmExclusions.has(exclKey(e))).sort((a, b) => b.ppsm - a.ppsm);
+    const n        = entries.length;
+    const nAct     = active.length;
+    const nExcl    = excluded.length;
+    const med      = nAct ? medianOf(active.map(e => e.ppsm)) : null;
+    const halfIdx  = nAct >= 3 ? Math.ceil(nAct / 2) - 1 : -1;
+
     document.getElementById('ppsm-drilldown-sub').textContent =
-        `${n} listing${n !== 1 ? 's' : ''} · Median ${ppsmDisplay(med)}/m² · Sorted by $/m² high → low`;
+        `${nAct}${nExcl ? ` of ${n}` : ''} listing${n !== 1 ? 's' : ''}`
+        + (nExcl ? ` · ${nExcl} excluded` : '')
+        + (med    ? ` · Median ${ppsmDisplay(med)}/m²` : '')
+        + ` · Sorted by $/m² high → low`;
 
-    const listEl  = document.getElementById('ppsm-drilldown-list');
-    const halfIdx = Math.ceil(n / 2) - 1;  // index of the median row
-
-    listEl.innerHTML = sorted.map((e, i) => {
-        const isMedian = i === halfIdx && n >= 3;
-        const idEsc    = e.l.id.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
-        return `<div class="drill-row${isMedian ? ' drill-median-row' : ''}"
-                     onclick="closePpsmDrilldown(); jumpToListing('${idEsc}')">
-            <span class="drill-rank">${i + 1}</span>
+    const makeRow = (e, rank, isExcl, isMed) =>
+        `<div class="drill-row${isMed ? ' drill-median-row' : ''}${isExcl ? ' drill-excluded' : ''}" data-listing-id="${e.l.id}">
+            <span class="drill-rank">${isExcl ? '—' : rank}</span>
             <span class="drill-name">${e.l.name}</span>
             <span class="drill-agency">${e.l.agency.replace(/Real Estate.*/, 'RE').replace(/Realtors?/, '').trim()}</span>
             <span class="drill-price">${formatPrice(e.l.askPrice)}</span>
-            <span class="drill-ppsm${isMedian ? ' drill-median-val' : ''}">${ppsmDisplay(e.ppsm)}/m²</span>
+            <span class="drill-ppsm${isMed ? ' drill-median-val' : ''}">${ppsmDisplay(e.ppsm)}/m²</span>
+            <button class="drill-excl-btn${isExcl ? ' restore' : ''}"
+                    data-area="${area}" data-type="${type}" data-listing-id="${e.l.id}"
+                    title="${isExcl ? 'Restore to median' : 'Exclude from median'}">${isExcl ? '↩' : '✕'}</button>
         </div>`;
-    }).join('');
 
-    document.getElementById('ppsm-drilldown-overlay').classList.add('open');
+    const listEl = document.getElementById('ppsm-drilldown-list');
+    listEl.innerHTML =
+        active.map((e, i) => makeRow(e, i + 1, false, i === halfIdx)).join('')
+        + (nExcl ? `<div class="drill-excl-divider">— ${nExcl} excluded from median —</div>` : '')
+        + excluded.map(e => makeRow(e, null, true, false)).join('');
 }
 
 function closePpsmDrilldown() {
     document.getElementById('ppsm-drilldown-overlay').classList.remove('open');
+    ppsmDrilldownCtx = null;
+}
+
+function togglePpsmExclusion(area, type, listingId) {
+    const key = `${area}:${type}:${listingId}`;
+    if (ppsmExclusions.has(key)) ppsmExclusions.delete(key);
+    else                          ppsmExclusions.add(key);
+    renderDrilldownList();
+    refreshPpsmMatrix();
+}
+
+function refreshPpsmMatrix() {
+    const activeTab = document.querySelector('.area-tab.active');
+    if (!activeTab) return;
+    renderAnalysisTab(activeTab.dataset.area);
 }
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closePpsmDrilldown(); });

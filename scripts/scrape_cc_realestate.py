@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site, parse_price_robust
+from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes
 
 BASE_URL   = "https://www.ccrealestatearuba.com"
 AGENCY     = "CC Real Estate Aruba"
@@ -83,6 +83,11 @@ def parse_card(item):
     m = re.search(r"([\d,.]+)\s*(m²|m2|sqm|sq\.?\s*ft)", text, re.I)
     size = m.group(0).strip() if m else ""
 
+    building_size, lot_size = parse_two_sizes(text)
+    # If parse_two_sizes found nothing but regex got a raw m² value, it's likely building size
+    if not building_size and not lot_size and size:
+        building_size = size
+
     # Status
     status = "active"
     for key, val in CC_STATUS_MAP.items():
@@ -97,16 +102,18 @@ def parse_card(item):
         href = BASE_URL + href
 
     return {
-        "name":      name,
-        "href":      href,
-        "image":     image,
-        "area":      "",
-        "location":  "",
-        "askPrice":  price,
-        "size":      size,
-        "bedrooms":  beds,
-        "bathrooms": baths,
-        "status":    status,
+        "name":         name,
+        "href":         href,
+        "image":        image,
+        "area":         "",
+        "location":     "",
+        "askPrice":     price,
+        "size":         size,
+        "buildingSize": building_size,
+        "lotSize":      lot_size,
+        "bedrooms":     beds,
+        "bathrooms":    baths,
+        "status":       status,
     }
 
 
@@ -157,6 +164,8 @@ def scrape_all():
                     "location":     data["location"],
                     "askPrice":     data["askPrice"],
                     "size":         data["size"],
+                    "buildingSize": data["buildingSize"],
+                    "lotSize":      data["lotSize"],
                     "bedrooms":     data["bedrooms"],
                     "bathrooms":    data["bathrooms"],
                     "agency":       AGENCY,

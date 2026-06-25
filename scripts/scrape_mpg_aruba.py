@@ -23,7 +23,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site, parse_price_robust
+from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes
 
 BASE_URL   = "https://www.mpgaruba.com"
 DATA_JSON  = Path("/Users/alan/Desktop/KD/Website/data.json")
@@ -91,7 +91,7 @@ def parse_cards(soup, listing_type):
         location = clean(loc_el.get_text())      if loc_el   else ""
         price    = parse_price(price_el.get_text() if price_el else "")
 
-        # Attributes: Beds, Baths, Lot size
+        # Attributes: Beds, Baths, size
         attrs    = text_el.find_all(class_="attr-item")
         beds, baths, size = None, None, ""
         for attr in attrs:
@@ -107,20 +107,29 @@ def parse_cards(soup, listing_type):
                 m2 = re.search(r"([\d,]+)\s*m[²2]", val)
                 size = m2.group(0).replace("m2", "m²") if m2 else val
 
+        # Run parse_two_sizes on full card text to distinguish building vs lot
+        card_text = text_el.get_text(" ") if text_el else ""
+        building_size, lot_size = parse_two_sizes(card_text)
+        # Fall back to raw size attr value in buildingSize if neither found
+        if not building_size and not lot_size and size:
+            building_size = size
+
         # Area: first part of location before comma
         area = location.split(",")[0].strip() if location else ""
 
         results.append({
-            "name":      name,
-            "type":      listing_type,
-            "image":     img_url,
-            "location":  location,
-            "area":      area,
-            "askPrice":  price,
-            "size":      size,
-            "bedrooms":  beds,
-            "bathrooms": baths,
-            "sourceUrl": href,
+            "name":         name,
+            "type":         listing_type,
+            "image":        img_url,
+            "location":     location,
+            "area":         area,
+            "askPrice":     price,
+            "size":         size,
+            "buildingSize": building_size,
+            "lotSize":      lot_size,
+            "bedrooms":     beds,
+            "bathrooms":    baths,
+            "sourceUrl":    href,
         })
     return results
 
@@ -211,6 +220,8 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
                 "location":     data["location"],
                 "askPrice":     data["askPrice"],
                 "size":         data["size"],
+                "buildingSize": data["buildingSize"],
+                "lotSize":      data["lotSize"],
                 "bedrooms":     data["bedrooms"],
                 "bathrooms":    data["bathrooms"],
                 "agency":       "MPG Aruba",

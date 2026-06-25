@@ -94,6 +94,72 @@ def parse_price_robust(text: str, prefer_usd: bool = True):
     return None
 
 
+# ── dual-size extraction ────────────────────────────────────────────────────
+
+def parse_two_sizes(text):
+    """
+    Parse building_size (interior/floor area) and lot_size (land parcel) from
+    property text using keyword context.
+
+    Returns: (building_size_str, lot_size_str)
+    Each is a normalised "NNN m²" string or "" when not found.
+    When only one unlabelled m² value appears, it is returned as building_size
+    (safe default — avoids inserting a land parcel value into house/condo $/m²).
+    """
+    if not text:
+        return "", ""
+
+    t = re.sub(r"\s+", " ", text)
+
+    def _m2(pat):
+        m = re.search(pat, t, re.I)
+        if not m:
+            return ""
+        raw = m.group(1).replace(",", "").rstrip(".")
+        try:
+            v = float(raw)
+            return f"{int(v)} m²" if v > 0 else ""
+        except ValueError:
+            return ""
+
+    def _sqft(pat):
+        m = re.search(pat, t, re.I)
+        if not m:
+            return ""
+        raw = m.group(1).replace(",", "").rstrip(".")
+        try:
+            v = float(raw)
+            return f"{round(v * 0.0929)} m²" if v > 0 else ""
+        except ValueError:
+            return ""
+
+    lot_size = (
+        _m2(r"lot\s*(?:size|area)\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")      or
+        _m2(r"land\s*(?:size|area)\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")     or
+        _m2(r"parcel\s*(?:size|area)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")  or
+        _m2(r"plot\s*(?:size|area)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")    or
+        _m2(r"([0-9,.]+)\s*m[²2]\s+(?:of\s+)?(?:lot|land|parcel|plot)\b") or
+        _sqft(r"lot\s*(?:size|area)\s*[:\-]?\s*([0-9,.]+)\s*(?:sq\.?\s*ft|sqft)")
+    )
+
+    building_size = (
+        _m2(r"built[\s\-]?up\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")     or
+        _m2(r"building\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")            or
+        _m2(r"floor\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")               or
+        _m2(r"interior\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")            or
+        _m2(r"living\s*(?:area|space|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")        or
+        _m2(r"house\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")               or
+        _m2(r"([0-9,.]+)\s*m[²2]\s+(?:interior|floor|living|built[\s\-]?up)")      or
+        _sqft(r"(?:built[\s\-]?up|floor|interior|living)\s*(?:area)?\s*[:\-]?\s*([0-9,.]+)\s*(?:sq\.?\s*ft|sqft)")
+    )
+
+    # Fallback: single unlabelled m² → treat as building_size
+    if not building_size and not lot_size:
+        building_size = _m2(r"([0-9,.]+)\s*m[²2]")
+
+    return building_size, lot_size
+
+
 # ── normalisation helpers ────────────────────────────────────────────────────
 
 def _norm_loc(text: str) -> str:
@@ -174,7 +240,9 @@ def dedup_within_site(listings: list, agency_name: str = "") -> tuple:
         # Pass 2: fingerprint
         loc   = _norm_loc(listing.get("location") or listing.get("area") or "")
         price = listing.get("askPrice") or 0
-        size  = _size_m2(listing.get("size") or "")
+        size  = (_size_m2(listing.get("buildingSize") or "") or
+                 _size_m2(listing.get("lotSize")      or "") or
+                 _size_m2(listing.get("size")         or ""))
 
         if loc and price:
             bucket = round(size / 10) * 10 if size else None   # 10 m² bucket
@@ -236,7 +304,9 @@ def dedup_cross_site(listings: list) -> tuple:
         a       = listings[i]
         a_price = a.get("askPrice")
         a_loc   = _norm_loc(a.get("location") or a.get("area") or "")
-        a_size  = _size_m2(a.get("size") or "")
+        a_size  = (_size_m2(a.get("buildingSize") or "") or
+                   _size_m2(a.get("lotSize")      or "") or
+                   _size_m2(a.get("size")         or ""))
 
         if not a_price or not a_loc:
             continue
@@ -265,7 +335,9 @@ def dedup_cross_site(listings: list) -> tuple:
                 continue
 
             # Size within 10% (when both available)
-            b_size = _size_m2(b.get("size") or "")
+            b_size = (_size_m2(b.get("buildingSize") or "") or
+                      _size_m2(b.get("lotSize")      or "") or
+                      _size_m2(b.get("size")         or ""))
             if a_size and b_size:
                 if abs(a_size - b_size) / max(a_size, b_size) > 0.10:
                     continue
@@ -285,7 +357,8 @@ def dedup_cross_site(listings: list) -> tuple:
                     {"agency": b_agency, "sourceUrl": b.get("sourceUrl", "")}
                 )
 
-            for field in ("image", "notes", "bedrooms", "bathrooms", "size"):
+            for field in ("image", "notes", "bedrooms", "bathrooms",
+                         "size", "buildingSize", "lotSize"):
                 if not a.get(field) and b.get(field):
                     a[field] = b[field]
 

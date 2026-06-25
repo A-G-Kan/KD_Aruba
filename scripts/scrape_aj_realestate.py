@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site, parse_price_robust
+from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes
 
 BASE_URL   = "https://ajrealestatearuba.com"
 AGENCY     = "AJ Real Estate Aruba"
@@ -149,17 +149,16 @@ def scrape_detail(page, url):
         m = re.search(r"(\d+)\s*[Bb]athroom", text)
         if m: baths = int(m.group(1))
 
-        size = ""
-        m = re.search(r"([\d,.]+)\s*(m²|m2|sqm|sq\.?\s*ft)", text, re.I)
-        if m: size = m.group(0).strip()
+        building_size, lot_size = parse_two_sizes(text)
+        size = building_size or lot_size
 
         paras = [p.get_text(strip=True) for p in soup.find_all("p") if len(p.get_text(strip=True)) > 60]
         desc = max(paras, key=len, default="")
 
-        return price, beds, baths, size, desc, image
+        return price, beds, baths, size, building_size, lot_size, desc, image
     except Exception as e:
         print(f"    ⚠  Detail failed ({url}): {e}")
-        return None, None, None, "", "", ""
+        return None, None, None, "", "", "", "", ""
 
 
 def scrape_section(browser, section_path, listing_type, seen_urls):
@@ -191,7 +190,7 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
                 seen_urls.add(href)
 
                 print(f"     → {data['name'][:50]}")
-                price, beds, baths, size, desc, detail_image = scrape_detail(page, href)
+                price, beds, baths, size, building_size, lot_size, desc, detail_image = scrape_detail(page, href)
                 time.sleep(0.4)
 
                 slug = href.rstrip("/").split("/")[-1]
@@ -204,6 +203,8 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
                     "location":     data["location"],
                     "askPrice":     price or data["askPrice"],
                     "size":         size or data["size"],
+                    "buildingSize": building_size or lot_size or "",
+                    "lotSize":      lot_size,
                     "bedrooms":     beds or data["bedrooms"],
                     "bathrooms":    baths or data["bathrooms"],
                     "agency":       AGENCY,

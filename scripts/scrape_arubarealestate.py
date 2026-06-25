@@ -23,7 +23,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site, parse_price_robust
+from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes
 
 BASE_URL   = "https://www.arubarealestate.com"
 DATA_JSON  = Path("/Users/alan/Desktop/KD/Website/data.json")
@@ -107,21 +107,28 @@ def parse_card(result_div, listing_type):
 
     beds  = parse_int(beds_el.get_text()  if beds_el  else "")
     baths = parse_int(baths_el.get_text() if baths_el else "")
-    size  = clean(area_el.get_text())     if area_el  else ""
+    # class_="area" element is building/interior area
+    building_size = clean(area_el.get_text()) if area_el else ""
+    # run parse_two_sizes on card text for lotSize
+    card_text = result_div.get_text(" ")
+    _, lot_size = parse_two_sizes(card_text)
+    size = building_size or lot_size
 
     return {
-        "name":      name or "Unknown",
-        "type":      listing_type,
-        "image":     img_url,
-        "location":  location,
-        "area":      parse_area(location),
-        "askPrice":  price,
-        "size":      size,
-        "bedrooms":  beds,
-        "bathrooms": baths,
-        "status":    parse_status(result_div),
-        "excerpt":   excerpt,
-        "sourceUrl": href,
+        "name":         name or "Unknown",
+        "type":         listing_type,
+        "image":        img_url,
+        "location":     location,
+        "area":         parse_area(location),
+        "askPrice":     price,
+        "size":         size,
+        "buildingSize": building_size or size,
+        "lotSize":      lot_size,
+        "bedrooms":     beds,
+        "bathrooms":    baths,
+        "status":       parse_status(result_div),
+        "excerpt":      excerpt,
+        "sourceUrl":    href,
     }
 
 
@@ -200,6 +207,8 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
                 "location":     data["location"],
                 "askPrice":     data["askPrice"],
                 "size":         data["size"],
+                "buildingSize": data["buildingSize"],
+                "lotSize":      data["lotSize"],
                 "bedrooms":     data["bedrooms"],
                 "bathrooms":    data["bathrooms"],
                 "agency":       "Aruba Real Estate",

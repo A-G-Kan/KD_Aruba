@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site, parse_price_robust
+from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes
 
 BASE_URL   = "https://aruba-realty.com"
 AGENCY     = "Prima Casa Real Estate"
@@ -75,18 +75,15 @@ def scrape_detail(page, url):
         if m:
             baths = int(m.group(1))
 
-        size = ""
-        m = re.search(r"([\d,.]+)\s*(m²|sqm|sq\.?\s*ft)", text, re.I)
-        if m:
-            size = m.group(0).strip()
+        building_size, lot_size = parse_two_sizes(text)
 
         paras = [p.get_text(strip=True) for p in soup.find_all("p") if len(p.get_text(strip=True)) > 60]
         desc = max(paras, key=len, default="")
 
-        return beds, baths, size, desc
+        return beds, baths, building_size, lot_size, desc
     except Exception as e:
         print(f"    ⚠  Detail failed ({url}): {e}")
-        return None, None, "", ""
+        return None, None, "", "", ""
 
 
 def scrape_all():
@@ -132,7 +129,7 @@ def scrape_all():
                 status = parse_status(status_raw or price_raw)
 
                 print(f"     → {name[:50]}")
-                beds, baths, size, desc = scrape_detail(page, href)
+                beds, baths, building_size, lot_size, desc = scrape_detail(page, href)
                 time.sleep(0.4)
 
                 slug = href.rstrip("/").split("/")[-1]
@@ -144,7 +141,9 @@ def scrape_all():
                     "area":         location,
                     "location":     location,
                     "askPrice":     price,
-                    "size":         size,
+                    "size":         building_size or lot_size,
+                    "buildingSize": building_size,
+                    "lotSize":      lot_size,
                     "bedrooms":     beds,
                     "bathrooms":    baths,
                     "agency":       AGENCY,

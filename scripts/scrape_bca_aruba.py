@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site, parse_price_robust
+from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes
 
 BASE_URL   = "https://bcarubarealty.com"
 AGENCY     = "Bon Choice Aruba Realty"
@@ -94,7 +94,11 @@ def parse_card(card):
 
     beds  = parse_int(bed_el.get_text()  if bed_el  else "")
     baths = parse_int(bath_el.get_text() if bath_el else "")
-    size  = clean(size_el.get_text())    if size_el else ""
+    # listing_unit_size / item_area / h-area → buildingSize
+    building_size = clean(size_el.get_text()) if size_el else ""
+    # run parse_two_sizes on card text for lotSize
+    _, lot_size = parse_two_sizes(card.get_text(" "))
+    size = building_size or lot_size
 
     # Status
     status = "active"
@@ -104,16 +108,18 @@ def parse_card(card):
         status = BCA_STATUS_MAP.get(st, "active")
 
     return {
-        "name":      name,
-        "href":      href,
-        "image":     image,
-        "location":  location,
-        "area":      location,
-        "askPrice":  price,
-        "size":      size,
-        "bedrooms":  beds,
-        "bathrooms": baths,
-        "status":    status,
+        "name":         name,
+        "href":         href,
+        "image":        image,
+        "location":     location,
+        "area":         location,
+        "askPrice":     price,
+        "size":         size,
+        "buildingSize": building_size,
+        "lotSize":      lot_size,
+        "bedrooms":     beds,
+        "bathrooms":    baths,
+        "status":       status,
     }
 
 
@@ -169,6 +175,8 @@ def scrape_all():
                     "location":     data["location"],
                     "askPrice":     data["askPrice"],
                     "size":         data["size"],
+                    "buildingSize": data["buildingSize"],
+                    "lotSize":      data["lotSize"],
                     "bedrooms":     data["bedrooms"],
                     "bathrooms":    data["bathrooms"],
                     "agency":       AGENCY,

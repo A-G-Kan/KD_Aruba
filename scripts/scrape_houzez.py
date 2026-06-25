@@ -12,7 +12,7 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from deduplicate import dedup_within_site, parse_price_robust
+from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes
 
 DATA_JSON = Path("/Users/alan/Desktop/KD/Website/data.json")
 TODAY     = date.today().isoformat()
@@ -72,7 +72,7 @@ def parse_houzez_card(card):
     beds  = parse_int(beds_el.get_text()  if beds_el  else "")
     baths = parse_int(baths_el.get_text() if baths_el else "")
 
-    # Size
+    # Size — h-area/item-area/h-size → buildingSize
     size_el = card.find(class_=re.compile(r"h-area|item-area|h-size", re.I))
     size    = clean(size_el.get_text()) if size_el else ""
 
@@ -95,16 +95,18 @@ def parse_houzez_card(card):
             status = HOUZEZ_STATUS_MAP[st]
 
     return {
-        "name":      name,
-        "href":      href,
-        "image":     image_url,
-        "location":  location,
-        "area":      location.split(",")[0].strip() if "," in location else location,
-        "askPrice":  price,
-        "size":      size,
-        "bedrooms":  beds,
-        "bathrooms": baths,
-        "status":    status,
+        "name":         name,
+        "href":         href,
+        "image":        image_url,
+        "location":     location,
+        "area":         location.split(",")[0].strip() if "," in location else location,
+        "askPrice":     price,
+        "size":         size,
+        "buildingSize": size,
+        "lotSize":      "",
+        "bedrooms":     beds,
+        "bathrooms":    baths,
+        "status":       status,
     }
 
 
@@ -120,10 +122,12 @@ def scrape_detail(page, url):
         paras = [p.get_text(strip=True) for p in soup.find_all("p") if len(p.get_text(strip=True)) > 60]
         desc = max(paras, key=len, default="")
 
-        return desc
+        building_size, lot_size = parse_two_sizes(text)
+
+        return desc, building_size, lot_size
     except Exception as e:
         print(f"    ⚠  Detail failed ({url}): {e}")
-        return ""
+        return "", "", ""
 
 
 def scrape_houzez_site(browser, base_url, agency, listing_pages, user_agent, seen_urls):
@@ -153,8 +157,11 @@ def scrape_houzez_site(browser, base_url, agency, listing_pages, user_agent, see
                 seen_urls.add(href)
 
                 print(f"     → {data['name'][:50]}")
-                desc = scrape_detail(page, href)
+                desc, detail_building, detail_lot = scrape_detail(page, href)
                 time.sleep(0.4)
+
+                building_size = detail_building or data["buildingSize"]
+                lot_size = detail_lot or data["lotSize"]
 
                 slug = href.rstrip("/").split("/")[-1]
                 results.append({
@@ -165,7 +172,9 @@ def scrape_houzez_site(browser, base_url, agency, listing_pages, user_agent, see
                     "area":         data["area"],
                     "location":     data["location"],
                     "askPrice":     data["askPrice"],
-                    "size":         data["size"],
+                    "size":         building_size or lot_size or data["size"],
+                    "buildingSize": building_size,
+                    "lotSize":      lot_size,
                     "bedrooms":     data["bedrooms"],
                     "bathrooms":    data["bathrooms"],
                     "agency":       agency,

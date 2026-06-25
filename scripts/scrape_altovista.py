@@ -21,7 +21,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site, parse_price_robust
+from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes
 
 BASE_URL   = "https://altovistarealestate.com"
 AGENCY     = "Alto Vista Real Estate"
@@ -98,11 +98,27 @@ def scrape_listing_page(browser, url, listing_type, seen_urls):
             price_el = row.find(class_="price_box")
             price = parse_price(price_el.get_text() if price_el else "")
 
-            # Size from built_up_area
+            # Size from built_up_area → buildingSize (skip zero values from WPL placeholder)
             size_el = row.find(class_="built_up_area")
             size_raw = clean(size_el.get_text()) if size_el else ""
             m = re.search(r"([\d,.]+)\s*(m²|m2|sqm|sq\.?\s*ft)", size_raw or row.get_text(), re.I)
-            size = m.group(0).strip() if m else ""
+            if m:
+                raw_num = float(re.sub(r"[^\d.]", "", m.group(1).replace(",", "")) or "0")
+                building_size = m.group(0).strip() if raw_num > 0 else ""
+            else:
+                building_size = ""
+
+            # Lot size from WPL lot-area classes
+            lot_size = ""
+            for lot_cls in ("lot_area", "wpl_prp_listing_lot_size", "land_area"):
+                lot_el = row.find(class_=lot_cls)
+                if lot_el:
+                    lot_raw = clean(lot_el.get_text())
+                    ml = re.search(r"([\d,.]+)\s*(m²|m2|sqm|sq\.?\s*ft)", lot_raw, re.I)
+                    if ml:
+                        raw_num = float(re.sub(r"[^\d.]", "", ml.group(1).replace(",", "")) or "0")
+                        lot_size = ml.group(0).strip() if raw_num > 0 else ""
+                    break
 
             # Beds / baths from text
             text = row.get_text(" ")
@@ -123,17 +139,24 @@ def scrape_listing_page(browser, url, listing_type, seen_urls):
 
             print(f"     → {name[:50]}")
 
-            # Detail page for description
+            # Detail page for description + supplement sizes
             try:
                 page.goto(href, timeout=20000, wait_until="domcontentloaded")
                 time.sleep(0.8)
                 detail = BeautifulSoup(page.content(), "html.parser")
                 paras  = [p.get_text(strip=True) for p in detail.find_all("p") if len(p.get_text(strip=True)) > 60]
                 desc   = max(paras, key=len, default="")
+                detail_text = detail.get_text(" ", strip=True)
+                detail_building, detail_lot = parse_two_sizes(detail_text)
+                if not building_size and detail_building:
+                    building_size = detail_building
+                if not lot_size and detail_lot:
+                    lot_size = detail_lot
             except Exception:
                 desc = ""
             time.sleep(0.4)
 
+            size = building_size or lot_size
             slug = href.rstrip("/").split("/")[-1]
             results.append({
                 "id":           slug,
@@ -144,6 +167,8 @@ def scrape_listing_page(browser, url, listing_type, seen_urls):
                 "location":     location,
                 "askPrice":     price,
                 "size":         size,
+                "buildingSize": building_size,
+                "lotSize":      lot_size,
                 "bedrooms":     beds,
                 "bathrooms":    baths,
                 "agency":       AGENCY,

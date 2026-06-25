@@ -23,7 +23,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site, parse_price_robust
+from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes
 
 # ── config ─────────────────────────────────────────────────────────────────
 BASE_URL   = "https://century21aruba.com"
@@ -182,15 +182,17 @@ def parse_card(article, listing_type):
 # ── detail page scraper ───────────────────────────────────────────────────────
 
 def scrape_detail(page, url):
-    """Visit a listing detail page and return description text."""
+    """Visit a listing detail page and return (description, building_size, lot_size)."""
     try:
         page.goto(url, timeout=20000, wait_until="domcontentloaded")
         soup = BeautifulSoup(page.content(), "html.parser")
         remarks = soup.find(class_=lambda c: c and "remarks" in c.lower() if c else False)
-        return clean(remarks.get_text()) if remarks else ""
+        desc = clean(remarks.get_text()) if remarks else ""
+        building_size, lot_size = parse_two_sizes(soup.get_text(" ", strip=True))
+        return desc, building_size, lot_size
     except Exception as e:
         print(f"    ⚠  Detail page failed ({url}): {e}")
-        return ""
+        return "", "", ""
 
 
 # ── main scraper ──────────────────────────────────────────────────────────────
@@ -240,9 +242,15 @@ def scrape_section(browser, section_path, listing_type, seen_ids):
 
                 print(f"     {mls}  {data['name'][:45]}")
 
+                detail_building = detail_lot = ""
                 if data["sourceUrl"]:
-                    data["notes"] = scrape_detail(page, data["sourceUrl"])
+                    data["notes"], detail_building, detail_lot = scrape_detail(page, data["sourceUrl"])
                     time.sleep(0.5)
+
+                # Card parse_size → buildingSize for residential; supplement with detail page
+                card_size = data["size"] or ""
+                building_size = detail_building or card_size
+                lot_size = detail_lot
 
                 results.append({
                     "id":           int(mls) if mls.isdigit() else mls,
@@ -252,7 +260,9 @@ def scrape_section(browser, section_path, listing_type, seen_ids):
                     "area":         data["area"],
                     "location":     data["location"],
                     "askPrice":     data["askPrice"],
-                    "size":         data["size"],
+                    "size":         building_size or lot_size or card_size,
+                    "buildingSize": building_size,
+                    "lotSize":      lot_size,
                     "bedrooms":     data["bedrooms"],
                     "bathrooms":    data["bathrooms"],
                     "agency":       "Century 21 Aruba",

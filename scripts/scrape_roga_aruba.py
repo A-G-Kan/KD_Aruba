@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site, parse_price_robust
+from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes
 
 BASE_URL   = "https://rogaruba.com"
 AGENCY     = "Realty One Group Aruba"
@@ -108,10 +108,12 @@ def scrape_detail(page, url):
         paras = [p.get_text(strip=True) for p in soup.find_all("p") if len(p.get_text(strip=True)) > 60]
         desc = max(paras, key=len, default="")
 
-        return image, baths, desc
+        building_size, lot_size = parse_two_sizes(text)
+
+        return image, baths, desc, building_size, lot_size
     except Exception as e:
         print(f"    ⚠  Detail failed ({url}): {e}")
-        return "", None, ""
+        return "", None, "", "", ""
 
 
 def scrape_section(browser, section_path, listing_type, seen_urls):
@@ -140,8 +142,13 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
             seen_urls.add(url)
 
             print(f"     → {data['name'][:50]}")
-            image, baths, desc = scrape_detail(page, url)
+            image, baths, desc, detail_building, detail_lot = scrape_detail(page, url)
             time.sleep(0.4)
+
+            # Card first icon_row → size; treat as buildingSize
+            card_size = data["size"]
+            building_size = detail_building or card_size
+            lot_size = detail_lot
 
             slug = url.rstrip("/").split("/")[-1]
             results.append({
@@ -152,7 +159,9 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
                 "area":         data["area"],
                 "location":     data["location"],
                 "askPrice":     data["askPrice"],
-                "size":         data["size"],
+                "size":         building_size or lot_size or card_size,
+                "buildingSize": building_size,
+                "lotSize":      lot_size,
                 "bedrooms":     data["bedrooms"],
                 "bathrooms":    baths,
                 "agency":       AGENCY,
