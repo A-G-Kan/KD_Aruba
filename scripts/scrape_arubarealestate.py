@@ -122,7 +122,7 @@ def parse_card(result_div, listing_type):
         "area":         parse_area(location),
         "askPrice":     price,
         "size":         size,
-        "buildingSize": building_size or size,
+        "buildingSize": building_size or "",
         "lotSize":      lot_size,
         "bedrooms":     beds,
         "bathrooms":    baths,

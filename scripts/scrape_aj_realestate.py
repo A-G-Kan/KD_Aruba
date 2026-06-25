@@ -40,13 +40,23 @@ SEARCH_SECTIONS = [
     ("/property-type/commercial-properties/", "commercial"),
 ]
 
+# "Sold!" has a trailing "!" on the MH Estate plugin — strip punctuation before lookup.
 AJ_STATUS_MAP = {
-    "sold":          "sold",
-    "under offer":   "under offer",
-    "under contract":"under offer",
-    "price reduced": "price reduced",
-    "on hold":       "on hold",
+    "sold":           "sold",
+    "for sale":       "active",
+    "under offer":    "under offer",
+    "under contract": "under offer",
+    "price reduced":  "price reduced",
+    "on hold":        "on hold",
 }
+
+# Labels in the mh-estate__list__element that indicate building/interior area
+_BUILDING_SIZE_LABELS = re.compile(
+    r"^(?:property|building|floor|interior|living|house)\s*size\s*:", re.I
+)
+_LOT_SIZE_LABELS = re.compile(
+    r"^(?:lot|land|parcel|plot)\s*size\s*:", re.I
+)
 
 
 def clean(text):
@@ -62,6 +72,11 @@ def parse_int(text):
     return int(m.group()) if m else None
 
 
+def _alpha(text):
+    """Lowercase + strip all non-alpha/space characters (handles 'Sold!', etc.)."""
+    return re.sub(r"[^a-z\s]", "", (text or "").lower()).strip()
+
+
 def parse_card(article):
     link_el = article.find("a")
     href    = link_el["href"] if link_el else ""
@@ -71,22 +86,18 @@ def parse_card(article):
     img_el = article.find("img")
     image  = img_el.get("src") or img_el.get("data-src") or "" if img_el else ""
 
-    # Title: h2 or h3 inside article
     h = article.find(["h2", "h3"])
     name = clean(h.get_text()) if h else clean(link_el.get_text()) if link_el else "Unknown"
 
-    # Price: look for AWG or $ amounts
     price_el = article.find(class_=re.compile(r"price", re.I))
     price = parse_price(price_el.get_text() if price_el else "")
     if not price:
         price = parse_price(article.get_text())
 
-    # Beds / baths
     text = article.get_text(" ")
-    beds = parse_int(re.search(r"(\d+)\s*[Bb]edroom", text).group(1) if re.search(r"(\d+)\s*[Bb]edroom", text) else "")
+    beds  = parse_int(re.search(r"(\d+)\s*[Bb]edroom", text).group(1) if re.search(r"(\d+)\s*[Bb]edroom", text) else "")
     baths = parse_int(re.search(r"(\d+)\s*[Bb]athroom", text).group(1) if re.search(r"(\d+)\s*[Bb]athroom", text) else "")
 
-    # Location from class names: mh-attribute-city__noord → Noord
     location = ""
     for cls in article.get("class", []):
         m = re.match(r"mh-attribute-city__(.+)", cls)
@@ -94,15 +105,15 @@ def parse_card(article):
             location = m.group(1).replace("-", " ").title()
             break
 
-    # Size
     size_el = article.find(class_=re.compile(r"size|area|sqft|sqm", re.I))
     size    = clean(size_el.get_text()) if size_el else ""
 
-    # Status
+    # Status from card badge (MH Estate uses mh-label__sold, mh-label__under-contract, etc.)
+    # Strip non-alpha characters before lookup — "Sold!" → "sold"
     status = "active"
     status_el = article.find(class_=re.compile(r"label|badge|tag|status", re.I))
     if status_el:
-        st = clean(status_el.get_text()).lower()
+        st = _alpha(status_el.get_text())
         status = AJ_STATUS_MAP.get(st, "active")
 
     return {
@@ -119,16 +130,25 @@ def parse_card(article):
     }
 
 
+def _parse_m2_from_attr(raw):
+    """Parse 'NNN m2' or 'N,NNN m2' from an attribute list item value."""
+    m = re.search(r"([0-9,. ]+)\s*m[²2]?", raw, re.I)
+    if not m:
+        return ""
+    try:
+        v = float(m.group(1).replace(",", "").replace(" ", ""))
+        return f"{int(v)} m²" if v >= 10 else ""
+    except ValueError:
+        return ""
+
+
 def scrape_detail(page, url):
     try:
         page.goto(url, timeout=20000, wait_until="domcontentloaded")
         time.sleep(0.8)
         soup = BeautifulSoup(page.content(), "html.parser")
-        text = soup.get_text(" ", strip=True)
 
-        # First photo from the swiper gallery (mh-popup-group).
-        # og:image is unreliable — it reflects a manually-pinned featured image,
-        # not necessarily the first gallery photo.
+        # First photo from the swiper gallery.
         image = ""
         gallery = soup.find(class_="mh-popup-group")
         if gallery:
@@ -136,29 +156,59 @@ def scrape_detail(page, url):
             if img:
                 image = img.get("src") or img.get("data-src") or ""
         if not image:
-            # Fallback: first popup link href (full-res URL)
             link = soup.find(class_="mh-popup-group__element")
             if link:
                 image = link.get("href", "")
 
+        text  = soup.get_text(" ", strip=True)
         price = parse_price(text)
 
-        beds = baths = None
-        m = re.search(r"(\d+)\s*[Bb]edroom", text)
-        if m: beds = int(m.group(1))
-        m = re.search(r"(\d+)\s*[Bb]athroom", text)
-        if m: baths = int(m.group(1))
+        paras = [p.get_text(strip=True) for p in soup.find_all("p") if len(p.get_text(strip=True)) > 60]
+        desc  = max(paras, key=len, default="")
 
-        building_size, lot_size = parse_two_sizes(text)
+        # Parse ALL property data from the MH Estate structured attribute list.
+        # This avoids false positives from sidebar filters, related listings, etc.
+        beds = baths = None
+        building_size = lot_size = ""
+        detail_status = None
+
+        for li in soup.find_all(class_="mh-estate__list__element"):
+            raw   = li.get_text(" ", strip=True)
+            lower = raw.lower()
+
+            if lower.startswith("offer type:"):
+                offer_val = _alpha(raw.replace("Offer type:", "").replace("offer type:", ""))
+                detail_status = AJ_STATUS_MAP.get(offer_val)
+
+            elif re.match(r"bedrooms?\s*:", lower):
+                m = re.search(r"(\d+)", raw)
+                if m and beds is None:
+                    beds = int(m.group(1))
+
+            elif re.match(r"bathrooms?\s*:", lower):
+                m = re.search(r"(\d+)", raw)
+                if m and baths is None:
+                    baths = int(m.group(1))
+
+            elif _BUILDING_SIZE_LABELS.match(raw):
+                if not building_size:
+                    building_size = _parse_m2_from_attr(raw)
+
+            elif _LOT_SIZE_LABELS.match(raw):
+                if not lot_size:
+                    lot_size = _parse_m2_from_attr(raw)
+
+        # Fallback for size only: if the attribute list had nothing, try full text.
+        if not building_size and not lot_size:
+            building_size, lot_size = parse_two_sizes(text)
+
         size = building_size or lot_size
 
-        paras = [p.get_text(strip=True) for p in soup.find_all("p") if len(p.get_text(strip=True)) > 60]
-        desc = max(paras, key=len, default="")
+        return price, beds, baths, size, building_size, lot_size, desc, image, detail_status
 
-        return price, beds, baths, size, building_size, lot_size, desc, image
     except Exception as e:
         print(f"    ⚠  Detail failed ({url}): {e}")
-        return None, None, None, "", "", "", "", ""
+        return None, None, None, "", "", "", "", "", None
 
 
 def scrape_section(browser, section_path, listing_type, seen_urls):
@@ -176,7 +226,7 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
             page.goto(url, timeout=30000, wait_until="domcontentloaded")
             time.sleep(2)
 
-            soup = BeautifulSoup(page.content(), "html.parser")
+            soup     = BeautifulSoup(page.content(), "html.parser")
             articles = soup.find_all("article", class_="mh-estate-vertical")
             print(f"   {len(articles)} cards")
             if not articles:
@@ -190,8 +240,15 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
                 seen_urls.add(href)
 
                 print(f"     → {data['name'][:50]}")
-                price, beds, baths, size, building_size, lot_size, desc, detail_image = scrape_detail(page, href)
+                price, beds, baths, size, building_size, lot_size, desc, detail_image, detail_status = scrape_detail(page, href)
                 time.sleep(0.4)
+
+                # For land listings, "Property size" on AJ's site means the parcel area.
+                # If we parsed it as building_size but there's no explicit lot_size, swap.
+                if listing_type == "land" and building_size and not lot_size:
+                    lot_size = building_size
+                    building_size = ""
+                    size = lot_size
 
                 slug = href.rstrip("/").split("/")[-1]
                 results.append({
@@ -203,19 +260,18 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
                     "location":     data["location"],
                     "askPrice":     price or data["askPrice"],
                     "size":         size or data["size"],
-                    "buildingSize": building_size or lot_size or "",
-                    "lotSize":      lot_size,
-                    "bedrooms":     beds or data["bedrooms"],
-                    "bathrooms":    baths or data["bathrooms"],
+                    "buildingSize": building_size or "",
+                    "lotSize":      lot_size or "",
+                    "bedrooms":     beds if beds is not None else data["bedrooms"],
+                    "bathrooms":    baths if baths is not None else data["bathrooms"],
                     "agency":       AGENCY,
                     "listedDate":   TODAY,
                     "sourceUrl":    href,
-                    "status":       data["status"],
+                    "status":       detail_status or data["status"],
                     "priceHistory": [{"date": TODAY, "price": price or data["askPrice"]}],
                     "notes":        desc,
                 })
 
-            # Check for next page
             next_el = soup.find("a", class_=re.compile(r"next|»", re.I))
             if not next_el:
                 break
