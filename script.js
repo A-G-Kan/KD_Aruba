@@ -356,7 +356,7 @@ function daysOnMarket(dateStr) {
 }
 
 function formatType(t) {
-    return { land: 'Land', house: 'House', condo: 'Condo', commercial: 'Commercial' }[t] || t;
+    return { land: 'Land', house: 'House', condo: 'Condo', commercial: 'Commercial', timeshare: 'Timeshare', unknown: 'Unknown' }[t] || t;
 }
 
 

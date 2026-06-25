@@ -21,7 +21,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes
+from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes, infer_listing_type
 
 BASE_URL   = "https://altovistarealestate.com"
 AGENCY     = "Alto Vista Real Estate"
@@ -157,11 +157,15 @@ def scrape_listing_page(browser, url, listing_type, seen_urls):
             time.sleep(0.4)
 
             size = building_size or lot_size
+            # /for-sale/ is a catch-all; infer actual type from name + description.
+            # Dedicated /condominium/ and /land-for-sale/ sections stay as-is.
+            effective_type = (infer_listing_type(name, desc)
+                              if listing_type == "house" else listing_type)
             slug = href.rstrip("/").split("/")[-1]
             results.append({
                 "id":           slug,
                 "name":         name,
-                "type":         listing_type,
+                "type":         effective_type,
                 "image":        image,
                 "area":         location,
                 "location":     location,
@@ -191,7 +195,10 @@ def scrape_all():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         for url, listing_type in LISTING_PAGES:
-            listings.extend(scrape_listing_page(browser, url, listing_type, seen_urls))
+            try:
+                listings.extend(scrape_listing_page(browser, url, listing_type, seen_urls))
+            except Exception as e:
+                print(f"  ⚠  Section {url} skipped: {e}")
             time.sleep(2)
         browser.close()
     return listings

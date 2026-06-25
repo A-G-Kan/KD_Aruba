@@ -728,6 +728,8 @@ body {
 .card-img-wrap.house      { background: linear-gradient(160deg, #1B2B4B, #2E4A7A); }
 .card-img-wrap.condo      { background: linear-gradient(160deg, #1565A7, #2E86C1); }
 .card-img-wrap.commercial { background: linear-gradient(160deg, #A84315, #E07B39); }
+.card-img-wrap.timeshare  { background: linear-gradient(160deg, #6B21A8, #9333EA); }
+.card-img-wrap.unknown    { background: linear-gradient(160deg, #374151, #6B7280); }
 
 .card-img {
     width: 100%;
@@ -2659,6 +2661,7 @@ body {
 .modal-banner.land       { background: linear-gradient(160deg, #2D6A4F, #52B788); }
 .modal-banner.commercial { background: linear-gradient(160deg, #A84315, #E07B39); }
 .modal-banner.timeshare  { background: linear-gradient(160deg, #6B21A8, #9333EA); }
+.modal-banner.unknown    { background: linear-gradient(160deg, #374151, #6B7280); }
 
 .modal-hero-img {
     width: 100%;

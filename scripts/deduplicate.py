@@ -169,6 +169,81 @@ def parse_two_sizes(text):
     return building_size, lot_size
 
 
+# ── property-type inference ─────────────────────────────────────────────────
+
+def infer_listing_type(name, text=""):
+    """
+    Infer property listing type from name and optional body text.
+
+    Priority: timeshare > land > commercial > condo > house > 'unknown'.
+
+    Returns 'unknown' rather than defaulting to 'house' when no type
+    keyword is found — a wrong category is worse than an honest unknown.
+    Valid return values: 'timeshare' | 'land' | 'commercial' | 'condo' |
+                         'house' | 'unknown'
+    """
+    name_l  = (name  or "").lower()
+    text_l  = (text  or "").lower()
+    combined = re.sub(r"\s+", " ", name_l + " " + text_l)
+
+    # 1. Timeshare ── check before condo (resort "suite/unit" ≠ condo)
+    if re.search(r"\btimeshare\b|\bfractional\s+ownership\b", combined):
+        return "timeshare"
+    if re.search(r"\bweek[\s\-]+\d+\b", combined):     # "week 34", "week-34", "Week 16"
+        return "timeshare"
+    if re.search(r"[-–]\s*week\b", combined):      # "– week" / "- week"
+        return "timeshare"
+
+    # 2. Land
+    if re.search(r"\bproperty\s+land\b|\bland\s+for\s+sale\b|\bvacant\s+land\b|\bland\s+parcel\b", combined):
+        return "land"
+    if re.search(r"\blot\b|\bparcel\b|\bplot\b|\bkavel\b|\bterrain\b", combined):
+        return "land"
+    # bare "land" — exclude compound words (island, mainland, highland …)
+    if re.search(r"\bland\b", combined) and not re.search(
+            r"\b(?:is|main|high|ice|free|far|farm|home|dear|ire|thai|nether|english|scotland|green)land\b",
+            combined):
+        return "land"
+
+    # 3. Commercial
+    if re.search(r"\bcommercial\b|\bwarehouse\b|\brestaurant\b|\bhotel\b|\bshowroom\b|\boutlet\b", combined):
+        return "commercial"
+    if re.search(r"\bapartment\s+complex\b|\bapartment\s+building\b|\bapartment\s+block\b", combined):
+        return "commercial"
+    if re.search(r"\bgift\s+store\b|\bturnkey\s+business\b|\boffice\s+building\b|\boffice\s+space\b|\boffice\s+park\b", combined):
+        return "commercial"
+    # "office" in name alone (not "home office")
+    if re.search(r"\boffice\b", name_l) and not re.search(r"\bhome\s+office\b", combined):
+        return "commercial"
+    # "building" in name without residential context
+    if re.search(r"\bbuilding\b", name_l) and not re.search(
+            r"\bhouse\b|\bhome\b|\bvilla\b|\bunder\s+construction\b|\bnew\s+built?\b|\bnewly\s+built?\b",
+            combined):
+        return "commercial"
+
+    # 4. Condo
+    if re.search(r"\bcondo(?:minium)?\b|\bpenthouse\b", combined):
+        return "condo"
+    if re.search(r"\btownhom\w*\b|\btownhous\w*\b", combined):
+        return "condo"
+    if re.search(r"\bapartment\b", combined) and not re.search(r"\bcomplex\b|\bbuilding\b|\bblock\b", combined):
+        return "condo"
+    if re.search(r"\bunit\b", combined):
+        return "condo"
+    if re.search(r"\bsuite\b", combined):
+        return "condo"
+    if re.search(r"\bstudio\b", combined):
+        return "condo"
+
+    # 5. House
+    if re.search(r"\bhouses?\b|\bvillas?\b|\bhomes?\b|\bduplex\b|\bfixer.upper\b"
+                 r"|\bresidences?\b|\bcottage\b|\bbungalow\b|\bmanor\b", combined):
+        return "house"
+
+    # 6. Cannot determine from available text
+    return "unknown"
+
+
 # ── normalisation helpers ────────────────────────────────────────────────────
 
 def _norm_loc(text: str) -> str:

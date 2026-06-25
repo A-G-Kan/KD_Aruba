@@ -20,6 +20,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from scrape_houzez import scrape_houzez_site, save_houzez
+from deduplicate import infer_listing_type
 
 AGENCY     = "RES Aruba Realty"
 USER_AGENT = (
@@ -43,5 +44,12 @@ if __name__ == "__main__":
         listings = scrape_houzez_site(browser, "https://resarubarealty.com",
                                       AGENCY, LISTING_PAGES, USER_AGENT, seen_urls)
         browser.close()
+
+    # "residential" and "villas" sections are broad catch-alls; re-infer for any
+    # listing that came in as "house" to catch condos and commercial that slip through.
+    for l in listings:
+        if l.get("type") == "house":
+            l["type"] = infer_listing_type(l["name"], l.get("notes", ""))
+
     print(f"\nScraped {len(listings)} listings. Saving …")
     save_houzez(listings, AGENCY)

@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes
+from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes, infer_listing_type
 
 BASE_URL   = "https://www.ccrealestatearuba.com"
 AGENCY     = "CC Real Estate Aruba"
@@ -114,6 +114,7 @@ def parse_card(item):
         "bedrooms":     beds,
         "bathrooms":    baths,
         "status":       status,
+        "_text":        text,   # full card text for type inference
     }
 
 
@@ -158,7 +159,7 @@ def scrape_all():
                 results.append({
                     "id":           slug,
                     "name":         data["name"],
-                    "type":         "house",
+                    "type":         infer_listing_type(data["name"], data.get("_text", "")),
                     "image":        data["image"],
                     "area":         data["area"],
                     "location":     data["location"],
