@@ -705,7 +705,6 @@ let applyRentalFilters = null; // set by initRentalFilters, used by refreshPrice
 
 function initListingFilters() {
     const typeButtons = document.querySelectorAll('[data-lfilter]');
-    const statusSel   = document.getElementById('l-status-filter');
     const areaSel     = document.getElementById('l-area-filter');
     const sortSel     = document.getElementById('l-sort');
     const searchInput = document.getElementById('l-search');
@@ -718,16 +717,13 @@ function initListingFilters() {
     let searchTerm      = '';
     let activeAgencies  = new Set(); // empty = All
 
-    // Keep pill highlights and dropdown in sync with activeStatuses
+    // Refresh status pill highlights to match activeStatuses
     function refreshStatusPills() {
         document.querySelectorAll('.stat-pill[data-status]').forEach(pill => {
             const st = pill.dataset.status;
             pill.classList.toggle('status-active',
                 st === 'total' ? activeStatuses.size === 0 : activeStatuses.has(st));
         });
-        if (statusSel) {
-            statusSel.value = (activeStatuses.size === 1) ? [...activeStatuses][0] : 'all';
-        }
     }
 
     function apply() {
@@ -807,11 +803,6 @@ function initListingFilters() {
         apply();
     }));
 
-    statusSel.addEventListener('change', () => {
-        activeStatuses.clear();
-        if (statusSel.value !== 'all') activeStatuses.add(statusSel.value);
-        apply();
-    });
     areaSel.addEventListener('change',     () => { activeArea   = areaSel.value;     apply(); });
     if (sortSel) sortSel.addEventListener('change', () => apply());
     m2MinInput.addEventListener('input',   () => apply());
