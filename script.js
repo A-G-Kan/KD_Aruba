@@ -479,16 +479,18 @@ function renderDashboardStats() {
 // ============================================================
 
 function renderListingStats() {
-    document.getElementById('l-total').textContent   = listings.length;
-    document.getElementById('l-active').textContent  = listings.filter(l => l.status === 'active' && !l.archived).length;
-    document.getElementById('l-reduced').textContent = listings.filter(l => l.status === 'price reduced' && !l.archived).length;
-    document.getElementById('l-offer').textContent   = listings.filter(l => l.status === 'under offer' && !l.archived).length;
-    document.getElementById('l-sold').textContent    = listings.filter(l => l.status === 'sold' && !l.archived).length;
+    document.getElementById('l-total').textContent    = listings.filter(l => !l.archived).length;
+    document.getElementById('l-active').textContent   = listings.filter(l => l.status === 'active' && !l.archived).length;
+    document.getElementById('l-reduced').textContent  = listings.filter(l => l.status === 'price reduced' && !l.archived).length;
+    document.getElementById('l-offer').textContent    = listings.filter(l => l.status === 'under offer' && !l.archived).length;
+    document.getElementById('l-sold').textContent     = listings.filter(l => l.status === 'sold' && !l.archived).length;
+    document.getElementById('l-archived').textContent = listings.filter(l => l.archived).length;
 }
 
 // ── Archive ────────────────────────────────────────────────────────────────
 
 let hasUnsavedArchiveChanges = false;
+let archivedViewActive = false; // true when Archived pill is selected in initListingFilters
 
 function toggleArchive(id) {
     const l = listings.find(x => x.id === id);
@@ -499,11 +501,12 @@ function toggleArchive(id) {
     applyListingFilters();
     renderArchivedSection();
     renderListingStats();
-    // Refresh home snapshot (exclude archived)
     renderListingsGrid(listings.filter(x => !x.archived && x.status !== 'sold').slice(0, 4), 'home-listings-grid');
-    showToast(l.archived
-        ? `"${l.name}" archived — export data.json to share with partners`
-        : `"${l.name}" restored to listings`);
+    if (l.archived) {
+        showToast(`Archived "${l.name}"`, { label: 'Undo', fn: () => toggleArchive(l.id) });
+    } else {
+        showToast(`"${l.name}" restored to listings`);
+    }
 }
 
 function renderArchivedSection() {
@@ -515,12 +518,13 @@ function renderArchivedSection() {
     const archivedListings = listings.filter(l => l.archived === true);
     if (countEl) countEl.textContent = `${archivedListings.length} archived`;
 
-    sec.style.display = archivedListings.length > 0 ? 'block' : 'none';
-
-    if (archivedListings.length === 0) {
+    // Hide the bottom section when archived listings are already shown in the main grid
+    if (archivedViewActive || archivedListings.length === 0) {
+        sec.style.display = 'none';
         grid.innerHTML = '';
         return;
     }
+    sec.style.display = 'block';
     renderListingsGrid(archivedListings, 'archived-listings-grid');
 }
 
@@ -539,7 +543,7 @@ function exportDataJson() {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-    showToast('data.json downloaded — replace the file in your repo, then git commit & push to share with partners');
+    showToast('data.json exported — commit and push to share with partners');
     hasUnsavedArchiveChanges = false;
     updateExportBanner();
 }
@@ -731,22 +735,30 @@ function initListingFilters() {
         const m2Max  = m2MaxInput.value !== '' ? parseFloat(m2MaxInput.value) : null;
         const sortBy = sortSel ? sortSel.value : 'default';
 
-        // Archived listings always live in their own section — never in main grid.
-        let result = [...listings].filter(l => !l.archived);
+        archivedViewActive = activeStatuses.has('archived');
+
+        // Base filter: archived view shows only archived; normal view excludes archived
+        let result = archivedViewActive
+            ? [...listings].filter(l => l.archived === true)
+            : [...listings].filter(l => !l.archived);
+
         if (activeAgencies.size > 0) result = result.filter(l => activeAgencies.has(l.agency));
         if (activeType !== 'all') result = result.filter(l => l.type === activeType);
 
-        // Status filter — sold always lives in its own section unless explicitly selected
-        if (activeStatuses.size === 0) {
-            result = result.filter(l => l.status !== 'sold');
-        } else {
-            result = result.filter(l => activeStatuses.has(l.status));
+        if (!archivedViewActive) {
+            // Status filter only applies outside archived view
+            if (activeStatuses.size === 0) {
+                result = result.filter(l => l.status !== 'sold');
+            } else {
+                result = result.filter(l => activeStatuses.has(l.status));
+            }
         }
 
-        // Hide sold section when sold listings are shown in the main grid (avoid double display)
+        // Sold section: hide when browsing sold in main grid, or when in archived view
         const soldSec = document.getElementById('sold-section');
-        if (soldSec) soldSec.style.display = activeStatuses.has('sold') ? 'none' : 'block';
-        renderSoldSection();
+        const showSold = !archivedViewActive && !activeStatuses.has('sold');
+        if (soldSec) soldSec.style.display = showSold ? 'block' : 'none';
+        if (!archivedViewActive) renderSoldSection();
         refreshStatusPills();
 
         if (activeArea   !== 'all') result = result.filter(l => l.area === activeArea);
@@ -820,16 +832,28 @@ function initListingFilters() {
         });
     });
 
-    // Status pill click handlers
+    // Status pill click handlers — Archived is exclusive (can't combine with other statuses)
     document.querySelectorAll('.stat-pill[data-status]').forEach(pill => {
         pill.addEventListener('click', () => {
             const st = pill.dataset.status;
             if (st === 'total') {
                 activeStatuses.clear();
-            } else if (activeStatuses.has(st)) {
-                activeStatuses.delete(st);
+            } else if (st === 'archived') {
+                // Toggle archived view exclusively
+                if (activeStatuses.has('archived')) {
+                    activeStatuses.clear();
+                } else {
+                    activeStatuses.clear();
+                    activeStatuses.add('archived');
+                }
             } else {
-                activeStatuses.add(st);
+                // Regular status — exit archived view if active, then toggle this status
+                activeStatuses.delete('archived');
+                if (activeStatuses.has(st)) {
+                    activeStatuses.delete(st);
+                } else {
+                    activeStatuses.add(st);
+                }
             }
             apply();
         });
@@ -1554,17 +1578,31 @@ function formatBytes(bytes) {
 //  TOAST NOTIFICATION
 // ============================================================
 
-function showToast(message) {
+function showToast(message, action) {
     let toast = document.getElementById('kd-toast');
     if (!toast) {
         toast = document.createElement('div');
         toast.id = 'kd-toast';
         document.body.appendChild(toast);
     }
-    toast.textContent = message;
-    toast.classList.add('show');
     clearTimeout(toast._timer);
-    toast._timer = setTimeout(() => toast.classList.remove('show'), 3000);
+    toast.innerHTML = '';
+    const span = document.createElement('span');
+    span.textContent = message;
+    toast.appendChild(span);
+    if (action) {
+        const btn = document.createElement('button');
+        btn.className = 'toast-action-btn';
+        btn.textContent = action.label;
+        btn.onclick = () => {
+            clearTimeout(toast._timer);
+            toast.classList.remove('show');
+            action.fn();
+        };
+        toast.appendChild(btn);
+    }
+    toast.classList.add('show');
+    toast._timer = setTimeout(() => toast.classList.remove('show'), 4000);
 }
 
 

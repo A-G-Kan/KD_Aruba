@@ -265,11 +265,10 @@
                 <span class="agent-banner-sync">Last updated: <span id="last-sync-time">never</span></span>
             </div>
 
-            <!-- Archive export banner — shown when there are unsaved archive changes -->
-            <div class="archive-export-banner" id="archive-export-banner" style="display:none">
-                <span>You have unsaved archive changes.</span>
-                <button onclick="exportDataJson()">Download data.json</button>
-                <span class="archive-banner-hint">Replace the file in your repo and push to share with partners.</span>
+            <!-- Compact save chip — appears when archive changes are unsaved -->
+            <div class="archive-save-chip" id="archive-export-banner" style="display:none">
+                <span class="archive-save-text">Unsaved archive changes</span>
+                <button class="archive-save-btn" onclick="exportDataJson()">Save &amp; export</button>
             </div>
 
             <div class="listings-controls-bar">
@@ -286,6 +285,7 @@
                     <div class="stat-pill" data-status="price reduced"><span class="stat-label">Price Reduced</span><span class="stat-value green" id="l-reduced">—</span></div>
                     <div class="stat-pill" data-status="under offer"><span class="stat-label">Under Offer</span><span class="stat-value yellow" id="l-offer">—</span></div>
                     <div class="stat-pill" data-status="sold"><span class="stat-label">Sold</span><span class="stat-value" id="l-sold">—</span></div>
+                    <div class="stat-pill" data-status="archived"><span class="stat-label">Archived</span><span class="stat-value muted" id="l-archived">—</span></div>
                 </div>
                 <div class="page-size-ctrl">
                     <span class="ctrl-label">Per page:</span>

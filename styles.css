@@ -375,6 +375,7 @@ body {
 
 .stat-value.green  { color: var(--available); }
 .stat-value.yellow { color: #CA8A04; }
+.stat-value.muted  { color: var(--text-muted); }
 
 /* ===========================
    HOME PAGE
@@ -1324,40 +1325,44 @@ body {
    ARCHIVE EXPORT BANNER
    =========================== */
 
-.archive-export-banner {
+/* Compact unsaved-archive chip — replaces the old alarming yellow banner */
+.archive-save-chip {
     display: flex;
     align-items: center;
-    gap: 10px;
-    background: #FFFBEB;
-    border: 1px solid #FCD34D;
-    border-radius: 8px;
-    padding: 10px 14px;
-    margin-bottom: 14px;
-    font-size: 13px;
-    color: #92400E;
-    flex-wrap: wrap;
+    gap: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 5px 5px 5px 12px;
+    margin-bottom: 10px;
+    width: fit-content;
+    margin-left: auto;
+    box-shadow: var(--shadow);
 }
 
-.archive-export-banner button {
-    background: #F59E0B;
+.archive-save-text {
+    font-size: 12px;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.archive-save-btn {
+    background: var(--primary);
     color: #fff;
     border: none;
-    border-radius: 6px;
-    padding: 5px 12px;
+    border-radius: 16px;
+    padding: 4px 11px;
     font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.15s;
+    transition: opacity 0.15s;
+    white-space: nowrap;
 }
 
-.archive-export-banner button:hover { background: #D97706; }
+.archive-save-btn:hover { opacity: 0.85; }
 
-.archive-banner-hint {
-    font-size: 11px;
-    color: #B45309;
-    opacity: 0.85;
-}
+.archive-banner-hint { display: none; }
 
 /* ===========================
    ARCHIVED SECTION
@@ -2844,7 +2849,7 @@ body {
     transform: translateX(-50%) translateY(20px);
     background: var(--primary);
     color: #fff;
-    padding: 10px 22px;
+    padding: 10px 16px 10px 22px;
     border-radius: 24px;
     font-size: 13px;
     font-weight: 500;
@@ -2854,12 +2859,31 @@ body {
     pointer-events: none;
     z-index: 9999;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 #kd-toast.show {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
 }
+
+.toast-action-btn {
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.35);
+    color: #fff;
+    border-radius: 12px;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.toast-action-btn:hover { background: rgba(255,255,255,0.28); }
 
 /* ===========================
    MODAL
@@ -3462,17 +3486,7 @@ body {
     color: #6EE7B7;
 }
 
-[data-theme="dark"] .archive-export-banner,
-[data-theme="bloomberg"] .archive-export-banner,
-[data-theme="teal-dark"] .archive-export-banner {
-    background: rgba(245,158,11,0.08);
-    border-color: rgba(245,158,11,0.3);
-    color: #F59E0B;
-}
-
-[data-theme="dark"] .archive-banner-hint,
-[data-theme="bloomberg"] .archive-banner-hint,
-[data-theme="teal-dark"] .archive-banner-hint { color: rgba(245,158,11,0.7); }
+/* archive-export-banner is now .archive-save-chip — inherits CSS variables, no theme overrides needed */
 
 /* ===========================
    BLOOMBERG TERMINAL THEME
