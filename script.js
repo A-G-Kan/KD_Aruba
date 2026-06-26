@@ -702,10 +702,22 @@ function initListingFilters() {
     const m2MaxInput  = document.getElementById('l-m2-max');
 
     let activeType      = 'all';
-    let activeStatus    = 'all';
+    let activeStatuses  = new Set(); // empty = All statuses (except sold, which lives in its section)
     let activeArea      = 'all';
     let searchTerm      = '';
     let activeAgencies  = new Set(); // empty = All
+
+    // Keep pill highlights and dropdown in sync with activeStatuses
+    function refreshStatusPills() {
+        document.querySelectorAll('.stat-pill[data-status]').forEach(pill => {
+            const st = pill.dataset.status;
+            pill.classList.toggle('status-active',
+                st === 'total' ? activeStatuses.size === 0 : activeStatuses.has(st));
+        });
+        if (statusSel) {
+            statusSel.value = (activeStatuses.size === 1) ? [...activeStatuses][0] : 'all';
+        }
+    }
 
     function apply() {
         const m2Min  = m2MinInput.value !== '' ? parseFloat(m2MinInput.value) : null;
@@ -717,19 +729,18 @@ function initListingFilters() {
         if (activeAgencies.size > 0) result = result.filter(l => activeAgencies.has(l.agency));
         if (activeType !== 'all') result = result.filter(l => l.type === activeType);
 
-        // Sold listings live in their own section; exclude them from the main
-        // grid unless the user has explicitly selected "sold" in the filter.
-        if (activeStatus === 'all') {
+        // Status filter — sold always lives in its own section unless explicitly selected
+        if (activeStatuses.size === 0) {
             result = result.filter(l => l.status !== 'sold');
         } else {
-            result = result.filter(l => l.status === activeStatus);
+            result = result.filter(l => activeStatuses.has(l.status));
         }
 
-        // Show/hide the dedicated sold section (hidden when user is already
-        // browsing sold in the main grid to avoid showing them twice).
+        // Hide sold section when sold listings are shown in the main grid (avoid double display)
         const soldSec = document.getElementById('sold-section');
-        if (soldSec) soldSec.style.display = (activeStatus === 'sold') ? 'none' : 'block';
+        if (soldSec) soldSec.style.display = activeStatuses.has('sold') ? 'none' : 'block';
         renderSoldSection();
+        refreshStatusPills();
 
         if (activeArea   !== 'all') result = result.filter(l => l.area === activeArea);
         if (m2Min !== null) result = result.filter(l => { const s = primarySqm(l); return s !== null && s >= m2Min; });
@@ -785,7 +796,11 @@ function initListingFilters() {
         apply();
     }));
 
-    statusSel.addEventListener('change',   () => { activeStatus = statusSel.value;   apply(); });
+    statusSel.addEventListener('change', () => {
+        activeStatuses.clear();
+        if (statusSel.value !== 'all') activeStatuses.add(statusSel.value);
+        apply();
+    });
     areaSel.addEventListener('change',     () => { activeArea   = areaSel.value;     apply(); });
     if (sortSel) sortSel.addEventListener('change', () => apply());
     m2MinInput.addEventListener('input',   () => apply());
@@ -800,6 +815,21 @@ function initListingFilters() {
             pageSize = parseInt(btn.dataset.size, 10);
             currentPage = 1;
             renderPage(1);
+        });
+    });
+
+    // Status pill click handlers
+    document.querySelectorAll('.stat-pill[data-status]').forEach(pill => {
+        pill.addEventListener('click', () => {
+            const st = pill.dataset.status;
+            if (st === 'total') {
+                activeStatuses.clear();
+            } else if (activeStatuses.has(st)) {
+                activeStatuses.delete(st);
+            } else {
+                activeStatuses.add(st);
+            }
+            apply();
         });
     });
 

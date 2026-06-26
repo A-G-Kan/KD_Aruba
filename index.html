@@ -251,13 +251,6 @@
                     <h1>Market Listings</h1>
                     <p class="page-sub">Properties currently listed on Aruba RE agency websites — monitored by your agent</p>
                 </div>
-                <div class="header-stats">
-                    <div class="stat-pill"><span class="stat-label">Total</span><span class="stat-value" id="l-total">—</span></div>
-                    <div class="stat-pill"><span class="stat-label">Active</span><span class="stat-value green" id="l-active">—</span></div>
-                    <div class="stat-pill"><span class="stat-label">Price Reduced</span><span class="stat-value green" id="l-reduced">—</span></div>
-                    <div class="stat-pill"><span class="stat-label">Under Offer</span><span class="stat-value yellow" id="l-offer">—</span></div>
-                    <div class="stat-pill"><span class="stat-label">Sold</span><span class="stat-value" id="l-sold">—</span></div>
-                </div>
             </div>
 
             <!-- Agent feed banner -->
@@ -291,6 +284,15 @@
 
             <!-- Agency filter — buttons built by JS from listings data -->
             <div class="agency-filter-bar" id="agency-filter-bar"></div>
+
+            <!-- Status filter pills — centered, clickable multi-select (Total = reset) -->
+            <div class="status-filter-bar" id="status-filter-bar">
+                <div class="stat-pill status-active" data-status="total"><span class="stat-label">Total</span><span class="stat-value" id="l-total">—</span></div>
+                <div class="stat-pill" data-status="active"><span class="stat-label">Active</span><span class="stat-value green" id="l-active">—</span></div>
+                <div class="stat-pill" data-status="price reduced"><span class="stat-label">Price Reduced</span><span class="stat-value green" id="l-reduced">—</span></div>
+                <div class="stat-pill" data-status="under offer"><span class="stat-label">Under Offer</span><span class="stat-value yellow" id="l-offer">—</span></div>
+                <div class="stat-pill" data-status="sold"><span class="stat-label">Sold</span><span class="stat-value" id="l-sold">—</span></div>
+            </div>
 
             <div class="filter-bar">
                 <div class="filter-types">
