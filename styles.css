@@ -537,6 +537,56 @@ body {
     flex-wrap: wrap;
 }
 
+/* Agency multi-select filter bar */
+.agency-filter-bar {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 10px 18px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    box-shadow: var(--shadow);
+}
+
+.agency-filter-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-right: 4px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.agency-filter-btn {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 5px 11px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+}
+
+.agency-filter-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.agency-filter-btn.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
 .filter-right select,
 .filter-right input {
     border: 1px solid var(--border);
@@ -1176,6 +1226,171 @@ body {
 
 /* purple stat */
 .purple-bg { background: #EDE9FE; color: #5B21B6; }
+
+/* ===========================
+   CARD ACTION ROW
+   =========================== */
+
+.card-action-row {
+    display: flex;
+    gap: 6px;
+    align-items: stretch;
+    margin-top: 12px;
+}
+
+.card-action-row .add-to-tracker-btn {
+    flex: 1;
+    display: block;
+    width: auto;
+    margin-top: 0;
+}
+
+/* ===========================
+   ARCHIVE BUTTON
+   =========================== */
+
+.archive-btn {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 7px 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-muted);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    flex-shrink: 0;
+}
+
+.archive-btn:hover {
+    border-color: #9CA3AF;
+    color: var(--text);
+    background: var(--accent-light);
+}
+
+.archive-btn.restore {
+    border-color: #6EE7B7;
+    color: #065F46;
+    background: #ECFDF5;
+}
+
+.archive-btn.restore:hover {
+    background: #D1FAE5;
+}
+
+/* ===========================
+   ARCHIVE EXPORT BANNER
+   =========================== */
+
+.archive-export-banner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #FFFBEB;
+    border: 1px solid #FCD34D;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 14px;
+    font-size: 13px;
+    color: #92400E;
+    flex-wrap: wrap;
+}
+
+.archive-export-banner button {
+    background: #F59E0B;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.archive-export-banner button:hover { background: #D97706; }
+
+.archive-banner-hint {
+    font-size: 11px;
+    color: #B45309;
+    opacity: 0.85;
+}
+
+/* ===========================
+   ARCHIVED SECTION
+   =========================== */
+
+.archived-section {
+    margin-top: 48px;
+    padding-top: 28px;
+    border-top: 2px dashed var(--border);
+}
+
+/* ===========================
+   EXPORT DATA BUTTON (in archived section header)
+   =========================== */
+
+.export-data-btn {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 7px 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: opacity 0.15s;
+}
+
+.export-data-btn:hover { opacity: 0.85; }
+
+/* ===========================
+   SOLD SECTION
+   =========================== */
+
+.sold-section {
+    margin-top: 48px;
+    padding-top: 28px;
+    border-top: 2px solid var(--border);
+}
+
+.sold-section-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.sold-section-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 4px;
+}
+
+.sold-section-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.sold-section-count {
+    flex-shrink: 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--sold);
+    background: #F3F4F6;
+    border-radius: 20px;
+    padding: 4px 12px;
+    white-space: nowrap;
+    margin-top: 2px;
+}
 
 /* ===========================
    PORTFOLIO EMPTY STATE
@@ -2744,6 +2959,7 @@ body {
     .home-stats { grid-template-columns: repeat(2, 1fr); }
     .metrics-grid { grid-template-columns: repeat(2, 1fr); }
     .metric-value { font-size: 24px; }
+    .agency-filter-bar { padding: 8px 14px; }
     .filter-bar { flex-direction: column; align-items: flex-start; }
     .filter-right { width: 100%; }
     .filter-right input { width: 100%; }
@@ -3206,6 +3422,33 @@ body {
 [data-theme="dark"] .area-price-val,
 [data-theme="dark"] .area-row-value,
 [data-theme="dark"] .file-name { color: var(--text); }
+
+[data-theme="dark"] .sold-section-count,
+[data-theme="bloomberg"] .sold-section-count,
+[data-theme="teal-dark"] .sold-section-count {
+    background: rgba(255,255,255,0.08);
+    color: var(--text-muted);
+}
+
+[data-theme="dark"] .archive-btn.restore,
+[data-theme="bloomberg"] .archive-btn.restore,
+[data-theme="teal-dark"] .archive-btn.restore {
+    background: rgba(110,231,183,0.1);
+    border-color: rgba(110,231,183,0.3);
+    color: #6EE7B7;
+}
+
+[data-theme="dark"] .archive-export-banner,
+[data-theme="bloomberg"] .archive-export-banner,
+[data-theme="teal-dark"] .archive-export-banner {
+    background: rgba(245,158,11,0.08);
+    border-color: rgba(245,158,11,0.3);
+    color: #F59E0B;
+}
+
+[data-theme="dark"] .archive-banner-hint,
+[data-theme="bloomberg"] .archive-banner-hint,
+[data-theme="teal-dark"] .archive-banner-hint { color: rgba(245,158,11,0.7); }
 
 /* ===========================
    BLOOMBERG TERMINAL THEME

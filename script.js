@@ -138,7 +138,7 @@ function setCurrency(cur) {
 function refreshPriceDisplays() {
     // Re-render the paginated listings grid and home snapshot
     if (typeof applyListingFilters === 'function') applyListingFilters();
-    renderListingsGrid(listings.slice(0, 4), 'home-listings-grid');
+    renderListingsGrid(listings.filter(l => !l.archived && l.status !== 'sold').slice(0, 4), 'home-listings-grid');
     // Re-render analysis tab so $/m² figures switch currency
     const activeAreaTab = document.querySelector('.area-tab.active');
     if (activeAreaTab) renderAnalysisTab(activeAreaTab.dataset.area);
@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function initApp() {
     initSidebarNav();
     renderDashboardStats();
-    renderListingsGrid(listings, 'home-listings-grid', 4);
+    renderListingsGrid(listings.filter(l => !l.archived && l.status !== 'sold'), 'home-listings-grid', 4);
     renderListingStats();
     renderTrackerTable(trackerItems);
     renderTrackerStats();
@@ -305,6 +305,7 @@ function initApp() {
     initAreaTabs();
     renderAnalysisTab('all');
     initListingFilters();
+    renderArchivedSection();
     initTrackerFilters();
     setAgentStatus();
     loadNotes();
@@ -474,9 +475,89 @@ function renderDashboardStats() {
 
 function renderListingStats() {
     document.getElementById('l-total').textContent   = listings.length;
-    document.getElementById('l-active').textContent  = listings.filter(l => l.status === 'active').length;
-    document.getElementById('l-reduced').textContent = listings.filter(l => l.status === 'price reduced').length;
-    document.getElementById('l-offer').textContent   = listings.filter(l => l.status === 'under offer').length;
+    document.getElementById('l-active').textContent  = listings.filter(l => l.status === 'active' && !l.archived).length;
+    document.getElementById('l-reduced').textContent = listings.filter(l => l.status === 'price reduced' && !l.archived).length;
+    document.getElementById('l-offer').textContent   = listings.filter(l => l.status === 'under offer' && !l.archived).length;
+    document.getElementById('l-sold').textContent    = listings.filter(l => l.status === 'sold' && !l.archived).length;
+}
+
+// ── Archive ────────────────────────────────────────────────────────────────
+
+let hasUnsavedArchiveChanges = false;
+
+function toggleArchive(id) {
+    const l = listings.find(x => x.id === id);
+    if (!l) return;
+    l.archived = !l.archived;
+    hasUnsavedArchiveChanges = true;
+    updateExportBanner();
+    applyListingFilters();
+    renderArchivedSection();
+    renderListingStats();
+    // Refresh home snapshot (exclude archived)
+    renderListingsGrid(listings.filter(x => !x.archived && x.status !== 'sold').slice(0, 4), 'home-listings-grid');
+    showToast(l.archived
+        ? `"${l.name}" archived — export data.json to share with partners`
+        : `"${l.name}" restored to listings`);
+}
+
+function renderArchivedSection() {
+    const sec     = document.getElementById('archived-section');
+    const grid    = document.getElementById('archived-listings-grid');
+    const countEl = document.getElementById('archived-section-count');
+    if (!sec || !grid) return;
+
+    const archivedListings = listings.filter(l => l.archived === true);
+    if (countEl) countEl.textContent = `${archivedListings.length} archived`;
+
+    sec.style.display = archivedListings.length > 0 ? 'block' : 'none';
+
+    if (archivedListings.length === 0) {
+        grid.innerHTML = '';
+        return;
+    }
+    renderListingsGrid(archivedListings, 'archived-listings-grid');
+}
+
+function exportDataJson() {
+    const exportData = {
+        listings:     listings,
+        agentMeta:    agentMeta,
+        trackerItems: trackerItems,
+    };
+    const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement('a');
+    a.href     = url;
+    a.download = 'data.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    showToast('data.json downloaded — replace the file in your repo, then git commit & push to share with partners');
+    hasUnsavedArchiveChanges = false;
+    updateExportBanner();
+}
+
+function updateExportBanner() {
+    const banner = document.getElementById('archive-export-banner');
+    if (!banner) return;
+    banner.style.display = hasUnsavedArchiveChanges ? 'flex' : 'none';
+}
+
+function renderSoldSection() {
+    const grid     = document.getElementById('sold-listings-grid');
+    const countEl  = document.getElementById('sold-section-count');
+    if (!grid) return;
+
+    const soldListings = listings.filter(l => l.status === 'sold' && !l.archived);
+    if (countEl) countEl.textContent = `${soldListings.length} sold listing${soldListings.length !== 1 ? 's' : ''}`;
+
+    if (soldListings.length === 0) {
+        grid.innerHTML = `<div class="empty-state"><div class="empty-icon">🔍</div><p>No recent sold listings.</p></div>`;
+        return;
+    }
+    renderListingsGrid(soldListings, 'sold-listings-grid');
 }
 
 function renderListingsGrid(list, gridId, limit = null) {
@@ -536,10 +617,16 @@ function renderListingsGrid(list, gridId, limit = null) {
                         <div class="card-dom">${dom}d on market</div>
                     </div>
                 </div>
-                ${inTracker
-                    ? `<button class="add-to-tracker-btn already-tracking" onclick="event.stopPropagation(); removeDeal(${trackerItem.id})">✓ Tracking — Remove</button>`
-                    : `<button class="add-to-tracker-btn" onclick="event.stopPropagation(); openAddToTrackerModal('${l.id}')">+ Add to Tracker</button>`
-                }
+                <div class="card-action-row">
+                    ${inTracker
+                        ? `<button class="add-to-tracker-btn already-tracking" onclick="event.stopPropagation(); removeDeal(${trackerItem.id})">✓ Tracking — Remove</button>`
+                        : `<button class="add-to-tracker-btn" onclick="event.stopPropagation(); openAddToTrackerModal('${l.id}')">+ Add to Tracker</button>`
+                    }
+                    ${l.archived
+                        ? `<button class="archive-btn restore" onclick="event.stopPropagation(); toggleArchive('${l.id}')" title="Restore to main listings">Unarchive</button>`
+                        : `<button class="archive-btn" onclick="event.stopPropagation(); toggleArchive('${l.id}')" title="Hide from main listings">Archive</button>`
+                    }
+                </div>
             </div>`;
         grid.appendChild(card);
     });
@@ -614,19 +701,36 @@ function initListingFilters() {
     const m2MinInput  = document.getElementById('l-m2-min');
     const m2MaxInput  = document.getElementById('l-m2-max');
 
-    let activeType   = 'all';
-    let activeStatus = 'all';
-    let activeArea   = 'all';
-    let searchTerm   = '';
+    let activeType      = 'all';
+    let activeStatus    = 'all';
+    let activeArea      = 'all';
+    let searchTerm      = '';
+    let activeAgencies  = new Set(); // empty = All
 
     function apply() {
         const m2Min  = m2MinInput.value !== '' ? parseFloat(m2MinInput.value) : null;
         const m2Max  = m2MaxInput.value !== '' ? parseFloat(m2MaxInput.value) : null;
         const sortBy = sortSel ? sortSel.value : 'default';
 
-        let result = [...listings];
-        if (activeType   !== 'all') result = result.filter(l => l.type === activeType);
-        if (activeStatus !== 'all') result = result.filter(l => l.status === activeStatus);
+        // Archived listings always live in their own section — never in main grid.
+        let result = [...listings].filter(l => !l.archived);
+        if (activeAgencies.size > 0) result = result.filter(l => activeAgencies.has(l.agency));
+        if (activeType !== 'all') result = result.filter(l => l.type === activeType);
+
+        // Sold listings live in their own section; exclude them from the main
+        // grid unless the user has explicitly selected "sold" in the filter.
+        if (activeStatus === 'all') {
+            result = result.filter(l => l.status !== 'sold');
+        } else {
+            result = result.filter(l => l.status === activeStatus);
+        }
+
+        // Show/hide the dedicated sold section (hidden when user is already
+        // browsing sold in the main grid to avoid showing them twice).
+        const soldSec = document.getElementById('sold-section');
+        if (soldSec) soldSec.style.display = (activeStatus === 'sold') ? 'none' : 'block';
+        renderSoldSection();
+
         if (activeArea   !== 'all') result = result.filter(l => l.area === activeArea);
         if (m2Min !== null) result = result.filter(l => { const s = primarySqm(l); return s !== null && s >= m2Min; });
         if (m2Max !== null) result = result.filter(l => { const s = primarySqm(l); return s !== null && s <= m2Max; });
@@ -698,6 +802,61 @@ function initListingFilters() {
             renderPage(1);
         });
     });
+
+    // Agency filter
+    (function buildAgencyFilter() {
+        const bar = document.getElementById('agency-filter-bar');
+        if (!bar) return;
+
+        // Count listings per agency (excluding archived), sort by count desc
+        const counts = {};
+        listings.forEach(l => {
+            if (!l.archived && l.agency) counts[l.agency] = (counts[l.agency] || 0) + 1;
+        });
+        const sortedAgencies = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+
+        function refreshButtons() {
+            bar.querySelectorAll('.agency-filter-btn').forEach(btn => {
+                const isAll = btn.dataset.agency === '__all__';
+                btn.classList.toggle('active', isAll ? activeAgencies.size === 0 : activeAgencies.has(btn.dataset.agency));
+            });
+        }
+
+        // Build DOM
+        bar.innerHTML = '';
+        const label = document.createElement('span');
+        label.className = 'agency-filter-label';
+        label.textContent = 'Agency';
+        bar.appendChild(label);
+
+        const allBtn = document.createElement('button');
+        allBtn.className = 'agency-filter-btn active';
+        allBtn.dataset.agency = '__all__';
+        allBtn.textContent = 'All';
+        allBtn.addEventListener('click', () => {
+            activeAgencies.clear();
+            refreshButtons();
+            apply();
+        });
+        bar.appendChild(allBtn);
+
+        sortedAgencies.forEach(agency => {
+            const btn = document.createElement('button');
+            btn.className = 'agency-filter-btn';
+            btn.dataset.agency = agency;
+            btn.textContent = agency;
+            btn.addEventListener('click', () => {
+                if (activeAgencies.has(agency)) {
+                    activeAgencies.delete(agency);
+                } else {
+                    activeAgencies.add(agency);
+                }
+                refreshButtons();
+                apply();
+            });
+            bar.appendChild(btn);
+        });
+    })();
 
     // Initial render
     apply();
@@ -906,7 +1065,7 @@ function confirmAddToTracker(listingId) {
     renderTrackerStats();
     renderDashboardStats();
     renderPage(currentPage);
-    renderListingsGrid(listings.slice(0, 4), 'home-listings-grid');
+    renderListingsGrid(listings.filter(l => !l.archived && l.status !== 'sold').slice(0, 4), 'home-listings-grid');
 
     // Confirm toast
     showToast(`"${l.name}" added to Deal Tracker`);
@@ -1270,7 +1429,7 @@ function doRemoveDeal(dealId) {
     renderTrackerStats();
     renderDashboardStats();
     renderPage(currentPage);
-    renderListingsGrid(listings.slice(0, 4), 'home-listings-grid');
+    renderListingsGrid(listings.filter(l => !l.archived && l.status !== 'sold').slice(0, 4), 'home-listings-grid');
     showToast(`"${name}" removed from tracker`);
 }
 

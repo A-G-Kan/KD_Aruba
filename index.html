@@ -256,6 +256,7 @@
                     <div class="stat-pill"><span class="stat-label">Active</span><span class="stat-value green" id="l-active">—</span></div>
                     <div class="stat-pill"><span class="stat-label">Price Reduced</span><span class="stat-value green" id="l-reduced">—</span></div>
                     <div class="stat-pill"><span class="stat-label">Under Offer</span><span class="stat-value yellow" id="l-offer">—</span></div>
+                    <div class="stat-pill"><span class="stat-label">Sold</span><span class="stat-value" id="l-sold">—</span></div>
                 </div>
             </div>
 
@@ -265,6 +266,13 @@
                 <span class="agent-banner-status" id="agent-banner-status">Inactive</span>
                 <span class="agent-banner-divider">·</span>
                 <span class="agent-banner-sync">Last updated: <span id="last-sync-time">never</span></span>
+            </div>
+
+            <!-- Archive export banner — shown when there are unsaved archive changes -->
+            <div class="archive-export-banner" id="archive-export-banner" style="display:none">
+                <span>You have unsaved archive changes.</span>
+                <button onclick="exportDataJson()">Download data.json</button>
+                <span class="archive-banner-hint">Replace the file in your repo and push to share with partners.</span>
             </div>
 
             <div class="listings-controls-bar">
@@ -280,6 +288,9 @@
                     <button class="page-size-btn" data-size="100">100</button>
                 </div>
             </div>
+
+            <!-- Agency filter — buttons built by JS from listings data -->
+            <div class="agency-filter-bar" id="agency-filter-bar"></div>
 
             <div class="filter-bar">
                 <div class="filter-types">
@@ -331,6 +342,33 @@
             <div id="pagination-top" class="pagination-controls"></div>
             <div class="listings-grid" id="listings-grid"></div>
             <div id="pagination-bottom" class="pagination-controls"></div>
+
+            <!-- Archived listings — set-aside, hidden from main view but kept for analysis -->
+            <div class="archived-section" id="archived-section" style="display:none">
+                <div class="sold-section-header">
+                    <div>
+                        <h2 class="sold-section-title">Archived Listings</h2>
+                        <p class="sold-section-sub">Set-aside listings hidden from the main view · still counted in market analysis · un-archive to restore</p>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:10px;flex-shrink:0;">
+                        <span class="sold-section-count" id="archived-section-count"></span>
+                        <button class="export-data-btn" id="export-data-btn" onclick="exportDataJson()" title="Download data.json to commit and push to all partners">Export data.json</button>
+                    </div>
+                </div>
+                <div class="listings-grid" id="archived-listings-grid"></div>
+            </div>
+
+            <!-- Sold listings — separate section always below active listings -->
+            <div class="sold-section" id="sold-section">
+                <div class="sold-section-header">
+                    <div>
+                        <h2 class="sold-section-title">Sold — Recent Comps</h2>
+                        <p class="sold-section-sub">Properties sold in the last 30 days · kept for comparable data · removed automatically after 30 days</p>
+                    </div>
+                    <span class="sold-section-count" id="sold-section-count"></span>
+                </div>
+                <div class="listings-grid" id="sold-listings-grid"></div>
+            </div>
         </section>
 
 

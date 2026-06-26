@@ -12,7 +12,7 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes
+from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes, restore_user_fields
 
 DATA_JSON = Path("/Users/alan/Desktop/KD/Website/data.json")
 TODAY     = date.today().isoformat()
@@ -198,9 +198,11 @@ def save_houzez(new_listings, agency):
         with open(DATA_JSON) as f:
             existing = json.load(f)
 
-    current = existing.get("listings", [])
-    kept    = [l for l in current if l.get("agency") != agency]
-    merged  = kept + new_listings
+    current      = existing.get("listings", [])
+    old_agency   = [l for l in current if l.get("agency") == agency]
+    kept         = [l for l in current if l.get("agency") != agency]
+    new_listings = restore_user_fields(old_agency, new_listings)
+    merged       = kept + new_listings
 
     existing["listings"] = merged
     existing["agentMeta"] = {

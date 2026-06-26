@@ -23,7 +23,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes
+from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes, restore_user_fields
 
 BASE_URL   = "https://www.bhhsaruba.com"
 AGENCY     = "BHHS Aruba"
@@ -188,8 +188,10 @@ def save(new_listings):
             existing = json.load(f)
 
     current = existing.get("listings", [])
+    old_agency   = [l for l in current if l.get("agency") == AGENCY]
     kept    = [l for l in current if l.get("agency") != AGENCY]
-    merged  = kept + new_listings
+    new_listings = restore_user_fields(old_agency, new_listings)
+    merged       = kept + new_listings
 
     existing["listings"] = merged
     existing["agentMeta"] = {

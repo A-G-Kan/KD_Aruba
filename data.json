@@ -1,871 +1,6 @@
 {
   "listings": [
     {
-      "id": "safir-13",
-      "name": "Safir 13",
-      "type": "house",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2026/04/1-1024x683.jpg",
-      "area": "Noord",
-      "location": "Noord",
-      "askPrice": 944000,
-      "size": "276 m²",
-      "buildingSize": "276 m²",
-      "lotSize": "651 m²",
-      "bedrooms": 4,
-      "bathrooms": 4,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/noord/safir-13/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 944000
-        }
-      ],
-      "notes": "Built on a 651 m² long-lease lot (until April 2058), the property features approximately 276 m² of living space, including 3 bedrooms and 3 bathrooms, plus a loft with an additional bedroom and bathroom—ideal for guests or extra living space.",
-      "realtors": [
-        {
-          "agency": "AJ Real Estate Aruba",
-          "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/noord/safir-13/"
-        },
-        {
-          "agency": "Century 21 Aruba",
-          "sourceUrl": "https://century21aruba.com/en/d/coudacarie-luxury-villas-home-for-sale-aruba-1159254"
-        }
-      ]
-    },
-    {
-      "id": "malmok-8a",
-      "name": "Malmok 8A",
-      "type": "house",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2026/03/DJI_20260312025931_0046_D.jpg",
-      "area": "Noord",
-      "location": "Noord",
-      "askPrice": 2200000,
-      "size": "651 m²",
-      "buildingSize": "651 m²",
-      "lotSize": "900 m²",
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/noord/malmok-8a/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 2200000
-        }
-      ],
-      "notes": "Prime Location:Located in the exclusive Malmok area, this property offers an unmatched lifestyle surrounded by Aruba’s most prestigious attractions. Just minutes away from the crystal-clear waters of Tres Trapi and Boca Catalina, and close to the iconic California Lighthouse, you are perfectly positioned to enjoy some of the island’s most breathtaking coastal views. The renowned Tierra del Sol Golf Course is right nearby for world-class golfing, while Fisherman’s Huts offers a vibrant scene for watersports and beachfront relaxation. Only a short drive from the high-rise hotel district, you’ll have easy access to fine dining, luxury resorts, shopping, and entertainment, all while enjoying the privacy and tranquility of an upscale residential neighborhood."
-    },
-    {
-      "id": "pos-chiquito-17",
-      "name": "Pos Chiquito 17",
-      "type": "house",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/10/WhatsApp-Image-2025-10-22-at-11.32.13-600x375.jpeg",
-      "area": "Savaneta",
-      "location": "Savaneta",
-      "askPrice": 324000,
-      "size": "Property size: 210,4 m2",
-      "buildingSize": "2320 m2",
-      "lotSize": "2320 m²",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/savaneta/pos-chiquito-17/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 324000
-        }
-      ],
-      "notes": "For more information please contact Paola Odor at +297 641175 or email at paola@remaxaruba.com",
-      "realtors": [
-        {
-          "agency": "AJ Real Estate Aruba",
-          "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/savaneta/pos-chiquito-17/"
-        },
-        {
-          "agency": "RE/MAX Aruba",
-          "sourceUrl": "https://remaxaruba.com/property/details/property-land-noord-cura-cabai"
-        }
-      ]
-    },
-    {
-      "id": "house-with-pool-for-sale-wayaca-residence-423",
-      "name": "House with Pool For Sale – Wayaca Residence 423",
-      "type": "house",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/79d2c744-60e2-4db5-b8c9-e6dde9cabf66-600x375.jpg",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 898876,
-      "size": "Property size: 256 m2",
-      "buildingSize": "",
-      "lotSize": "",
-      "bedrooms": 0,
-      "bathrooms": 3,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/oranjestad/house-with-pool-for-sale-wayaca-residence-423/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 898876
-        }
-      ],
-      "notes": ""
-    },
-    {
-      "id": "kas-paloma-18-b",
-      "name": "Kas Paloma 18-B",
-      "type": "house",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-04-at-1.26.29-PM-3-1024x473.jpeg",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 700000,
-      "size": "724 m²",
-      "buildingSize": "724 m²",
-      "lotSize": "1133 m²",
-      "bedrooms": 7,
-      "bathrooms": 6,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/oranjestad/kas-paloma-18-b/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 700000
-        }
-      ],
-      "notes": "Key Features:Lot Size: 1,133m² Long Lease Property LandMain House: 4 Bedrooms | 3 Bathrooms | 210m² Built-Up AreaApartment: 2 Bedrooms | 2 Bathrooms | Attached OfficeWarehouse: Large space split into two sections with automatic gatesSwimming Pool: Fully equipped with pumps, pool cover, and maintenance setupSecure Fencing & Private EntrySolar Panels for Energy Efficiency"
-    },
-    {
-      "id": "esmeralda-110-house-with-apartments",
-      "name": "Esmeralda 110 - House with apartments",
-      "type": "house",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/e6080777-5241-42da-b77f-25f8ef73b793-600x375.webp",
-      "area": "Noord",
-      "location": "Noord",
-      "askPrice": 650000,
-      "size": "Property size: 210 m2",
-      "buildingSize": "",
-      "lotSize": "",
-      "bedrooms": 0,
-      "bathrooms": 4,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/noord/esmeralda-110-house-with-apartments/",
-      "status": "sold",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 650000
-        }
-      ],
-      "notes": ""
-    },
-    {
-      "id": "3-bedroom-project-home-tamarijn-9b",
-      "name": "3-Bedroom Project Home Tamarijn 9B",
-      "type": "house",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/01-1-1024x594.jpg",
-      "area": "Paradera",
-      "location": "Paradera",
-      "askPrice": 208000,
-      "size": "211 m²",
-      "buildingSize": "211 m²",
-      "lotSize": "553 m²",
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/paradera/3-bedroom-project-home-tamarijn-9b/",
-      "status": "sold",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 208000
-        }
-      ],
-      "notes": "This home offers ample space for both relaxation and entertainment, featuring a spacious living room, a dining area connected to a kitchen, and a TV room for family movie nights. The master bedroom boasts a walk-in closet, and the outdoor patio and porch areas provide the perfect settings for enjoying the lovely Aruban weather."
-    },
-    {
-      "id": "home-at-rooi-taki-3",
-      "name": "Home at Rooi Taki 3",
-      "type": "house",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/01-scaled-1-1024x478.jpg",
-      "area": "Savaneta",
-      "location": "Savaneta",
-      "askPrice": 440000,
-      "size": "246 m²",
-      "buildingSize": "246 m²",
-      "lotSize": "903 m²",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/savaneta/home-at-rooi-taki-3/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 440000
-        }
-      ],
-      "notes": "Neighborhood:Rooi Taki is surrounded by lush greenery, offering a peaceful retreat from the hustle and bustle. This home provides the perfect blend of privacy and natural beauty, making it ideal for those who appreciate a quiet, serene environment. Enjoy the sounds of nature and ample outdoor space while still being just a short drive from essential amenities and local attractions."
-    },
-    {
-      "id": "sero-patrishi-43-a",
-      "name": "Sero Patrishi 43-A",
-      "type": "house",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-18-at-8.16.45-AM-3-1024x768.jpeg",
-      "area": "Paradera",
-      "location": "Paradera",
-      "askPrice": 460000,
-      "size": "313 m²",
-      "buildingSize": "313 m²",
-      "lotSize": "1103 m²",
-      "bedrooms": 4,
-      "bathrooms": 4,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/paradera/sero-patrishi-43-a/",
-      "status": "sold",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 460000
-        }
-      ],
-      "notes": "Interior Highlights:Expansive Open-Plan Living & Dining AreaWell-Equipped Kitchen with Wooden Cabinets & Breakfast CounterFully Air-Conditioned with Split-Units (Carrier, Panasonic & Daikin)Separate Family Room & Additional Storage SpacesModern Bathrooms with Quality Fixtures & FinishesMaid’s Quarter with Private Entrance"
-    },
-    {
-      "id": "charming-family-home-in-sabana-basora-157",
-      "name": "Charming Family Home in Sabana Basora #157",
-      "type": "house",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/WhatsApp-Image-2024-10-03-at-13504-PM-1024x768.jpeg",
-      "area": "Savaneta",
-      "location": "Savaneta",
-      "askPrice": 265000,
-      "size": "143 m²",
-      "buildingSize": "143 m²",
-      "lotSize": "487 m²",
-      "bedrooms": 4,
-      "bathrooms": 4,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/savaneta/charming-family-home-in-sabana-basora-157/",
-      "status": "sold",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 265000
-        }
-      ],
-      "notes": "Discover your new oasis in the peaceful area of Sabana Basora! This spacious 4-bedroom, 3-bathroom home sits on a487 m² long lease landand offers everything you need for comfortable island living."
-    },
-    {
-      "id": "caribbean-town-condos-villas",
-      "name": "Caribbean Town Condos & VIllas",
-      "type": "condo",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/Main-2-1024x576.jpg",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 22000,
-      "size": "42000 m²",
-      "buildingSize": "42000 m²",
-      "lotSize": "",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/condominium/oranjestad/caribbean-town-condos-villas/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 22000
-        }
-      ],
-      "notes": "Welcome toCaribbean Town Condos and Villas—an exciting new residential development redefining modern island living. Spanning an impressive 42,000 m², this master-planned community offers a unique blend of comfort, innovation, and lifestyle within a secure, gated environment."
-    },
-    {
-      "id": "atlantic-360-condo-houses",
-      "name": "Atlantic 360 Condo Houses",
-      "type": "condo",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/2D-LIVING-ROOM-1_final-1024x682.jpg",
-      "area": "Noord",
-      "location": "Noord",
-      "askPrice": null,
-      "size": "196 m²",
-      "buildingSize": "196 m²",
-      "lotSize": "",
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/condominium/noord/atlantic-360-condo-houses/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": null
-        }
-      ],
-      "notes": "25 condominium homes…yes homes!! all built for one purpose: to provide the last word in happiness and tranquility. All our homes face the ocean, and all offer the ultimate in comfort, intelligent technology, luxurious finishes, and exquisite taste. Even the entrance to your new seven story refuge makes a statement of elegance. You’ll enter a three-story atrium that’s more than just jaw-dropping: its next generation energy-efficient design is economical, ecological, and deliberately in keeping with Aruba’s almost spiritual connection to nature."
-    },
-    {
-      "id": "coral-shell-condominiums",
-      "name": "Coral Shell Condominiums",
-      "type": "condo",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/6075a8a040c28079904359-1024x683.jpg",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": null,
-      "size": "",
-      "buildingSize": "",
-      "lotSize": "",
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/condominium/oranjestad/coral-shell-condominiums/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": null
-        }
-      ],
-      "notes": "​Its prime sea-front position affords a truly spectacular view from each of its exquisite contemporary apartments. Residents will enjoy a breathtaking view of Paardenbaai (Horse Bay) with its unique aquamarine color, or the option of overlooking Boy Ecury Park with its artfully landscaped lawns and public gardens, as well as the beautiful view of inland Aruba."
-    },
-    {
-      "id": "property-land-commercial-space",
-      "name": "Property Land + Commercial space",
-      "type": "land",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/DJI_20250214174716_0422_D-scaled-1-600x375.jpg",
-      "area": "San Nicolas",
-      "location": "San Nicolas",
-      "askPrice": 1123595,
-      "size": "",
-      "buildingSize": "",
-      "lotSize": "",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/land/san-nicolas/property-land-commercial-space/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 1123595
-        }
-      ],
-      "notes": ""
-    },
-    {
-      "id": "2-plots-for-sale-at-sabana-blanco",
-      "name": "2 Plots For Sale at Sabana Blanco",
-      "type": "land",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/map_marked-1024x576.jpg",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 347710,
-      "size": "1203 m²",
-      "buildingSize": "",
-      "lotSize": "1203 m²",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/land/oranjestad/2-plots-for-sale-at-sabana-blanco/",
-      "status": "sold",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 347710
-        }
-      ],
-      "notes": "Looking to build your dream home or invest in property? These two spacious plots of property land in Sabana Grandi are now available!"
-    },
-    {
-      "id": "ponton-hills-residences",
-      "name": "Ponton Hills Residences",
-      "type": "land",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/map2-1024x708.png",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 1123595,
-      "size": "",
-      "buildingSize": "",
-      "lotSize": "",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/land/oranjestad/ponton-hills-residences/",
-      "status": "sold",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 1123595
-        }
-      ],
-      "notes": "A rare opportunity to build your dream home inone of Aruba’s most desirable locations. Ponton Hills Residences offers the perfect combination of privacy, tranquility, and convenience."
-    },
-    {
-      "id": "plots-of-land-in-tanki-leendert",
-      "name": "Plots of land in Tanki Leendert",
-      "type": "land",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/473817633_122219832182030227_8851876825086185606_n.jpg",
-      "area": "Tanki Leendert",
-      "location": "Tanki Leendert",
-      "askPrice": 1123595,
-      "size": "314 m²",
-      "buildingSize": "",
-      "lotSize": "314 m²",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/land/tanki-leendert/plots-of-land-in-tanki-leendert/",
-      "status": "sold",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 1123595
-        }
-      ],
-      "notes": "An excellent opportunity to build your dream home or invest in a residential development. These26 spacious plotsare situated in a quiet and well-connected neighborhood, offering easy access to schools, shopping centers, and main roads."
-    },
-    {
-      "id": "land-in-matadera-noord-aruba",
-      "name": "Land in Matadera Noord Aruba",
-      "type": "land",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/WhatsApp-Image-2023-07-24-at-1.45.45-PM-1024x576.jpeg",
-      "area": "Noord",
-      "location": "Noord",
-      "askPrice": 1224719,
-      "size": "23987 m²",
-      "buildingSize": "",
-      "lotSize": "23987 m²",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/land/noord/land-in-matadera-noord-aruba/",
-      "status": "sold",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 1224719
-        }
-      ],
-      "notes": "Matadera Perceel 1-L-1702 offers a rare opportunity to invest in one of Aruba’s most sought-after locations. This expansive lot provides endless possibilities for residential or commercial development."
-    },
-    {
-      "id": "property-land-sabana-liber",
-      "name": "Property Land Sabana Liber",
-      "type": "land",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/2-1-1024x682.jpg",
-      "area": "Noord",
-      "location": "Noord",
-      "askPrice": 617977,
-      "size": "17020 m²",
-      "buildingSize": "",
-      "lotSize": "17020 m²",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/land/noord/property-land-sabana-liber/",
-      "status": "under offer",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 617977
-        }
-      ],
-      "notes": ""
-    },
-    {
-      "id": "property-land-in-camacuri",
-      "name": "Property Land in Camacuri",
-      "type": "land",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/WhatsApp-Image-2024-08-01-at-10.07.42-AM-1024x540.jpeg",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 1143595,
-      "size": "11632 m²",
-      "buildingSize": "",
-      "lotSize": "11632 m²",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/land/oranjestad/property-land-in-camacuri/",
-      "status": "under offer",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 1143595
-        }
-      ],
-      "notes": "Proximity:Just 1 minute from the renowned Nikki Beach A mere 3 minutes from downtown Oranjestad. Close to the airport, offering convenience for international travel. This expansive property represents one of the last significant parcels of land available in the heart of Oranjestad. Positioned in a prime location, it offers a unique opportunity for development in one of the most sought-after areas. Perfect for residential projects, this property is a rare gem on the market. Don’t miss the chance to invest in a location with unparalleled potential and proximity to key attractions and amenities."
-    },
-    {
-      "id": "prime-property-land-in-mahuma",
-      "name": "Prime Property Land in Mahuma",
-      "type": "land",
-      "image": "",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 256000,
-      "size": "2853 m²",
-      "buildingSize": "",
-      "lotSize": "2853 m²",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/land/oranjestad/prime-property-land-in-mahuma/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 256000
-        }
-      ],
-      "notes": "Your chance to own a spacious plot of property land in one of Aruba’s most strategic locations! Perfect for your dream home, a lucrative investment project, or even a commercial venture."
-    },
-    {
-      "id": "4021",
-      "name": "Land for Sale Ponton (Building Permit Approved)",
-      "type": "land",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/2-1024x768.jpg",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 350000,
-      "size": "1215 m²",
-      "buildingSize": "",
-      "lotSize": "1215 m²",
-      "bedrooms": 7,
-      "bathrooms": 5,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/land/oranjestad/4021/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 350000
-        }
-      ],
-      "notes": "This property offers amazing investment potential—whether you’re looking to develop, rent, or live in a scenic and strategic location."
-    },
-    {
-      "id": "property-land-moko",
-      "name": "Property Land Moko",
-      "type": "land",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/111-1024x575.jpg",
-      "area": "Noord",
-      "location": "Noord",
-      "askPrice": 1200000,
-      "size": "14515 m²",
-      "buildingSize": "",
-      "lotSize": "14515 m²",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/land/noord/property-land-moko/",
-      "status": "sold",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 1200000
-        }
-      ],
-      "notes": "Aruba is a top tourist destination known for its beautiful beaches and sunny weather. This property is ideal for building a luxury resort, exclusive condos, or a commercial complex. Its strategic location guarantees strong demand from both locals and tourists, ensuring a steady income stream."
-    },
-    {
-      "id": "avenida-milio-j-croes-54",
-      "name": "Avenida Milio J. Croes 54",
-      "type": "commercial",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-at-14.48.02-1024x473.jpeg",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 1068000,
-      "size": "327 m²",
-      "buildingSize": "327 m²",
-      "lotSize": "1111 m²",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/oranjestad/avenida-milio-j-croes-54/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 1068000
-        }
-      ],
-      "notes": "This versatile property spanstwo long-lease parcels totaling 1,111 m²and features a well-designed blend ofcommercial and residential spaces, perfect for entrepreneurs, investors, or those seeking a property with bothincome-generating potentialand living accommodations."
-    },
-    {
-      "id": "4887",
-      "name": "Avenida Milo Croes 91 & 91-E",
-      "type": "commercial",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-at-14.50.00-1024x473.jpeg",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 1011000,
-      "size": "285 m²",
-      "buildingSize": "285 m²",
-      "lotSize": "2035 m²",
-      "bedrooms": 5,
-      "bathrooms": 3,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/oranjestad/4887/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 1011000
-        }
-      ],
-      "notes": "The property’s long lease land status can be converted into commercial leasehold, significantly enhancing its long-term value and development potential. This is a rare find in one of Aruba’s most sought-after commercial corridors, perfect for developers or investors ready to create a modern, income-generating property in a high-traffic area."
-    },
-    {
-      "id": "commercial-building-for-sale-macapruimstraat-1",
-      "name": "Commercial Building for Sale – Macapruimstraat #1",
-      "type": "commercial",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/Macapruimstraat-Drone9-scaled-1-1024x576.jpg",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 1398876,
-      "size": "1420 m²",
-      "buildingSize": "1420 m²",
-      "lotSize": "1892 m²",
-      "bedrooms": 5,
-      "bathrooms": 4,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/oranjestad/commercial-building-for-sale-macapruimstraat-1/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 1398876
-        }
-      ],
-      "notes": "Prime Location:Situated in thebustling commercial districtof Dakota with easy access to main roads.Large Lot Size:1,892 m² ofprime commercial real estate, offeringample spacefor various business ventures.Great Business Potential:Ideal forretail stores, office spaces, restaurants, showrooms, or a mixed-use development.High Visibility & Accessibility:Located in a well-trafficked area, ensuringmaximum exposure for any business.Investment-Ready:A fantastic opportunity for those looking toexpand their commercial portfolioin Aruba.",
-      "realtors": [
-        {
-          "agency": "AJ Real Estate Aruba",
-          "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/oranjestad/commercial-building-for-sale-macapruimstraat-1/"
-        },
-        {
-          "agency": "Keller Williams Aruba",
-          "sourceUrl": "https://kw-aruba.com/listings/schotlandstraat-4-2"
-        }
-      ]
-    },
-    {
-      "id": "savaneta-97-commercial-building",
-      "name": "Savaneta 97 Commercial Building",
-      "type": "commercial",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/Front-JPG-1024x478.jpg",
-      "area": "Savaneta",
-      "location": "Savaneta",
-      "askPrice": 350000,
-      "size": "160 m²",
-      "buildingSize": "160 m²",
-      "lotSize": "347 m²",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/savaneta/savaneta-97-commercial-building/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 350000
-        }
-      ],
-      "notes": "This commercial property is perfectly situated on the well-paved, illuminated main road of Savaneta, ideally located between Oranjestad and San Nicolas. Only 250 meters west of the Savaneta MFA, the area is surrounded by bustling businesses and heavy daily traffic—offering excellent exposure for your business!"
-    },
-    {
-      "id": "stadionweg-12",
-      "name": "Stadionweg 12",
-      "type": "commercial",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/1-1024x478.jpg",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 1750000,
-      "size": "",
-      "buildingSize": "",
-      "lotSize": "",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/oranjestad/stadionweg-12/",
-      "status": "sold",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 1750000
-        }
-      ],
-      "notes": "15 Exceptional Apartments: Experience the epitome of luxury living with a collection of meticulously crafted one and two-bedroom apartments, thoughtfully designed for comfort and convenience.Fully Furnished: Each apartment comes fully furnished, offering residents a seamless transition into their new home.Modern Amenities: Enjoy modern comforts with spacious living areas, well-appointed kitchens, ample closet space, and individual water and electric meters for added convenience.Year-Round Comfort: Stay cool and comfortable year-round with air conditioning units in every apartment, ensuring a pleasant living environment.Convenient Parking: Dedicated parking spaces ensure hassle-free parking for residents and guests alike.Leisure Facilities: Indulge in leisurely afternoons by the shared swimming pool or unwind on the expansive terrace, perfect for soaking up the Caribbean sunshine.Enhanced Security: Rest assured with an advanced alarm system, smoke detectors, and a comprehensive surveillance system, providing peace of mind for residents.Income Generating: With 14 apartments already rented out, this property offers an immediate stream of rental income, providing a solid foundation for investors. Moreover, the property holds immense potential for additional revenue if converted into short-term rentals through platforms like Airbnb, tapping into the lucrative tourist market.Great Return on Investment: Capitalize on the property’s strong rental demand and potential for lucrative returns, making it an attractive investment opportunity.Prime Location: Nestled in a tranquil and secure neighborhood, just a short 4-minute walk from the beach, and conveniently located near the airport and downtown, with the vibrant hotel area just a 10-minute drive away."
-    },
-    {
-      "id": "sabana-grandi-43a-apartment-complex",
-      "name": "Sabana Grandi 43A Apartment Complex",
-      "type": "commercial",
-      "image": "",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 308000,
-      "size": "168 m²",
-      "buildingSize": "168 m²",
-      "lotSize": "526 m²",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/oranjestad/sabana-grandi-43a-apartment-complex/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 308000
-        }
-      ],
-      "notes": "Adjacent to Sabana Grandi 43, you will find Sabana Grandi 43A, a standalone apartment complex that expands your investment potential. Situated on a larger 526 m² plot, this property offers a buildup area of 168 m² and comprises:"
-    },
-    {
-      "id": "sabana-grandi-43-apartment-complex",
-      "name": "Sabana Grandi 43 Apartment complex",
-      "type": "commercial",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/WhatsApp-Image-2024-06-20-at-2.42.35-PM-1024x768.jpeg",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 394000,
-      "size": "144 m²",
-      "buildingSize": "144 m²",
-      "lotSize": "512 m²",
-      "bedrooms": 512,
-      "bathrooms": 4,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/oranjestad/sabana-grandi-43-apartment-complex/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 394000
-        }
-      ],
-      "notes": "The second floor mirrors the ground floor in terms of space, with another 144 m² of buildup area, but is cleverly divided into 6 individual 1-bedroom apartments. Each apartment includes:• Living/Dining/Kitchen Area• 1 Bathroom• Closet",
-      "realtors": [
-        {
-          "agency": "AJ Real Estate Aruba",
-          "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/oranjestad/sabana-grandi-43-apartment-complex/"
-        },
-        {
-          "agency": "Keller Williams Aruba",
-          "sourceUrl": "https://kw-aruba.com/listings/constantijn-huygensstraat-20"
-        }
-      ]
-    },
-    {
-      "id": "morgenster-43-l-apartment-complex-with-adjacent-land",
-      "name": "Morgenster 43-L Apartment Complex with Adjacent Land",
-      "type": "commercial",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-12-at-8.16.46-AM-1024x576.jpeg",
-      "area": "Santa Cruz",
-      "location": "Santa Cruz",
-      "askPrice": 1650000,
-      "size": "1900 m²",
-      "buildingSize": "1900 m²",
-      "lotSize": "",
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/santa-cruz/morgenster-43-l-apartment-complex-with-adjacent-land/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 1650000
-        }
-      ],
-      "notes": "Additional Opportunity:The adjacent land offers immense potential for further development, whether for additional apartment units, a private residence, or recreational facilities to enhance the complex’s appeal. This extra space adds significant value to the property and flexibility for future projects."
-    },
-    {
-      "id": "arendstraat-122",
-      "name": "Arendstraat 122",
-      "type": "commercial",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/20240315_094617-1-scaled-1-1024x478.jpg",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 780000,
-      "size": "286 m²",
-      "buildingSize": "286 m²",
-      "lotSize": "723 m²",
-      "bedrooms": null,
-      "bathrooms": null,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/oranjestad/arendstraat-122/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 780000
-        }
-      ],
-      "notes": "Modern Commercial Office Building with big office space and two large Apartments located in commercial neighborhood Eagle in Oranjestad, with easy access road, to L.G.Smith Blvd, minutes away from hotel resort areas at Eagle (low Rise) and Palm Beach(High Rise) This recently renovated property has a beautiful 3 unit office with 2 bathroom and Attic and has ample private parking for clients. This property also has two newly and modernly, constructed 1 bedroom, 1 bathroom apartments with spacious living/kitchen area, and one studio apartment with extra office. The one bedroom apartments have their separate secured entrance and a nice private paved area/garden (space enough to construct a pool), with palm trees where one can relax and have cool refreshments. This property also has large storage space, garage and laundry area."
-    },
-    {
-      "id": "luxury-boutique-hotel-in-savaneta",
-      "name": "Luxury Boutique Hotel in Savaneta",
-      "type": "commercial",
-      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/DJI_0222-1024x768.jpg",
-      "area": "Savaneta",
-      "location": "Savaneta",
-      "askPrice": 6000000,
-      "size": "10027 m²",
-      "buildingSize": "10027 m²",
-      "lotSize": "10027 m²",
-      "bedrooms": 7,
-      "bathrooms": 8,
-      "agency": "AJ Real Estate Aruba",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/savaneta/luxury-boutique-hotel-in-savaneta/",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 6000000
-        }
-      ],
-      "notes": "Formerly a charming Cunucu House, this boutique property has been lovingly restored, preserving its authentic character while integrating modern luxury. Thoughtfully designed, nearly 90% of the hotel features bespoke craftsmanship and intricate detailing, creating a unique and memorable atmosphere. Guests are welcomed into a sophisticated, open-space layout where they can relax by a cozy fireplace or unwind beside a shimmering saltwater pool—perfect for both leisure and social gatherings."
-    },
-    {
       "id": "568-Brazil-Aruba",
       "name": "Property land for sale in Brasil - lot size starts at 313m2",
       "type": "land",
@@ -888,7 +23,8 @@
           "price": 53500
         }
       ],
-      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…"
+      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "571-Alto-Vista-Aruba",
@@ -913,7 +49,8 @@
           "price": 96000
         }
       ],
-      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…"
+      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "507-Lucianitastraat-Oranjestad",
@@ -938,7 +75,8 @@
           "price": 120000
         }
       ],
-      "notes": "This property land consists of two parcels together, totaling approximately 430m2, making it an ideal investment opportunity. Located on a paved road in the Madiki neighborhood, it offers easy access to nearby amenities, new infrastructure, and a paved road. The property is also in close proximity to the main road of Lucianitastraat/Santa Helena, providing easy access to schools, supermarkets, downtown area, government offices, hospital, and beaches."
+      "notes": "This property land consists of two parcels together, totaling approximately 430m2, making it an ideal investment opportunity. Located on a paved road in the Madiki neighborhood, it offers easy access to nearby amenities, new infrastructure, and a paved road. The property is also in close proximity to the main road of Lucianitastraat/Santa Helena, providing easy access to schools, supermarkets, downtown area, government offices, hospital, and beaches.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "483-Modanza-Tanki-Leendert",
@@ -963,7 +101,8 @@
           "price": 136320
         }
       ],
-      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…"
+      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "480-Address-not-available",
@@ -988,7 +127,8 @@
           "price": 140000
         }
       ],
-      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…"
+      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "555-Engelandstraat%23-2-Aruba",
@@ -1013,7 +153,8 @@
           "price": 175000
         }
       ],
-      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…"
+      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "511-Santa-Cruz",
@@ -1038,7 +179,8 @@
           "price": 185000
         }
       ],
-      "notes": "The property offers a unique opportunity to own a piece of paradise in one of Aruba’s most secluded and private neighborhoods. Its location provides the best of both worlds, with tranquil surroundings, incredible country views, and close proximity to natural attractions and district amenities in Santa Cruz center, while also being only 5 miles away from Oranjestad and its city amenities."
+      "notes": "The property offers a unique opportunity to own a piece of paradise in one of Aruba’s most secluded and private neighborhoods. Its location provides the best of both worlds, with tranquil surroundings, incredible country views, and close proximity to natural attractions and district amenities in Santa Cruz center, while also being only 5 miles away from Oranjestad and its city amenities.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "359-Sta-Cruz-242",
@@ -1063,7 +205,8 @@
           "price": 186000
         }
       ],
-      "notes": "This traditional  family house is located in Santa Cruz consisting of 3 bedrooms and 1.5 bathrooms, living room, covered patio and 2 kitchens. Next to the main kitchen there is the dining room where you walked out through the covered patio. The yard is paved with a concrete floor together with a one car garage.  Property is completely fenced."
+      "notes": "This traditional  family house is located in Santa Cruz consisting of 3 bedrooms and 1.5 bathrooms, living room, covered patio and 2 kitchens. Next to the main kitchen there is the dining room where you walked out through the covered patio. The yard is paved with a concrete floor together with a one car garage.  Property is completely fenced.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "545-Schotlandstraat-Aruba-Eagle",
@@ -1113,7 +256,8 @@
           "price": 199000
         }
       ],
-      "notes": "Discover comfort and elegance in this 3-bedroom, 2-bathroom apartment on the third floor of the prestigious Harbor Residence building in Eagle-Oranjestad, Aruba. With an approximate area of 120m2, it offers a seamless blend of modern living and captivating views of the cruise terminal. The open layout, flooded with natural light, creates a warm ambiance. Modern appliances adorn the kitchen, and each bedroom offers a peaceful retreat. Enjoy the convenience of onsite parking and the luxury of watching ships sail by from your home. Don’t miss this opportunity for stylish living in a prime location!"
+      "notes": "Discover comfort and elegance in this 3-bedroom, 2-bathroom apartment on the third floor of the prestigious Harbor Residence building in Eagle-Oranjestad, Aruba. With an approximate area of 120m2, it offers a seamless blend of modern living and captivating views of the cruise terminal. The open layout, flooded with natural light, creates a warm ambiance. Modern appliances adorn the kitchen, and each bedroom offers a peaceful retreat. Enjoy the convenience of onsite parking and the luxury of watching ships sail by from your home. Don’t miss this opportunity for stylish living in a prime location!",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "440-zumbo",
@@ -1138,7 +282,8 @@
           "price": 218062
         }
       ],
-      "notes": "Explore the allure of NOSVALI, Santa Cruz’s newest residential haven, offering diverse lot sizes amid the breathtaking countryside. Just moments away from the iconic National Park Arikok, these plots are a gateway to hiking, mountain biking, and the captivating Aruba flora and fauna."
+      "notes": "Explore the allure of NOSVALI, Santa Cruz’s newest residential haven, offering diverse lot sizes amid the breathtaking countryside. Just moments away from the iconic National Park Arikok, these plots are a gateway to hiking, mountain biking, and the captivating Aruba flora and fauna.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "557-Sabana-Basora-Aruba",
@@ -1163,7 +308,8 @@
           "price": 220000
         }
       ],
-      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…"
+      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "82-Bay-Harbour-Condo-205-Pool-Level-Second-Floor",
@@ -1188,7 +334,8 @@
           "price": 235749
         }
       ],
-      "notes": "The apartment’s open-floor concept was specially planned to highlight the Caribbean breathtaking views. Bay Harbour condos are built with top-of-the-line finishes, carefully chosen to accommodate your desire for luxury living and durability. Each unit includes an european-style kitchen, all major appliances, high speed internet and HDTV capabilities. We have all dreamed of five-star living. At Bay Harbour, this desire becomes reality it as soon as you walk into its stunning lobby. Bay Harbour is minutes away from Eagle and Palm Beach, Aruba’s most famous white-sand and turquoise- water beaches: A unique combination of modern living with Caribbean relaxation. Be prepared to experience the pleasures of a luxurious vacation within the comfort of your own home. The Paardenbaai exhibition is just steps away from the project. This art exhibit embraces the Playa District’s history as the main horse trading spot during the Spanish Colonization. There are eight different horses all over town, all of which have a particular name and personality. The Marina is a hot spot for local artists as they showcase their most recent work. Immerse yourself in the Aruban art movement by just taking an elevator to the lower floor, where 20+ spaces have been allocated for local contemporary artists. Bay Harbour is the perfect environment to interact with local talent.."
+      "notes": "The apartment’s open-floor concept was specially planned to highlight the Caribbean breathtaking views. Bay Harbour condos are built with top-of-the-line finishes, carefully chosen to accommodate your desire for luxury living and durability. Each unit includes an european-style kitchen, all major appliances, high speed internet and HDTV capabilities. We have all dreamed of five-star living. At Bay Harbour, this desire becomes reality it as soon as you walk into its stunning lobby. Bay Harbour is minutes away from Eagle and Palm Beach, Aruba’s most famous white-sand and turquoise- water beaches: A unique combination of modern living with Caribbean relaxation. Be prepared to experience the pleasures of a luxurious vacation within the comfort of your own home. The Paardenbaai exhibition is just steps away from the project. This art exhibit embraces the Playa District’s history as the main horse trading spot during the Spanish Colonization. There are eight different horses all over town, all of which have a particular name and personality. The Marina is a hot spot for local artists as they showcase their most recent work. Immerse yourself in the Aruban art movement by just taking an elevator to the lower floor, where 20+ spaces have been allocated for local contemporary artists. Bay Harbour is the perfect environment to interact with local talent..",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "521-Bubali",
@@ -1213,7 +360,8 @@
           "price": 245000
         }
       ],
-      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…"
+      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "565-Morgenster-Aruba",
@@ -1288,7 +436,8 @@
           "price": 260478
         }
       ],
-      "notes": "Themain floorfeatures akitchen, living area, 2 bedrooms, and 1 bathroom. Upstairs, you’ll find anadditional living space, 1 bedroom, and the option to add asecond bathroom—ideal for ahome office, guest suite, or lounge. From thebalcony, enjoy breathtaking views of the Caribbean Ocean, enhancing the peaceful ambiance of this home."
+      "notes": "Themain floorfeatures akitchen, living area, 2 bedrooms, and 1 bathroom. Upstairs, you’ll find anadditional living space, 1 bedroom, and the option to add asecond bathroom—ideal for ahome office, guest suite, or lounge. From thebalcony, enjoy breathtaking views of the Caribbean Ocean, enhancing the peaceful ambiance of this home.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "575-Hubadastraat-11D",
@@ -1313,7 +462,8 @@
           "price": 262000
         }
       ],
-      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…"
+      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "360-Matadera",
@@ -1338,7 +488,8 @@
           "price": 275000
         }
       ],
-      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…"
+      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "661-Savaneta-Aruba-95",
@@ -1388,7 +539,8 @@
           "price": 282725
         }
       ],
-      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…"
+      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "522-Caya-Betico-Croes",
@@ -1438,7 +590,8 @@
           "price": 285000
         }
       ],
-      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…"
+      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "563-Savaneta-339-K-339-K-Savaneta-Aruba",
@@ -1463,7 +616,8 @@
           "price": 287000
         }
       ],
-      "notes": "Explore the charm of this family house nestled in the heart of Savaneta. Boasting 3 bedrooms with closets, 2 bathrooms, as well kitchen, a cozy living room area, storage space, laundry facilities with a toilet, and a spacious enclosed back patio, this property offers both comfort and convenience. Notably, it is being offered unfurnished, providing a blank canvas for personalization."
+      "notes": "Explore the charm of this family house nestled in the heart of Savaneta. Boasting 3 bedrooms with closets, 2 bathrooms, as well kitchen, a cozy living room area, storage space, laundry facilities with a toilet, and a spacious enclosed back patio, this property offers both comfort and convenience. Notably, it is being offered unfurnished, providing a blank canvas for personalization.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "442-Address-not-available",
@@ -1513,7 +667,8 @@
           "price": 468750
         }
       ],
-      "notes": "This spacious land offers the opportunity to build your dream home, complete with room for landscaping, a pool, and outdoor entertainment areas. Whether you desire a peaceful retreat or a space for unforgettable gatherings, this property holds endless possibilities."
+      "notes": "This spacious land offers the opportunity to build your dream home, complete with room for landscaping, a pool, and outdoor entertainment areas. Whether you desire a peaceful retreat or a space for unforgettable gatherings, this property holds endless possibilities.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "453-bubali-park",
@@ -1538,7 +693,8 @@
           "price": 550000
         }
       ],
-      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…"
+      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "274-Address-not-available",
@@ -1563,7 +719,8 @@
           "price": 630000
         }
       ],
-      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…"
+      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "609-Kibrahachastraat",
@@ -1638,7 +795,8 @@
           "price": 1078247
         }
       ],
-      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…"
+      "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "330-Seroe-blanco-Paramira",
@@ -3188,7 +2346,8 @@
           "price": 695000
         }
       ],
-      "notes": "“Attractive investment opportunity located in the bustling heart of Palm Beach, Noord! This property is situated adjacent to Sextasy and is a few minutes walk away from Aruba’s renowned Palm Beach, high-rise hotels, and an array of restaurants. Brimming with potential, this project property offers an abundance of opportunities. The residence is constructed on two lots of long-lease land, encompassing a total of 1,060 m2, and is currently configured with 3 bedrooms, 2 bathrooms, an office, kitchen, and a combined dining and living room, offering views of the busy main road of Palm Beach. The property is being offered for sale “”as is”” in its current condition.” bike gps Property Details: Beds: 3 Baths: 2 Price (in AWG): 1,237,100.- Built up area: 145 m² / 1,561 ft² Land Size: 1,060 m²"
+      "notes": "“Attractive investment opportunity located in the bustling heart of Palm Beach, Noord! This property is situated adjacent to Sextasy and is a few minutes walk away from Aruba’s renowned Palm Beach, high-rise hotels, and an array of restaurants. Brimming with potential, this project property offers an abundance of opportunities. The residence is constructed on two lots of long-lease land, encompassing a total of 1,060 m2, and is currently configured with 3 bedrooms, 2 bathrooms, an office, kitchen, and a combined dining and living room, offering views of the busy main road of Palm Beach. The property is being offered for sale “”as is”” in its current condition.” bike gps Property Details: Beds: 3 Baths: 2 Price (in AWG): 1,237,100.- Built up area: 145 m² / 1,561 ft² Land Size: 1,060 m²",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "pos-abao-residence",
@@ -3313,7 +2472,8 @@
           "price": 395000
         }
       ],
-      "notes": "Welcome to Residence San Barbola San Barbola is an established residential neighborhood of Aruba, known for its tranquility and proximity to amenities, including shopping, dining, and schools. This turnkey, meticulously maintained home is a combination of tropical comfort and style. With 3 bedrooms with built-in closets, and 2 bathrooms, this property promises a very comfortable living experience. Key"
+      "notes": "Welcome to Residence San Barbola San Barbola is an established residential neighborhood of Aruba, known for its tranquility and proximity to amenities, including shopping, dining, and schools. This turnkey, meticulously maintained home is a combination of tropical comfort and style. With 3 bedrooms with built-in closets, and 2 bathrooms, this property promises a very comfortable living experience. Key",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "avenida-milio-croes-residence",
@@ -3413,7 +2573,8 @@
           "price": 300000
         }
       ],
-      "notes": "“Introducing Tanki Leendert 161-A Home! Set within expansive lease land, this dwelling offers immense potential for further development. Upon entrance, you’re immediately drawn to the open-plan layout that fluidly integrates the living and dining spaces, accentuated by an elegantly positioned dividing wall. The neighboring kitchen radiates thoughtful craftsmanship, accentuated by its spaciousness, classic wooden cabinets, chic stone countertops, and up-to-date stainless steel fittings. Further exploration down the hallway reveals two guest bathrooms, both contemporarily rejuvenated and poised for final detailing. Adjacently positioned is the inviting Master bedroom, complemented by its updated ensuite. The kitchen and carport gateway lead to an extensive backyard, ripe for landscaping enhancements or pool installation. A highlight of the Tanki Leendert Home is its independent studio apartment, equipped with a modernized bathroom – an optimal setup for potential rental prospects. Furthermore, the property is equipped with newly added solar panels, emphasizing its drive towards eco-friendliness and efficient energy consumption. This abode effortlessly marries potential, comfort, and sustainable living, marking it as a compelling option for both homeowners and investors.” bike gps Property Details: Beds: 4 Baths: 3 Price (in AWG): 530,000.- Built up area: 237 m² / 2,551 ft² Land Size: 936 m²"
+      "notes": "“Introducing Tanki Leendert 161-A Home! Set within expansive lease land, this dwelling offers immense potential for further development. Upon entrance, you’re immediately drawn to the open-plan layout that fluidly integrates the living and dining spaces, accentuated by an elegantly positioned dividing wall. The neighboring kitchen radiates thoughtful craftsmanship, accentuated by its spaciousness, classic wooden cabinets, chic stone countertops, and up-to-date stainless steel fittings. Further exploration down the hallway reveals two guest bathrooms, both contemporarily rejuvenated and poised for final detailing. Adjacently positioned is the inviting Master bedroom, complemented by its updated ensuite. The kitchen and carport gateway lead to an extensive backyard, ripe for landscaping enhancements or pool installation. A highlight of the Tanki Leendert Home is its independent studio apartment, equipped with a modernized bathroom – an optimal setup for potential rental prospects. Furthermore, the property is equipped with newly added solar panels, emphasizing its drive towards eco-friendliness and efficient energy consumption. This abode effortlessly marries potential, comfort, and sustainable living, marking it as a compelling option for both homeowners and investors.” bike gps Property Details: Beds: 4 Baths: 3 Price (in AWG): 530,000.- Built up area: 237 m² / 2,551 ft² Land Size: 936 m²",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "montana-residence-your-gateway-to-serene-living-in-noord",
@@ -3438,7 +2599,8 @@
           "price": 300000
         }
       ],
-      "notes": "Nestled in the tranquil neighborhood of Noord, Montaña Residence presents an exceptional opportunity."
+      "notes": "Nestled in the tranquil neighborhood of Noord, Montaña Residence presents an exceptional opportunity.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "walishali-condominiums",
@@ -3663,7 +2825,8 @@
           "price": 107000
         }
       ],
-      "notes": "Introducing Rooi Afo Property Land ** Update October 2024 – all plots have been sold ** Discover an unparalleled real estate opportunity in a prime location with Rooi Afo Property Land. Strategically positioned, this land promises both tranquility and convenience. Nestled in a peaceful neighborhood, daily essentials like supermarkets are just moments away. Plus, imagine being a mere 5-minute drive from Aruba’s iconic Eagle Beach – an epitome of sun-soaked relaxation. Rooi Afo offers the perfect backdrop for realizing your architectural vision, be it a holiday haven or a forever home. The location strikes a harmonious balance between serenity and accessibility, making it an enticing choice for discerning buyers. Unlock the door to the Aruban lifestyle you’ve always envisioned. Starting at USD 107,000.00 | AWG 190,460.00. Property Details: Price (AWG): 190,460.00 Request Info Want to know more? Click here to request information Aruba Real Estate Advice Get advice related to Real Estate in Aruba Buying a property Living in Aruba Get Advice! List Your Aruba Property Why list your property on Aruba Real Estate? Get the right exposure for your property Get the best possible price Get Listed! Aruba Property Assistant FREE personal Aruba Real Estate service Let our Property Assistants do the work for you. Don't miss your dream Aruba home opportunity! Tell us what you're looking for! © 2026, Aruba Real Estate | By Caribmedia About Houses For Sale Vacation Rentals Condos For Sale Land For Sale Aruba Privacy Terms Aruba Real Estate Advice Get advice related to Real Estate in Aruba Buying a property Living in Aruba Get Advice! List Your Aruba Property Why list your property on Aruba Real Estate? Get the right exposure for your property Get the best possible price Get Listed! Aruba Property Assistant FREE personal Aruba Real Estate service Let our Property Assistants do the work for you. Don't miss your dream Aruba home opportunity! Tell us what you're looking for! © 2026, Aruba Real Estate | By Caribmedia About Houses For Sale Vacation Rentals Condos For Sale Land For Sale Aruba Privacy Terms"
+      "notes": "Introducing Rooi Afo Property Land ** Update October 2024 – all plots have been sold ** Discover an unparalleled real estate opportunity in a prime location with Rooi Afo Property Land. Strategically positioned, this land promises both tranquility and convenience. Nestled in a peaceful neighborhood, daily essentials like supermarkets are just moments away. Plus, imagine being a mere 5-minute drive from Aruba’s iconic Eagle Beach – an epitome of sun-soaked relaxation. Rooi Afo offers the perfect backdrop for realizing your architectural vision, be it a holiday haven or a forever home. The location strikes a harmonious balance between serenity and accessibility, making it an enticing choice for discerning buyers. Unlock the door to the Aruban lifestyle you’ve always envisioned. Starting at USD 107,000.00 | AWG 190,460.00. Property Details: Price (AWG): 190,460.00 Request Info Want to know more? Click here to request information Aruba Real Estate Advice Get advice related to Real Estate in Aruba Buying a property Living in Aruba Get Advice! List Your Aruba Property Why list your property on Aruba Real Estate? Get the right exposure for your property Get the best possible price Get Listed! Aruba Property Assistant FREE personal Aruba Real Estate service Let our Property Assistants do the work for you. Don't miss your dream Aruba home opportunity! Tell us what you're looking for! © 2026, Aruba Real Estate | By Caribmedia About Houses For Sale Vacation Rentals Condos For Sale Land For Sale Aruba Privacy Terms Aruba Real Estate Advice Get advice related to Real Estate in Aruba Buying a property Living in Aruba Get Advice! List Your Aruba Property Why list your property on Aruba Real Estate? Get the right exposure for your property Get the best possible price Get Listed! Aruba Property Assistant FREE personal Aruba Real Estate service Let our Property Assistants do the work for you. Don't miss your dream Aruba home opportunity! Tell us what you're looking for! © 2026, Aruba Real Estate | By Caribmedia About Houses For Sale Vacation Rentals Condos For Sale Land For Sale Aruba Privacy Terms",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "alto-vista-estate-land",
@@ -3788,7 +2951,8 @@
           "price": 224719
         }
       ],
-      "notes": "Introducing a Prime Commercial Gem in San Nicolas: Situated prominently on Main Street San Nicolas, this outstanding commercial property, set on a 199m2 long lease land, emerges as an enticing proposition for discerning investors. Offering tremendous upside, this well-maintained building encompasses two distinct spaces, of which one currently operates as a flourishing Beauty Hair Salon. Upon entry, the harmonious layout seamlessly integrates form and function. The salon radiates warmth and efficiency, with a cozy waiting area, streamlined cashier desk, and four generously spaced hairstyling stations. Adjacently, a dedicated shampooing section ensures clients a premium experience. At the building’s rear lies a sizeable storage area, flanked by two conveniently located restrooms, catering to both clients and staff. The layout also affords additional space, ripe for customization or extension, unlocking even greater potential. To the building’s left, the secondary space echoes the primary area’s layout, complemented with its own dedicated restroom, making it a versatile investment platform. San Nicolas Main Street boasts abundant parking, ensuring ease of access for visitors. Furthermore, its strategic location provides proximity to a myriad of essential amenities – from banks to eclectic eateries, bustling retail shops to charming cafes. This is San Nicolas redefined – a blend of opportunity, location, and potential. Don’t let this investment opportunity slip away!” Property Details: Baths: 3 Built up area: 176 m² Built up area: 1,894 ft² Price (in AWG): 400,000.00"
+      "notes": "Introducing a Prime Commercial Gem in San Nicolas: Situated prominently on Main Street San Nicolas, this outstanding commercial property, set on a 199m2 long lease land, emerges as an enticing proposition for discerning investors. Offering tremendous upside, this well-maintained building encompasses two distinct spaces, of which one currently operates as a flourishing Beauty Hair Salon. Upon entry, the harmonious layout seamlessly integrates form and function. The salon radiates warmth and efficiency, with a cozy waiting area, streamlined cashier desk, and four generously spaced hairstyling stations. Adjacently, a dedicated shampooing section ensures clients a premium experience. At the building’s rear lies a sizeable storage area, flanked by two conveniently located restrooms, catering to both clients and staff. The layout also affords additional space, ripe for customization or extension, unlocking even greater potential. To the building’s left, the secondary space echoes the primary area’s layout, complemented with its own dedicated restroom, making it a versatile investment platform. San Nicolas Main Street boasts abundant parking, ensuring ease of access for visitors. Furthermore, its strategic location provides proximity to a myriad of essential amenities – from banks to eclectic eateries, bustling retail shops to charming cafes. This is San Nicolas redefined – a blend of opportunity, location, and potential. Don’t let this investment opportunity slip away!” Property Details: Baths: 3 Built up area: 176 m² Built up area: 1,894 ft² Price (in AWG): 400,000.00",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "bon-bini-suites",
@@ -9838,7 +9002,8 @@
           "price": null
         }
       ],
-      "notes": ""
+      "notes": "",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "orquidea-residence-in-noord-3",
@@ -9963,7 +9128,8 @@
           "price": null
         }
       ],
-      "notes": ""
+      "notes": "",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "summerside-iii-3-bedroom-townhomes-8",
@@ -10038,7 +9204,8 @@
           "price": 565000
         }
       ],
-      "notes": ""
+      "notes": "",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "l-aquila-residences---1-bedroom-unit-11",
@@ -10138,7 +9305,8 @@
           "price": 449000
         }
       ],
-      "notes": ""
+      "notes": "",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "pavia-country-club-164-15",
@@ -10263,7 +9431,8 @@
           "price": 322860
         }
       ],
-      "notes": ""
+      "notes": "",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "commandeurs-1-bedroom-condominium-20",
@@ -10538,7 +9707,8 @@
           "price": null
         }
       ],
-      "notes": ""
+      "notes": "",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "l-aquila-residences---2-bedroom-unit-31",
@@ -10688,7 +9858,8 @@
           "price": null
         }
       ],
-      "notes": ""
+      "notes": "",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "luca-model---reina-sophia-residence-37",
@@ -10763,7 +9934,8 @@
           "price": 445000
         }
       ],
-      "notes": ""
+      "notes": "",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "diamantbergweg-81--san-nicolaas-40",
@@ -10788,7 +9960,8 @@
           "price": null
         }
       ],
-      "notes": ""
+      "notes": "",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "palm-aruba-condo---unit-416-in-palm-beach--noord-41",
@@ -10888,7 +10061,8 @@
           "price": null
         }
       ],
-      "notes": ""
+      "notes": "",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "port-au-prince-2-bedroom-unit---caribbean-town-45",
@@ -11238,7 +10412,8 @@
           "price": 565143
         }
       ],
-      "notes": ""
+      "notes": "",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "condominium-in-noord--matadera-3-n--unit-9-59",
@@ -11513,7 +10688,8 @@
           "price": null
         }
       ],
-      "notes": ""
+      "notes": "",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "st--john-ii-studio-unit---caribbean-town-71",
@@ -11663,7 +10839,8 @@
           "price": 1795000
         }
       ],
-      "notes": "Stunning modern villa in Bubali – Prime Location near Aruba’s best beaches!Located in the highly desirable neighborhood of Bubali, this beautiful villa offers the perfect blend of modern elegance and relaxed Caribbean living. Situated on a spacious 943 m² parcel of land, the property enjoys a prime location just minutes from Aruba’s most popular beaches, restaurants, hotels, and everyday amenities. Designed with comfort and style in mind, the villa features a bright open-concept floor plan that fills the living spaces with natural light, creating a welcoming and tranquil atmosphere. The modern kitchen is fully equipped and centered around a stylish island, perfect for casual breakfasts, entertaining guests, or preparing family meals. The main house offers a total 4 spacious bedrooms and 4,5 bathrooms, all bedrooms have an ensuite bathroom, providing ample space and privacy for both residents and visitors.Step outside and discover your own private tropical oasis. The beautifully landscaped backyard features a sparkling swimming pool, lush greenery, and multiple entertainment areas designed for enjoying Aruba’s outdoor lifestyle. A fully equipped outdoor kitchen with a professional BBQ station makes al fresco dining underneath the palapa and hosting gatherings effortless. For added convenience, the pool area also includes a dedicated outdoor toilet, perfect for guests enjoying the backyard and pool. Adding even more versatility to the property is a separate studio apartment with its own en-suite bathroom, ideal for guests, extended family, or additional rental income.Whether you are looking for a luxury vacation home, full-time residence, or a high-potential rental investment, this exceptional Bubali villa offers everything you need to experience the very best of island living.Contact us for more information or to schedule a viewing."
+      "notes": "Stunning modern villa in Bubali – Prime Location near Aruba’s best beaches!Located in the highly desirable neighborhood of Bubali, this beautiful villa offers the perfect blend of modern elegance and relaxed Caribbean living. Situated on a spacious 943 m² parcel of land, the property enjoys a prime location just minutes from Aruba’s most popular beaches, restaurants, hotels, and everyday amenities. Designed with comfort and style in mind, the villa features a bright open-concept floor plan that fills the living spaces with natural light, creating a welcoming and tranquil atmosphere. The modern kitchen is fully equipped and centered around a stylish island, perfect for casual breakfasts, entertaining guests, or preparing family meals. The main house offers a total 4 spacious bedrooms and 4,5 bathrooms, all bedrooms have an ensuite bathroom, providing ample space and privacy for both residents and visitors.Step outside and discover your own private tropical oasis. The beautifully landscaped backyard features a sparkling swimming pool, lush greenery, and multiple entertainment areas designed for enjoying Aruba’s outdoor lifestyle. A fully equipped outdoor kitchen with a professional BBQ station makes al fresco dining underneath the palapa and hosting gatherings effortless. For added convenience, the pool area also includes a dedicated outdoor toilet, perfect for guests enjoying the backyard and pool. Adding even more versatility to the property is a separate studio apartment with its own en-suite bathroom, ideal for guests, extended family, or additional rental income.Whether you are looking for a luxury vacation home, full-time residence, or a high-potential rental investment, this exceptional Bubali villa offers everything you need to experience the very best of island living.Contact us for more information or to schedule a viewing.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": 1161620,
@@ -13488,7 +12665,8 @@
           "price": 297000
         }
       ],
-      "notes": "This well-maintained and fully furnished property is locatedin the center of Aruba, offering easy access to shops, schools, restaurants, and main roads — truly close to everything."
+      "notes": "This well-maintained and fully furnished property is locatedin the center of Aruba, offering easy access to shops, schools, restaurants, and main roads — truly close to everything.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "business-space-for-lease",
@@ -13688,7 +12866,8 @@
           "price": 3000
         }
       ],
-      "notes": "This contemporary 3-bedroom, 3 bath condo offers a bright and open floor plan, featuring a modern living and dining area, a stylish kitchen equipped with stainless steel appliances and granite countertops, and a spacious master bedroom complete with a private en-suite bath and walk-in closet. The second and third guest rooms share a well-appointed bathroom."
+      "notes": "This contemporary 3-bedroom, 3 bath condo offers a bright and open floor plan, featuring a modern living and dining area, a stylish kitchen equipped with stainless steel appliances and granite countertops, and a spacious master bedroom complete with a private en-suite bath and walk-in closet. The second and third guest rooms share a well-appointed bathroom.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "spacious-corner-townhouse-gold-coast-107",
@@ -13713,7 +12892,8 @@
           "price": 2600
         }
       ],
-      "notes": "As a resident of Gold Coast, you will have access to a range of amazing resort amenities. The homeowners association (HOA) fee includes 24-hour security service, outside maintenance, illumination, and upkeep of all general areas, including the clubhouse, tennis courts, and three pools. Additionally, you will have free access to the gym and enjoy well-maintained grounds, roads, sidewalks, the main gated entrance, and public green areas."
+      "notes": "As a resident of Gold Coast, you will have access to a range of amazing resort amenities. The homeowners association (HOA) fee includes 24-hour security service, outside maintenance, illumination, and upkeep of all general areas, including the clubhouse, tennis courts, and three pools. Additionally, you will have free access to the gym and enjoy well-maintained grounds, roads, sidewalks, the main gated entrance, and public green areas.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "exclusive-house-apartment-private-land",
@@ -13738,7 +12918,8 @@
           "price": 715000
         }
       ],
-      "notes": "In addition to its impressive features, this property boasts two covered garages, adding to its appeal and potential. If you are looking to invest in a property that provides you with additional income, this can be it! The garage area can easily be converted in ideal (vacation) rental apartments. Furthermore, there is a separate 2-bedroom, 1-bathroom apartment with its own private entrance, conveniently located adjacent to the main house."
+      "notes": "In addition to its impressive features, this property boasts two covered garages, adding to its appeal and potential. If you are looking to invest in a property that provides you with additional income, this can be it! The garage area can easily be converted in ideal (vacation) rental apartments. Furthermore, there is a separate 2-bedroom, 1-bathroom apartment with its own private entrance, conveniently located adjacent to the main house.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "napa-valley-town-house",
@@ -13788,7 +12969,8 @@
           "price": 495000
         }
       ],
-      "notes": "Investment Opportunity: This listing is not just a home; it’s a wise investment choice. The potential rental income from the two studios and one-bedroom apartment allows you to maximize your return on investment while enjoying the benefits of property ownership in one of Aruba’s most desirable locations."
+      "notes": "Investment Opportunity: This listing is not just a home; it’s a wise investment choice. The potential rental income from the two studios and one-bedroom apartment allows you to maximize your return on investment while enjoying the benefits of property ownership in one of Aruba’s most desirable locations.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "paradera-home-private-land",
@@ -13813,7 +12995,8 @@
           "price": 300000
         }
       ],
-      "notes": "Situated on property land spanning a generous 723 m², with a well-designed house occupying 212 m², this property offers you the freedom to transform it into your vision of paradise. Whether you’re an investor seeking a valuable opportunity or a homeowner looking for a project, Sero Patrishi 62 is the canvas for your imagination. Centrally located on the island, you’ll enjoy easy access to Aruba’s stunning beaches, vibrant city life, and a wide array of dining and entertainment options."
+      "notes": "Situated on property land spanning a generous 723 m², with a well-designed house occupying 212 m², this property offers you the freedom to transform it into your vision of paradise. Whether you’re an investor seeking a valuable opportunity or a homeowner looking for a project, Sero Patrishi 62 is the canvas for your imagination. Centrally located on the island, you’ll enjoy easy access to Aruba’s stunning beaches, vibrant city life, and a wide array of dining and entertainment options.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "alto-vista-28j-noord",
@@ -13838,7 +13021,8 @@
           "price": 295000
         }
       ],
-      "notes": "To add convenience to your move, this property comes semi-furnished, allowing you to envision your personal style and effortlessly settle into your new home. The semi-furnished status provides a perfect balance, providing essential elements while giving you the freedom to add your own personal touches."
+      "notes": "To add convenience to your move, this property comes semi-furnished, allowing you to envision your personal style and effortlessly settle into your new home. The semi-furnished status provides a perfect balance, providing essential elements while giving you the freedom to add your own personal touches.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "wegfontein-49b-fixer-upper-property-land",
@@ -13863,7 +13047,8 @@
           "price": 65000
         }
       ],
-      "notes": "This property is located in a quiet neighborhood of Sanicolas. The fixer-upper residence is on property land. Just 5 minutes from the city center and 10 minutes from baby beach."
+      "notes": "This property is located in a quiet neighborhood of Sanicolas. The fixer-upper residence is on property land. Just 5 minutes from the city center and 10 minutes from baby beach.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "private-land-jaburibari-residence",
@@ -13913,7 +13098,8 @@
           "price": 295000
         }
       ],
-      "notes": "he project consists of 19 Apartments and one commercial space, the apartments are as follows: 5x apartments of two bedrooms and two bathrooms and 14x apartments of one bedroom and one bathroom. The permit has been already approved for the project however it needs to be updated at DOW Aruba."
+      "notes": "he project consists of 19 Apartments and one commercial space, the apartments are as follows: 5x apartments of two bedrooms and two bathrooms and 14x apartments of one bedroom and one bathroom. The permit has been already approved for the project however it needs to be updated at DOW Aruba.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "tamarijn-11-property-land",
@@ -13938,7 +13124,8 @@
           "price": 550000
         }
       ],
-      "notes": "But the real value lies in the additional income streams – not one but two apartments! The first apartment is a spacious 38m2 with its own kitchen, bathroom, and one bedroom. The second apartment, spanning 29m2, comes complete with a kitchen, bathroom, and bedroom."
+      "notes": "But the real value lies in the additional income streams – not one but two apartments! The first apartment is a spacious 38m2 with its own kitchen, bathroom, and one bedroom. The second apartment, spanning 29m2, comes complete with a kitchen, bathroom, and bedroom.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "napa-valley-lot",
@@ -13963,7 +13150,8 @@
           "price": 157950
         }
       ],
-      "notes": "Discover the ideal location on the island, offering easy access to schools, stores, downtown, and beaches. Perfect for families looking to create their own dream home."
+      "notes": "Discover the ideal location on the island, offering easy access to schools, stores, downtown, and beaches. Perfect for families looking to create their own dream home.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "catalina-estates-lot-14",
@@ -13988,7 +13176,8 @@
           "price": 425000
         }
       ],
-      "notes": "Situated close to Aruba’s best beaches like Boca Catalina and Tres Trapi, this location is a beach lover’s dream. Whether you dream of a luxurious villa or a serene retreat, this lot provides the canvas for your vision."
+      "notes": "Situated close to Aruba’s best beaches like Boca Catalina and Tres Trapi, this location is a beach lover’s dream. Whether you dream of a luxurious villa or a serene retreat, this lot provides the canvas for your vision.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "tanki-leendert-property-land",
@@ -14013,7 +13202,8 @@
           "price": 230000
         }
       ],
-      "notes": "Discover the perfect canvas for your future home on this exceptional 297 m2 land, located in the sought-after Tanki Leendert neighborhood. This property offers a unique opportunity to build your dream home with all the essential amenities already in place."
+      "notes": "Discover the perfect canvas for your future home on this exceptional 297 m2 land, located in the sought-after Tanki Leendert neighborhood. This property offers a unique opportunity to build your dream home with all the essential amenities already in place.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "avenida-milio-croes-commercial-land-2",
@@ -14088,7 +13278,8 @@
           "price": 320000
         }
       ],
-      "notes": "Discover the charm of Bona Vista Hills, an exclusive residential development where you can own a stunning 1005 m² property lot and build your dream home. Nestled in a natural setting, this peaceful and serene environment offers the perfect escape from the hustle and bustle of the city. Surrounded by lush greenery, you’ll enjoy breathtaking views and a close connection to nature."
+      "notes": "Discover the charm of Bona Vista Hills, an exclusive residential development where you can own a stunning 1005 m² property lot and build your dream home. Nestled in a natural setting, this peaceful and serene environment offers the perfect escape from the hustle and bustle of the city. Surrounded by lush greenery, you’ll enjoy breathtaking views and a close connection to nature.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "aruba-breeze-apartment-complex",
@@ -14113,7 +13304,8 @@
           "price": 715000
         }
       ],
-      "notes": "Situated on lease land spanning 600m2, this property presents a remarkable chance for those seeking an attractive investment in a sought-after location. Whether you are a seasoned investor or someone looking to expand your real estate portfolio, Arendstraat 120-A offers an ideal opportunity to capitalize on the thriving rental market in Aruba."
+      "notes": "Situated on lease land spanning 600m2, this property presents a remarkable chance for those seeking an attractive investment in a sought-after location. Whether you are a seasoned investor or someone looking to expand your real estate portfolio, Arendstraat 120-A offers an ideal opportunity to capitalize on the thriving rental market in Aruba.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "jaburibari-26b",
@@ -14188,7 +13380,8 @@
           "price": 3400
         }
       ],
-      "notes": "Inside, you’ll find a main dining room equipped with a powerful AC unit ensuring comfort for your guests, while the fully equipped kitchen comes complete with essential appliances such as freezers, fryers, and exhausts, along with all necessary utensils, plates, and silverware. Notably, the kitchen has an approved permit, ensuring compliance with safety standards."
+      "notes": "Inside, you’ll find a main dining room equipped with a powerful AC unit ensuring comfort for your guests, while the fully equipped kitchen comes complete with essential appliances such as freezers, fryers, and exhausts, along with all necessary utensils, plates, and silverware. Notably, the kitchen has an approved permit, ensuring compliance with safety standards.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "palm-beach-commercial-building",
@@ -14213,7 +13406,8 @@
           "price": 735000
         }
       ],
-      "notes": "Situated on 1034m2 of long lease land, this property features three units, each approximately 110m2 in size. With the potential for lucrative returns from tenants, including La Fonda, Pizzeria, and a Beauty Salon, this property is poised to provide excellent rental income."
+      "notes": "Situated on 1034m2 of long lease land, this property features three units, each approximately 110m2 in size. With the potential for lucrative returns from tenants, including La Fonda, Pizzeria, and a Beauty Salon, this property is poised to provide excellent rental income.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "avenida-milio-croes-commercial-land",
@@ -14263,7 +13457,8 @@
           "price": 435000
         }
       ],
-      "notes": "Nestled in a serene neighborhood, Montana presents an excellent investment opportunity in the heart of Aruba. This apartment complex, set on a property land of 441 m2, comprises 6 cozy apartments, with 5 located on the ground floor and 1 on the second floor."
+      "notes": "Nestled in a serene neighborhood, Montana presents an excellent investment opportunity in the heart of Aruba. This apartment complex, set on a property land of 441 m2, comprises 6 cozy apartments, with 5 located on the ground floor and 1 on the second floor.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "turnkey-restaurant-for-rent-prime-location-at-l-g-smith-blvd-2",
@@ -15063,7 +14258,8 @@
           "price": 1390000
         }
       ],
-      "notes": "With 273m² of interior space, the villa is designed to make the most of Aruba’s sunny lifestyle. Step outside to your private saltwater pool, finished with premium Diamond Brite for smooth, lasting beauty. The layout allows constant wind circulation, keeping the area cool and comfortable throughout the day. A mature tropical garden surrounds the property, creating a peaceful, private atmosphere. Lush greenery and vibrant plants provide natural seclusion, making the outdoor space feel like a personal retreat."
+      "notes": "With 273m² of interior space, the villa is designed to make the most of Aruba’s sunny lifestyle. Step outside to your private saltwater pool, finished with premium Diamond Brite for smooth, lasting beauty. The layout allows constant wind circulation, keeping the area cool and comfortable throughout the day. A mature tropical garden surrounds the property, creating a peaceful, private atmosphere. Lush greenery and vibrant plants provide natural seclusion, making the outdoor space feel like a personal retreat.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "AltoVista45A",
@@ -15088,7 +14284,8 @@
           "price": 1350000
         }
       ],
-      "notes": "Perched gracefully in the scenic hills of Alto Vista, this three-story luxury villa offers an unparalleled blend of elegance, comfort, and breathtaking views. Spanning 762m² of lease land, this remarkable 4-bedroom, 4.5-bathroom property is designed for those who seek tranquility, style, and convenience just minutes from Aruba’s most beautiful beaches."
+      "notes": "Perched gracefully in the scenic hills of Alto Vista, this three-story luxury villa offers an unparalleled blend of elegance, comfort, and breathtaking views. Spanning 762m² of lease land, this remarkable 4-bedroom, 4.5-bathroom property is designed for those who seek tranquility, style, and convenience just minutes from Aruba’s most beautiful beaches.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "jamanota-19d-1-2",
@@ -15188,7 +14385,8 @@
           "price": 1195000
         }
       ],
-      "notes": "Outside, a beautifully landscaped garden provides unobstructed views over protected nature grounds a rare privilege on the island. Multiple terraces, a wooden deck, and a private pool make this the ideal space for relaxing, entertaining, or simply soaking in the peace and privacy."
+      "notes": "Outside, a beautifully landscaped garden provides unobstructed views over protected nature grounds a rare privilege on the island. Multiple terraces, a wooden deck, and a private pool make this the ideal space for relaxing, entertaining, or simply soaking in the peace and privacy.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "esmeralda-42-b-brand-new-solar-panels-carport-furnished",
@@ -15338,7 +14536,8 @@
           "price": 850000
         }
       ],
-      "notes": "At the back of the house, a large patio opens up to a generous outdoor living space with multiple seating areas and a beautiful swimming pool, perfect for relaxing and enjoying Aruba’s outdoor lifestyle. At the front of the property, there is private parking on the premises, surrounded by a landscaped garden that adds to the charm of the home."
+      "notes": "At the back of the house, a large patio opens up to a generous outdoor living space with multiple seating areas and a beautiful swimming pool, perfect for relaxing and enjoying Aruba’s outdoor lifestyle. At the front of the property, there is private parking on the premises, surrounded by a landscaped garden that adds to the charm of the home.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "pos-abao-10F",
@@ -15488,7 +14687,8 @@
           "price": 795000
         }
       ],
-      "notes": "Whether you're looking for aluxurious vacation home, aprofitable short-term rental investment, or apeaceful island escape, Casa Iguana delivers on all fronts. This property is a standout in Aruba’s real estate market—offering style, location, and resort-style living in one exceptional package. Casa Iguana has been a short term rental property for a couple of years and has a great ROI in the Aruba short term rental market. This is a turnkey property, fully furnished and comes with reservations already booked in 2025."
+      "notes": "Whether you're looking for aluxurious vacation home, aprofitable short-term rental investment, or apeaceful island escape, Casa Iguana delivers on all fronts. This property is a standout in Aruba’s real estate market—offering style, location, and resort-style living in one exceptional package. Casa Iguana has been a short term rental property for a couple of years and has a great ROI in the Aruba short term rental market. This is a turnkey property, fully furnished and comes with reservations already booked in 2025.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "rooi-bosal-24e",
@@ -15638,7 +14838,8 @@
           "price": 730000
         }
       ],
-      "notes": "Step outside to enjoy aspacious outdoor area, ideal for hosting, unwinding, or expanding the property further. The layout also offers thepossibility to extend the land area at the rear, adding long-term value and flexibility. (Note: this is only by officially sending in a request)"
+      "notes": "Step outside to enjoy aspacious outdoor area, ideal for hosting, unwinding, or expanding the property further. The layout also offers thepossibility to extend the land area at the rear, adding long-term value and flexibility. (Note: this is only by officially sending in a request)",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "bucutiweg-30",
@@ -15963,7 +15164,8 @@
           "price": 559000
         }
       ],
-      "notes": "Step inside and be greeted by a bright, open-conceptliving, dining, and kitchen areawith soaringcathedral ceilingsthat create a spacious, airy feel. The home isfully air-conditioned, yet thanks to its location near the natural east side of Noord, a refreshing breeze flows through the house all day long. Enjoy thebeautiful backyard, perfect for entertaining with itscovered porch and inviting pool,ideal for evening dinners, barbecues, or just relaxing under the Aruban sky during the Sunset!"
+      "notes": "Step inside and be greeted by a bright, open-conceptliving, dining, and kitchen areawith soaringcathedral ceilingsthat create a spacious, airy feel. The home isfully air-conditioned, yet thanks to its location near the natural east side of Noord, a refreshing breeze flows through the house all day long. Enjoy thebeautiful backyard, perfect for entertaining with itscovered porch and inviting pool,ideal for evening dinners, barbecues, or just relaxing under the Aruban sky during the Sunset!",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "orcuyo-24-tranquility-views-future-potential",
@@ -16038,7 +15240,8 @@
           "price": 533700
         }
       ],
-      "notes": "Experience the best of island living in this stylish villa, perfectly located in the peaceful and scenic area of Ayo. Set on a generous900 m²of long lease land and offering226 m²of refined living space, this property beautifully blends comfort, design, and natural beauty."
+      "notes": "Experience the best of island living in this stylish villa, perfectly located in the peaceful and scenic area of Ayo. Set on a generous900 m²of long lease land and offering226 m²of refined living space, this property beautifully blends comfort, design, and natural beauty.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "turibana-32",
@@ -16163,7 +15366,8 @@
           "price": 499000
         }
       ],
-      "notes": "Step outside into the garden, where a brand-new 35m² pool with a gazebo awaits, perfect for relaxation and outdoor entertainment. Additionally, the property includes a separate 1-bedroom apartment with its own kitchen/living area, and bathroom, making it ideal for guests or rental opportunities."
+      "notes": "Step outside into the garden, where a brand-new 35m² pool with a gazebo awaits, perfect for relaxation and outdoor entertainment. Additionally, the property includes a separate 1-bedroom apartment with its own kitchen/living area, and bathroom, making it ideal for guests or rental opportunities.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "santa-cruz-17-2",
@@ -16188,7 +15392,8 @@
           "price": 499000
         }
       ],
-      "notes": "Escape to your own private oasis with this unique and charming Cunucu-style house and cottage complex. Nestled on a 1407m2 property land in the desirable Santa Cruz area, this property offers each cottage the ultimate in privacy and seclusion. The main house boasts 3 bedrooms and 1 bathroom, while the 5 separate cottages each feature 2 bedrooms and 1 bathroom, providing ample space for guests or renters. The Cunucu-style architecture, used for the house, is evident throughout, with traditional elements such as thick walls. The spacious property is perfect for those who love to entertain or simply enjoy the outdoors. Don't miss out on this rare opportunity to own a piece of Aruban history, combinate with cottages who are easily to rent out!"
+      "notes": "Escape to your own private oasis with this unique and charming Cunucu-style house and cottage complex. Nestled on a 1407m2 property land in the desirable Santa Cruz area, this property offers each cottage the ultimate in privacy and seclusion. The main house boasts 3 bedrooms and 1 bathroom, while the 5 separate cottages each feature 2 bedrooms and 1 bathroom, providing ample space for guests or renters. The Cunucu-style architecture, used for the house, is evident throughout, with traditional elements such as thick walls. The spacious property is perfect for those who love to entertain or simply enjoy the outdoors. Don't miss out on this rare opportunity to own a piece of Aruban history, combinate with cottages who are easily to rent out!",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "noord-142",
@@ -16213,7 +15418,8 @@
           "price": 495000
         }
       ],
-      "notes": "Located in the highly sought-after area ofNoord, this3-bedroom, 2-bathroom homeoffers an excellent opportunity to own in one of Aruba’s most desirable neighborhoods — just minutes from the island’s best beaches, restaurants, shopping, and nightlife."
+      "notes": "Located in the highly sought-after area ofNoord, this3-bedroom, 2-bathroom homeoffers an excellent opportunity to own in one of Aruba’s most desirable neighborhoods — just minutes from the island’s best beaches, restaurants, shopping, and nightlife.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "savaneta-199-2",
@@ -16338,7 +15544,8 @@
           "price": 466292
         }
       ],
-      "notes": "Outdoor Area:Enjoy a beautifully landscaped garden filled with mature trees and lush plants. The property is fully fenced for privacy and security.In the garden, you’ll find a lovely covered sitting area, perfect for relaxing or entertaining guests. There’s also a jacuzzi, and enough space to add a swimming pool if desired.At the front of the home, there is parking space for two cars on the property."
+      "notes": "Outdoor Area:Enjoy a beautifully landscaped garden filled with mature trees and lush plants. The property is fully fenced for privacy and security.In the garden, you’ll find a lovely covered sitting area, perfect for relaxing or entertaining guests. There’s also a jacuzzi, and enough space to add a swimming pool if desired.At the front of the home, there is parking space for two cars on the property.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "cas-aruba-37c-new-2",
@@ -16613,7 +15820,8 @@
           "price": 379000
         }
       ],
-      "notes": "This lovely home is located in Macuarima 41C on 628m² of long lease land, with a total build-up size of 219m². The main house has been completely renovated and offers 3 spacious bedrooms, 2 modern bathrooms, a new kitchen, and a bright, open layout perfect for family living."
+      "notes": "This lovely home is located in Macuarima 41C on 628m² of long lease land, with a total build-up size of 219m². The main house has been completely renovated and offers 3 spacious bedrooms, 2 modern bathrooms, a new kitchen, and a bright, open layout perfect for family living.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "new-built",
@@ -16688,7 +15896,8 @@
           "price": 275000
         }
       ],
-      "notes": "This property, located in the area close to Savaneta in Noord Cura Cabai, is perfect for those looking for a comfortable home with extra space or rental potential. It is located on a large plot of 600 m² property land and has a built-up size of 219 m². The property includes a main house of 115m², a porch and patio of 49m², a garage of 34m² and a separate apartment of 21m² , offering plenty of options for living and hosting."
+      "notes": "This property, located in the area close to Savaneta in Noord Cura Cabai, is perfect for those looking for a comfortable home with extra space or rental potential. It is located on a large plot of 600 m² property land and has a built-up size of 219 m². The property includes a main house of 115m², a porch and patio of 49m², a garage of 34m² and a separate apartment of 21m² , offering plenty of options for living and hosting.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "juwana-m",
@@ -16763,7 +15972,8 @@
           "price": 175000
         }
       ],
-      "notes": "ROPV: Stedelijk Woongebiedhttps://www.iomgeving.nl/Aruba/r_NL.IMRO.0000.20190517-0001.html#NL.IMRO.PT.s626If you're ready to embark on an exciting journey of transformation and want to turn this house into your home, seize the moment and make this property yours today! I have plenty of concepts and ideas to share."
+      "notes": "ROPV: Stedelijk Woongebiedhttps://www.iomgeving.nl/Aruba/r_NL.IMRO.0000.20190517-0001.html#NL.IMRO.PT.s626If you're ready to embark on an exciting journey of transformation and want to turn this house into your home, seize the moment and make this property yours today! I have plenty of concepts and ideas to share.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "st-catherinestraat-55",
@@ -16813,7 +16023,8 @@
           "price": 1550000
         }
       ],
-      "notes": "Discover the ultimate combination of luxury living, resort-style convenience, and solid investment performance in this stunning ocean and golf course-view penthouse at the award-winning Divi Village Golf & Beach Resort. With 3 bedrooms, 3.5 bathrooms, and a massive 1,500 sq. ft. private deck, this two-story residence offers a rare opportunity to own a spacious retreat just a5-minute walk from Eagle Beach— one of the top beaches in the world —combined with all amenities of an upscale resort."
+      "notes": "Discover the ultimate combination of luxury living, resort-style convenience, and solid investment performance in this stunning ocean and golf course-view penthouse at the award-winning Divi Village Golf & Beach Resort. With 3 bedrooms, 3.5 bathrooms, and a massive 1,500 sq. ft. private deck, this two-story residence offers a rare opportunity to own a spacious retreat just a5-minute walk from Eagle Beach— one of the top beaches in the world —combined with all amenities of an upscale resort.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "spectacular-penthouse-condo-divi-golf-beach-resort",
@@ -16838,7 +16049,8 @@
           "price": 1299999
         }
       ],
-      "notes": "This penthouse is just a5-minute walk from the iconic Eagle Beach, consistently ranked among theTop 10 Beaches in the World. Imagine stepping out of your door and strolling to soft white sands, calm turquoise waters, and a laid-back beach bar for sunset cocktails. Whether you love swimming, sunbathing, paddleboarding, or simply watching the waves roll in,Eagle Beach is your backyard."
+      "notes": "This penthouse is just a5-minute walk from the iconic Eagle Beach, consistently ranked among theTop 10 Beaches in the World. Imagine stepping out of your door and strolling to soft white sands, calm turquoise waters, and a laid-back beach bar for sunset cocktails. Whether you love swimming, sunbathing, paddleboarding, or simply watching the waves roll in,Eagle Beach is your backyard.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "azure-725",
@@ -16913,7 +16125,8 @@
           "price": 950000
         }
       ],
-      "notes": "Extras include a storage room, a dedicated parking spot, and a garage. The complex also offers two pools, 24/7 security, and on-site restaurants. With direct ocean views and a secure, sought-after location, Azure isn’t just a home, it’s a lifestyle."
+      "notes": "Extras include a storage room, a dedicated parking spot, and a garage. The complex also offers two pools, 24/7 security, and on-site restaurants. With direct ocean views and a secure, sought-after location, Azure isn’t just a home, it’s a lifestyle.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "wariruri-unit-214",
@@ -16963,7 +16176,8 @@
           "price": 818000
         }
       ],
-      "notes": "•3rd-floorcorner unit–bright, private, and airy with excellent natural light•Elevator just steps from your front door•Rooftop terracewith spectacular ocean and island views•2 bedrooms | 2.5 bathrooms•1-bedroom lockout with private entrance–perfect for guests or rental income•Two private balconies/terraces•Modern kitchen with premium finishes•Fully furnished – move-in or rental ready•Two swimming pools•Three outdoor kitchens and entertaining areas•Upscale on-site restaurant•Walking distance to Aruba’s famous beaches•Turn-key property–ready for immediate use or vacation rental income•Excellent short-term rental potential"
+      "notes": "•3rd-floorcorner unit–bright, private, and airy with excellent natural light•Elevator just steps from your front door•Rooftop terracewith spectacular ocean and island views•2 bedrooms | 2.5 bathrooms•1-bedroom lockout with private entrance–perfect for guests or rental income•Two private balconies/terraces•Modern kitchen with premium finishes•Fully furnished – move-in or rental ready•Two swimming pools•Three outdoor kitchens and entertaining areas•Upscale on-site restaurant•Walking distance to Aruba’s famous beaches•Turn-key property–ready for immediate use or vacation rental income•Excellent short-term rental potential",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "isla-bonita-penthouse",
@@ -17138,7 +16352,8 @@
           "price": 550000
         }
       ],
-      "notes": "Inside, this contemporary condo boasts a bright open layout, with two large sliding doors that fill the space with natural light. The sleek kitchen features a nice island with bar seating, plenty of cabinetry, and a washer and dryer smartly tucked away. At the back of the unit, you'll find two well-sized bedrooms with built-in closets. The primary suite has its own ensuite, while a second full bathroom serves the guest room."
+      "notes": "Inside, this contemporary condo boasts a bright open layout, with two large sliding doors that fill the space with natural light. The sleek kitchen features a nice island with bar seating, plenty of cabinetry, and a washer and dryer smartly tucked away. At the back of the unit, you'll find two well-sized bedrooms with built-in closets. The primary suite has its own ensuite, while a second full bathroom serves the guest room.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "yoo-aruba-branded-residences-oranjestad",
@@ -17563,7 +16778,8 @@
           "price": 146629
         }
       ],
-      "notes": "Discover a great opportunity to build your dream home in the peaceful and established neighborhood of San Barbola. This522 m² parcel of landoffers ample space to design and build a comfortable residence in a quiet residential setting."
+      "notes": "Discover a great opportunity to build your dream home in the peaceful and established neighborhood of San Barbola. This522 m² parcel of landoffers ample space to design and build a comfortable residence in a quiet residential setting.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "rooi-afo-lot-431m2",
@@ -18775,7 +17991,8 @@
           "price": null
         }
       ],
-      "notes": "Now let's take you on a stroll through the perfectly landscaped outside space. Take a refreshing plunge from the diving board into the depths of the pool or relax in the outdoor Jacuzzi. Gatherings around the fire pit or hanging out at the BBQ Grill are guaranteed fun  and outdoor dining in this house gives a whole new twist to dining Al Fresco with views that last for days! The LED lights infused in the pool should add instant ambiance at any social event and the well maintained garden will keep the moment magical thanks to the automated irrigation system."
+      "notes": "Now let's take you on a stroll through the perfectly landscaped outside space. Take a refreshing plunge from the diving board into the depths of the pool or relax in the outdoor Jacuzzi. Gatherings around the fire pit or hanging out at the BBQ Grill are guaranteed fun  and outdoor dining in this house gives a whole new twist to dining Al Fresco with views that last for days! The LED lights infused in the pool should add instant ambiance at any social event and the well maintained garden will keep the moment magical thanks to the automated irrigation system.",
+      "soldDate": "2026-06-25"
     },
     {
       "id": "casa-warehouse-pos-chiquito",
@@ -21226,12 +20443,847 @@
         }
       ],
       "notes": "An exceptional investment opportunity located in the peaceful and centrally positionedSabana Basora 114-Q, Aruba. This well-constructed building sits on a generous leasehold land parcel of2.702 m². The property includes aconcrete restaurant,two commercial shop units, and aresidential apartment."
+    },
+    {
+      "id": "safir-13",
+      "name": "Safir 13",
+      "type": "house",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2026/04/1-1024x683.jpg",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 944000,
+      "size": "276 m²",
+      "buildingSize": "276 m²",
+      "lotSize": "651 m²",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/noord/safir-13/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 944000
+        }
+      ],
+      "notes": "Built on a 651 m² long-lease lot (until April 2058), the property features approximately 276 m² of living space, including 3 bedrooms and 3 bathrooms, plus a loft with an additional bedroom and bathroom—ideal for guests or extra living space."
+    },
+    {
+      "id": "malmok-8a",
+      "name": "Malmok 8A",
+      "type": "house",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2026/03/DJI_20260312025931_0046_D.jpg",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 2200000,
+      "size": "651 m²",
+      "buildingSize": "651 m²",
+      "lotSize": "900 m²",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/noord/malmok-8a/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 2200000
+        }
+      ],
+      "notes": "Prime Location:Located in the exclusive Malmok area, this property offers an unmatched lifestyle surrounded by Aruba’s most prestigious attractions. Just minutes away from the crystal-clear waters of Tres Trapi and Boca Catalina, and close to the iconic California Lighthouse, you are perfectly positioned to enjoy some of the island’s most breathtaking coastal views. The renowned Tierra del Sol Golf Course is right nearby for world-class golfing, while Fisherman’s Huts offers a vibrant scene for watersports and beachfront relaxation. Only a short drive from the high-rise hotel district, you’ll have easy access to fine dining, luxury resorts, shopping, and entertainment, all while enjoying the privacy and tranquility of an upscale residential neighborhood."
+    },
+    {
+      "id": "pos-chiquito-17",
+      "name": "Pos Chiquito 17",
+      "type": "house",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/10/WhatsApp-Image-2025-10-22-at-11.30.48-1024x576.jpeg",
+      "area": "Savaneta",
+      "location": "Savaneta",
+      "askPrice": 324000,
+      "size": "2104 m²",
+      "buildingSize": "2104 m²",
+      "lotSize": "806 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/savaneta/pos-chiquito-17/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 324000
+        }
+      ],
+      "notes": "Investment Highlights:Multiple income-generating units with current rental potentialAmple space to build or expand additional apartmentsPotential to add a pool for premium rental or vacation useRenovation potential to increase property value and rental incomeFully fenced lot offering privacy and future development opportunitiesPrime location minutes from beaches, shopping, and restaurants"
+    },
+    {
+      "id": "house-with-pool-for-sale-wayaca-residence-423",
+      "name": "House with Pool For Sale – Wayaca Residence 423",
+      "type": "house",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/a3311d92-ffd6-42db-8109-386bad178ee9-1024x768.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 898876,
+      "size": "256 m²",
+      "buildingSize": "256 m²",
+      "lotSize": "535 m²",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/oranjestad/house-with-pool-for-sale-wayaca-residence-423/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 898876
+        }
+      ],
+      "notes": "3 Spacious Bedrooms & 2 Bathrooms– Including awalk-in closetin the master suitePrivate Swimming Pool– Perfect for relaxing and entertainingModern Kitchen, Dining & Living Room– Open-concept design for seamless flowDedicated Office Space– Ideal for remote work or a home businessStorage Room & Laundry Room– Extra convenience for household organizationOutdoor Bathroom with Shower– Great for poolside usePatio & Gazebo– Enjoy outdoor living in stylePumphouse– Ensuring efficient pool maintenanceQuiet & Safe Neighborhood– Located in the tranquilWayaca community, known for itsconvenience and family-friendly atmospherePrime Location:Close toOranjestad, the airport, shopping centers, schools, and more!"
+    },
+    {
+      "id": "kas-paloma-18-b",
+      "name": "Kas Paloma 18-B",
+      "type": "house",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/WhatsApp-Image-2025-03-04-at-1.26.29-PM-3-1024x473.jpeg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 700000,
+      "size": "724 m²",
+      "buildingSize": "724 m²",
+      "lotSize": "1133 m²",
+      "bedrooms": 7,
+      "bathrooms": 6,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/oranjestad/kas-paloma-18-b/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 700000
+        }
+      ],
+      "notes": "Key Features:Lot Size: 1,133m² Long Lease Property LandMain House: 4 Bedrooms | 3 Bathrooms | 210m² Built-Up AreaApartment: 2 Bedrooms | 2 Bathrooms | Attached OfficeWarehouse: Large space split into two sections with automatic gatesSwimming Pool: Fully equipped with pumps, pool cover, and maintenance setupSecure Fencing & Private EntrySolar Panels for Energy Efficiency"
+    },
+    {
+      "id": "esmeralda-110-house-with-apartments",
+      "name": "Esmeralda 110 - House with apartments",
+      "type": "house",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/1-1-1024x478.jpg",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 650000,
+      "size": "210 m²",
+      "buildingSize": "210 m²",
+      "lotSize": "763 m²",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/noord/esmeralda-110-house-with-apartments/",
+      "status": "sold",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 650000
+        }
+      ],
+      "notes": "Live in comfort while effortlessly earning from your investment. The main home boasts 2 bedrooms and 1.5 baths, providing ample space for relaxation and entertainment.",
+      "soldDate": "2026-06-25"
+    },
+    {
+      "id": "3-bedroom-project-home-tamarijn-9b",
+      "name": "3-Bedroom Project Home Tamarijn 9B",
+      "type": "house",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/01-1-1024x594.jpg",
+      "area": "Paradera",
+      "location": "Paradera",
+      "askPrice": 208000,
+      "size": "211 m²",
+      "buildingSize": "211 m²",
+      "lotSize": "553 m²",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/paradera/3-bedroom-project-home-tamarijn-9b/",
+      "status": "sold",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 208000
+        }
+      ],
+      "notes": "This home offers ample space for both relaxation and entertainment, featuring a spacious living room, a dining area connected to a kitchen, and a TV room for family movie nights. The master bedroom boasts a walk-in closet, and the outdoor patio and porch areas provide the perfect settings for enjoying the lovely Aruban weather.",
+      "soldDate": "2026-06-25"
+    },
+    {
+      "id": "home-at-rooi-taki-3",
+      "name": "Home at Rooi Taki 3",
+      "type": "house",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/01-scaled-1-1024x478.jpg",
+      "area": "Savaneta",
+      "location": "Savaneta",
+      "askPrice": 440000,
+      "size": "246 m²",
+      "buildingSize": "246 m²",
+      "lotSize": "903 m²",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/savaneta/home-at-rooi-taki-3/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 440000
+        }
+      ],
+      "notes": "Neighborhood:Rooi Taki is surrounded by lush greenery, offering a peaceful retreat from the hustle and bustle. This home provides the perfect blend of privacy and natural beauty, making it ideal for those who appreciate a quiet, serene environment. Enjoy the sounds of nature and ample outdoor space while still being just a short drive from essential amenities and local attractions."
+    },
+    {
+      "id": "sero-patrishi-43-a",
+      "name": "Sero Patrishi 43-A",
+      "type": "house",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-18-at-8.16.45-AM-3-1024x768.jpeg",
+      "area": "Paradera",
+      "location": "Paradera",
+      "askPrice": 460000,
+      "size": "313 m²",
+      "buildingSize": "313 m²",
+      "lotSize": "1103 m²",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/paradera/sero-patrishi-43-a/",
+      "status": "sold",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 460000
+        }
+      ],
+      "notes": "Interior Highlights:Expansive Open-Plan Living & Dining AreaWell-Equipped Kitchen with Wooden Cabinets & Breakfast CounterFully Air-Conditioned with Split-Units (Carrier, Panasonic & Daikin)Separate Family Room & Additional Storage SpacesModern Bathrooms with Quality Fixtures & FinishesMaid’s Quarter with Private Entrance",
+      "soldDate": "2026-06-25"
+    },
+    {
+      "id": "charming-family-home-in-sabana-basora-157",
+      "name": "Charming Family Home in Sabana Basora #157",
+      "type": "house",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/WhatsApp-Image-2024-10-03-at-13504-PM-1024x768.jpeg",
+      "area": "Savaneta",
+      "location": "Savaneta",
+      "askPrice": 265000,
+      "size": "143 m²",
+      "buildingSize": "143 m²",
+      "lotSize": "487 m²",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/house-for-sale/savaneta/charming-family-home-in-sabana-basora-157/",
+      "status": "sold",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 265000
+        }
+      ],
+      "notes": "Discover your new oasis in the peaceful area of Sabana Basora! This spacious 4-bedroom, 3-bathroom home sits on a487 m² long lease landand offers everything you need for comfortable island living.",
+      "soldDate": "2026-06-25"
+    },
+    {
+      "id": "caribbean-town-condos-villas",
+      "name": "Caribbean Town Condos & VIllas",
+      "type": "condo",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/Main-2-1024x576.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "size": "42000 m²",
+      "buildingSize": "42000 m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/condominium/oranjestad/caribbean-town-condos-villas/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": null
+        }
+      ],
+      "notes": "Welcome toCaribbean Town Condos and Villas—an exciting new residential development redefining modern island living. Spanning an impressive 42,000 m², this master-planned community offers a unique blend of comfort, innovation, and lifestyle within a secure, gated environment."
+    },
+    {
+      "id": "atlantic-360-condo-houses",
+      "name": "Atlantic 360 Condo Houses",
+      "type": "condo",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/2D-LIVING-ROOM-1_final-1024x682.jpg",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": null,
+      "size": "196 m²",
+      "buildingSize": "196 m²",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/condominium/noord/atlantic-360-condo-houses/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": null
+        }
+      ],
+      "notes": "25 condominium homes…yes homes!! all built for one purpose: to provide the last word in happiness and tranquility. All our homes face the ocean, and all offer the ultimate in comfort, intelligent technology, luxurious finishes, and exquisite taste. Even the entrance to your new seven story refuge makes a statement of elegance. You’ll enter a three-story atrium that’s more than just jaw-dropping: its next generation energy-efficient design is economical, ecological, and deliberately in keeping with Aruba’s almost spiritual connection to nature."
+    },
+    {
+      "id": "coral-shell-condominiums",
+      "name": "Coral Shell Condominiums",
+      "type": "condo",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/6075a8a040c28079904359-1024x683.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/condominium/oranjestad/coral-shell-condominiums/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": null
+        }
+      ],
+      "notes": "​Its prime sea-front position affords a truly spectacular view from each of its exquisite contemporary apartments. Residents will enjoy a breathtaking view of Paardenbaai (Horse Bay) with its unique aquamarine color, or the option of overlooking Boy Ecury Park with its artfully landscaped lawns and public gardens, as well as the beautiful view of inland Aruba."
+    },
+    {
+      "id": "property-land-commercial-space",
+      "name": "Property Land + Commercial space",
+      "type": "land",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/Zeewijk-68-Edit-Property-1024x875.jpg",
+      "area": "San Nicolas",
+      "location": "San Nicolas",
+      "askPrice": 1123595,
+      "size": "4447 m²",
+      "buildingSize": "",
+      "lotSize": "4447 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/land/san-nicolas/property-land-commercial-space/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 1123595
+        }
+      ],
+      "notes": "9 Office Spaces– Perfect for administrative use, rentals, or business operations3 Halls– Spacious and versatile for conferences, events, or workshops3 Bathrooms– Conveniently located for staff and clients1 Kitchen– Functional kitchen space for office or commercial use2 Storage Rooms– Ideal for inventory or additional workspace4 Workshops– Spacious and adaptable for various industrial or commercial purposesCantina– Dedicated area forbreaks, refreshments, or a small cafeteria"
+    },
+    {
+      "id": "2-plots-for-sale-at-sabana-blanco",
+      "name": "2 Plots For Sale at Sabana Blanco",
+      "type": "land",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/map_marked-1024x576.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 347710,
+      "size": "1203 m²",
+      "buildingSize": "",
+      "lotSize": "1203 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/land/oranjestad/2-plots-for-sale-at-sabana-blanco/",
+      "status": "sold",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 347710
+        }
+      ],
+      "notes": "Looking to build your dream home or invest in property? These two spacious plots of property land in Sabana Grandi are now available!",
+      "soldDate": "2026-06-25"
+    },
+    {
+      "id": "ponton-hills-residences",
+      "name": "Ponton Hills Residences",
+      "type": "land",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/map2-1024x708.png",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/land/oranjestad/ponton-hills-residences/",
+      "status": "sold",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": null
+        }
+      ],
+      "notes": "A rare opportunity to build your dream home inone of Aruba’s most desirable locations. Ponton Hills Residences offers the perfect combination of privacy, tranquility, and convenience.",
+      "soldDate": "2026-06-25"
+    },
+    {
+      "id": "plots-of-land-in-tanki-leendert",
+      "name": "Plots of land in Tanki Leendert",
+      "type": "land",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/473817633_122219832182030227_8851876825086185606_n.jpg",
+      "area": "Tanki Leendert",
+      "location": "Tanki Leendert",
+      "askPrice": null,
+      "size": "314 m²",
+      "buildingSize": "",
+      "lotSize": "314 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/land/tanki-leendert/plots-of-land-in-tanki-leendert/",
+      "status": "sold",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": null
+        }
+      ],
+      "notes": "An excellent opportunity to build your dream home or invest in a residential development. These26 spacious plotsare situated in a quiet and well-connected neighborhood, offering easy access to schools, shopping centers, and main roads.",
+      "soldDate": "2026-06-25"
+    },
+    {
+      "id": "land-in-matadera-noord-aruba",
+      "name": "Land in Matadera Noord Aruba",
+      "type": "land",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/WhatsApp-Image-2023-07-24-at-1.45.45-PM-1024x576.jpeg",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 1224719,
+      "size": "23987 m²",
+      "buildingSize": "",
+      "lotSize": "23987 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/land/noord/land-in-matadera-noord-aruba/",
+      "status": "sold",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 1224719
+        }
+      ],
+      "notes": "Matadera Perceel 1-L-1702 offers a rare opportunity to invest in one of Aruba’s most sought-after locations. This expansive lot provides endless possibilities for residential or commercial development.",
+      "soldDate": "2026-06-25"
+    },
+    {
+      "id": "property-land-sabana-liber",
+      "name": "Property Land Sabana Liber",
+      "type": "land",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/2-1-1024x682.jpg",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 617977,
+      "size": "17020 m²",
+      "buildingSize": "",
+      "lotSize": "17020 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/land/noord/property-land-sabana-liber/",
+      "status": "under offer",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 617977
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "property-land-in-camacuri",
+      "name": "Property Land in Camacuri",
+      "type": "land",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/WhatsApp-Image-2024-08-01-at-10.07.42-AM-1024x540.jpeg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 1143595,
+      "size": "11632 m²",
+      "buildingSize": "",
+      "lotSize": "11632 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/land/oranjestad/property-land-in-camacuri/",
+      "status": "under offer",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 1143595
+        }
+      ],
+      "notes": "Proximity:Just 1 minute from the renowned Nikki Beach A mere 3 minutes from downtown Oranjestad. Close to the airport, offering convenience for international travel. This expansive property represents one of the last significant parcels of land available in the heart of Oranjestad. Positioned in a prime location, it offers a unique opportunity for development in one of the most sought-after areas. Perfect for residential projects, this property is a rare gem on the market. Don’t miss the chance to invest in a location with unparalleled potential and proximity to key attractions and amenities."
+    },
+    {
+      "id": "prime-property-land-in-mahuma",
+      "name": "Prime Property Land in Mahuma",
+      "type": "land",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/Map_Perceel3-scaled.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 256000,
+      "size": "2853 m²",
+      "buildingSize": "",
+      "lotSize": "2853 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/land/oranjestad/prime-property-land-in-mahuma/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 256000
+        }
+      ],
+      "notes": "Your chance to own a spacious plot of property land in one of Aruba’s most strategic locations! Perfect for your dream home, a lucrative investment project, or even a commercial venture."
+    },
+    {
+      "id": "4021",
+      "name": "Land for Sale Ponton (Building Permit Approved)",
+      "type": "land",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/2-1024x768.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 350000,
+      "size": "1215 m²",
+      "buildingSize": "",
+      "lotSize": "1215 m²",
+      "bedrooms": 7,
+      "bathrooms": 5,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/land/oranjestad/4021/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 350000
+        }
+      ],
+      "notes": "This property offers amazing investment potential—whether you’re looking to develop, rent, or live in a scenic and strategic location."
+    },
+    {
+      "id": "property-land-moko",
+      "name": "Property Land Moko",
+      "type": "land",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/111-1024x575.jpg",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 1200000,
+      "size": "14515 m²",
+      "buildingSize": "",
+      "lotSize": "14515 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/land/noord/property-land-moko/",
+      "status": "sold",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 1200000
+        }
+      ],
+      "notes": "Aruba is a top tourist destination known for its beautiful beaches and sunny weather. This property is ideal for building a luxury resort, exclusive condos, or a commercial complex. Its strategic location guarantees strong demand from both locals and tourists, ensuring a steady income stream.",
+      "soldDate": "2026-06-25"
+    },
+    {
+      "id": "avenida-milio-j-croes-54",
+      "name": "Avenida Milio J. Croes 54",
+      "type": "commercial",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-at-14.48.02-1024x473.jpeg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 1068000,
+      "size": "327 m²",
+      "buildingSize": "327 m²",
+      "lotSize": "1111 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/oranjestad/avenida-milio-j-croes-54/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 1068000
+        }
+      ],
+      "notes": "This versatile property spanstwo long-lease parcels totaling 1,111 m²and features a well-designed blend ofcommercial and residential spaces, perfect for entrepreneurs, investors, or those seeking a property with bothincome-generating potentialand living accommodations."
+    },
+    {
+      "id": "4887",
+      "name": "Avenida Milo Croes 91 & 91-E",
+      "type": "commercial",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/10/WhatsApp-Image-2025-10-15-at-14.50.00-1024x473.jpeg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 1011000,
+      "size": "285 m²",
+      "buildingSize": "285 m²",
+      "lotSize": "2035 m²",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/oranjestad/4887/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 1011000
+        }
+      ],
+      "notes": "The property’s long lease land status can be converted into commercial leasehold, significantly enhancing its long-term value and development potential. This is a rare find in one of Aruba’s most sought-after commercial corridors, perfect for developers or investors ready to create a modern, income-generating property in a high-traffic area."
+    },
+    {
+      "id": "commercial-building-for-sale-macapruimstraat-1",
+      "name": "Commercial Building for Sale – Macapruimstraat #1",
+      "type": "commercial",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/Macapruimstraat-Drone9-scaled-1-1024x576.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 1398876,
+      "size": "1420 m²",
+      "buildingSize": "1420 m²",
+      "lotSize": "1892 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/oranjestad/commercial-building-for-sale-macapruimstraat-1/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 1398876
+        }
+      ],
+      "notes": "Prime Location:Situated in thebustling commercial districtof Dakota with easy access to main roads.Large Lot Size:1,892 m² ofprime commercial real estate, offeringample spacefor various business ventures.Great Business Potential:Ideal forretail stores, office spaces, restaurants, showrooms, or a mixed-use development.High Visibility & Accessibility:Located in a well-trafficked area, ensuringmaximum exposure for any business.Investment-Ready:A fantastic opportunity for those looking toexpand their commercial portfolioin Aruba."
+    },
+    {
+      "id": "savaneta-97-commercial-building",
+      "name": "Savaneta 97 Commercial Building",
+      "type": "commercial",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/Front-JPG-1024x478.jpg",
+      "area": "Savaneta",
+      "location": "Savaneta",
+      "askPrice": 350000,
+      "size": "160 m²",
+      "buildingSize": "160 m²",
+      "lotSize": "347 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/savaneta/savaneta-97-commercial-building/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 350000
+        }
+      ],
+      "notes": "This commercial property is perfectly situated on the well-paved, illuminated main road of Savaneta, ideally located between Oranjestad and San Nicolas. Only 250 meters west of the Savaneta MFA, the area is surrounded by bustling businesses and heavy daily traffic—offering excellent exposure for your business!"
+    },
+    {
+      "id": "stadionweg-12",
+      "name": "Stadionweg 12",
+      "type": "commercial",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/1-1024x478.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 1750000,
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/oranjestad/stadionweg-12/",
+      "status": "sold",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 1750000
+        }
+      ],
+      "notes": "15 Exceptional Apartments: Experience the epitome of luxury living with a collection of meticulously crafted one and two-bedroom apartments, thoughtfully designed for comfort and convenience.Fully Furnished: Each apartment comes fully furnished, offering residents a seamless transition into their new home.Modern Amenities: Enjoy modern comforts with spacious living areas, well-appointed kitchens, ample closet space, and individual water and electric meters for added convenience.Year-Round Comfort: Stay cool and comfortable year-round with air conditioning units in every apartment, ensuring a pleasant living environment.Convenient Parking: Dedicated parking spaces ensure hassle-free parking for residents and guests alike.Leisure Facilities: Indulge in leisurely afternoons by the shared swimming pool or unwind on the expansive terrace, perfect for soaking up the Caribbean sunshine.Enhanced Security: Rest assured with an advanced alarm system, smoke detectors, and a comprehensive surveillance system, providing peace of mind for residents.Income Generating: With 14 apartments already rented out, this property offers an immediate stream of rental income, providing a solid foundation for investors. Moreover, the property holds immense potential for additional revenue if converted into short-term rentals through platforms like Airbnb, tapping into the lucrative tourist market.Great Return on Investment: Capitalize on the property’s strong rental demand and potential for lucrative returns, making it an attractive investment opportunity.Prime Location: Nestled in a tranquil and secure neighborhood, just a short 4-minute walk from the beach, and conveniently located near the airport and downtown, with the vibrant hotel area just a 10-minute drive away.",
+      "soldDate": "2026-06-25"
+    },
+    {
+      "id": "sabana-grandi-43a-apartment-complex",
+      "name": "Sabana Grandi 43A Apartment Complex",
+      "type": "commercial",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/WhatsApp-Image-2024-06-20-at-2.42.36-PM.jpeg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 308000,
+      "size": "168 m²",
+      "buildingSize": "168 m²",
+      "lotSize": "526 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/oranjestad/sabana-grandi-43a-apartment-complex/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 308000
+        }
+      ],
+      "notes": "Adjacent to Sabana Grandi 43, you will find Sabana Grandi 43A, a standalone apartment complex that expands your investment potential. Situated on a larger 526 m² plot, this property offers a buildup area of 168 m² and comprises:"
+    },
+    {
+      "id": "sabana-grandi-43-apartment-complex",
+      "name": "Sabana Grandi 43 Apartment complex",
+      "type": "commercial",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/WhatsApp-Image-2024-06-20-at-2.42.35-PM-1024x768.jpeg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 394000,
+      "size": "144 m²",
+      "buildingSize": "144 m²",
+      "lotSize": "512 m²",
+      "bedrooms": 512,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/oranjestad/sabana-grandi-43-apartment-complex/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 394000
+        }
+      ],
+      "notes": "The second floor mirrors the ground floor in terms of space, with another 144 m² of buildup area, but is cleverly divided into 6 individual 1-bedroom apartments. Each apartment includes:• Living/Dining/Kitchen Area• 1 Bathroom• Closet"
+    },
+    {
+      "id": "morgenster-43-l-apartment-complex-with-adjacent-land",
+      "name": "Morgenster 43-L Apartment Complex with Adjacent Land",
+      "type": "commercial",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-12-at-8.16.46-AM-1024x576.jpeg",
+      "area": "Santa Cruz",
+      "location": "Santa Cruz",
+      "askPrice": 1650000,
+      "size": "1900 m²",
+      "buildingSize": "1900 m²",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/santa-cruz/morgenster-43-l-apartment-complex-with-adjacent-land/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 1650000
+        }
+      ],
+      "notes": "Additional Opportunity:The adjacent land offers immense potential for further development, whether for additional apartment units, a private residence, or recreational facilities to enhance the complex’s appeal. This extra space adds significant value to the property and flexibility for future projects."
+    },
+    {
+      "id": "arendstraat-122",
+      "name": "Arendstraat 122",
+      "type": "commercial",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/20240315_094617-1-scaled-1-1024x478.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 780000,
+      "size": "286 m²",
+      "buildingSize": "286 m²",
+      "lotSize": "723 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/oranjestad/arendstraat-122/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 780000
+        }
+      ],
+      "notes": "Modern Commercial Office Building with big office space and two large Apartments located in commercial neighborhood Eagle in Oranjestad, with easy access road, to L.G.Smith Blvd, minutes away from hotel resort areas at Eagle (low Rise) and Palm Beach(High Rise) This recently renovated property has a beautiful 3 unit office with 2 bathroom and Attic and has ample private parking for clients. This property also has two newly and modernly, constructed 1 bedroom, 1 bathroom apartments with spacious living/kitchen area, and one studio apartment with extra office. The one bedroom apartments have their separate secured entrance and a nice private paved area/garden (space enough to construct a pool), with palm trees where one can relax and have cool refreshments. This property also has large storage space, garage and laundry area."
+    },
+    {
+      "id": "luxury-boutique-hotel-in-savaneta",
+      "name": "Luxury Boutique Hotel in Savaneta",
+      "type": "commercial",
+      "image": "https://ajrealestatearuba.com/wp-content/uploads/2025/03/DJI_0222-1024x768.jpg",
+      "area": "Savaneta",
+      "location": "Savaneta",
+      "askPrice": 6000000,
+      "size": "10027 m²",
+      "buildingSize": "10027 m²",
+      "lotSize": "10027 m²",
+      "bedrooms": 7,
+      "bathrooms": 8,
+      "agency": "AJ Real Estate Aruba",
+      "listedDate": "2026-06-26",
+      "sourceUrl": "https://ajrealestatearuba.com/properties/commercial-properties/savaneta/luxury-boutique-hotel-in-savaneta/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-26",
+          "price": 6000000
+        }
+      ],
+      "notes": "Formerly a charming Cunucu House, this boutique property has been lovingly restored, preserving its authentic character while integrating modern luxury. Thoughtfully designed, nearly 90% of the hotel features bespoke craftsmanship and intricate detailing, creating a unique and memorable atmosphere. Guests are welcomed into a sophisticated, open-space layout where they can relax by a cozy fireplace or unwind beside a shimmering saltwater pool—perfect for both leisure and social gatherings."
     }
   ],
   "agentMeta": {
-    "lastSync": "2026-06-25T22:09:52Z",
+    "lastSync": "2026-06-26T19:41:13Z",
     "agentActive": true,
-    "totalSyncCount": 69
+    "totalSyncCount": 71
   },
   "trackerItems": [],
   "monthlyData": [

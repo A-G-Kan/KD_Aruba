@@ -18,6 +18,7 @@ Usage (cross-site pass):
 import re
 import json
 import sys
+from datetime import date, timedelta
 from pathlib import Path
 from collections import Counter
 
@@ -452,6 +453,89 @@ def dedup_cross_site(listings: list) -> tuple:
     return [l for idx, l in enumerate(listings) if keep[idx]], merges
 
 
+# ── User-field preservation ──────────────────────────────────────────────────
+
+# Fields that belong to the user (not the scraper) and must survive re-scrapes.
+_USER_FIELDS = ("archived", "soldDate")
+
+
+def restore_user_fields(old_listings: list, new_listings: list) -> list:
+    """
+    Copy user-controlled fields from old listings to freshly scraped ones.
+
+    Matched by sourceUrl (primary) then id (fallback).  Any field in
+    _USER_FIELDS that is present on an old listing is copied to its
+    counterpart in new_listings so that re-scraping never wipes user data
+    (archived flags, sold dates, etc.).
+
+    Returns new_listings with user fields restored in-place.
+    """
+    by_url: dict = {}
+    by_id:  dict = {}
+    for l in old_listings:
+        url = (l.get("sourceUrl") or "").rstrip("/").lower()
+        if url:
+            by_url[url] = l
+        lid = l.get("id") or ""
+        if lid:
+            by_id[lid] = l
+
+    for l in new_listings:
+        url = (l.get("sourceUrl") or "").rstrip("/").lower()
+        lid = l.get("id") or ""
+        old = by_url.get(url) or by_id.get(lid)
+        if not old:
+            continue
+        for field in _USER_FIELDS:
+            if field in old:
+                l[field] = old[field]
+
+    return new_listings
+
+
+# ── Sold-listing maintenance ─────────────────────────────────────────────────
+
+def purge_old_sold(listings: list, max_days: int = 30) -> tuple:
+    """
+    Stamp soldDate on newly-sold listings and drop any sold listing whose
+    soldDate is older than max_days.
+
+    Sold listings without a soldDate get today's date (they will expire
+    max_days from when they were first seen as sold).
+
+    Returns (updated_listings, stamped_count, removed_count).
+    """
+    today_str = date.today().isoformat()
+    cutoff    = date.today() - timedelta(days=max_days)
+
+    stamped = 0
+    removed = 0
+    kept    = []
+
+    for l in listings:
+        if l.get("status") != "sold":
+            kept.append(l)
+            continue
+
+        if not l.get("soldDate"):
+            l["soldDate"] = today_str
+            stamped += 1
+
+        try:
+            sold_dt = date.fromisoformat(l["soldDate"])
+        except (ValueError, TypeError):
+            l["soldDate"] = today_str
+            kept.append(l)
+            continue
+
+        if sold_dt < cutoff:
+            removed += 1
+        else:
+            kept.append(l)
+
+    return kept, stamped, removed
+
+
 # ── Standalone runner ────────────────────────────────────────────────────────
 
 def run_cross_site_dedup(data_json: Path = DATA_JSON) -> int:
@@ -535,6 +619,15 @@ def run_cross_site_dedup(data_json: Path = DATA_JSON) -> int:
             print(f"    • {name:<45}  {price}  [{agencies}]")
     else:
         print("\n  No co-listed properties found.")
+
+    # ── Pass 3: sold-listing maintenance ──────────────────────────────────────
+    merged_list, stamped, removed_sold = purge_old_sold(merged_list, max_days=30)
+    if stamped or removed_sold:
+        print(f"\n  Pass 3 (sold maintenance): "
+              f"stamped soldDate on {stamped} listing(s), "
+              f"removed {removed_sold} sold listing(s) older than 30 days")
+    else:
+        print(f"\n  Pass 3 (sold maintenance): all sold listings are current")
 
     data["listings"] = merged_list
     with open(data_json, "w") as f:

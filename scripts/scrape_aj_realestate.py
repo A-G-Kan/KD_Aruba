@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-package
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes
+from deduplicate import dedup_within_site, parse_price_robust, parse_two_sizes, restore_user_fields
 
 BASE_URL   = "https://ajrealestatearuba.com"
 AGENCY     = "AJ Real Estate Aruba"
@@ -148,7 +148,10 @@ def scrape_detail(page, url):
         time.sleep(0.8)
         soup = BeautifulSoup(page.content(), "html.parser")
 
-        # First photo from the swiper gallery.
+        # First photo — three structures observed across listing types:
+        # 1. Houses/condos: swiper gallery div (mh-popup-group) with img tags inside
+        # 2. Houses/condos fallback: individual mh-popup-group__element anchor hrefs
+        # 3. Land/commercial: single plain <a class="mh-popup"> whose href IS the image
         image = ""
         gallery = soup.find(class_="mh-popup-group")
         if gallery:
@@ -159,9 +162,24 @@ def scrape_detail(page, url):
             link = soup.find(class_="mh-popup-group__element")
             if link:
                 image = link.get("href", "")
+        if not image:
+            # Land/commercial: no gallery wrapper, just a bare mh-popup anchor
+            popup = soup.find("a", class_="mh-popup")
+            if popup:
+                image = popup.get("href", "")
 
         text  = soup.get_text(" ", strip=True)
-        price = parse_price(text)
+
+        # Price: targeted element lookup only — intentionally no full-page-text fallback.
+        # Full page text can contain stray dollar amounts (parking fees, deposits, etc.)
+        # that get mistaken for the listing price when the real price field is absent.
+        price = None
+        price_el = (
+            soup.select_one(".mh-estate__listing-price, .listing-price, .property-price")
+            or soup.find(class_=re.compile(r"^price$", re.I))
+        )
+        if price_el:
+            price = parse_price(price_el.get_text())
 
         paras = [p.get_text(strip=True) for p in soup.find_all("p") if len(p.get_text(strip=True)) > 60]
         desc  = max(paras, key=len, default="")
@@ -179,6 +197,10 @@ def scrape_detail(page, url):
             if lower.startswith("offer type:"):
                 offer_val = _alpha(raw.replace("Offer type:", "").replace("offer type:", ""))
                 detail_status = AJ_STATUS_MAP.get(offer_val)
+
+            elif re.match(r"(?:asking\s*)?price\s*:", lower) and price is None:
+                # Attribute list fallback for price (only used when no dedicated price element)
+                price = parse_price(raw)
 
             elif re.match(r"bedrooms?\s*:", lower):
                 m = re.search(r"(\d+)", raw)
@@ -304,8 +326,10 @@ def save(new_listings):
             existing = json.load(f)
 
     current = existing.get("listings", [])
+    old_agency   = [l for l in current if l.get("agency") == AGENCY]
     kept    = [l for l in current if l.get("agency") != AGENCY]
-    merged  = kept + new_listings
+    new_listings = restore_user_fields(old_agency, new_listings)
+    merged       = kept + new_listings
 
     existing["listings"] = merged
     existing["agentMeta"] = {
