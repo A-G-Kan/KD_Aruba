@@ -76,6 +76,10 @@
                 <span class="nav-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 14V7l6-5 6 5v7H2z"/><rect x="6" y="9" width="4" height="5"/></svg></span>
                 <span>Market Listings</span>
             </button>
+            <button class="nav-item" data-page="rentals">
+                <span class="nav-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6.5" r="3"/><path d="M8 9l6 6M12 13l1.5-1.5"/></svg></span>
+                <span>LTR &amp; STR</span>
+            </button>
             <button class="nav-item" data-page="tracker">
                 <span class="nav-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="12" height="13" rx="1"/><path d="M5 6h6M5 9h6M5 12h4"/><path d="M6 0h4v3H6z"/></svg></span>
                 <span>Deal Tracker</span>
@@ -370,6 +374,85 @@
                 </div>
                 <div class="listings-grid" id="sold-listings-grid"></div>
             </div>
+        </section>
+
+
+        <!-- ========== LTR & STR LISTINGS ========== -->
+        <section id="page-rentals" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>LTR &amp; STR Listings</h1>
+                    <p class="page-sub">Long-term and short-term rental properties listed on Aruba RE agency websites</p>
+                </div>
+            </div>
+
+            <div class="listings-controls-bar">
+                <div class="currency-toggle">
+                    <span class="ctrl-label">Rent:</span>
+                    <button class="currency-btn active" id="r-btn-usd" onclick="setCurrency('USD')">$ USD</button>
+                    <button class="currency-btn" id="r-btn-awg" onclick="setCurrency('AWG')">Afl. AWG</button>
+                    <span class="currency-rate-note">1 USD = 1.79 AWG</span>
+                </div>
+                <div class="status-pills-inline" id="r-status-filter-bar">
+                    <div class="stat-pill status-active" data-rstatus="total"><span class="stat-label">Total</span><span class="stat-value" id="r-total">—</span></div>
+                    <div class="stat-pill" data-rstatus="active"><span class="stat-label">Available</span><span class="stat-value green" id="r-active">—</span></div>
+                    <div class="stat-pill" data-rstatus="under offer"><span class="stat-label">Under Offer</span><span class="stat-value yellow" id="r-offer">—</span></div>
+                    <div class="stat-pill" data-rstatus="rented"><span class="stat-label">Rented</span><span class="stat-value" id="r-rented">—</span></div>
+                </div>
+                <div class="page-size-ctrl">
+                    <span class="ctrl-label">Per page:</span>
+                    <button class="r-page-size-btn active" data-rsize="50">50</button>
+                    <button class="r-page-size-btn" data-rsize="100">100</button>
+                </div>
+            </div>
+
+            <!-- Agency filter — built by JS from rentals data -->
+            <div class="agency-filter-bar" id="r-agency-filter-bar"></div>
+
+            <div class="filter-bar">
+                <div class="filter-types">
+                    <button class="filter-btn active" data-rfilter="all">All</button>
+                    <button class="filter-btn" data-rfilter="ltr">Long-term</button>
+                    <button class="filter-btn" data-rfilter="str">Short-term</button>
+                </div>
+                <div class="filter-right">
+                    <select id="r-status-filter">
+                        <option value="all">All Statuses</option>
+                        <option value="active">Available</option>
+                        <option value="under offer">Under Offer</option>
+                        <option value="rented">Rented</option>
+                    </select>
+                    <select id="r-area-filter">
+                        <option value="all">All Areas</option>
+                        <option value="Palm Beach">Palm Beach</option>
+                        <option value="Eagle Beach">Eagle Beach</option>
+                        <option value="Noord">Noord</option>
+                        <option value="Malmok">Malmok</option>
+                        <option value="Oranjestad">Oranjestad</option>
+                        <option value="Savaneta">Savaneta</option>
+                    </select>
+                    <div class="m2-range">
+                        <input type="number" id="r-m2-min" placeholder="Min m²" min="0">
+                        <span class="m2-sep">–</span>
+                        <input type="number" id="r-m2-max" placeholder="Max m²" min="0">
+                    </div>
+                    <select id="r-sort">
+                        <option value="default">Sort: Default</option>
+                        <option value="price-asc">Rent: Low → High</option>
+                        <option value="price-desc">Rent: High → Low</option>
+                        <option value="size-asc">Size: Small → Large</option>
+                        <option value="size-desc">Size: Large → Small</option>
+                        <option value="dom-asc">Listed: Newest First</option>
+                        <option value="dom-desc">Listed: Oldest First</option>
+                    </select>
+                    <input type="text" id="r-search" placeholder="Search rentals...">
+                </div>
+            </div>
+
+            <div class="results-meta"><span id="r-results-count"></span></div>
+            <div id="r-pagination-top" class="pagination-controls"></div>
+            <div class="listings-grid" id="rentals-grid"></div>
+            <div id="r-pagination-bottom" class="pagination-controls"></div>
         </section>
 
 

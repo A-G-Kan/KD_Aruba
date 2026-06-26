@@ -111,6 +111,7 @@ function updateUserUI() {
 // ============================================================
 
 let listings     = [];
+let rentals      = []; // populated from data.rentals — separate from sale listings
 let agentMeta    = { lastSync: null, agentActive: false, totalSyncCount: 0 };
 let trackerItems = [];
 
@@ -129,15 +130,17 @@ function formatPrice(usdPrice) {
 
 function setCurrency(cur) {
     activeCurrency = cur;
-    document.getElementById('btn-usd').classList.toggle('active', cur === 'USD');
-    document.getElementById('btn-awg').classList.toggle('active', cur === 'AWG');
+    // Update all currency toggle buttons across all pages
+    ['btn-usd', 'r-btn-usd'].forEach(id => document.getElementById(id)?.classList.toggle('active', cur === 'USD'));
+    ['btn-awg', 'r-btn-awg'].forEach(id => document.getElementById(id)?.classList.toggle('active', cur === 'AWG'));
     // Re-render all current views that show prices
     refreshPriceDisplays();
 }
 
 function refreshPriceDisplays() {
     // Re-render the paginated listings grid and home snapshot
-    if (typeof applyListingFilters === 'function') applyListingFilters();
+    if (typeof applyListingFilters  === 'function') applyListingFilters();
+    if (typeof applyRentalFilters   === 'function') applyRentalFilters();
     renderListingsGrid(listings.filter(l => !l.archived && l.status !== 'sold').slice(0, 4), 'home-listings-grid');
     // Re-render analysis tab so $/m² figures switch currency
     const activeAreaTab = document.querySelector('.area-tab.active');
@@ -286,6 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(r => r.json())
         .then(data => {
             listings     = data.listings     || [];
+            rentals      = data.rentals      || [];
             agentMeta    = data.agentMeta    || agentMeta;
             trackerItems = data.trackerItems || [];
             initApp();
@@ -306,6 +310,7 @@ function initApp() {
     renderAnalysisTab('all');
     initListingFilters();
     renderArchivedSection();
+    initRentalFilters();
     initTrackerFilters();
     setAgentStatus();
     loadNotes();
@@ -692,6 +697,12 @@ let currentPage  = 1;
 let pageSize     = 50;
 let applyListingFilters = null; // set by initListingFilters, used by setCurrency
 
+// Rental page state (separate from sale listings)
+let filteredRentals    = [];
+let currentRentalPage  = 1;
+let rentalPageSize     = 50;
+let applyRentalFilters = null; // set by initRentalFilters, used by refreshPriceDisplays
+
 function initListingFilters() {
     const typeButtons = document.querySelectorAll('[data-lfilter]');
     const statusSel   = document.getElementById('l-status-filter');
@@ -937,6 +948,212 @@ function renderPagination(page, totalPages, containerId) {
     html += `<span class="pg-label">${start}–${end} of ${filteredListings.length}</span>`;
 
     el.innerHTML = html;
+}
+
+
+// ============================================================
+//  LTR & STR RENTALS PAGE
+// ============================================================
+
+function renderRentalStats() {
+    const set = (id, n) => { const el = document.getElementById(id); if (el) el.textContent = n; };
+    set('r-total',  rentals.length);
+    set('r-active', rentals.filter(l => l.status === 'active').length);
+    set('r-offer',  rentals.filter(l => l.status === 'under offer').length);
+    set('r-rented', rentals.filter(l => l.status === 'rented').length);
+}
+
+function renderRentalPage(page) {
+    currentRentalPage = page;
+    const start     = (page - 1) * rentalPageSize;
+    const pageItems = filteredRentals.slice(start, start + rentalPageSize);
+    renderListingsGrid(pageItems, 'rentals-grid');
+    const totalPages = Math.ceil(filteredRentals.length / rentalPageSize);
+    renderRentalPagination(page, totalPages, 'r-pagination-top');
+    renderRentalPagination(page, totalPages, 'r-pagination-bottom');
+}
+
+function renderRentalPagination(page, totalPages, containerId) {
+    const el = document.getElementById(containerId);
+    if (!el) return;
+    if (totalPages <= 1) { el.innerHTML = ''; return; }
+
+    const start = (page - 1) * rentalPageSize + 1;
+    const end   = Math.min(page * rentalPageSize, filteredRentals.length);
+    let html = '';
+    html += `<button class="pg-btn" onclick="renderRentalPage(${page - 1})" ${page === 1 ? 'disabled' : ''}>&#8592; Prev</button>`;
+
+    const pages = [];
+    if (totalPages <= 7) {
+        for (let i = 1; i <= totalPages; i++) pages.push(i);
+    } else {
+        pages.push(1);
+        if (page > 3) pages.push('…');
+        for (let i = Math.max(2, page - 1); i <= Math.min(totalPages - 1, page + 1); i++) pages.push(i);
+        if (page < totalPages - 2) pages.push('…');
+        pages.push(totalPages);
+    }
+    pages.forEach(p => {
+        if (p === '…') {
+            html += `<span class="pg-ellipsis">…</span>`;
+        } else {
+            html += `<button class="pg-btn${p === page ? ' active' : ''}" onclick="renderRentalPage(${p})">${p}</button>`;
+        }
+    });
+    html += `<button class="pg-btn" onclick="renderRentalPage(${page + 1})" ${page === totalPages ? 'disabled' : ''}>Next &#8594;</button>`;
+    html += `<span class="pg-label">${start}–${end} of ${filteredRentals.length}</span>`;
+    el.innerHTML = html;
+}
+
+function initRentalFilters() {
+    const typeButtons = document.querySelectorAll('[data-rfilter]');
+    const statusSel   = document.getElementById('r-status-filter');
+    const areaSel     = document.getElementById('r-area-filter');
+    const sortSel     = document.getElementById('r-sort');
+    const searchInput = document.getElementById('r-search');
+    const m2MinInput  = document.getElementById('r-m2-min');
+    const m2MaxInput  = document.getElementById('r-m2-max');
+
+    let activeType     = 'all';
+    let activeStatuses = new Set();
+    let activeArea     = 'all';
+    let searchTerm     = '';
+    let activeAgencies = new Set();
+
+    function refreshStatusPills() {
+        document.querySelectorAll('.stat-pill[data-rstatus]').forEach(pill => {
+            const st = pill.dataset.rstatus;
+            pill.classList.toggle('status-active',
+                st === 'total' ? activeStatuses.size === 0 : activeStatuses.has(st));
+        });
+        if (statusSel) {
+            statusSel.value = (activeStatuses.size === 1) ? [...activeStatuses][0] : 'all';
+        }
+    }
+
+    function apply() {
+        const m2Min  = m2MinInput && m2MinInput.value !== '' ? parseFloat(m2MinInput.value) : null;
+        const m2Max  = m2MaxInput && m2MaxInput.value !== '' ? parseFloat(m2MaxInput.value) : null;
+        const sortBy = sortSel ? sortSel.value : 'default';
+
+        let result = [...rentals];
+        if (activeAgencies.size > 0) result = result.filter(l => activeAgencies.has(l.agency));
+        if (activeType !== 'all')     result = result.filter(l => l.type === activeType);
+        if (activeStatuses.size > 0)  result = result.filter(l => activeStatuses.has(l.status));
+        if (activeArea !== 'all')     result = result.filter(l => l.area === activeArea);
+        if (m2Min !== null) result = result.filter(l => { const s = primarySqm(l); return s !== null && s >= m2Min; });
+        if (m2Max !== null) result = result.filter(l => { const s = primarySqm(l); return s !== null && s <= m2Max; });
+        if (searchTerm) result = result.filter(l =>
+            l.name.toLowerCase().includes(searchTerm) ||
+            (l.location || '').toLowerCase().includes(searchTerm) ||
+            (l.agency   || '').toLowerCase().includes(searchTerm));
+
+        const nullsLast = (aV, bV, dir) => {
+            if (aV == null && bV == null) return 0;
+            if (aV == null) return 1;
+            if (bV == null) return -1;
+            return dir === 'asc' ? aV - bV : bV - aV;
+        };
+        if      (sortBy === 'price-asc'  || sortBy === 'price-desc')
+            result.sort((a, b) => nullsLast(a.askPrice, b.askPrice, sortBy === 'price-asc' ? 'asc' : 'desc'));
+        else if (sortBy === 'size-asc'   || sortBy === 'size-desc')
+            result.sort((a, b) => nullsLast(primarySqm(a), primarySqm(b), sortBy === 'size-asc' ? 'asc' : 'desc'));
+        else if (sortBy === 'dom-asc'    || sortBy === 'dom-desc')
+            result.sort((a, b) => {
+                const aV = a.listedDate ? new Date(a.listedDate).getTime() : null;
+                const bV = b.listedDate ? new Date(b.listedDate).getTime() : null;
+                return nullsLast(aV, bV, sortBy === 'dom-asc' ? 'desc' : 'asc');
+            });
+
+        filteredRentals   = result;
+        currentRentalPage = 1;
+        renderRentalPage(1);
+        const countEl = document.getElementById('r-results-count');
+        if (countEl) countEl.textContent = `${result.length} rental${result.length !== 1 ? 's' : ''} found`;
+        refreshStatusPills();
+    }
+
+    applyRentalFilters = apply;
+
+    typeButtons.forEach(btn => btn.addEventListener('click', () => {
+        typeButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeType = btn.dataset.rfilter;
+        apply();
+    }));
+
+    if (statusSel)   statusSel.addEventListener('change',  () => { activeStatuses.clear(); if (statusSel.value !== 'all') activeStatuses.add(statusSel.value); apply(); });
+    if (areaSel)     areaSel.addEventListener('change',    () => { activeArea = areaSel.value; apply(); });
+    if (sortSel)     sortSel.addEventListener('change',    () => apply());
+    if (m2MinInput)  m2MinInput.addEventListener('input',  () => apply());
+    if (m2MaxInput)  m2MaxInput.addEventListener('input',  () => apply());
+    if (searchInput) searchInput.addEventListener('input', () => { searchTerm = searchInput.value.trim().toLowerCase(); apply(); });
+
+    document.querySelectorAll('.r-page-size-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.r-page-size-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            rentalPageSize    = parseInt(btn.dataset.rsize, 10);
+            currentRentalPage = 1;
+            renderRentalPage(1);
+        });
+    });
+
+    document.querySelectorAll('.stat-pill[data-rstatus]').forEach(pill => {
+        pill.addEventListener('click', () => {
+            const st = pill.dataset.rstatus;
+            if (st === 'total') activeStatuses.clear();
+            else if (activeStatuses.has(st)) activeStatuses.delete(st);
+            else activeStatuses.add(st);
+            apply();
+        });
+    });
+
+    // Agency filter — built from rentals data
+    (function buildRentalAgencyFilter() {
+        const bar = document.getElementById('r-agency-filter-bar');
+        if (!bar) return;
+        const counts = {};
+        rentals.forEach(l => { if (l.agency) counts[l.agency] = (counts[l.agency] || 0) + 1; });
+        const sortedAgencies = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+
+        function refreshButtons() {
+            bar.querySelectorAll('.agency-filter-btn').forEach(btn => {
+                const isAll = btn.dataset.ragency === '__all__';
+                btn.classList.toggle('active', isAll ? activeAgencies.size === 0 : activeAgencies.has(btn.dataset.ragency));
+            });
+        }
+
+        bar.innerHTML = '';
+        const label = document.createElement('span');
+        label.className = 'agency-filter-label';
+        label.textContent = 'Agency';
+        bar.appendChild(label);
+
+        const allBtn = document.createElement('button');
+        allBtn.className = 'agency-filter-btn active';
+        allBtn.dataset.ragency = '__all__';
+        allBtn.textContent = 'All';
+        allBtn.addEventListener('click', () => { activeAgencies.clear(); refreshButtons(); apply(); });
+        bar.appendChild(allBtn);
+
+        sortedAgencies.forEach(agency => {
+            const btn = document.createElement('button');
+            btn.className = 'agency-filter-btn';
+            btn.dataset.ragency = agency;
+            btn.textContent = agency;
+            btn.addEventListener('click', () => {
+                if (activeAgencies.has(agency)) activeAgencies.delete(agency);
+                else activeAgencies.add(agency);
+                refreshButtons();
+                apply();
+            });
+            bar.appendChild(btn);
+        });
+    })();
+
+    renderRentalStats();
+    apply();
 }
 
 
