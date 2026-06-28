@@ -21281,9 +21281,9 @@
     }
   ],
   "agentMeta": {
-    "lastSync": "2026-06-26T19:41:13Z",
+    "lastSync": "2026-06-28T20:56:50Z",
     "agentActive": true,
-    "totalSyncCount": 71
+    "totalSyncCount": 72
   },
   "trackerItems": [],
   "monthlyData": [
@@ -21444,6 +21444,710 @@
       "adrHigh": 400,
       "adrLow": 240,
       "profile": "Exclusive, ocean views, high-end"
+    }
+  ],
+  "rentals": [
+    {
+      "id": "ahr-ltr-palm-beach-sunset-villa",
+      "name": "Palm Beach Sunset Villa",
+      "type": "ltr",
+      "image": "https://arubahappyrentals.com/storage/app/resources/resize/484_320_0_0_crop/img_7d1d02fd8280a21b529cf5c18bb3177e.webp",
+      "area": "Palm Beach",
+      "location": "Palm Beach",
+      "askPrice": 3500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://arubahappyrentals.com/listing/palm-beach-sunset-villa",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 3500
+        }
+      ],
+      "notes": "Palm Beach Sunset Villa offers the perfect blend of luxury and convenience for your long-term rental needs, available in 2025. Located in one of the island's most desirable spots, this villa provides a serene yet vibrant lifestyle."
+    },
+    {
+      "id": "ahr-ltr-paradera-46-l",
+      "name": "Paradera 46-L",
+      "type": "ltr",
+      "image": "https://arubahappyrentals.com/storage/app/resources/resize/484_320_0_0_crop/img_ab9fecb6bee3e91661670d153c332195.webp",
+      "area": "Paradera",
+      "location": "Paradera",
+      "askPrice": 3100,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://arubahappyrentals.com/listing/paradera-46-l",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 3100
+        }
+      ],
+      "notes": "Welcome to Paradera 46-L, where comfort meets elegance in a serene neighborhood. This fully furnished gem features four spacious bedrooms and four luxurious bathrooms, offering the perfect blend of functionality and style. The open-concept design seamlessly connects the state-of-the-art kitchen, dining room, and living room, creating an inviting space for family gatherings and creating lasting memories."
+    },
+    {
+      "id": "ahr-ltr-emmastraat-1",
+      "name": "Emmastraat #1",
+      "type": "ltr",
+      "image": "https://arubahappyrentals.com/storage/app/resources/resize/484_320_0_0_crop/img_5128112514bdce23ddaf22d8b3bee5ed.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://arubahappyrentals.com/listing/emmastraat-1",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 2500
+        }
+      ],
+      "notes": "Looking for a comfortable, move-in-ready home right in the center of it all? This bright and breezy 2-bedroom apartment puts you just steps away from everything Oranjestad has to offer — from shopping and dining to beaches and entertainment. Whether you're settling in for work, relaxation, or a bit of both, this space has everything you need to feel right at home in Aruba."
+    },
+    {
+      "id": "ahr-ltr-tamarijn-37-c",
+      "name": "Tamarijn 37-C",
+      "type": "ltr",
+      "image": "https://arubahappyrentals.com/storage/app/resources/resize/484_320_0_0_crop/img_275e2998974d8dd189fd2b5285300963.webp",
+      "area": "Paradera",
+      "location": "Paradera",
+      "askPrice": 2285,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://arubahappyrentals.com/listing/tamarijn-37-c",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 2285
+        }
+      ],
+      "notes": "From morning coffee on the patio to afternoon playtime in the yard, this home offers the space and calm atmosphere that make family living truly special. Surrounded by serene views and nestled in a safe neighborhood, it’s more than just a house—it’s where your next chapter begins."
+    },
+    {
+      "id": "ahr-ltr-casa-mango-caya-seour-dorothea-2",
+      "name": "Casa Mango - Caya Seour Dorothea #2",
+      "type": "ltr",
+      "image": "https://arubahappyrentals.com/storage/app/resources/resize/484_320_0_0_crop/img_210002d73f0dafc3d3b755b6dbd4df23.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 2000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://arubahappyrentals.com/listing/casa-mango-caya-seour-dorothea-2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 2000
+        }
+      ],
+      "notes": "Available fromOctober 20th 2025, this beautiful property is more than just a house – it’s a place to feel at home. With its spacious layout, large garden, and private pool, it’s the perfect setting for families or anyone who enjoys outdoor living. Imagine lazy afternoons by the pool, barbecues with friends, and plenty of space for children to play or for you to simply unwind in the fresh air."
+    },
+    {
+      "id": "ahr-ltr-orcuyo-14",
+      "name": "Orcuyo #13",
+      "type": "ltr",
+      "image": "https://arubahappyrentals.com/storage/app/resources/resize/484_320_0_0_crop/img_9f841a958a4b36566414a4e89b3415c9.webp",
+      "area": "Santa Cruz",
+      "location": "Santa Cruz",
+      "askPrice": 1658,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://arubahappyrentals.com/listing/orcuyo-14",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 1658
+        }
+      ],
+      "notes": "Discover the comfort of quiet living in this charming 2-bedroom, 2-bathroom home located in the serene neighborhood of Orcuyo Residences. This non-furnished property offers a spacious and inviting layout, perfect for creating your ideal living space."
+    },
+    {
+      "id": "ahr-ltr-moko-147",
+      "name": "Moko 147",
+      "type": "ltr",
+      "image": "https://arubahappyrentals.com/storage/app/resources/resize/484_320_0_0_crop/img_3f846dc0cc38caa88b1f6f96ea283de7.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 1602,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://arubahappyrentals.com/listing/moko-147",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 1602
+        }
+      ],
+      "notes": "Make Moko 147 your new (rental) home and experience unparalleled comfort and privacy. Contact us today for at 592 8308 or at housing@arubahappyrentals.com for more details and to schedule a viewing!"
+    },
+    {
+      "id": "ahr-ltr-orucyo-5g",
+      "name": "Orucyo 5G",
+      "type": "ltr",
+      "image": "https://arubahappyrentals.com/storage/app/resources/resize/484_320_0_0_crop/img_82c33e44490281979ae4d7ea6984f710.webp",
+      "area": "Santa Cruz",
+      "location": "Santa Cruz",
+      "askPrice": 1062,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://arubahappyrentals.com/listing/orucyo-5g",
+      "status": "under offer",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 1062
+        }
+      ],
+      "notes": "Discover the comfort of quiet living in this charming view two-bedroom, one-bathroom apartment on the second floor located in the serene neighborhood of Orcuyo Residences."
+    },
+    {
+      "id": "ahr-ltr-san-barbola-287",
+      "name": "San Barbola 287",
+      "type": "ltr",
+      "image": "https://arubahappyrentals.com/storage/app/resources/resize/484_320_0_0_crop/img_4848ca1806a143c8a8138c41be61ff44.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 943,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://arubahappyrentals.com/listing/san-barbola-287",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 943
+        }
+      ],
+      "notes": "For Rent – Recently Built 1-Bedroom Apartment in San Barbola ResidenceDiscover modern island living in this freshly constructed 1-bedroom, 1-bathroom semi-furnished apartment located within the peaceful and sought-after San Barbola Residence. With its own private entrance and a charming private porch, this unit offers both comfort and tranquility."
+    },
+    {
+      "id": "ahr-str-arashi-aruba-beachfront",
+      "name": "Arashi Beachfront",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/859815/1725647643_thumbnail.jpeg",
+      "area": "Arashi",
+      "location": "Arashi",
+      "askPrice": 900,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/arashi-aruba-beachfront/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 900
+        }
+      ],
+      "notes": "The villa is nestled in the prestigious Malmok Beach area of Aruba, celebrated for its stunning beaches and peaceful environment. Guests enjoy immediate access to Arashi Beach. The villa is close to the bay Boca Catalina, perfect for snorkeling and swimming, and the California lighthouse. For dining and entertainment, the nearby Ritz-Carlton and Palm Beach high-rise hotels offer luxurious resort-level amenities. Arashi Beach Shack is conveniently located just 1 minute from the villa, a perfect spot for a quick bite or a refreshing cocktail during sunset. Malmok combines serene surroundings with convenient access to Aruba’s top attractions, making it an ideal location for relaxation and exploration."
+    },
+    {
+      "id": "ahr-str-azul-aruba-tide-bohemian-villa",
+      "name": "Azul Tide - Bohemian Villa",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/861116/1732808280_thumbnail.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 200,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/azul-aruba-tide-bohemian-villa/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 200
+        }
+      ],
+      "notes": "Welcome to Villa Azul Tide, your private tropical escape in the heart of downtown Oranjestad, Aruba.From the moment you arrive, you will feel the perfect balance of modern comfort and relaxed bohemian beach vibes. Tucked just a short walk from the iconic Renaissance Wind Creek Aruba Resort and the vibrant energy of downtown, this beautifully renovated 3 bedroom villa offers the ideal setting for your Aruba getaway.Step inside and you are greeted by a bright open living space designed for connection and comfort. The living room, dining area, and fully equipped kitchen flow together effortlessly, creating the perfect space for morning coffee, shared meals, and easy evenings after a day in the sun. With full air conditioning throughout and high speed WiFi, you will stay cool, comfortable, and connected.Each of the three bedrooms features a plush queen size bed, inviting you to unwind and recharge in your own peaceful retreat. Inside the villa are two full bathrooms with reliable hot water from a tankless system, plus a convenient outdoor half bathroom near the pool area, making poolside days even more enjoyable.And then there is the outdoor space.Your private pool is surrounded by lush tropical greenery, creating a calm oasis right in the center of town. Lounge in the sun, take a refreshing dip, or gather around the outdoor dining area for relaxed dinners under the Aruba sky. This is where memories are made.We also provide beach towels, lightweight chairs, and a cooler so your island adventures are effortless. With parking directly in front of the villa and an onsite laundry room, everything you need for a comfortable stay is right here.When you are ready to explore, you are perfectly located within walking distance to restaurants, shopping, entertainment, and cultural attractions. Spend the day at the beach, enjoy waterfront dining, explore local history, or simply relax by your private pool. The choice is yours.Villa Azul Tide is more than just a place to stay. It is your home in Aruba and we would love to host you.Special Features of the Home• Private pool surrounded by tropical greenery• Fully air conditioned throughout• High speed WiFi• 3 bedrooms with queen beds• 2 full bathrooms inside plus 1 outdoor half bathroom• Tankless hot water system• Fully equipped kitchen• Onsite laundry room• Beach towels, chairs, and cooler provided• Parking directly in front of the villa• 24/7 guest support• All utilities includedNearby Attractions• Renaissance Island Famous for its flamingos and crystal clear turquoise waters• Surfside Beach Calm, swimmable beach just minutes from downtown• Renaissance Marketplace Open air dining, shopping, and nightlife• Fort Zoutman Aruba’s oldest historic landmark and museum• Main Street (Caya G. F. Betico Croes) Colorful downtown shopping, cafés, and local boutiquesImportant NotesParties, social events, and gatherings are not allowed. Concierge services are available to help you plan the perfect Aruba experience."
+    },
+    {
+      "id": "ahr-str-1028344",
+      "name": "Bakval High Rise Retreat",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/998493/1765312276_thumbnail.jpeg",
+      "area": "Bakval",
+      "location": "Bakval",
+      "askPrice": 592,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 7,
+      "bathrooms": 6,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/1028344/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 592
+        }
+      ],
+      "notes": "Palm Beach 5-A, Noord ArubaPRINCESS PROPERTIES N.V.concierge@casagoaruba.com+297 586 2662"
+    },
+    {
+      "id": "ahr-str-aruba-beija-flor-villa",
+      "name": "Beija Flor",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/868329/1726672605_thumbnail.jpeg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 140,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/aruba-beija-flor-villa/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 140
+        }
+      ],
+      "notes": "Private Outdoor Oasis:Step outside to your own private paradise! This home boasts a stunning swimming pool, perfect for those warm, sunny days when you want to take a refreshing dip. The charming patio is ideal for outdoor dining and entertaining, making it the perfect setting for unforgettable evenings under the stars. Plus, the grill is ready for BBQ lovers."
+    },
+    {
+      "id": "ahr-str-aruba-blue-star-villa-noord",
+      "name": "Blue Star Villa",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/859858/1725659320_thumbnail.jpeg",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 166,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/aruba-blue-star-villa-noord/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 166
+        }
+      ],
+      "notes": "Ideal Location for Relaxation and Fun:Nestled in a prime location, Blue Star Villa allows easy access to local attractions, ensuring that your vacation combines relaxation with adventure. Enjoy the balance of serene retreat and vibrant exploration during your stay. With only a 5-minute drive to Arashi Beach and easy reach to Palm Beach, this villa offers the perfect location."
+    },
+    {
+      "id": "ahr-str-aruba-breeze-a5-condo-eagle-beach",
+      "name": "Breeze A5",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/859855/1725655118_thumbnail.jpeg",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 179,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/aruba-breeze-a5-condo-eagle-beach/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 179
+        }
+      ],
+      "notes": "Aruba Breeze is a serene escape just steps from Eagle Beach, one of the world's most breathtaking coastlines. This condo offers two spacious bedrooms, each with a queen-size bed, an en-suite bathroom, a private walk-in shower, a toilet, and a washbasin. One bedroom also has its own balcony, perfect for enjoying Aruba’s breezes."
+    },
+    {
+      "id": "ahr-str-aruba-breeze-b7-condo-eagle-beach",
+      "name": "Breeze B7",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/860215/1725907779_thumbnail.jpeg",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 179,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": null,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/aruba-breeze-b7-condo-eagle-beach/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 179
+        }
+      ],
+      "notes": "Each bedroom is equipped with a plush king-size bed, luxurious linens, a dresser for ample storage, and its own en-suite bathroom with a shower. Both rooms offer air conditioning, closets, luggage racks, desks, and TVs, ensuring a private, comfortable atmosphere. The master bedroom even has its own private balcony to enjoy the refreshing island breeze."
+    },
+    {
+      "id": "ahr-str-bubali-villa-aruba-noord",
+      "name": "Bubali Villa",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/860240/1769435129_thumbnail.jpeg",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 289,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": null,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/bubali-villa-aruba-noord/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 289
+        }
+      ],
+      "notes": "Bubali Villa is ideally located just a 2-minute drive from Eagle Beach, famous for its beautiful white sands and clear waters. Nestled in a quiet residential area, the villa is close to a large supermarket and only a 10-minute drive from the vibrant attractions of Aruba's hotel zone."
+    },
+    {
+      "id": "ahr-str-casa-luna-aruba-villa-noord",
+      "name": "Casa Luna",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/860905/1725986796_thumbnail.jpeg",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 267,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/casa-luna-aruba-villa-noord/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 267
+        }
+      ],
+      "notes": "This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot."
+    },
+    {
+      "id": "ahr-str-981268",
+      "name": "Cocolishi Villa",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/951673/1752178849_thumbnail.jpeg",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 220,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/981268/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 220
+        }
+      ],
+      "notes": "This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot."
+    },
+    {
+      "id": "ahr-str-aruba-dutch-caribbean-residence-oranjestad-a",
+      "name": "Dutch Caribbean A",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/861032/1752849110_thumbnail.jpeg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 174,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/aruba-dutch-caribbean-residence-oranjestad-a/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 174
+        }
+      ],
+      "notes": "This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot."
+    },
+    {
+      "id": "ahr-str-aruba-dutch-caribbean-residence-oranjestad-b",
+      "name": "Dutch Caribbean B",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/860976/1752867022_thumbnail.jpeg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 150,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/aruba-dutch-caribbean-residence-oranjestad-b/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 150
+        }
+      ],
+      "notes": "This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot."
+    },
+    {
+      "id": "ahr-str-aruba-dutch-caribbean-residence-oranjestad-c",
+      "name": "Dutch Caribbean C",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/861096/1752848360_thumbnail.jpeg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 150,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/aruba-dutch-caribbean-residence-oranjestad-c/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 150
+        }
+      ],
+      "notes": "This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot."
+    },
+    {
+      "id": "ahr-str-aruba-dutch-caribbean-residence-oranjestad-d",
+      "name": "Dutch Caribbean D",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/861098/1752868391_thumbnail.jpeg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 174,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/aruba-dutch-caribbean-residence-oranjestad-d/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 174
+        }
+      ],
+      "notes": "This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot."
+    },
+    {
+      "id": "ahr-str-aruba-dutch-caribbean-residence-oranjestad-e",
+      "name": "Dutch Caribbean E",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/861126/1753972251_thumbnail.jpeg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 174,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/aruba-dutch-caribbean-residence-oranjestad-e/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 174
+        }
+      ],
+      "notes": "This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot."
+    },
+    {
+      "id": "ahr-str-aruba-dutch-caribbean-residence-oranjestad-f",
+      "name": "Dutch Caribbean F",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/861138/1753021131_thumbnail.jpeg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 150,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/aruba-dutch-caribbean-residence-oranjestad-f/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 150
+        }
+      ],
+      "notes": "This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot."
+    },
+    {
+      "id": "ahr-str-aruba-dutch-caribbean-residence-oranjestad-g",
+      "name": "Dutch Caribbean G",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/861155/1753027841_thumbnail.jpeg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 150,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/aruba-dutch-caribbean-residence-oranjestad-g/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 150
+        }
+      ],
+      "notes": "This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot."
+    },
+    {
+      "id": "ahr-str-villa-jolie-aruba-rooi-santo-noord",
+      "name": "Jolie Villa",
+      "type": "str",
+      "image": "https://gallery.streamlinevrs.com/stl-default-images/3236/home/861270/1726166185_thumbnail.jpeg",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 251,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": null,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-06-28",
+      "sourceUrl": "https://casagoaruba.com/villa-jolie-aruba-rooi-santo-noord/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-06-28",
+          "price": 251
+        }
+      ],
+      "notes": "Villa Jolie is a modern, private villa with a spacious outdoor area featuring a pool, elevated tub, BBQ, and rooftop terrace, just minutes from Aruba’s famous beaches. Inside, find three bedrooms, a fully equipped kitchen, and cozy living spaces, all secured within a gated property. This villa boasts breathtaking views of Aruba’s natural landscapes, creating an ideal setting for your dream getaway.Highlights• Spacious back patio: the outside area contains multiple areas; a poolside lounge area, a rooftop terrace offering stunning panoramic views, and a covered veranda including a dining area with a BBQ for some great meal experiences.• Comfortable sunroom: this area is a cozy space with large windows that let in plenty of natural light, ideal for relaxing with a book or enjoying quiet moments indoors or a great spot to lounge away from the sun. Are you on a workation, your desk with pool view is awaiting you.• Fully equipped kitchen: the kitchen features ample counter space and storage for convenience, is perfect for self-catering and enjoying meals with family and friends, and connects seamlessly to the living and dining areas for easy entertaining.• Perfect location: Villa Jolie is located in a quiet residential area of Noord. It is just a 5-minute drive to Aruba’s famous Palm Beach and Eagle Beach. Big supermarkets are 10 minutes away, and a small supermarket is just 3 minutes away. You have easy access to local dining, shopping, and attractions while enjoying peace and privacy.Amenities• Air conditioning throughout the villa• High-speed Wi-Fi throughout the villa for seamless connectivity• Gated property with an alarm system for security• Smart TV with streaming services• Guest restroom and poolside shower for convenience• Onsite parking available behind the gates for convenience• Washer and dryer• Beach towels, lightweight chairs, and cooler provided for beach days• 24/7 guest supportLocationNoord is known for its beautiful beaches, excellent dining options, and vibrant atmosphere. Visit nearby attractions such as Eagle Beach, Palm Beach, and the California Lighthouse. Enjoy water sports, shopping, and exploring the local culture – all within easy reach. This property is located about a 8-minutes drive to Boca Catalina/ Arashi and a 5-minutes drive to Palm Beach Area / Eagle Beach, rated one of the best beaches on the One Happy Island, Aruba.Book Your Stay Don’t miss the opportunity to experience this luxurious vacation home in Aruba. Whether you’re seeking relaxation or adventure, this property offers everything you need for an unforgettable stay. Book now and start counting down the days to your modern Caribbean chic retreat! Please be advised that Parties, social events and gatherings are not allowed at our vacation homes. Remember to take advantage of our concierge services! All utilities are included."
     }
   ]
 }
