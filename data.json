@@ -21281,9 +21281,9 @@
     }
   ],
   "agentMeta": {
-    "lastSync": "2026-06-28T20:56:50Z",
+    "lastSync": "2026-06-30T21:39:36Z",
     "agentActive": true,
-    "totalSyncCount": 72
+    "totalSyncCount": 73
   },
   "trackerItems": [],
   "monthlyData": [
@@ -22148,6 +22148,630 @@
         }
       ],
       "notes": "Villa Jolie is a modern, private villa with a spacious outdoor area featuring a pool, elevated tub, BBQ, and rooftop terrace, just minutes from Aruba’s famous beaches. Inside, find three bedrooms, a fully equipped kitchen, and cozy living spaces, all secured within a gated property. This villa boasts breathtaking views of Aruba’s natural landscapes, creating an ideal setting for your dream getaway.Highlights• Spacious back patio: the outside area contains multiple areas; a poolside lounge area, a rooftop terrace offering stunning panoramic views, and a covered veranda including a dining area with a BBQ for some great meal experiences.• Comfortable sunroom: this area is a cozy space with large windows that let in plenty of natural light, ideal for relaxing with a book or enjoying quiet moments indoors or a great spot to lounge away from the sun. Are you on a workation, your desk with pool view is awaiting you.• Fully equipped kitchen: the kitchen features ample counter space and storage for convenience, is perfect for self-catering and enjoying meals with family and friends, and connects seamlessly to the living and dining areas for easy entertaining.• Perfect location: Villa Jolie is located in a quiet residential area of Noord. It is just a 5-minute drive to Aruba’s famous Palm Beach and Eagle Beach. Big supermarkets are 10 minutes away, and a small supermarket is just 3 minutes away. You have easy access to local dining, shopping, and attractions while enjoying peace and privacy.Amenities• Air conditioning throughout the villa• High-speed Wi-Fi throughout the villa for seamless connectivity• Gated property with an alarm system for security• Smart TV with streaming services• Guest restroom and poolside shower for convenience• Onsite parking available behind the gates for convenience• Washer and dryer• Beach towels, lightweight chairs, and cooler provided for beach days• 24/7 guest supportLocationNoord is known for its beautiful beaches, excellent dining options, and vibrant atmosphere. Visit nearby attractions such as Eagle Beach, Palm Beach, and the California Lighthouse. Enjoy water sports, shopping, and exploring the local culture – all within easy reach. This property is located about a 8-minutes drive to Boca Catalina/ Arashi and a 5-minutes drive to Palm Beach Area / Eagle Beach, rated one of the best beaches on the One Happy Island, Aruba.Book Your Stay Don’t miss the opportunity to experience this luxurious vacation home in Aruba. Whether you’re seeking relaxation or adventure, this property offers everything you need for an unforgettable stay. Book now and start counting down the days to your modern Caribbean chic retreat! Please be advised that Parties, social events and gatherings are not allowed at our vacation homes. Remember to take advantage of our concierge services! All utilities are included."
+    },
+    {
+      "id": "av-ltr-141-Diamante-195-L",
+      "name": "Diamante 195 L",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/141/thimg_4.3_350x220.jpg",
+      "area": "Diamante",
+      "location": "Diamante",
+      "askPrice": 3500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/141-Diamante-195-L/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 3500
+        }
+      ],
+      "notes": "3 Bedroom condo with an additional family room in the attic for long term rent. This beautiful condo is located in Gold Coast Villas, walking distance from the beach."
+    },
+    {
+      "id": "av-ltr-149-Mosaic",
+      "name": "Mosaic",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/149/thimg_2.1_350x220.jpg",
+      "area": "Mosaic",
+      "location": "Mosaic",
+      "askPrice": 2300,
+      "pricePeriod": "monthly",
+      "size": "98m²",
+      "buildingSize": "98m²",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/149-Mosaic/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 2300
+        }
+      ],
+      "notes": "Brand New Fully furnished 3 bedroom Condo in close to the hotel area."
+    },
+    {
+      "id": "av-ltr-176-Aruba-Harbor-8",
+      "name": "Aruba, Harbor 8",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/176/thimg_8.1_350x220.jpg",
+      "area": "Harbor",
+      "location": "Harbor",
+      "askPrice": 1200,
+      "pricePeriod": "monthly",
+      "size": "69m²",
+      "buildingSize": "69m²",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/176-Aruba-Harbor-8/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 1200
+        }
+      ],
+      "notes": "Living in Eagle area! Nice 1 bedroom one bathroom condo for rent in well known Harbor Residence! City view, close to town and low rise hotels. Parking and nice shops on ground floor! Contact us today for more information."
+    },
+    {
+      "id": "av-ltr-181-Noord-41-F-number-8",
+      "name": "Noord 41 F number 8",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/181/thimg_12.1_350x220.jpg",
+      "area": "Noord 41 F number 8",
+      "location": "Noord 41 F number 8",
+      "askPrice": 1600,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/181-Noord-41-F-number-8/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 1600
+        }
+      ],
+      "notes": "Living in Palm Beach close to all beaches, shopping malls, restaurants and hotels! This new apartment building is located in Palm Beach next to famous Pharmacy Santa Ana. Modern design, modern interior, all hall ways marble tiled, privacy, secured entrance, swimming pool and parking on premises! This one bedroom is complete high-end furnished. The rent is US$ 1."
+    },
+    {
+      "id": "av-ltr-305-Stadionweg-Oranjestad",
+      "name": "Stadionweg, Oranjestad",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/305/thimg_Doc-Oct-12-2020-3-14-PM-p7_350x220.jpg",
+      "area": "Stadionweg",
+      "location": "Stadionweg",
+      "askPrice": 800,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/305-Stadionweg-Oranjestad/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 800
+        }
+      ],
+      "notes": "2 Bedroom apartment for rent in Oranjestad. Apartment is fully furnished including Gas, Cable and internet."
+    },
+    {
+      "id": "av-ltr-309-Savaneta-40",
+      "name": "Savaneta 40",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/309/thimg_Doc-Oct-19-2020-9-57-AM-p1_350x220.jpg",
+      "area": "Savaneta 40",
+      "location": "Savaneta 40",
+      "askPrice": 1260,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/309-Savaneta-40/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 1260
+        }
+      ],
+      "notes": "House for rent on the main road Oranjestad-San Nicolas. For rent for residential and or commercial."
+    },
+    {
+      "id": "av-ltr-310-Palm-Beach-405",
+      "name": "Palm Beach 405",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/310/thimg_7.1_350x220.jpg",
+      "area": "Palm Beach",
+      "location": "Palm Beach",
+      "askPrice": 2700,
+      "pricePeriod": "monthly",
+      "size": "148m²",
+      "buildingSize": "148m²",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/310-Palm-Beach-405/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 2700
+        }
+      ],
+      "notes": "Palm Aruba Condos are located in the heart of Palm Beach in Aruba and is just few steps away from the world’s most beautiful beaches. PALMARUBA CONDOS is a project of 78 units condominium, with fully equipped 1, 2 and 3 bedrooms with optional furnish."
+    },
+    {
+      "id": "av-ltr-343-Schotlandstraat-5",
+      "name": "Schotlandstraat 5",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/343/thimg_Doc-Feb-10-2021-11-08-AM-p6_350x220.jpg",
+      "area": "Schotlandstraat",
+      "location": "Schotlandstraat",
+      "askPrice": 1300,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/343-Schotlandstraat-5/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 1300
+        }
+      ],
+      "notes": "Newly built 1 bedroom apartment complex centrally located in Eagle minutes away from supermarkets, downtown, and hotels. The units come completely furnished with a modern kitchen, refrigerator, gas stove, and air conditioning.The rental price is USD 1.300.00 per month plus a 1-month security deposit. Excluding internet and cable. No pets allowedRequirement: I.D., payslip, and reference letter."
+    },
+    {
+      "id": "av-ltr-350-Ponton-38-H",
+      "name": "Ponton 38 H",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/350/thimg_IMG_4114_350x220.jpg",
+      "area": "Ponton",
+      "location": "Ponton",
+      "askPrice": 1686,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/350-Ponton-38-H/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 1686
+        }
+      ],
+      "notes": "This warm home with a beautiful view of the big garden is situated in Ponton, Oranjestad. The house is rented unfurnished, is fully fenced, and has an alarm system. It consists of 3 bedrooms, 2 bathrooms, a kitchen, an open space living- and dining area, and a patio overlooking the beautiful trees in the garden. On the property there is a basketball court."
+    },
+    {
+      "id": "av-ltr-407-Sabana-Liber-72",
+      "name": "Sabana Liber 72",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/407/thimg_Doc-Oct-7-2021-9-03-AM-p6_350x220.jpg",
+      "area": "Sabana Liber",
+      "location": "Sabana Liber",
+      "askPrice": 1400,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/407-Sabana-Liber-72/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 1400
+        }
+      ],
+      "notes": "Semi furnished 3 bedroom apartment with outdoor patio for rent in Sabana Liber, Noord."
+    },
+    {
+      "id": "av-ltr-444-gold-coast",
+      "name": "gold coast",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/444/thimg_WhatsApp-Image-2022-05-23-at-1.39.16-PM_350x220.jpg",
+      "area": "gold coast",
+      "location": "gold coast",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/444-gold-coast/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 2500
+        }
+      ],
+      "notes": "For rent this beautiful 2 bedroom and 2 bath condo at Gold Coast."
+    },
+    {
+      "id": "av-ltr-446-90-bushiri",
+      "name": "90, bushiri",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/446/thimg_WhatsApp-Image-2022-05-23-at-1.42.08-PM_350x220.jpg",
+      "area": "House",
+      "location": "House",
+      "askPrice": 2000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/446-90-bushiri/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 2000
+        }
+      ],
+      "notes": "For rent USD$2000/m excluding utilities, unfurnished. Good neighborhood and close to Eagle Beach.Two minutes away from Ling & Sons and Superfood.No pet allowed."
+    },
+    {
+      "id": "av-ltr-462-Gold-Coast-Aruba-Malmok-Aruba",
+      "name": "Gold Coast, Aruba Malmok, Aruba",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/462/thimg_IMG-20240617-WA0009_350x220.jpg",
+      "area": "Aruba",
+      "location": "Aruba",
+      "askPrice": 4500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/462-Gold-Coast-Aruba-Malmok-Aruba/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 4500
+        }
+      ],
+      "notes": "This beautifully fully furnished Villa, move-in-ready decorated three-bedroom townhouse is the perfect place for you to call home. It has an open living room where everyone can enjoy themselves, as well as three spacious bedrooms upstairs.Gold Coast is the perfect place to live if you're looking for an exclusive community with amenities that are second to none."
+    },
+    {
+      "id": "av-ltr-463-gold-coast-Aruba-110",
+      "name": "gold coast, Aruba 110",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/463/thimg_20241002_154051_350x220.jpg",
+      "area": "Aruba",
+      "location": "Aruba",
+      "askPrice": 3500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/463-gold-coast-Aruba-110/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 3500
+        }
+      ],
+      "notes": "This beautifully fully furnished, move-in-ready decorated three-bedroom townhouse is the perfect place for you to call home. It has an open living room where everyone can enjoy themselves, as well as three spacious bedrooms upstairs.Gold Coast is the perfect place to live if you're looking for an exclusive community with amenities that are second to none."
+    },
+    {
+      "id": "av-ltr-465-gold-coast-42",
+      "name": "gold coast 42",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/465/thimg_WhatsApp-Image-2022-05-23-at-2.16.06-PM_350x220.jpg",
+      "area": "gold coast 42",
+      "location": "gold coast 42",
+      "askPrice": 2800,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/465-gold-coast-42/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 2800
+        }
+      ],
+      "notes": "This beautifully fully furnished, move-in-ready decorated three-bedroom townhouse is the perfect place for you to call home. It has an open living room where everyone can enjoy themselves, as well as three spacious bedrooms upstairs.Gold Coast is the perfect place to live if you're looking for an exclusive community with amenities that are second to none."
+    },
+    {
+      "id": "av-ltr-467-mosaic",
+      "name": "mosaic",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/467/thimg_WhatsApp-Image-2022-06-23-at-1.57.57-PM_350x220.jpg",
+      "area": "mosaic",
+      "location": "mosaic",
+      "askPrice": 2000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/467-mosaic/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 2000
+        }
+      ],
+      "notes": "This unit comes completely furnished, with a dishwasher, washer, and dryer, consisting of 2 bedrooms/ 3.5. Bathrooms. This unit comes with a studio on the 3rd floor with its own bathroom.Rental price longterm USD$ 2000."
+    },
+    {
+      "id": "av-ltr-484-Tanki-Leendert-245-Tanki-Leendert",
+      "name": "Tanki Leendert 245, Tanki Leendert",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/484/thimg_20230120_142412-COLLAGE_350x220.jpg",
+      "area": "Tanki Leendert",
+      "location": "Tanki Leendert",
+      "askPrice": 4500,
+      "pricePeriod": "monthly",
+      "size": "320m²",
+      "buildingSize": "320m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/484-Tanki-Leendert-245-Tanki-Leendert/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 4500
+        }
+      ],
+      "notes": "A retail/warehouse unit is for rent on Tanki Leendert's popular high-traffic road.Total space: 320m2Asking price: Awg. 8000.00 per month excluding all utilities and services."
+    },
+    {
+      "id": "av-ltr-487-Tanki-Flip-30-H-Aruba",
+      "name": "Tanki Flip 30 H, Aruba",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/487/thimg_6.1_350x220.jpg",
+      "area": "Tanki Flip",
+      "location": "Tanki Flip",
+      "askPrice": 1450,
+      "pricePeriod": "monthly",
+      "size": "45m²",
+      "buildingSize": "45m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/487-Tanki-Flip-30-H-Aruba/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 1450
+        }
+      ],
+      "notes": "Commercial Space for Rent – Tanki FlipThis centrally located commercial building in Tanki Flip offers a 45 m² office space available for rent. Part of the property features common areas, restrooms making it ideal for professional or administrative use.Monthly Rent: AWG 2,500."
+    },
+    {
+      "id": "av-ltr-491-Lucianitastraat-13-Oranjestad",
+      "name": "Lucianitastraat 13, Oranjestad",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/491/thimg_20230217_103155_350x220.jpg",
+      "area": "Lucianitastraat",
+      "location": "Lucianitastraat",
+      "askPrice": 1250,
+      "pricePeriod": "monthly",
+      "size": "141m²",
+      "buildingSize": "141m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/491-Lucianitastraat-13-Oranjestad/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 1250
+        }
+      ],
+      "notes": "This 141m2 property has three office spaces, a visitor waiting room, and two separate bathrooms, making it ideal for a doctor's office, law firm, or administration.The rent is Awg. 2.200 per month, which excludes all utilities and services.The property is completely fenced, with a large yard behind that can be used as an assigned employee parking."
+    },
+    {
+      "id": "av-ltr-492-Belgiestraat-Oranjestad",
+      "name": "Belgiestraat, Oranjestad",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/492/thimg_8.1_350x220.jpg",
+      "area": "Belgiestraat",
+      "location": "Belgiestraat",
+      "askPrice": 1573,
+      "pricePeriod": "monthly",
+      "size": "77.40m²",
+      "buildingSize": "77.40m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/492-Belgiestraat-Oranjestad/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 1573
+        }
+      ],
+      "notes": "Commercial unit for rent at Harbor Residence! The monthly rent is Awg. 2,800 per month excluding utilities and services.Close to town and low-rise hotels.Parking in front of shops on ground floor!Contact us today for more information at 5824494 or listing agent Angela 5937376."
+    },
+    {
+      "id": "av-ltr-493-Belgiestraat-Engelandstraat-%232-Oranjestad",
+      "name": "Belgiestraat Engelandstraat #2, Oranjestad",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/493/thimg_8.1_350x220.jpg",
+      "area": "Belgiestraat",
+      "location": "Belgiestraat",
+      "askPrice": 1304,
+      "pricePeriod": "monthly",
+      "size": "66.40m²",
+      "buildingSize": "66.40m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/493-Belgiestraat-Engelandstraat-%232-Oranjestad/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 1304
+        }
+      ],
+      "notes": "Commercial unit available for rent at Harbor Residence! Close to town and low-rise hotels. The unit comes with air-conditioning and with an office space in the back.The monthly rent is Awg. 2,800.00 per month excluding utilities and services. The lease agreement starts for 6 months and is renewable for every 6 months."
+    },
+    {
+      "id": "av-ltr-497-Barcadera-155-Barcadera",
+      "name": "Barcadera 155, Barcadera",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/497/thimg_IMG-20230209-WA0018_350x220.jpg",
+      "area": "Barcadera",
+      "location": "Barcadera",
+      "askPrice": 2530,
+      "pricePeriod": "monthly",
+      "size": "90m²",
+      "buildingSize": "90m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/497-Barcadera-155-Barcadera/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 2530
+        }
+      ],
+      "notes": "This recently renovated commercial property offers approximately 90 m2 of semi furnished office space with a waiting room, toilette, kitchenette, and two (2) office rooms and a shower. The front space is available for rent.Located at Barcadera 155, next to D.T."
+    },
+    {
+      "id": "av-ltr-506-Palm-Beach-4-Noord",
+      "name": "Palm Beach 4, Noord",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/506/thimg_Doc-Apr-21_-2023-10-44-AM-p9_350x220.jpg",
+      "area": "Palm Beach",
+      "location": "Palm Beach",
+      "askPrice": 2000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/506-Palm-Beach-4-Noord/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 2000
+        }
+      ],
+      "notes": "Fully furnished two bedroom apartment is available for rent in Noord, close to Palm Beach Area, Aruba."
+    },
+    {
+      "id": "av-ltr-516-Diamante",
+      "name": "Diamante",
+      "type": "ltr",
+      "image": "https://altovistarealestate.com/wp-content/uploads/WPL/516/thimg_IMG-20230626-WA0018_350x220.jpg",
+      "area": "Diamante",
+      "location": "Diamante",
+      "askPrice": 3500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Alto Vista Real Estate",
+      "listedDate": "2026-06-30",
+      "sourceUrl": "https://altovistarealestate.com/properties/516-Diamante/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-06-30",
+          "price": 3500
+        }
+      ],
+      "notes": "This beautifully fully furnished, move-in-ready decorated three-bedroom townhouse is the perfect place for you to call home. It has an open living room where everyone can enjoy themselves, as well as three spacious bedrooms upstairs.Gold Coast is the perfect place to live if you’re looking for an exclusive community with amenities that are second to none."
     }
   ]
 }
