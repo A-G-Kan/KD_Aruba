@@ -19,15 +19,17 @@ import sys, json, re, time
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent.parent))   # find deduplicate.py in scripts/
 sys.path.insert(0, str(Path.home() / "Library/Python/3.9/lib/python/site-packages"))
 
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
-from deduplicate import parse_price_robust
+from deduplicate import parse_price_and_currency
 
-AGENCY    = "Aruba Happy Homes"
-DATA_JSON = Path("/Users/alan/Desktop/KD/Website/data.json")
-TODAY     = date.today().isoformat()
+AGENCY     = "Aruba Happy Homes"
+DATA_JSON  = Path("/Users/alan/Desktop/KD/Website/data.json")
+TODAY      = date.today().isoformat()
+SCRAPED_AT = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
@@ -45,10 +47,6 @@ LTR_STATUS_MAP = {
 
 def clean(text):
     return re.sub(r"\s+", " ", text or "").strip()
-
-
-def parse_price(text):
-    return parse_price_robust(text)
 
 
 def parse_int(text):
@@ -127,12 +125,12 @@ def scrape_ltr(browser):
 
             # Price: div with "italic" class containing "per month"
             price_el = card.find("div", class_=re.compile(r"\bitalic\b"))
-            price = parse_price(price_el.get_text() if price_el else "")
+            price, currency = parse_price_and_currency(price_el.get_text() if price_el else "")
 
             # Status badge
             badge = card.find("div", class_=re.compile(r"bg-tertiary"))
             badge_text = clean(badge.get_text()).lower() if badge else ""
-            status = LTR_STATUS_MAP.get(badge_text, "active")
+            raw_status = LTR_STATUS_MAP.get(badge_text, "active")
 
             # Beds/baths from card (fallback if detail fails)
             card_text = card.get_text(" ")
@@ -147,27 +145,24 @@ def scrape_ltr(browser):
             bathrooms = bathrooms if bathrooms is not None else card_baths
             time.sleep(0.5)
 
-            slug = href.rstrip("/").split("/")[-1]
             results.append({
-                "id":           f"ahr-ltr-{slug}",
-                "name":         name,
-                "type":         "ltr",
-                "image":        image,
-                "area":         area,
-                "location":     area,
-                "askPrice":     price,
-                "pricePeriod":  "monthly",
-                "size":         "",
-                "buildingSize": "",
-                "lotSize":      "",
-                "bedrooms":     bedrooms,
-                "bathrooms":    bathrooms,
-                "agency":       AGENCY,
-                "listedDate":   TODAY,
-                "sourceUrl":    href,
-                "status":       status,
-                "priceHistory": [{"date": TODAY, "price": price}],
-                "notes":        description,
+                "source":          AGENCY,
+                "listingType":     "long_term_rental",
+                "propertyType":    None,
+                "price":           price,
+                "currency":        currency,
+                "buildingSize_m2": None,
+                "lotSize_m2":      None,
+                "bedrooms":        bedrooms,
+                "bathrooms":       bathrooms,
+                "neighborhood":    area,
+                "description":     description,
+                "photoUrls":       [image] if image else [],
+                "status":          "sold" if raw_status == "rented" else "available",
+                "agentContact":    None,
+                "listingUrl":      href,
+                "scrapedAt":       SCRAPED_AT,
+                "priceHistory":    [{"date": TODAY, "price": price, "currency": currency}],
             })
     finally:
         ctx.close()
@@ -252,33 +247,30 @@ def scrape_str(browser):
             period_el = parent.find("span", class_="h6") if parent else None
             price_text  = clean(price_el.get_text())  if price_el  else ""
             period_text = clean(period_el.get_text()) if period_el else "daily"
-            price = parse_price(price_text)
+            price, currency = parse_price_and_currency(price_text)
 
             print(f"     → {name[:55]}  ({area}, {price_text} {period_text})")
             bedrooms, bathrooms, description = scrape_str_detail(page, href)
             time.sleep(0.5)
 
-            slug = href.rstrip("/").split("/")[-1] or re.sub(r"[^a-z0-9]+", "-", name.lower())
             results.append({
-                "id":           f"ahr-str-{slug}",
-                "name":         name,
-                "type":         "str",
-                "image":        image,
-                "area":         area,
-                "location":     area,
-                "askPrice":     price,
-                "pricePeriod":  "nightly",
-                "size":         "",
-                "buildingSize": "",
-                "lotSize":      "",
-                "bedrooms":     bedrooms,
-                "bathrooms":    bathrooms,
-                "agency":       AGENCY,
-                "listedDate":   TODAY,
-                "sourceUrl":    href,
-                "status":       "active",
-                "priceHistory": [{"date": TODAY, "price": price}],
-                "notes":        description,
+                "source":          AGENCY,
+                "listingType":     "short_term_rental",
+                "propertyType":    None,
+                "price":           price,
+                "currency":        currency,
+                "buildingSize_m2": None,
+                "lotSize_m2":      None,
+                "bedrooms":        bedrooms,
+                "bathrooms":       bathrooms,
+                "neighborhood":    area,
+                "description":     description,
+                "photoUrls":       [image] if image else [],
+                "status":          "available",
+                "agentContact":    None,
+                "listingUrl":      href,
+                "scrapedAt":       SCRAPED_AT,
+                "priceHistory":    [{"date": TODAY, "price": price, "currency": currency}],
             })
     finally:
         ctx.close()
@@ -297,21 +289,24 @@ def save(new_rentals):
             existing = json.load(f)
 
     current_rentals = existing.get("rentals", [])
-    # Keep rentals from other agencies, replace this agency's
-    kept    = [r for r in current_rentals if r.get("agency") != AGENCY]
-    merged  = kept + new_rentals
+    old_ours = [r for r in current_rentals if r.get("source") == AGENCY or r.get("agency") == AGENCY]
+    kept      = [r for r in current_rentals if r.get("source") != AGENCY and r.get("agency") != AGENCY]
 
-    # Preserve user fields (archived, notes overrides) from previous run
-    old_by_id = {r["id"]: r for r in current_rentals if r.get("agency") == AGENCY}
+    # Preserve user fields (archived, userNotes) from previous run — keyed by URL
+    old_by_url = {
+        r.get("listingUrl") or r.get("sourceUrl"): r
+        for r in old_ours
+        if r.get("listingUrl") or r.get("sourceUrl")
+    }
     for r in new_rentals:
-        old = old_by_id.get(r["id"])
+        old = old_by_url.get(r.get("listingUrl"))
         if old:
             if old.get("archived"):
                 r["archived"] = True
-            # Preserve user-written notes override if different from scraped
             if old.get("userNotes"):
                 r["userNotes"] = old["userNotes"]
 
+    merged = kept + new_rentals
     existing["rentals"] = merged
     existing["agentMeta"] = {
         "lastSync":       datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
@@ -322,8 +317,8 @@ def save(new_rentals):
     with open(DATA_JSON, "w") as f:
         json.dump(existing, f, indent=2, ensure_ascii=False)
 
-    ltr_count = sum(1 for r in new_rentals if r["type"] == "ltr")
-    str_count = sum(1 for r in new_rentals if r["type"] == "str")
+    ltr_count = sum(1 for r in new_rentals if r.get("listingType") == "long_term_rental")
+    str_count = sum(1 for r in new_rentals if r.get("listingType") == "short_term_rental")
     print(f"\n✓  Saved {ltr_count} LTR + {str_count} STR rentals ({len(new_rentals)} total) → data.json[\"rentals\"]")
     print(f"   Total rentals in data.json: {len(merged)}")
 
