@@ -3,8 +3,12 @@
 Aruba Happy Homes property listing scraper.
 Source: https://arubahappyhomes.com
 
-Scrapes all for-sale listings across residential, condo, land, and commercial.
-Card contains name, location, price, size, beds. Detail page adds image + baths.
+Scrapes LAND listings only — per product decision, Happy Homes contributes
+only land to sales (Market Listings) and its own LTR/STR to the rentals page.
+Houses, condos, and commercial are excluded.
+
+Name format: "Land [Area] [Size]m²" built from real scraped fields.
+$0 prices and 0/blank sizes are stored as null, not as misleading zeros.
 
 Usage:
     python3 scrape_happyhomes.py
@@ -33,11 +37,9 @@ USER_AGENT = (
 )
 TODAY = date.today().isoformat()
 
+# Land only — houses/condos/commercial excluded by design
 SEARCH_SECTIONS = [
-    ("/listings/for-sale/residential",   "house"),
-    ("/listings/for-sale/condominium",   "condo"),
-    ("/listings/for-sale/land",          "land"),
-    ("/listings/for-sale/commercial",    "commercial"),
+    ("/listings/for-sale/land", "land"),
 ]
 
 
@@ -45,34 +47,55 @@ def clean(text):
     return re.sub(r"\s+", " ", text or "").strip()
 
 
-def parse_price(text):
-    return parse_price_robust(text)
+def parse_sqm(text):
+    """Return integer m² from a size string like '970 m²', or None if absent/zero."""
+    if not text:
+        return None
+    m = re.search(r"([\d,]+)\s*m", text, re.I)
+    if not m:
+        return None
+    val = int(m.group(1).replace(",", ""))
+    return val if val > 0 else None
 
-def parse_int(text):
-    m = re.search(r"\d+", text or "")
-    return int(m.group()) if m else None
+
+def format_size(sqm):
+    """'970 m²' string for display, or None."""
+    return f"{sqm:,} m²" if sqm else None
+
+
+def make_name(area, sqm):
+    """
+    Consistent land listing name built from real fields only.
+    Examples: "Land Savaneta 970 m²"  /  "Land Noord"  (no size if unknown)
+    """
+    parts = ["Land"]
+    if area:
+        parts.append(area)
+    if sqm:
+        parts.append(f"{sqm:,} m²")
+    return " ".join(parts)
 
 
 def parse_card(card):
-    name_el  = card.find(class_="name")
     link_el  = card.find("a", class_="link-cover")
     area_el  = card.find(class_="area")
     price_el = card.find(class_="price")
+    opts     = card.find_all(class_="option__value")
 
-    opts = card.find_all(class_="option__value")
-    size = clean(opts[0].get_text()) if len(opts) > 0 else ""
-    beds = parse_int(opts[1].get_text()) if len(opts) > 1 else None
+    href  = (link_el["href"] if link_el else "").strip()
+    area  = clean(area_el.get_text()) if area_el else ""
+    raw_price = parse_price_robust(price_el.get_text() if price_el else "")
+    price = raw_price if raw_price else None          # $0 → None
 
-    name = clean(name_el.get_text()) if name_el else "Unknown"
-    href = link_el["href"] if link_el else ""
+    # First option value is size
+    card_size_text = clean(opts[0].get_text()) if opts else ""
+    card_sqm       = parse_sqm(card_size_text)
 
     return {
-        "name":     name,
         "href":     href if href.startswith("http") else BASE_URL + href,
-        "area":     clean(area_el.get_text()) if area_el else "",
-        "askPrice": parse_price(price_el.get_text() if price_el else ""),
-        "size":     size,
-        "bedrooms": beds,
+        "area":     area,
+        "price":    price,
+        "card_sqm": card_sqm,
     }
 
 
@@ -82,29 +105,23 @@ def scrape_detail(page, url):
         time.sleep(0.8)
         soup = BeautifulSoup(page.content(), "html.parser")
 
-        # Image: first listing photo (handles lazy-load data-src)
+        # Image
         img = soup.find("img", class_="listing")
         if not img:
             img = soup.select_one(".gallery img, .slider img, .photo img, article img")
-        image_url = (img.get("src") or img.get("data-src") or "") if img else ""
+        image = (img.get("src") or img.get("data-src") or "") if img else ""
 
-        # Bathrooms
-        baths = None
-        text = soup.get_text(" ", strip=True)
-        m = re.search(r"(\d+)\s*bathroom", text, re.I)
-        if m:
-            baths = int(m.group(1))
-
-        # Description: longest paragraph
+        # Description
         paras = [p.get_text(strip=True) for p in soup.find_all("p") if len(p.get_text(strip=True)) > 60]
-        desc = max(paras, key=len, default="")
+        desc  = max(paras, key=len, default="")
 
+        # Sizes from full page text
         building_size, lot_size = parse_two_sizes(soup.get_text(" ", strip=True))
 
-        return image_url, baths, desc, building_size, lot_size
+        return image, desc, building_size, lot_size
     except Exception as e:
         print(f"    ⚠  Detail failed ({url}): {e}")
-        return "", None, "", "", ""
+        return "", "", "", ""
 
 
 def scrape_section(browser, section_path, listing_type, seen_urls):
@@ -113,7 +130,7 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
     page = ctx.new_page()
 
     try:
-        print(f"\n▶  {section_path}")
+        print(f"\n▶  {BASE_URL}{section_path}")
         page.goto(BASE_URL + section_path, timeout=30000, wait_until="domcontentloaded")
         time.sleep(2)
 
@@ -128,34 +145,40 @@ def scrape_section(browser, section_path, listing_type, seen_urls):
                 continue
             seen_urls.add(url)
 
-            print(f"     → {data['name'][:50]}")
-            image_url, baths, desc, detail_building, detail_lot = scrape_detail(page, url)
-            time.sleep(0.5)
+            image, desc, detail_building, detail_lot = scrape_detail(page, url)
+            time.sleep(0.4)
 
-            # card first option__value → building size for residential
-            card_size = data["size"]
-            building_size = detail_building or card_size
-            lot_size = detail_lot
+            # Prefer detail-page sizes; fall back to card value
+            lot_sqm      = parse_sqm(detail_lot) or parse_sqm(detail_building) or data["card_sqm"]
+            building_sqm = parse_sqm(detail_building) or None
 
+            size_str     = format_size(lot_sqm)
+            building_str = format_size(building_sqm)
+            lot_str      = format_size(lot_sqm)
+
+            name = make_name(data["area"], lot_sqm)
             slug = url.rstrip("/").split("/")[-1]
+
+            print(f"     → {name}  |  price={'${:,}'.format(data['price']) if data['price'] else 'N/A'}")
+
             results.append({
                 "id":           slug,
-                "name":         data["name"],
+                "name":         name,
                 "type":         listing_type,
-                "image":        image_url,
+                "image":        image,
                 "area":         data["area"],
                 "location":     data["area"],
-                "askPrice":     data["askPrice"],
-                "size":         building_size or lot_size or card_size,
-                "buildingSize": building_size,
-                "lotSize":      lot_size,
-                "bedrooms":     data["bedrooms"],
-                "bathrooms":    baths,
+                "askPrice":     data["price"],
+                "size":         size_str or "",
+                "buildingSize": building_str or "",
+                "lotSize":      lot_str or "",
+                "bedrooms":     None,
+                "bathrooms":    None,
                 "agency":       AGENCY,
                 "listedDate":   TODAY,
                 "sourceUrl":    url,
                 "status":       "active",
-                "priceHistory": [{"date": TODAY, "price": data["askPrice"]}],
+                "priceHistory": [{"date": TODAY, "price": data["price"]}],
                 "notes":        desc,
             })
     finally:
@@ -183,11 +206,12 @@ def save(new_listings):
         with open(DATA_JSON) as f:
             existing = json.load(f)
 
-    current = existing.get("listings", [])
-    old_agency   = [l for l in current if l.get("agency") == AGENCY]
-    kept    = [l for l in current if l.get("agency") != AGENCY]
+    current    = existing.get("listings", [])
+    # Match both old schema (agency) and new schema (source) to ensure full cleanup
+    old_agency = [l for l in current if l.get("agency") == AGENCY or l.get("source") == AGENCY]
+    kept       = [l for l in current if l.get("agency") != AGENCY and l.get("source") != AGENCY]
     new_listings = restore_user_fields(old_agency, new_listings)
-    merged       = kept + new_listings
+    merged     = kept + new_listings
 
     existing["listings"] = merged
     existing["agentMeta"] = {
@@ -199,7 +223,7 @@ def save(new_listings):
     with open(DATA_JSON, "w") as f:
         json.dump(existing, f, indent=2, ensure_ascii=False)
 
-    print(f"\n✓  Saved {len(new_listings)} {AGENCY} listings → {DATA_JSON} ({len(merged)} total)")
+    print(f"\n✓  Saved {len(new_listings)} {AGENCY} land listings → {DATA_JSON} ({len(merged)} total)")
 
 
 if __name__ == "__main__":

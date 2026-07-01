@@ -824,631 +824,6 @@
       "notes": "Alto Vista Real Estate Aruba N.V. is a real estate company established in Aruba and locally owned. The team consists of local agents with different cultural backgrounds and is therefore multiple lingual which is in complete consistency with the multicultural mix of…"
     },
     {
-      "id": "malmokweg-22t",
-      "name": "Malmokweg 22T",
-      "type": "house",
-      "image": "",
-      "area": "Malmok",
-      "location": "Malmok",
-      "askPrice": 2600000,
-      "size": "880 m²",
-      "buildingSize": "880 m²",
-      "lotSize": "880 m²",
-      "bedrooms": 5,
-      "bathrooms": 5,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/malmokweg-22t",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 2600000
-        }
-      ],
-      "notes": "Welcome to Malmokweg 22T, where luxury living meets artistic elegance in this stunning five-bedroom, five-and-a-half-bathroom mansion. With soaring high ceilings, a sparkling pool, a covered deck, and exquisite glass artwork reminiscent of Arte Murano, this property is a true masterpiece—now enhanced with a beautifully finished kitchen."
-    },
-    {
-      "id": "mesa-vista-55",
-      "name": "Mesa Vista 55",
-      "type": "house",
-      "image": "",
-      "area": "Tierra del Sol",
-      "location": "Tierra del Sol",
-      "askPrice": 1600000,
-      "size": "862 m²",
-      "buildingSize": "862 m²",
-      "lotSize": "862 m²",
-      "bedrooms": 4,
-      "bathrooms": 4,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/mesa-vista-55",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 1600000
-        }
-      ],
-      "notes": "This unique property sits on two lots, offering a generously sized lot larger than typical homes in the Mesa Vista area. It features a sparkling private pool and a rare two-car garage—a true luxury in this community where most homes have only one garage.  Ideally located only 3 minutes from Aruba’s stunning white-sand beaches and the lively Palm Beach district, this property places you at the heart of the island’s finest attractions."
-    },
-    {
-      "id": "esmeralda-16",
-      "name": "Esmeralda 16",
-      "type": "house",
-      "image": "",
-      "area": "Westpunt",
-      "location": "Westpunt",
-      "askPrice": 925000,
-      "size": "676 m²",
-      "buildingSize": "676 m²",
-      "lotSize": "676 m²",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/esmeralda-16",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 925000
-        }
-      ],
-      "notes": "One of the home’s most exceptional features is the green space directly behind the lot—ensuring no future construction and providing enduring privacy, tranquility, and unobstructed views. An elevated lookout point delivers sweeping vistas of the hotel strip and the ocean, creating a perfect spot to unwind and enjoy Aruba’s stunning sunsets."
-    },
-    {
-      "id": "matadera-9-u",
-      "name": "Matadera 9-U",
-      "type": "house",
-      "image": "",
-      "area": "Matadera",
-      "location": "Matadera",
-      "askPrice": 435000,
-      "size": "496 m²",
-      "buildingSize": "496 m²",
-      "lotSize": "496 m²",
-      "bedrooms": 5,
-      "bathrooms": 3,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/matadera-9-u",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 435000
-        }
-      ],
-      "notes": "Located in acentral and convenient area, this home is just minutes away fromschools, supermarkets, main roads, and highways, ensuring easy access to all daily essentials. It’s also close tohotels, restaurants, and Aruba’s most popular attractions, making it a perfect blend of residential comfort and investment value."
-    },
-    {
-      "id": "Miramar",
-      "name": "Caya Bista Lamar",
-      "type": "house",
-      "image": "",
-      "area": "Malmok",
-      "location": "Malmok",
-      "askPrice": 0,
-      "size": "820 m²",
-      "buildingSize": "820 m²",
-      "lotSize": "820 m²",
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/Miramar",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": "This fantastic home is located in one of Aruba´s most luxurious gated communities, Tierra del Sol. Built solidly, the home features high vaulted ceilings in every room with ceiling fans.  There are 3 spacious bedrooms each with its own private bathroom.  The master bedroom is complete with a spacious walk-in closet and the large bathroom, is equipped with a shower and relaxing bathtub for two. Each bedroom has its own split unit and the main house has a central a/c unit."
-    },
-    {
-      "id": "driemasterstraat-33usersmichelledownloadsdscn0664jpg-usersmichelledownloadsdscn0665-1jpg-usersmichelledownloadsdscn0665-2jpg-usersmichelledownloadsdscn0665-3jpg-usersmichelledownloadsdscn0665",
-      "name": "Driemasterstraat 33",
-      "type": "house",
-      "image": "",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 0,
-      "size": "347 m²",
-      "buildingSize": "347 m²",
-      "lotSize": "347 m²",
-      "bedrooms": 3,
-      "bathrooms": 5,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/driemasterstraat-33usersmichelledownloadsdscn0664jpg-usersmichelledownloadsdscn0665-1jpg-usersmichelledownloadsdscn0665-2jpg-usersmichelledownloadsdscn0665-3jpg-usersmichelledownloadsdscn0665",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": "Don't miss your chance to bring your vision to life in this promising fixer-upper. With its prime location and spacious layout, this property is brimming with potential. The canvas is blank, and the future is yours to design. Seize this opportunity and turn this house into a masterpiece that reflects your unique style and aspirations."
-    },
-    {
-      "id": "nobelstraat-14",
-      "name": "Nobelstraat 14",
-      "type": "house",
-      "image": "",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 0,
-      "size": "480 m²",
-      "buildingSize": "480 m²",
-      "lotSize": "480 m²",
-      "bedrooms": 5,
-      "bathrooms": 4,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/nobelstraat-14",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": "Discover the endless possibilities of this spacious property nestled on property land. With a fixer-upper house featuring three bedrooms, two full bathrooms, and the bonus of two studio apartments, this property offers the perfect canvas for your creative vision."
-    },
-    {
-      "id": "seroe-preto-226",
-      "name": "Seroe Preto 226",
-      "type": "house",
-      "image": "",
-      "area": "San Nicolas",
-      "location": "San Nicolas",
-      "askPrice": 0,
-      "size": "610 m²",
-      "buildingSize": "610 m²",
-      "lotSize": "610 m²",
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/seroe-preto-226",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": "This property presents an excellent opportunity to create your dream home with the option of a garage addition, making it perfect for those who value both privacy and a strong sense of community. Whether you're seeking a comfortable family home or an investment property, this house in San Nicolas, Aruba, caters to all your desires."
-    },
-    {
-      "id": "orcuyo-23-aruba",
-      "name": "Orcuyo 23 Aruba",
-      "type": "house",
-      "image": "https://arubahappyhomes.com/storage/app/uploads/public/633/deb/a2a/633deba2a451e568005229.jpg",
-      "area": "Santa Cruz",
-      "location": "Santa Cruz",
-      "askPrice": 0,
-      "size": "704 m²",
-      "buildingSize": "704 m²",
-      "lotSize": "704 m²",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/orcuyo-23-aruba",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": ""
-    },
-    {
-      "id": "rooi-santo-108",
-      "name": "Rooi Santo 108",
-      "type": "house",
-      "image": "",
-      "area": "Noord",
-      "location": "Noord",
-      "askPrice": 0,
-      "size": "792 m²",
-      "buildingSize": "792 m²",
-      "lotSize": "792 m²",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/rooi-santo-108",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": "This property is located in the upscale residential area of Rooi Santo. The nearest supermarket is within a 5-minute drive, and also you are very close to the beach. It is in a quiet neighborhood that is surrounded by beautiful nature."
-    },
-    {
-      "id": "orcuyo-34",
-      "name": "Orcuyo 34",
-      "type": "house",
-      "image": "",
-      "area": "Santa Cruz",
-      "location": "Santa Cruz",
-      "askPrice": 0,
-      "size": "617 m²",
-      "buildingSize": "617 m²",
-      "lotSize": "617 m²",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/orcuyo-34",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": "This property features 2 porches and has a lot of opportunities to create a very tropical outside area"
-    },
-    {
-      "id": "tanki-leendert-35-d",
-      "name": "Tanki Leendert 35-D",
-      "type": "house",
-      "image": "https://arubahappyhomes.com/storage/app/uploads/public/635/86e/38c/63586e38c0ca0051698999.jpg",
-      "area": "Tanki Leendert",
-      "location": "Tanki Leendert",
-      "askPrice": 0,
-      "size": "476 m²",
-      "buildingSize": "476 m²",
-      "lotSize": "476 m²",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/tanki-leendert-35-d",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": ""
-    },
-    {
-      "id": "modanza-117",
-      "name": "Modanza 117",
-      "type": "house",
-      "image": "",
-      "area": "Tanki Leendert",
-      "location": "Tanki Leendert",
-      "askPrice": 0,
-      "size": "424 m²",
-      "buildingSize": "424 m²",
-      "lotSize": "424 m²",
-      "bedrooms": 3,
-      "bathrooms": 5,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/modanza-117",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": "This property has a large porch and a nice-sized pool area. It includes a very lovely and tropical backyard with its private swimming pool and pizza oven."
-    },
-    {
-      "id": "mesa-vista-37",
-      "name": "Mesa Vista 37",
-      "type": "house",
-      "image": "",
-      "area": "Malmok",
-      "location": "Malmok",
-      "askPrice": 0,
-      "size": "880 m²",
-      "buildingSize": "880 m²",
-      "lotSize": "880 m²",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/mesa-vista-37",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": "This lovely 3 bedroom, 2 bathroom villa is located in the prestigious gated community of Tierra del Sol.  This home is truly made for entertaining and everyday living, with plenty of space. Enjoy an open floor plan, a kitchen with stainless steel appliances, and plenty of cabinets.  At the heart of this home, the kitchen — with adjoining dining and family rooms — makes it ideal for gatherings. Walk outside into your backyard oasis, with a stretched patio and pool area perfect for the family barbecue.  This property is ready for new owners. Welcome home!"
-    },
-    {
-      "id": "las-campeonas-0",
-      "name": "Las Campeonas 10",
-      "type": "house",
-      "image": "",
-      "area": "Malmok",
-      "location": "Malmok",
-      "askPrice": 0,
-      "size": "984 m²",
-      "buildingSize": "984 m²",
-      "lotSize": "984 m²",
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/las-campeonas-0",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": "Welcome to Las Campeonas 10, nestled within the prestigious Tierra del Sol gated community. This property offers an incredible opportunity to create your dream coastal home close to beaches, restaurants, shopping, and more."
-    },
-    {
-      "id": "cunucu-abou-10-b",
-      "name": "Cunucu Abou 10-B",
-      "type": "house",
-      "image": "",
-      "area": "Noord",
-      "location": "Noord",
-      "askPrice": 0,
-      "size": "724 m²",
-      "buildingSize": "724 m²",
-      "lotSize": "724 m²",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/cunucu-abou-10-b",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": "General construction: The floor is made of reinforced concrete slabs and is finished with luxury ceramic tiles. Walls Exterior and interior walls are all erected with concrete blocks. Ceilings The patio has a cathedral finish. Roofing The roof construction is a hip roof consisting of timberwork covered with roof tiles of clay Spanish quality. Kitchen cabinets The kitchen is provided with high Europe-quality finished cabinets with lower and upper cupboards. The top is of marble. The cabinets are all in excellent condition."
-    },
-    {
-      "id": "italiestraat-4",
-      "name": "Italiestraat 4",
-      "type": "house",
-      "image": "",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 0,
-      "size": "988 m²",
-      "buildingSize": "988 m²",
-      "lotSize": "988 m²",
-      "bedrooms": 5,
-      "bathrooms": 3,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/italiestraat-4",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": "Italiestraat 4 is a canvas for your imagination, a place where you can create the home you've always envisioned. Whether you seek a family haven, a workspace, or a combination of both, this property offers the space and potential to bring your vision to life."
-    },
-    {
-      "id": "wayaca-495",
-      "name": "Wayaca house in Aruba Near Oranjestad-Palm Beach and the Airport",
-      "type": "house",
-      "image": "",
-      "area": "Oranjestad",
-      "location": "Oranjestad",
-      "askPrice": 0,
-      "size": "533 m²",
-      "buildingSize": "533 m²",
-      "lotSize": "533 m²",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/wayaca-495",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": "Located close to top schools and a short drive to some of Aruba’s finest beaches and attractions, this home is perfect for families, investors, or those looking for a tranquil lifestyle near the heart of the island."
-    },
-    {
-      "id": "tanki-leendert-121m",
-      "name": "Tanki Leendert 121M",
-      "type": "house",
-      "image": "",
-      "area": "Tanki Leendert",
-      "location": "Tanki Leendert",
-      "askPrice": 0,
-      "size": "355 m²",
-      "buildingSize": "355 m²",
-      "lotSize": "355 m²",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/tanki-leendert-121m",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": "The home features a master bedroom with an ensuite bathroom and closet, ensuring privacy and ease. The practical layout includes a bright living area, a functional kitchen, and two additional bedrooms that share a bathroom. Outside, you'll find a carport for convenient parking and a separate storage room, perfect for keeping your tools and belongings organized."
-    },
-    {
-      "id": "savaneta",
-      "name": "Savaneta",
-      "type": "house",
-      "image": "",
-      "area": "Savaneta",
-      "location": "Savaneta",
-      "askPrice": 0,
-      "size": "770 m²",
-      "buildingSize": "770 m²",
-      "lotSize": "770 m²",
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/savaneta",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": "Savaneta's most beautiful beaches are situated on just a 10 minutes walk."
-    },
-    {
-      "id": "safir-43",
-      "name": "Safir 43",
-      "type": "house",
-      "image": "",
-      "area": "Noord",
-      "location": "Noord",
-      "askPrice": 0,
-      "size": "657 m²",
-      "buildingSize": "657 m²",
-      "lotSize": "657 m²",
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/safir-43",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": "Property Highlights:✅ 4 Bedrooms | 3 Full Bathrooms✅ Spacious open-concept living and dining area✅ Modern kitchen with quality appliances✅ Privatesaltwaterswimming pool with deck space✅ Outdoor kitchen – ideal for entertaining✅ Landscaped garden with irrigation system✅ Large 657m² land lot✅ Backs onto a protected green area – ultimate privacy and no future neighbors✅ Located in a quiet and upscale neighborhood in Noord✅ Minutes from Aruba’s best beaches, hotels, restaurants, and nightlife✅ Ideal for families, retirees, or as a high-yield investment property"
-    },
-    {
-      "id": "land-savaneta-970m2",
-      "name": "Land Savaneta 970m2",
-      "type": "land",
-      "image": "",
-      "area": "Savaneta",
-      "location": "Savaneta",
-      "askPrice": 240000,
-      "size": "970 m²",
-      "buildingSize": "970 m²",
-      "lotSize": "970 m²",
-      "bedrooms": 0,
-      "bathrooms": 2,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/land-savaneta-970m2",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 240000
-        }
-      ],
-      "notes": "Take advantage of this exceptional opportunity to ownfreehold propertyin the serene and welcoming area of Savaneta.Kavel 1, measuring 970m², is now available for sale. This spacious lot isnot part of a development, offering you complete freedom to design and build without HOA restrictions or community guidelines."
-    },
-    {
-      "id": "cashero-property-land-sale",
-      "name": "Cashero property land For Sale",
-      "type": "land",
-      "image": "",
-      "area": "Santa Cruz",
-      "location": "Santa Cruz",
-      "askPrice": 132,
-      "size": "m²",
-      "buildingSize": "m²",
-      "lotSize": "",
-      "bedrooms": 0,
-      "bathrooms": 2,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/cashero-property-land-sale",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 132
-        }
-      ],
-      "notes": ""
-    },
-    {
-      "id": "large-lot-in-matadera-noord",
-      "name": "Matadera-Noord Aruba Large Lot",
-      "type": "land",
-      "image": "",
-      "area": "Noord",
-      "location": "Noord",
-      "askPrice": 0,
-      "size": "21400 m²",
-      "buildingSize": "21400 m²",
-      "lotSize": "21400 m²",
-      "bedrooms": 0,
-      "bathrooms": 2,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/large-lot-in-matadera-noord",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": "This property is perfect for constructing a new residential area with 12 properties/apartments."
-    },
-    {
-      "id": "catiri-21",
-      "name": "𝘽𝙤𝙪𝙩𝙞𝙦𝙪𝙚 𝘼𝙥𝙖𝙧𝙩𝙢𝙚𝙣𝙩𝙨 𝙛𝙤𝙧 𝙎𝙖𝙡𝙚 𝙞𝙣 𝘼𝙧𝙪𝙗𝙖.",
-      "type": "commercial",
-      "image": "",
-      "area": "Noord",
-      "location": "Noord",
-      "askPrice": 0,
-      "size": "900 m²",
-      "buildingSize": "900 m²",
-      "lotSize": "900 m²",
-      "bedrooms": 6,
-      "bathrooms": 4,
-      "agency": "Aruba Happy Homes",
-      "listedDate": "2026-06-25",
-      "sourceUrl": "https://arubahappyhomes.com/listings/catiri-21",
-      "status": "active",
-      "priceHistory": [
-        {
-          "date": "2026-06-25",
-          "price": 0
-        }
-      ],
-      "notes": "The entire property is tastefully and contemporarily decorated, radiating comfort and a modern, stylish atmosphere. The highly attractive location, which also offers plenty of privacy, allows for multiple uses: ideal for families seeking a peaceful island retreat close to beaches and island activities, or for investors looking for a turn-key and profitable rental property."
-    },
-    {
       "id": "casa-del-mar-week-29",
       "name": "CASA DEL MAR – week 29",
       "type": "timeshare",
@@ -21278,12 +20653,87 @@
         }
       ],
       "notes": "Formerly a charming Cunucu House, this boutique property has been lovingly restored, preserving its authentic character while integrating modern luxury. Thoughtfully designed, nearly 90% of the hotel features bespoke craftsmanship and intricate detailing, creating a unique and memorable atmosphere. Guests are welcomed into a sophisticated, open-space layout where they can relax by a cozy fireplace or unwind beside a shimmering saltwater pool—perfect for both leisure and social gatherings."
+    },
+    {
+      "id": "land-savaneta-970m2",
+      "name": "Land Savaneta 970 m²",
+      "type": "land",
+      "image": "",
+      "area": "Savaneta",
+      "location": "Savaneta",
+      "askPrice": 240000,
+      "size": "970 m²",
+      "buildingSize": "",
+      "lotSize": "970 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://arubahappyhomes.com/listings/land-savaneta-970m2",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 240000
+        }
+      ],
+      "notes": "Take advantage of this exceptional opportunity to ownfreehold propertyin the serene and welcoming area of Savaneta.Kavel 1, measuring 970m², is now available for sale. This spacious lot isnot part of a development, offering you complete freedom to design and build without HOA restrictions or community guidelines."
+    },
+    {
+      "id": "cashero-property-land-sale",
+      "name": "Land Santa Cruz",
+      "type": "land",
+      "image": "",
+      "area": "Santa Cruz",
+      "location": "Santa Cruz",
+      "askPrice": 132,
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://arubahappyhomes.com/listings/cashero-property-land-sale",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 132
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "large-lot-in-matadera-noord",
+      "name": "Land Noord 21,400 m²",
+      "type": "land",
+      "image": "",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": null,
+      "size": "21,400 m²",
+      "buildingSize": "",
+      "lotSize": "21,400 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Aruba Happy Homes",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://arubahappyhomes.com/listings/large-lot-in-matadera-noord",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": null
+        }
+      ],
+      "notes": "This property is perfect for constructing a new residential area with 12 properties/apartments."
     }
   ],
   "agentMeta": {
-    "lastSync": "2026-06-30T21:39:36Z",
+    "lastSync": "2026-07-01T21:00:37Z",
     "agentActive": true,
-    "totalSyncCount": 73
+    "totalSyncCount": 76
   },
   "trackerItems": [],
   "monthlyData": [
