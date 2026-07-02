@@ -20731,9 +20731,9 @@
     }
   ],
   "agentMeta": {
-    "lastSync": "2026-07-01T21:00:37Z",
+    "lastSync": "2026-07-02T00:04:03Z",
     "agentActive": true,
-    "totalSyncCount": 76
+    "totalSyncCount": 77
   },
   "trackerItems": [],
   "monthlyData": [
@@ -22222,6 +22222,2398 @@
         }
       ],
       "notes": "This beautifully fully furnished, move-in-ready decorated three-bedroom townhouse is the perfect place for you to call home. It has an open living room where everyone can enjoy themselves, as well as three spacious bedrooms upstairs.Gold Coast is the perfect place to live if you’re looking for an exclusive community with amenities that are second to none."
+    },
+    {
+      "id": "bhhs-ltr-warehouse-oranjestad-2",
+      "name": "Warehouse in Oranjestad",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/645/8a2/4a1/thumb_13129_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 7000,
+      "pricePeriod": "monthly",
+      "size": "941 m²",
+      "buildingSize": "941 m²",
+      "lotSize": "1537 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/warehouse-oranjestad-2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 7000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-anabui-residence-2-2",
+      "name": "Anabui Residence # 2",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/60c/232/5fc/thumb_5391_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 5500,
+      "pricePeriod": "monthly",
+      "size": "230 m²",
+      "buildingSize": "230 m²",
+      "lotSize": "230 m²",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/anabui-residence-2-2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 5500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-franklinstraat-5",
+      "name": "Franklinstraat 5",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/65c/3bb/7ca/thumb_16830_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 5400,
+      "pricePeriod": "monthly",
+      "size": "634 m²",
+      "buildingSize": "634 m²",
+      "lotSize": "1076 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/franklinstraat-5",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 5400
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-condo-gold-coast",
+      "name": "Gold Coast 194 G",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/653/9e3/86e/thumb_15448_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 5000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/condo-gold-coast",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 5000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-modern-3-bedroom-home-opal",
+      "name": "Modern 3 Bedroom Home in Opal",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/6a3/efa/82b/thumb_24539_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 5000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/modern-3-bedroom-home-opal",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 5000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-sophisticated-modern-home",
+      "name": "Sophisticated Modern Home",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/690/cb0/249/thumb_22305_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 4500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/sophisticated-modern-home",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 4500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-caya-punta-brabo-commercial-unit",
+      "name": "Hoet Building Commercial Unit",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/688/261/c9d/thumb_21587_627_470_0_0_crop.png",
+      "area": "",
+      "location": "",
+      "askPrice": 4300,
+      "pricePeriod": "monthly",
+      "size": "180 m²",
+      "buildingSize": "180 m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/caya-punta-brabo-commercial-unit",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 4300
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-commercial-building-downtown-oranjestad",
+      "name": "Warehouse Downtown Oranjestad",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/647/4f4/f87/thumb_13631_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 4185,
+      "pricePeriod": "monthly",
+      "size": "495 m²",
+      "buildingSize": "495 m²",
+      "lotSize": "495 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/commercial-building-downtown-oranjestad",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 4185
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-opal-133-2",
+      "name": "Home at Opal",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/609/1c0/fc4/thumb_3973_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 4000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/opal-133-2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 4000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-office-boulevard",
+      "name": "Office on Boulevard",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/65c/503/afa/thumb_16890_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 3652,
+      "pricePeriod": "monthly",
+      "size": "265 m²",
+      "buildingSize": "265 m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/office-boulevard",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3652
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-constantijn-huygenstraat-13",
+      "name": "Constantijn Huygenstraat 13",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/665/899/ff6/thumb_18105_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 3500,
+      "pricePeriod": "monthly",
+      "size": "170 m²",
+      "buildingSize": "170 m²",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/constantijn-huygenstraat-13",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-zeewijk-1-m",
+      "name": "Zeewijk 1-M",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/68b/09b/001/thumb_21864_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 3500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/zeewijk-1-m",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-cozy-3-bedroom-home-apartment",
+      "name": "3 bedroom home with apartment",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/69f/c84/f3d/thumb_24295_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 3500,
+      "pricePeriod": "monthly",
+      "size": "155 m²",
+      "buildingSize": "155 m²",
+      "lotSize": "427 m²",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/cozy-3-bedroom-home-apartment",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-jg-emanstraat-icr-building",
+      "name": "J.G. Emanstraat ICR building",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/65d/ed4/937/thumb_17015_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 3370,
+      "pricePeriod": "monthly",
+      "size": "240 m²",
+      "buildingSize": "240 m²",
+      "lotSize": "240 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/jg-emanstraat-icr-building",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3370
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-palma-real-villa",
+      "name": "Palma Real Villa 79",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/65b/16c/13c/thumb_16405_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 3100,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/palma-real-villa",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3100
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-commercial-building-oranjestad-2",
+      "name": "Commercial building in Oranjestad",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/5f0/016/031/thumb_2486_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 3090,
+      "pricePeriod": "monthly",
+      "size": "700 m²",
+      "buildingSize": "700 m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/commercial-building-oranjestad-2",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3090
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-3-bedroom-condo-solito",
+      "name": "Condo at Solito (3 Bedrooms)",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/66d/9c7/a65/thumb_18823_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 3000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/3-bedroom-condo-solito",
+      "status": "on hold",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-apartment-tierra-del-sol-2",
+      "name": "Condo at Tierra del Sol",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/626/5f6/c73/thumb_9148_627_470_0_0_crop.webp",
+      "area": "",
+      "location": "",
+      "askPrice": 3000,
+      "pricePeriod": "monthly",
+      "size": "140 m²",
+      "buildingSize": "140 m²",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/apartment-tierra-del-sol-2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-breeze-aruba-unit-6a",
+      "name": "Aruba Breeze - Unit 6A",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/642/473/b7d/thumb_12836_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 2900,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/breeze-aruba-unit-6a",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2900
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-villa-noord",
+      "name": "Villa in Noord",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/620/eef/d46/thumb_8739_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 2900,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/villa-noord",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2900
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-washington-gardens-49-p",
+      "name": "Washington Gardens 49 P",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/641/4ac/545/thumb_12698_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 2800,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/washington-gardens-49-p",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2800
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-spacious-home-pool-rent",
+      "name": "Spacious home with pool for rent",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/684/afb/98e/thumb_21381_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 2800,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/spacious-home-pool-rent",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2800
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-home-piedra-plat",
+      "name": "Home at Piedra Plat",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/615/71f/73e/thumb_7380_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 2650,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/home-piedra-plat",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2650
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-palma-real-villa-4",
+      "name": "Palma Real Villa 4",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/65b/19d/bb4/thumb_16461_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 2600,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/palma-real-villa-4",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2600
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-villa-santa-lucia",
+      "name": "Villa Santa Lucia",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/644/593/bb4/thumb_12967_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 2588,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/villa-santa-lucia",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2588
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-paradera-cunucu",
+      "name": "Paradera - Cunucu",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/640/f41/f44/thumb_12552_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/paradera-cunucu",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-charming-2-bedroom-home-pool",
+      "name": "Charming 2-Bedroom Home with Pool",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/66b/28f/2c7/thumb_18581_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/charming-2-bedroom-home-pool",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-rooi-bosal-24-b",
+      "name": "Rooi Bosal 24 B",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/645/273/b6c/thumb_12994_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 3,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/rooi-bosal-24-b",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-diamante-232-c-2",
+      "name": "Diamante 232-C",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/651/d62/be9/thumb_15139_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/diamante-232-c-2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-las-rocas-17-c",
+      "name": "Las Rocas 17-C",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/609/2d6/c20/thumb_4070_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "115 m²",
+      "buildingSize": "115 m²",
+      "lotSize": "115 m²",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/las-rocas-17-c",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-diamante-232a-2",
+      "name": "Diamante 232A",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/660/efc/efd/thumb_17568_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/diamante-232a-2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-papaya-6-h",
+      "name": "Papaya 6 H",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/641/4a7/43b/thumb_12658_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 2400,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/papaya-6-h",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2400
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-wayaca-43-g",
+      "name": "Building in Wayaca",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/608/c62/7d6/thumb_3825_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 2260,
+      "pricePeriod": "monthly",
+      "size": "400 m²",
+      "buildingSize": "400 m²",
+      "lotSize": "398 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/wayaca-43-g",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2260
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-3-bedroom-noord",
+      "name": "Home in Noord 3 bedrooms",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/670/1c8/9ab/thumb_19037_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 2250,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/3-bedroom-noord",
+      "status": "on hold",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2250
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-diamante-139-b",
+      "name": "Gold Coast 139B",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/609/2d0/513/thumb_4063_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 2200,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/diamante-139-b",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2200
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-mazurka-20",
+      "name": "Mazurka 20",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/672/5b2/9c7/thumb_19166_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 2115,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/mazurka-20",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2115
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-catiri-31-e",
+      "name": "Catiri 31 E",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/64f/b49/ae9/thumb_14622_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 2100,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/catiri-31-e",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2100
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-pavia-29",
+      "name": "Pavia 29 A",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/691/f45/512/thumb_22416_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 2050,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/pavia-29",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2050
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-ponton90D",
+      "name": "Home at Ponton",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/61e/efa/e36/thumb_8445_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 2000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/ponton90D",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-home-tanki-leendert-4",
+      "name": "Home at Tanki Leendert",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/621/50c/a61/thumb_8823_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 2000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/home-tanki-leendert-4",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-santa-cruz-288-d",
+      "name": "Santa Cruz 288 D",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/66a/ebd/7e3/thumb_18550_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 2000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/santa-cruz-288-d",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-house-papilon",
+      "name": "House in Papilon",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/633/5e7/0e8/thumb_10837_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1980,
+      "pricePeriod": "monthly",
+      "size": "111 m²",
+      "buildingSize": "111 m²",
+      "lotSize": "497 m²",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/house-papilon",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1980
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-seroe-janchi-rental",
+      "name": "Seroe Janchi Home",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/66a/bcd/42b/thumb_18465_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 1967,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/seroe-janchi-rental",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1967
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-office-rent-oranjestad",
+      "name": "Office for rent Oranjestad",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/636/d27/4e3/thumb_11660_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1966,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/office-rent-oranjestad",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1966
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-nune-7f",
+      "name": "House in Nune",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/620/bb7/ce2/thumb_8625_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1925,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/nune-7f",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1925
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-palmaruba-rental-201",
+      "name": "Palmaruba Rental 01",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/66a/7fd/a13/thumb_18400_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 1800,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/palmaruba-rental-201",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1800
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-apartment-3",
+      "name": "Apartment in Palm Beach",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/612/401/903/thumb_7035_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 1800,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/apartment-3",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1800
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-cuquisastraat-22",
+      "name": "Cuquisastraat 22",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/650/375/955/thumb_14803_627_470_0_0_crop.webp",
+      "area": "",
+      "location": "",
+      "askPrice": 1800,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/cuquisastraat-22",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1800
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-palmaruba-302",
+      "name": "Palmaruba Rental 02",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/665/4e6/aea/thumb_18084_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 1800,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/palmaruba-302",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1800
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-tanki-leendert-153-L",
+      "name": "Tanki Leendert 153-L",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/641/0f0/2b1/thumb_12592_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 1690,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/tanki-leendert-153-L",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1690
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-tamarijn-house",
+      "name": "Tamarijn 2 bedroom house",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/697/69f/67b/thumb_23330_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 1602,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/tamarijn-house",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1602
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-home-seroe-blanco",
+      "name": "Home at Seroe Blanco",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/61d/85a/ab8/thumb_8086_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 1600,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 4,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/home-seroe-blanco",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1600
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-primavera-78",
+      "name": "Primavera 78",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/651/713/9cd/thumb_14994_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1518,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/primavera-78",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1518
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-ponton-commercial-center",
+      "name": "Ponton Commercial Center",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/643/0ff/8f8/thumb_12912_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1500,
+      "pricePeriod": "monthly",
+      "size": "60 m²",
+      "buildingSize": "60 m²",
+      "lotSize": "60 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/ponton-commercial-center",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-home-seroe-blanco-2",
+      "name": "Home at Seroe Blanco",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/671/ae7/6e6/thumb_19145_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1460,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/home-seroe-blanco-2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1460
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-san-barbola-residence-296",
+      "name": "San Barbola Residence 296",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/652/6d7/7b7/thumb_15302_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1430,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/san-barbola-residence-296",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1430
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-home-bubali",
+      "name": "Home at Bubali",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/612/fcd/77f/thumb_7045_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1400,
+      "pricePeriod": "monthly",
+      "size": "163 m²",
+      "buildingSize": "163 m²",
+      "lotSize": "397 m²",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/home-bubali",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1400
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-duplex-home-noord",
+      "name": "Duplex Home in Noord",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/618/3f3/d84/thumb_7689_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 1400,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/duplex-home-noord",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1400
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-home-ponton-2",
+      "name": "Home at Ponton",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/627/525/e6c/thumb_9310_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1400,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/home-ponton-2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1400
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-caya-frere-henricus-4-house",
+      "name": "Caya Frere Henricus # 4 - House",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/64e/e17/4a3/thumb_14544_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1372,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/caya-frere-henricus-4-house",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1372
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-retail-building-oranjestad-2",
+      "name": "Commercial Building Oranjestad",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/60e/e75/2e6/thumb_6308_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1349,
+      "pricePeriod": "monthly",
+      "size": "87 m²",
+      "buildingSize": "87 m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/retail-building-oranjestad-2",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1349
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-2-bedroom-apartment-regents-park-residence",
+      "name": "Two-bedroom apartment Regents Park no. 1",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/633/48e/86e/thumb_10817_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1320,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/2-bedroom-apartment-regents-park-residence",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1320
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-napa-valley-home",
+      "name": "Napa Valley home",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/620/e35/d2c/thumb_8685_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1264,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/napa-valley-home",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1264
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-piedra-plat-98-paradera",
+      "name": "Offices at Piedra Plat",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/5e1/4ca/897/thumb_1359_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1250,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/piedra-plat-98-paradera",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1250
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-commercial-building-ponton",
+      "name": "Commercial building in Ponton",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/621/7b3/21a/thumb_8842_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 1130,
+      "pricePeriod": "monthly",
+      "size": "76 m²",
+      "buildingSize": "",
+      "lotSize": "76 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/commercial-building-ponton",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1130
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-morgenster-43-l",
+      "name": "Morgenster 43 L",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/645/e82/f7a/thumb_13242_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1085,
+      "pricePeriod": "monthly",
+      "size": "60 m²",
+      "buildingSize": "60 m²",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/morgenster-43-l",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1085
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-cozy-apartment-oranjestad",
+      "name": "Spacious apartment in Oranjestad",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/6a0/bdc/6b3/thumb_24320_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 1060,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/cozy-apartment-oranjestad",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1060
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-2-bedroom-oranjestad",
+      "name": "Cute modular home in Oranjestad",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/679/03e/667/thumb_19611_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 1040,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/2-bedroom-oranjestad",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1040
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-luxurious-studio-pos-chikito",
+      "name": "Luxurious Studio in Pos Chikito",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/67c/f6a/616/thumb_20090_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 1010,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/luxurious-studio-pos-chikito",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1010
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-home-madiki",
+      "name": "Home at Madiki",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/61e/061/6c5/thumb_8185_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/home-madiki",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-2-bedroom-home-regents-park-residence-4",
+      "name": "Two-bedroom home Regents Park no. 4",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/633/488/270/thumb_10792_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 927,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/2-bedroom-home-regents-park-residence-4",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 927
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-2-bedroom-home-regents-park-residence-5",
+      "name": "Two-bedroom home Regents Park no. 5",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/633/485/d72/thumb_10777_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 927,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/2-bedroom-home-regents-park-residence-5",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 927
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-home-seroe-pita",
+      "name": "Home at Seroe Pita",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/66d/b5e/476/thumb_18848_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 888,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/home-seroe-pita",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 888
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-caya-frere-henricus-4-apartment",
+      "name": "Caya Frere Henricus # 4 - Apartment",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/64e/cdc/2c5/thumb_14539_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 860,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/caya-frere-henricus-4-apartment",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 860
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-apartment-paradera",
+      "name": "Apartment in Paradera",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/62f/cf1/d92/thumb_10082_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 857,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/apartment-paradera",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 857
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-weg-kustbatterij-12",
+      "name": "Weg Kustbatterij 12",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/64c/a83/539/thumb_14211_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 838,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/weg-kustbatterij-12",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 838
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-cunucu-house-babijn",
+      "name": "Cunucu house in Babijn",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/61b/20b/8fe/thumb_7928_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 825,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/cunucu-house-babijn",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 825
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-comfortable-apartment-paradera",
+      "name": "Comfortable apartment in Paradera",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/6a0/bdf/e4a/thumb_24333_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 775,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/comfortable-apartment-paradera",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 775
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-apartment-noord",
+      "name": "Noord Apt. #2A",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/60c/27f/687/thumb_5401_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 760,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/apartment-noord",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 760
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-rutena-3",
+      "name": "Rutena Oranjestad #2",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/60b/51e/d00/thumb_5195_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 750,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/rutena-3",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 750
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-rutena-2",
+      "name": "Rutena Oranjestad #1",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/60b/518/e06/thumb_5180_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 750,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/rutena-2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 750
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-felicidad-apartment",
+      "name": "Apartment Felicidad 8A",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/64b/f1f/ba5/thumb_14164_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 731,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/felicidad-apartment",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 731
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-apartment-seroe-blanco",
+      "name": "Apartment in Seroe Blanco",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/632/a7b/b46/thumb_10652_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 674,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/apartment-seroe-blanco",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 674
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-appartment-santa-cruz",
+      "name": "Apartment in Santa Cruz",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/62d/05d/8d9/thumb_9686_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 635,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/appartment-santa-cruz",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 635
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-studio-regents-park-residence",
+      "name": "Studio Regents Park no. 3",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/633/709/954/thumb_10847_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 617,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/studio-regents-park-residence",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 617
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-apartment-felicidad-8",
+      "name": "Apartment at Felicidad 8",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/649/4ed/8d7/thumb_13844_627_470_0_0_crop.jpeg",
+      "area": "",
+      "location": "",
+      "askPrice": 600,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/apartment-felicidad-8",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 600
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-studio-tanki-leendert",
+      "name": "Studio at Tanki Leendert",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/61e/59f/187/thumb_8357_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/studio-tanki-leendert",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-tanki-leendert4E",
+      "name": "Tanki Leendert Studio",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/620/3d3/4fe/thumb_8589_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 400,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/tanki-leendert4E",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 400
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-commercial-building-cumana",
+      "name": "Commercial Building Cumana",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/642/5b2/6d1/thumb_12855_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 42,
+      "pricePeriod": "monthly",
+      "size": "100 m²",
+      "buildingSize": "100 m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/commercial-building-cumana",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 42
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-kerkstraat-office-space",
+      "name": "Kerkstraat Office Space",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/66c/f70/ac1/thumb_18722_627_470_0_0_crop.png",
+      "area": "",
+      "location": "",
+      "askPrice": 12,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/kerkstraat-office-space",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 12
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-airport-business-mall",
+      "name": "Airport Business Mall",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/66d/d3c/f71/thumb_18866_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 0,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/airport-business-mall",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bhhs-ltr-warehouse-pos-chiquito",
+      "name": "Warehouse Pos Chiquito",
+      "type": "ltr",
+      "image": "https://www.bhhsaruba.com/storage/app/uploads/public/61e/077/27c/thumb_8208_627_470_0_0_crop.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 0,
+      "pricePeriod": "monthly",
+      "size": "963 m²",
+      "buildingSize": "963 m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 2,
+      "agency": "BHHS Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://www.bhhsaruba.com/listings/warehouse-pos-chiquito",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 0
+        }
+      ],
+      "notes": ""
     }
   ]
 }

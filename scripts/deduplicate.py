@@ -112,11 +112,19 @@ def parse_two_sizes(text):
 
     t = re.sub(r"\s+", " ", text)
 
+    def _degroup(raw):
+        """Strip a Dutch thousands separator (e.g. '1.537' -> '1537') so it
+        isn't mistaken for a decimal point. Matches the convention already
+        used for prices in _parse_numeric."""
+        if re.fullmatch(r"\d{1,3}(\.\d{3})+", raw):
+            return raw.replace(".", "")
+        return raw
+
     def _m2(pat):
         m = re.search(pat, t, re.I)
         if not m:
             return ""
-        raw = m.group(1).replace(",", "").rstrip(".")
+        raw = _degroup(m.group(1).replace(",", "").rstrip("."))
         try:
             v = float(raw)
             return f"{int(v)} m²" if v > 0 else ""
@@ -127,7 +135,7 @@ def parse_two_sizes(text):
         m = re.search(pat, t, re.I)
         if not m:
             return ""
-        raw = m.group(1).replace(",", "").rstrip(".")
+        raw = _degroup(m.group(1).replace(",", "").rstrip("."))
         try:
             v = float(raw)
             return f"{round(v * 0.0929)} m²" if v > 0 else ""
