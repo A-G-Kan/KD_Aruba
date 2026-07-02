@@ -20731,9 +20731,9 @@
     }
   ],
   "agentMeta": {
-    "lastSync": "2026-07-02T04:31:39Z",
+    "lastSync": "2026-07-02T04:43:43Z",
     "agentActive": true,
-    "totalSyncCount": 86
+    "totalSyncCount": 88
   },
   "trackerItems": [],
   "monthlyData": [
@@ -27968,6 +27968,136 @@
         }
       ],
       "notes": "Nice office space across from the hospital at H.M Tromp Dental Clinic. It has a reception area, office room, kitchen, storage room and a bathroom. For more information please call Muna @5934747"
+    },
+    {
+      "id": "roga-ltr-caya-j-e-m-arends-33",
+      "name": "Caya J. E. M. Arends 33",
+      "type": "ltr",
+      "image": "https://rogaruba.com/storage/app/resources/resize/800_500_0_0_crop/img_d092094d3d22c5ddb7ce450796d343e1.webp",
+      "area": "Noord",
+      "location": "Caya J. E. M. Arends 33, Noord",
+      "askPrice": 8427,
+      "pricePeriod": "monthly",
+      "size": "420 m²",
+      "buildingSize": "420 m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Realty One Group Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://rogaruba.com/listings/caya-j-e-m-arends-33",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 8427
+        }
+      ],
+      "notes": "An exceptional opportunity to lease ahigh-quality commercial propertyin one of Aruba’s most sought-after business districts. Located inEagle, just minutes from the island’s main hospital and key commercial hubs, this property offers a versatile layout ideal forprofessional offices, medical facilities, or service-oriented enterprisesseeking a prestigious and accessible address."
+    },
+    {
+      "id": "roga-ltr-commercial-building-rent-centrally-located-oranjestad",
+      "name": "Commercial building for rent centrally located in Oranjestad",
+      "type": "ltr",
+      "image": "https://rogaruba.com/storage/app/resources/resize/800_500_0_0_crop/img_5447d00fd8891153adbf785afd331547.webp",
+      "area": "Oranjestad",
+      "location": "Caya Boes Orman 116, Oranjestad",
+      "askPrice": 4689,
+      "pricePeriod": "monthly",
+      "size": "260 m²",
+      "buildingSize": "260 m²",
+      "lotSize": "",
+      "bedrooms": 8,
+      "bathrooms": 2,
+      "agency": "Realty One Group Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://rogaruba.com/listings/commercial-building-rent-centrally-located-oranjestad",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 4689
+        }
+      ],
+      "notes": "Strategically located inOranjestad, this standalone commercial property offers a total of260 m²of versatile space. The property can be rented as a whole or divided into two separate units of117 m² and 143 m², providing flexibility to suit different business needs."
+    },
+    {
+      "id": "roga-ltr-koyari-home",
+      "name": "Koyari Home",
+      "type": "ltr",
+      "image": "https://rogaruba.com/storage/app/resources/resize/800_500_0_0_crop/img_600a65ce805554e78c7464ac7b493e54.webp",
+      "area": "Noord",
+      "location": "Koyari 10-J, Noord",
+      "askPrice": 2750,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Realty One Group Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://rogaruba.com/listings/koyari-home",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2750
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "roga-ltr-Beautiful-Home-for-Rent-in-Purun",
+      "name": "Beautiful Home for Rent in Purun",
+      "type": "ltr",
+      "image": "https://rogaruba.com/storage/app/resources/resize/800_500_0_0_crop/img_8b55414b1cb8b2da0f5196b930cfb580.webp",
+      "area": "Tanki Leendert",
+      "location": "Purun 31, Tanki Leendert",
+      "askPrice": 2700,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Realty One Group Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://rogaruba.com/listings/Beautiful-Home-for-Rent-in-Purun",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2700
+        }
+      ],
+      "notes": "Looking for a cozy yet stylish place to call home in Aruba? This charming property in the desirable Tanki Leendert / Purun area offers comfort, convenience, and a fantastic location — just minutes away from the vibrant Palm Beach high-rise hotel area, restaurants, entertainment, and Aruba’s breathtaking beaches."
+    },
+    {
+      "id": "roga-ltr-john-g-emanstraat-112",
+      "name": "John G. Emanstraat 112",
+      "type": "ltr",
+      "image": "https://rogaruba.com/storage/app/resources/resize/800_500_0_0_crop/img_1719b8bfc62d171b69c36f7f029c5cf9.webp",
+      "area": "Oranjestad",
+      "location": "John G. Emanstraat 112, Oranjestad",
+      "askPrice": 2528,
+      "pricePeriod": "monthly",
+      "size": "110 m²",
+      "buildingSize": "110 m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 2,
+      "agency": "Realty One Group Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://rogaruba.com/listings/john-g-emanstraat-112",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2528
+        }
+      ],
+      "notes": ""
     }
   ]
 }
