@@ -20731,9 +20731,9 @@
     }
   ],
   "agentMeta": {
-    "lastSync": "2026-07-02T03:47:40Z",
+    "lastSync": "2026-07-02T04:31:39Z",
     "agentActive": true,
-    "totalSyncCount": 84
+    "totalSyncCount": 86
   },
   "trackerItems": [],
   "monthlyData": [
@@ -27136,6 +27136,838 @@
         }
       ],
       "notes": "FOR RENT | Centrally located studio apartmentModern and recently renovated studio apartment available for long-term rent in the centrally located area of Caya Frere Eduardo, near the Aruba Aloe factory. This apartment offers easy access to both the downtown area and Noord, making it the perfect location for convenience and comfort. The apartment comes semi-furnished and features a modern interior, ideal for an expat, or young professional seeking a cozy and low-maintenance living space.Rental Price: Afl. 1,500 per month | No pets and no children permittedIncluded:• Wi-Fi• Garden maintenance• Garbage pickup serviceExcluded:• Water• ElectricityContact us for more information or to schedule a viewing."
+    },
+    {
+      "id": "mpg-ltr-residential-607-bona-vista-hills-apartment",
+      "name": "Bona vista hills Apartment",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/68c/460/7db/thumb_18201_1200_900_0_0_crop.webp",
+      "area": "Alto Vista",
+      "location": "Alto Vista, Aruba",
+      "askPrice": 1250,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-607-bona-vista-hills-apartment",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1250
+        }
+      ],
+      "notes": "Apartment for Rent – Bona Vista Hills, Alto Vista, Aruba Available NOW! For more information or to schedule a viewing, please contact: Xenia at +297 5644357 or email xenia@mpgaruba.com Discover comfort and convenience in this beautifulone-bedroom apartmentlocated in the peaceful community ofBona Vista Hills, Alto Vista, on the stunning island of Aruba. Property Details: Rental Terms: This residence offers a tranquil setting while remaining close to Aruba’s beaches, shopping, and other amenities, making it the perfect place to call home. For more information or to schedule a viewing, please contact: Xenia at +297 5644357."
+    },
+    {
+      "id": "mpg-ltr-residential-658-savaneta-apartment",
+      "name": "Savaneta Apartment",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/6a1/b15/a4e/thumb_19317_1200_900_0_0_crop.webp",
+      "area": "Savaneta",
+      "location": "Savaneta, Aruba",
+      "askPrice": 1250,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-658-savaneta-apartment",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1250
+        }
+      ],
+      "notes": "Located just a short drive from the beautiful Mangel Halto Beach, this charming apartment in Savaneta is ideal for long-term renters.Two bedrooms one bathroom. The apartment features a fully equipped kitchen with a microwave and coffee machine. Additional comforts include air conditioning, ironing facilities, free WiFi, and a flat-screen TV. A safety deposit box. Guests can enjoy a private patio and terrace, creating the perfect space to relax and unwind. Swimming pool, free private parking is included, and the property offers non-smoking accommodations. Included in the price internet, gas and excluding water and electricity. Conveniently located only 5 miles from Queen Beatrix International Airport, 5.9 miles from Arikok National park."
+    },
+    {
+      "id": "mpg-ltr-residential-659-savaneta-apartment",
+      "name": "Savaneta Apartment",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/6a1/b17/d2d/thumb_19341_1200_900_0_0_crop.webp",
+      "area": "Savaneta",
+      "location": "Savaneta, Aruba",
+      "askPrice": 1100,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-659-savaneta-apartment",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1100
+        }
+      ],
+      "notes": "Located just a short drive from the beautiful Mangel Halto Beach, this charming apartment in Savaneta is ideal for long-term renters.One bedroom one bathroom. The apartment features a fully equipped kitchen with a microwave and coffee machine. Additional comforts include air conditioning, ironing facilities, free WiFi, and a flat-screen TV. A safety deposit box. Guests can enjoy a private patio and terrace, creating the perfect space to relax and unwind. Swimming pool, free private parking is included, and the property offers non-smoking accommodations. Included in the price internet, gas and excluding water and electricity. Conveniently located only 5 miles from Queen Beatrix International Airport, 5.9 miles from Arikok National park."
+    },
+    {
+      "id": "mpg-ltr-residential-23-modern-villa-on-the-golf-course",
+      "name": "Modern Villa on the Golf Course!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/59b/1e9/14a/thumb_734_1200_900_0_0_crop.webp",
+      "area": "Malmok",
+      "location": "Malmok, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "869 m²",
+      "buildingSize": "",
+      "lotSize": "869 m²",
+      "bedrooms": 3,
+      "bathrooms": 4,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-23-modern-villa-on-the-golf-course",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "This newly completely renovated Courtyard Villa is situated in the tranquil Mesa Vista neighborhood, located on the nature preserve side of the golf course offering picturesque views of golf and nature. Once entering the property the lushly landscaped courtyard offers right away privacy and tranquility. The courtyard and the main house flowing seamlessly with each other as the flawless tile work are the same and continues towards the covered terrace and beyond. With its open lay out design, high vaulted ceiling, modern gourmet kitchen with island, this property offers views from all the main areas of the house. Two large guest bedroom with private bathroom and one spacious master bedroom with walk through closet which leads to the costume designed bathroom. A waterfall shower experience from the ceiling and with floor to ceiling glass windows, it offers a feeling of being outside in the lush gardens while maintaining complete privacy. At the other side of the bedroom it offers entertainment and access through large sliding doors towards the covered terrace and pool area. The garden, professionally landscaped with Aruba's environment in mind, offering an outside kitchen area, dining, sitting area, a large pool and a Jacuzzi for eight adults. Not to take away, all with beautiful nature and golf course views. Will be available in June 2019."
+    },
+    {
+      "id": "mpg-ltr-residential-84-luxury-ocean-view-luxury-villa",
+      "name": "Luxury Ocean View Luxury Villa!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/59c/d97/acd/thumb_1714_1200_900_0_0_crop.webp",
+      "area": "Alto Vista",
+      "location": "Alto Vista, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 5,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-84-luxury-ocean-view-luxury-villa",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Luxury Villa with tropical garden and panoramic view overlooking the Island. This fully air conditioned luxury villa is furnished and consist of 4 bedrooms, 41/2 bathrooms, study room with private toilet, large open kitchen with dining room, pantry, laundry room, living room, double garage, 4 balconies and infinity pool with jacuzzi. Next to the pool bar you find the BBQ pit with sitting area."
+    },
+    {
+      "id": "mpg-ltr-residential-172-modern-villa-with-a-pool-at-malmok",
+      "name": "Modern Villa with a Pool at Malmok",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/5d8/bf4/70e/thumb_5385_1200_900_0_0_crop.webp",
+      "area": "Malmok",
+      "location": "Malmok, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "937 m²",
+      "buildingSize": "",
+      "lotSize": "937 m²",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-172-modern-villa-with-a-pool-at-malmok",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "This modern villa is located at Westpunt in the beautiful neighborhood of Esmeralda, just minutes away from the prestigious beach Boca Catalina and Tierra Del Sol. It is fully gated with the latest technologies and amenities. Stunning & Spacious Architect-Designed home with a swimming pool. The house has 3 bedrooms and 2 bathrooms. The master bedroom has a walk in closet and a master bathroom. Open lay out of living, dining area and a kitchen. The house has quality amenities, such as large glass windows and doors, high ceiling walls, modern kitchen fully equipped with a breakfast bar on the outside patio and pool area, private landscaped back yard and patio for entertaining. Laundry room and maid's quarters. The house is alarmed with digital door locks, lighting and sound system. This modern villa is fully air conditioned."
+    },
+    {
+      "id": "mpg-ltr-residential-524-cozy-beautiful-home-in-opal-for-rent-3-bed-3-bath-with-a-studio",
+      "name": "Cozy Beautiful home in Opal for rent, 3 bed/3 bath with a Studio!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/669/7c8/101/thumb_15231_1200_900_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-524-cozy-beautiful-home-in-opal-for-rent-3-bed-3-bath-with-a-studio",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Beautiful fully furnished home for rent in Opal, Noord, located less than 5 minutes from the high-rise hotels and beaches, in a quiet and safe residential area. This home is perfect for a family or individuals looking for a comfortable living space! It features 3 spacious bedrooms and 3 full bathrooms. The master bedroom includes 2 walk-in closets, and each bedroom offers ample closet space. Enjoy a fully equipped kitchen and a lovely outdoor entertainment area. Additionally, there is a studio apartment in the back with a full bathroom, perfect for guests or extra living space! Trash, Cable and Internet is included in the rental price! Call me today to schedule a viewing or if you have any questions or concerns! +297-6991119 | nizar@mpgaruba.com"
+    },
+    {
+      "id": "mpg-ltr-residential-622-villa-bunita",
+      "name": "Villa Bunita",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/690/50f/595/thumb_18361_1200_900_0_0_crop.webp",
+      "area": "San Nicolas",
+      "location": "San Nicolas, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-622-villa-bunita",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Escape to a stunningprivate 3-bedroom, 2-bathroom homein the peaceful district of San Nicolas. This fully furnished property offers the perfect balance of comfort and convenience — ideal for families, professionals, or anyone seeking a serene island lifestyle. Enjoy your ownprivate pool,modern open-concept kitchen,spacious living area with sofa bed,dedicated work space, andair conditioning in all rooms. The patio and BBQ area are perfect for relaxing or entertaining, while the beach is just a short drive away. 📅Available starting March 2026📆Minimum rental period: 6 months💰1-month security deposit required💡Utilities and pool service not included For more information or to schedule a viewing,call Xenia Roelofsen at +297 5644357."
+    },
+    {
+      "id": "mpg-ltr-residential-468-modern-villa-for-rent-at-opal",
+      "name": "Modern Villa For Rent at Opal!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/64e/3d6/47a/thumb_13381_1200_900_0_0_crop.webp",
+      "area": "Malmok",
+      "location": "Malmok, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-468-modern-villa-for-rent-at-opal",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Nice Villa at Opal 45, with 3 bedrooms 3 bathrooms and an apartment. Kitchen with pantry, dining, living room, TV room and laundry. The master bedroom has two walk-in closets and master bathroom. The house comes fully furnished and included in the price, internet, gas and garbage., excluding water and electricity. Covered porch in the back with a BBQ. The house is fully fenced and secured with a nice land scaped garden. Call Muna for a viewing +297-5934647"
+    },
+    {
+      "id": "mpg-ltr-residential-297-modern-villa-for-rent",
+      "name": "Modern Villa for Rent",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/604/fa3/8e1/thumb_8151_1200_900_0_0_crop.webp",
+      "area": "Ponton",
+      "location": "Ponton, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-297-modern-villa-for-rent",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "This modern villa consists of living/dining area, and covered airconditioned patio with a large kitchen with granite top fully equipped. Master bedroom with walk in closet and second large bedroom with build in closet, 2 bathrooms and one bedroom apartment with a kitchen can be accessed from inside the house or separate entrance from the back yard. Two automatic car garages, landscaped garden with a drip system, covered patio with outside dining. The house is fully fenced with alarm system. The house is fully furnished and equipped and fully airconditioned, Included in the rental price, cable, wifi, serlimar and gardner."
+    },
+    {
+      "id": "mpg-ltr-residential-464-beautiful-family-home-in-monteverde-for-rent",
+      "name": "Beautiful Family Home in Monteverde for Rent!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/649/516/c32/thumb_13304_1200_900_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-464-beautiful-family-home-in-monteverde-for-rent",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Home in a residential area that exudes beauty and charm. We are delighted to present to you a stunning home for rent that embodies comfort, style, and convenience. This inviting property boasts a plethora of features that are sure to make you feel right at home. The price excludes the costs of living, such as electricity, water, internet, cable, and pool maintenance. Situated in a community known for its lovely homes, this residence offers a perfect blend of modern amenities and a serene ambiance. With 3 spacious bedrooms and 2 and a half bathrooms, this home provides ample space for you and your family to thrive. The master bedroom includes a walk-in closet, ensuring that your wardrobe finds its perfect place. The convenience of a washer and dryer within the home eliminates the need for trips to the laundromat, making laundry day a breeze. The kitchen, living room, and dining area flow seamlessly, creating an open-concept layout that is perfect for both entertaining and everyday living. The well-appointed kitchen is equipped with all the necessary appliances and ample counter space, allowing you to prepare meals with ease. Step outside onto the patio, where you'll discover a comfortable pool size, ideal for relaxing dips on warm summer days. The lounging area beckons you to unwind and soak up the sun, while the cute gazebo provides a charming spot for outdoor gatherings or quiet moments of reflection. Dedicated car park accommodating 2 vehicles, ensuring that your vehicles are safe and easily accessible. In addition to this, the attic space provides extra storage options, supplementing the storage space available in the washer and dryer room. This home offers a professional and inviting atmosphere that will make you feel right at home from the moment you step through the door. Its desirable location in the beautiful residential area of Monteverde, combined with its array of amenities, makes it an exceptional rental opportunity that shouldn't be missed. Contact us today to schedule a viewing and make this delightful home in Monteverde your own. We look forward to assisting you in finding your perfect place to call home. Call: +297-737 7727"
+    },
+    {
+      "id": "mpg-ltr-residential-657-modern-4-bedroom-home-in-san-miguel-noord-for-rent",
+      "name": "Modern 4-Bedroom Home in San Miguel, Noord, For Rent!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/6a1/459/5b2/thumb_19232_1200_900_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-657-modern-4-bedroom-home-in-san-miguel-noord-for-rent",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Located in the desirable neighborhood ofSan Miguel, Noord, this spacious and modern4-bedroom, 3.5-bathroomhome offers the perfect blend of comfort, style, and convenience. Ideally situated just minutes from Aruba’s high-rise hotel area, Palm Beach, restaurants, shopping, supermarkets, and entertainment, this property places you close to everything while still enjoying privacy and tranquility. Designed with both indoor and outdoor living in mind, the home features generous open spaces, a large yard, and a bright, airy layout throughout. The fully equipped kitchen is perfect for everyday living and entertaining alike. Two of the bedrooms featurewalk-in closets and en-suite bathrooms, including the spacious master suite with a private balcony showcasing beautiful views of the high-rise hotels and Hooiberg. The additional two bedrooms are also generously sized and share a well-appointed bathroom. This property is ideal for families, entertaining, or anyone looking for modern island living in one of Noord’s most convenient locations. For more information or to schedule a viewing, please contact: Nizar Perret-Gentil📞 +297 6991119📧Nizar@mpgaruba.com"
+    },
+    {
+      "id": "mpg-ltr-residential-541-beautiful-two-bedroom-apartment",
+      "name": "Beautiful Two Bedroom Apartment!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/671/a4d/677/thumb_15834_1200_900_0_0_crop.webp",
+      "area": "Paradera",
+      "location": "Paradera, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-541-beautiful-two-bedroom-apartment",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Looking for a beautiful apartment with 2 bedrooms and 1 bathroom?This cozy space features an open layout with a fully equipped kitchen and breakfast counter, ideal for entertaining guests or enjoying a peaceful morning. The master bedroom offers a touch of luxury with a sliding door to the patio and jacuzzi area. Perfect for a small family or roommates, this apartment includes utilities in the price, the apartment comes fully air conditioned, furnished & equipped, making budgeting a breeze. Long term one year minimum. If you're considering renting or have any questions, feel free to reach out! Muna Habash +297-5934647"
+    },
+    {
+      "id": "mpg-ltr-residential-483-beautiful-home-for-rent-in-bubali",
+      "name": "Beautiful Home For Rent in Bubali!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/654/a59/42d/thumb_13941_1200_900_0_0_crop.webp",
+      "area": "Bubali",
+      "location": "Bubali, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-483-beautiful-home-for-rent-in-bubali",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Tranquilo Apartments Aruba, Welcome to your future home! Completely renovated property, unveiled in the third quarter of 2023, offer an all-inclusive package: furniture, a refreshing communal pool, television, high-speed wifi, meticulous care of the lush common areas, efficient garbage disposal, reliable pest control, as well as gas and water services. The only utility not included is electricity, giving you peace of mind and convenience. This home offers 2.5 bedrooms and 2 bathrooms, and it is a two-story, fully equipped home ready for you to move in! Nestled in the breathtaking Bubali area and surrounded by just 10 other apartments, Tranquilo Apartments Aruba is a secluded and serene paradise awaiting your arrival. You'll be only minutes away from the pristine beaches of Aruba, the vibrant Palm Beach area, and the heart of downtown Aruba. For your convenience, we offer rental contracts with a minimum duration of 6 months or more. Discover the perfect blend of comfort and tranquility at Tranquilo Apartments Aruba today. Your new home in paradise awaits! Call or WhatsApp: +297 699-1119 or +1 786 800-5515"
+    },
+    {
+      "id": "mpg-ltr-residential-359-beautiful-villa-for-rent",
+      "name": "Beautiful Villa For Rent!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/621/d44/8e4/thumb_10118_1200_900_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-359-beautiful-villa-for-rent",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Beautiful villa for rent at Emma straat 69. Close to down town Oranjestad and 5minutes drive to Eagle Beach. It consists of 3 bedrooms 2.5 bathrooms, open layout of living, dining and kitchen. Two car garage, fully air-conditioned, new pavers all around the patio and side walk, full kitchen, laundry room, pantry, with porch. The house is partially furnished and completely refurbished. For more information call Muna @ 5934647."
+    },
+    {
+      "id": "mpg-ltr-residential-136-beach-apartment",
+      "name": "Beach Apartment!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/5bf/c2c/ef4/thumb_4315_1200_900_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-136-beach-apartment",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Nice apartment unfurnished across from the beach of 3 bedrooms, living area and kitchen with a nice patio. It is within a walking distance to Nikki beach, Linear Park and close to down town Oranjestad and Renaissance Hotel and Casino, restaurants and all the shops. The apartment is fully fenced and alarmed. Call Muna @5934647"
+    },
+    {
+      "id": "mpg-ltr-residential-482-bubali-2-bedroom-apartment",
+      "name": "Bubali 2 Bedroom Apartment!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/654/a55/93a/thumb_13924_1200_900_0_0_crop.webp",
+      "area": "Bubali",
+      "location": "Bubali, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-482-bubali-2-bedroom-apartment",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Tranquilo Apartments Aruba, Welcome to your future home! Completely renovated apartments, unveiled in the third quarter of 2023, offer an all-inclusive package: furniture, a refreshing communal pool, television, high-speed wifi, meticulous care of the lush common areas, efficient garbage disposal, reliable pest control, as well as gas and water services. The only utility not included is electricity, giving you peace of mind and convenience. This apartment is a two-bedroom, one-bathroom unit, fully equipped. We have five available, with some on the second floor featuring a balcony and others on the first floor with a terrace. Nestled in the breathtaking Bubali area and surrounded by just 9 other apartments, Tranquilo Apartments Aruba is a secluded and serene paradise awaiting your arrival. You'll be only minutes away from the pristine beaches of Aruba, the vibrant Palm Beach area, and the heart of downtown Aruba. For your convenience, we offer rental contracts with a minimum duration of 6 months or more. Discover the perfect blend of comfort and tranquility at Tranquilo Apartments Aruba today. Your new home in paradise awaits! Call or WhatsApp: +297 699-1119 or +1 786 800-5515"
+    },
+    {
+      "id": "mpg-ltr-residential-244-nice-home-in-noord-for-rent",
+      "name": "Nice Home in Noord for Rent!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/5f3/7dd/922/thumb_6940_1200_900_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/residential-244-nice-home-in-noord-for-rent",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Nice home in a quit residential area. The house consists of 3 bedrooms 2 bathrooms, open living/dining and kitchen. Laundry room in the back and a large spacious backyard. The house is fully air conditioned and fenced."
+    },
+    {
+      "id": "mpg-ltr-condominium-587-apartment-at-gold-coast-aruba-for-rent",
+      "name": "Apartment at Gold Coast Aruba For Rent!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/685/826/18e/thumb_17568_1200_900_0_0_crop.webp",
+      "area": "Malmok",
+      "location": "Malmok, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/condominium-587-apartment-at-gold-coast-aruba-for-rent",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Stunning First-Floor Apartment – 2 Bed, 2 Bath – Fully Furnished & Private. Step into this beautiful2-bedroom, 2-bathroom apartment, on the first floor, featuring an open-concept layout with a fully equipped kitchen, spacious living room, and dining area. Enjoy the convenience of in-unit washer/dryer and relax on your large private patio perfect for outdoor living. Fully furnished and move-in ready, this space offers complete privacy and all the comforts of home. Don’t miss out on this exceptional rental! Located in the highly desirable Gold Coast community, residents enjoy 24/7 security and access to premium amenities, including two large swimming pools with showers and BBQ areas, tennis courts, a gym, and an on-site bar and restaurant. Private parking.available Aug 1, 2025 Call Muna for a viewing +297-5934647 Utilities and Wi-Fi are not included."
+    },
+    {
+      "id": "mpg-ltr-condominium-585-for-rent-2-bedroom-2-bathroom-apartment-in-gold-coast",
+      "name": "FOR RENT, 2-Bedroom, 2-Bathroom Apartment in Gold Coast",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/682/d27/1a3/thumb_17558_1200_900_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/condominium-585-for-rent-2-bedroom-2-bathroom-apartment-in-gold-coast",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "RENTED, no longer available.Beautiful 2-Bedroom, 2-Bathroom Apartment in Gold Coast Recently renovated, this stunning second-floor apartment features a modern open-concept layout that seamlessly connects the living room, dining area, and kitchen. The kitchen comes fully equipped with brand-new appliances, including a refrigerator, dishwasher, microwave, oven, and stovetop—ideal for everyday living and entertaining. Both bedrooms are generously sized and include ample closet space. The master bedroom features a private balcony and an en-suite bathroom for added comfort and privacy. The second bedroom is conveniently located next to the second full bathroom, which also serves as a guest bath. The apartment also includes a washer and dryer for your convenience, along with some storage space to keep your home organized and clutter-free. Please note:This apartment is located on the second floor and requires one flight of stairs. While easily accessible for most, it may not be suitable for individuals with mobility challenges. Located in the highly desirable Gold Coast community, residents enjoy 24/7 security and access to premium amenities, including two large swimming pools with showers and BBQ areas, tennis courts, a gym, and an on-site bar and restaurant. Utilities and Wi-Fi are not included."
+    },
+    {
+      "id": "mpg-ltr-condominium-243-ocean-view-condo-at-oceania-residences",
+      "name": "Ocean View Condo at Oceania Residences.",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/5f3/08c/5c2/thumb_6908_1200_900_0_0_crop.webp",
+      "area": "Eagle Beach",
+      "location": "Eagle Beach, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "150 m²",
+      "buildingSize": "",
+      "lotSize": "150 m²",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/condominium-243-ocean-view-condo-at-oceania-residences",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Beautiful Ocean view condo at Oceania Residences. The condo is located on the ground floor of Boca Catalina Building. Open lay out of living dining area and a fully equipped kitchen with the sliding door open to the outside terrace, private Jacuzzi. Just a min walk to the beach and the pool. Master bedroom with a welkin closet and a bathroom with a sliding door leading to the terrace, pool and garden, another bedroom with a bathroom. The condo is fully conditioned with laundry facilities and all the elements of maximum luxury that you have come to expect in this range. The Oceania residences have 24/7 security, a secured parking area, fitness center, sauna, children playroom, tennis, a social club and fine dining nearby."
+    },
+    {
+      "id": "mpg-ltr-commercial-627-prime-warehouse-storefront-with-loading-dock-in-high-traffic-area",
+      "name": "Prime Warehouse & Storefront with Loading Dock in High-Traffic Area!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/692/11b/abc/thumb_18451_1200_900_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad, Aruba",
+      "askPrice": 10112,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 2,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/commercial-627-prime-warehouse-storefront-with-loading-dock-in-high-traffic-area",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 10112
+        }
+      ],
+      "notes": "Prime Warehouse with Storefront and Loading Dock in High-Traffic Area Available starting December 1st, 2025. Thisversatile commercial propertyis ideally situated in ahigh-traffic, prime location, perfect for distribution, retail, or mixed-use operations. The property offers a total of651.73 m² of warehouse space, including a134.63 m² loading dockwith direct access for efficient logistics and deliveries. The warehouse also includes abathroomfor staff convenience. Only the right side of this warehouse is available, as indicated on the floor plan. The property features a185.06 m² storefrontwithanother bathroom, ideal for customer-facing operations. Aloft provides the possibility of adding a second floor, offering additional office or storage space if needed. With its strategic location, high visibility, and flexible layout, this property is perfect for businesses looking to establish or expand operations in a busy commercial area. Fast Facts & Location: Minutes from major roads and highways, allowing quick access to all prime distribution points Ideal for logistics or retail operationsdue to high traffic and visibility Flexible warehouse and storefront layoutwith potential for expansion Separate bathrooms in both warehouse and store areafor convenience This property combinesfunctionality, flexibility, and a prime location, making it a rare opportunity for businesses seeking convenience, visibility, and growth potential."
+    },
+    {
+      "id": "mpg-ltr-commercial-470-office-or-medical-practice-space-in-a-prime-location",
+      "name": "Office or Medical Practice Space in a Prime Location!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/64f/b6f/9e2/thumb_13437_1200_900_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord, Aruba",
+      "askPrice": 4775,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 5,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/commercial-470-office-or-medical-practice-space-in-a-prime-location",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 4775
+        }
+      ],
+      "notes": "Discover an outstanding commercial property for rent at Caya Punta Brabo 200! This prime location, nestled between Eagle Beach and Oranjestad, offers a fantastic business opportunity. Situated near The Hospital of Aruba and health department offices, this commercial building is perfect for healthcare businesses or any business requiring prime location. It features versatile rooms for easy office partitioning, cozy sitting areas, and storage. You can even split the building into two separate offices with their entrances. Parking is available right in front via the main road, and there's a rear entrance connecting to The Hospital of Aruba's parking lot, providing easy access. At 8,500 Florins a month (excluding utilities), this is a steal considering its size and location. Contact us to schedule a viewing or for more information: Email:nizar@mpgaruba.com Phone and WhatsApp: +297 6991119. Seize this incredible opportunity today!"
+    },
+    {
+      "id": "mpg-ltr-commercial-569-prime-commercial-space-for-rent-in-oranjestad-high-traffic-spacious",
+      "name": "Prime Commercial Space for Rent in Oranjestad – High Traffic & Spacious!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/67c/b3c/b61/thumb_17005_1200_900_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad, Aruba",
+      "askPrice": 3090,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 5,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/commercial-569-prime-commercial-space-for-rent-in-oranjestad-high-traffic-spacious",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 3090
+        }
+      ],
+      "notes": "This700m² commercial buildingin the heart of Oranjestad offershigh visibility and excellent foot traffic, making it a perfect opportunity for businesses looking to establish or expand their presence in a prime location. The space isdivided into multiple sections, but thanks to itsflexible layout, most partitions—made of sheetrock rather than concrete—can be modified to fit your business needs. Whether you need an open-concept showroom, private offices, or a combination of both, this space can be customized to your exact requirements. The space is currently in the process of being emptied, so you will receive an empty and cleaned-up space. Please look at the last two photos; you will see the floor plans of the first and second floors. Additionally, the property features aspacious second floorand arooftop terrace, offering even more potential for office space, storage, or a unique customer experience. One of its biggest advantages is the300m² private parking area, accommodatingup to 14 vehicles—a rare and highly valuable asset in downtown Oranjestad! Don’t miss out on this exceptional opportunity. Contact us today for more information or to schedule a viewing! Nizar Perret-Gentil, +297 6991119 or Nizar@MPGAruba.com"
+    },
+    {
+      "id": "mpg-ltr-commercial-592-commercial-space-for-rent-at-harbor-residence",
+      "name": "Commercial Space for Rent at Harbor Residence!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/688/11b/133/thumb_17708_1200_900_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad, Aruba",
+      "askPrice": 1573,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/commercial-592-commercial-space-for-rent-at-harbor-residence",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1573
+        }
+      ],
+      "notes": "Prime Retail Space Available at Harbor Residence! Ideal location near downtown and boutique hotels. Ground-floor unit with convenient street-level parking. Don’t miss out—contact us now for details! Muna Habash @ +296-5934647"
+    },
+    {
+      "id": "mpg-ltr-commercial-496-warehouse-distribution-center-and-store-in-an-amazing-location",
+      "name": "Warehouse , Distribution center, and Store in an amazing location!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/65a/cb0/c51/thumb_14380_1200_900_0_0_crop.webp",
+      "area": "Bushiri",
+      "location": "Bushiri, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 4,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/commercial-496-warehouse-distribution-center-and-store-in-an-amazing-location",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Looking for a large warehouse, a distribution point to expand your business, or a spacious store that encompasses all of the above? This space is ideal for you and your business. The massive warehouse is conveniently located right next to Bushiri Karting (a prime location) and PriceHacker or across from Ling & Sons Supermarket. The space measures 3350 square meters and includes 2 entrances, 6 windows, 1 loading dock, 4 bathrooms, 4 emergency exit doors, and high ceilings. The highest point of the ceiling reaches 9 meters, while the lowest is 7 meters. Please keep in mind that construction is still taking place, with minor details such as finishing touches to the parking lot and mostly cosmetic work. The space is expected to be ready by the end of February; however, it is very much ready for use. For viewing or any inquiries, please contact us at +297 699-1119."
+    },
+    {
+      "id": "mpg-ltr-commercial-108-office-space-for-rent-fully-furnished",
+      "name": "Office Space for Rent Fully Furnished!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/5ac/808/2af/thumb_2837_1200_900_0_0_crop.webp",
+      "area": "Bushiri",
+      "location": "Bushiri, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 7,
+      "bathrooms": 2,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/commercial-108-office-space-for-rent-fully-furnished",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Spacious Office Space for Rent in an excellent location, close to news paper Diario Aruba, Office Systems and Ling & Sons Supermarket. The office space comes fully furnished with a reception area on the ground floor and offices on the second. Plenty of parking space. For more information, call Muna @ 5934647."
+    },
+    {
+      "id": "mpg-ltr-commercial-170-commercial-building-in-down-town-oranjestad",
+      "name": "Commercial Building in Down Town Oranjestad",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/5d4/cfb/2f6/thumb_5339_1200_900_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "191 m²",
+      "buildingSize": "",
+      "lotSize": "191 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/commercial-170-commercial-building-in-down-town-oranjestad",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "This two story building is Formerly known as Kay's Fine Jewelry store in the main street of down town Oranjestad and next to famous Boolchand's. The building has two entrances from the front of main street and the back entrance from the main road of the high way and the cruise ships. The back entrance is across from the cruise ships and high traffic area. The ground floor consists of large space for a commercial store with an office space, safe room and storage, The second floor can be used for offices and storage. Small kitchen and 2 bathrooms. Parking available across the street. The building is in a very good condition and ready to move in."
+    },
+    {
+      "id": "mpg-ltr-commercial-352-modern-office-building",
+      "name": "Modern Office Building!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/61e/ede/3a0/thumb_9888_1200_900_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "200 m²",
+      "buildingSize": "",
+      "lotSize": "200 m²",
+      "bedrooms": 8,
+      "bathrooms": 1,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/commercial-352-modern-office-building",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Modern brand new office building of 200 m2 for rent on the main road of LG Smith Boulevard. Excellent location in high traffic area and next to ATA, Aruba Tourism Authority Building Inverter air conditioning, LED lighting, sun reflecting windows, kitchenette, bathroom and storage. The place if fully fenced and secure. Parking space on location for up to 10 cars. Wifi and Serlimar is included in the price. Call Muna for a viewing @ +297-5934647"
+    },
+    {
+      "id": "mpg-ltr-commercial-223-commercial-building-on-the-main-road-of-dakota-for-rent",
+      "name": "Commercial Building on the Main Road of Dakota for Rent!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/5ee/cae/3d0/thumb_6569_1200_900_0_0_crop.webp",
+      "area": "Dakota",
+      "location": "Dakota, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "540 m²",
+      "buildingSize": "",
+      "lotSize": "540 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/commercial-223-commercial-building-on-the-main-road-of-dakota-for-rent",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Commercial Building on the main road of Dakota next to Flora Market and Price Smart."
+    },
+    {
+      "id": "mpg-ltr-commercial-456-warehouse-for-rent-in-oranjestad",
+      "name": "Warehouse for Rent in Oranjestad!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/692/496/907/thumb_18483_1200_900_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/commercial-456-warehouse-for-rent-in-oranjestad",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Ware House for Rent in Oranjestaed. 320 m2 for more information call Muna @+297-5934647 muna@mpgaruba.com"
+    },
+    {
+      "id": "mpg-ltr-commercial-251-office-space-next-to-the-hospital",
+      "name": "Office Space Next to the Hospital!",
+      "type": "ltr",
+      "image": "https://www.mpgaruba.com/storage/app/uploads/public/5f4/fd0/3e6/thumb_7143_1200_900_0_0_crop.webp",
+      "area": "Eagle Beach",
+      "location": "Eagle Beach, Aruba",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "MPG Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.mpgaruba.com/property/commercial-251-office-space-next-to-the-hospital",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Nice office space across from the hospital at H.M Tromp Dental Clinic. It has a reception area, office room, kitchen, storage room and a bathroom. For more information please call Muna @5934747"
     }
   ]
 }
