@@ -20731,9 +20731,9 @@
     }
   ],
   "agentMeta": {
-    "lastSync": "2026-07-02T00:04:03Z",
+    "lastSync": "2026-07-02T00:40:22Z",
     "agentActive": true,
-    "totalSyncCount": 77
+    "totalSyncCount": 80
   },
   "trackerItems": [],
   "monthlyData": [
@@ -24611,6 +24611,1280 @@
         {
           "date": "2026-07-01",
           "price": 0
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-business-space-for-lease",
+      "name": "Business Space for Lease",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/06/Image-57.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad Aruba",
+      "askPrice": 2450,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/business-space-for-lease/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2450
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-walishali-1-bedroom-condo",
+      "name": "Walishali 1 Bedroom Condo",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/05/Image-24.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1800,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/walishali-1-bedroom-condo/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1800
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-gold-coast-99-three-bedroom-townhouse",
+      "name": "Gold Coast 99 – Three Bedroom Townhouse",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_8_Gold-Coast-99-7.jpg",
+      "area": "Noord",
+      "location": "Diamante 300, Noord, Aruba",
+      "askPrice": 3000,
+      "pricePeriod": "monthly",
+      "size": "157 m²",
+      "buildingSize": "157 m²",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/gold-coast-99-three-bedroom-townhouse/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-spacious-corner-townhouse-gold-coast-107",
+      "name": "Spacious Corner Townhouse Gold Coast 107",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_3_DIAMANTE-107-2.jpg",
+      "area": "Noord",
+      "location": "Diamante 300, Noord, Aruba",
+      "askPrice": 2600,
+      "pricePeriod": "monthly",
+      "size": "120 m²",
+      "buildingSize": "120 m²",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/spacious-corner-townhouse-gold-coast-107/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2600
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-prado-apartment-1",
+      "name": "Prado Apartment 1",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_8_Prado-15.jpg",
+      "area": "Noord",
+      "location": "Noord, Aruba",
+      "askPrice": 1000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/prado-apartment-1/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-turibana-68-apartment",
+      "name": "Turibana 68 Apartment",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_8_turibana-11.jpg",
+      "area": "Noord",
+      "location": "Turibana 68h, Noord, Aruba",
+      "askPrice": 850,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/turibana-68-apartment/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 850
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-el-lerele-apartment",
+      "name": "El Lerele Apartment",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_5_lerele-04.jpg",
+      "area": "Noord",
+      "location": "Matadera 9, Noord, Aruba",
+      "askPrice": 1500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/el-lerele-apartment/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-prado-apartment-2",
+      "name": "Prado Apartment 2",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_13_prado2-12.jpg",
+      "area": "Noord",
+      "location": "Noord, Aruba",
+      "askPrice": 800,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/prado-apartment-2/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 800
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-diamante-137-d-gold-coast-noord-aruba",
+      "name": "Diamante 137-D Gold Coast Noord Aruba",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_4_Diamante-137D-03.jpg",
+      "area": "Noord",
+      "location": "Diamante 300, Noord, Aruba",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/diamante-137-d-gold-coast-noord-aruba/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-washington-3-bedroom-home",
+      "name": "Washington 3 Bedroom Home",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_62_Washington-48I-01-1024x754-1.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 2248,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/washington-3-bedroom-home/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2248
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-diamante-247b",
+      "name": "Diamante 247B",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_9_Diamante247B-13.jpg",
+      "area": "Noord",
+      "location": "Diamante 300, Noord, Aruba",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "100 m²",
+      "buildingSize": "100 m²",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/diamante-247b/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-diamante-232c-2",
+      "name": "Diamante 232C",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_12_Diamante-232C-17.jpg",
+      "area": "Noord",
+      "location": "Diamante 300, Noord, Aruba",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "100 m²",
+      "buildingSize": "100 m²",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/diamante-232c-2/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-prado-apartment-11",
+      "name": "Prado Apartment 11",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_8_prado-apartment-11-07.jpg",
+      "area": "Noord",
+      "location": "Noord, Aruba",
+      "askPrice": 1400,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/prado-apartment-11/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1400
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-noord-1-bedroom-apartment",
+      "name": "Noord 1 Bedroom Apartment",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_4_Moko-Apartment-1.jpg",
+      "area": "Noord",
+      "location": "Moko, Noord, Aruba",
+      "askPrice": 944,
+      "pricePeriod": "monthly",
+      "size": "42 m²",
+      "buildingSize": "42 m²",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/noord-1-bedroom-apartment/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 944
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-gold-coast-townhouse",
+      "name": "Gold Coast Townhouse",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_3_Gold-Coast-Townhouse-01-1.jpg",
+      "area": "Noord",
+      "location": "Diamante 300, Noord, Aruba",
+      "askPrice": 2300,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/gold-coast-townhouse/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2300
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-jaburibari-rental-home",
+      "name": "Jaburibari Rental Home",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_9_caya_bembe_02.jpg",
+      "area": "Caya Bembe",
+      "location": "Caya Bembe, Aruba",
+      "askPrice": 1011,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/jaburibari-rental-home/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1011
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-diamante-28-gold-coast-aruba",
+      "name": "Diamante 28 Gold Coast Aruba",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_3_Diamante-28-01.jpg",
+      "area": "Noord",
+      "location": "Diamante 300, Noord, Aruba",
+      "askPrice": 2200,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/diamante-28-gold-coast-aruba/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2200
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-bar-restaurant-for-rent-2",
+      "name": "Bar/Restaurant for Rent",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_4_Rudolf-Arendstraat-24F-03.jpg",
+      "area": "Oranjestad",
+      "location": "Rudolf Arendsstraat 24, Oranjestad, Aruba",
+      "askPrice": 3400,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/bar-restaurant-for-rent-2/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3400
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-alto-vista-condo-1",
+      "name": "Alto Vista Condo 1",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_9_Palm-Beach-76A-Apartment1-09.jpg",
+      "area": "Noord",
+      "location": "Alto Vista 76, Noord, Aruba",
+      "askPrice": 1500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/alto-vista-condo-1/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-alto-vista-condo-2",
+      "name": "Alto Vista condo 2",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_30_Palm-Beach-76A-Apartment2-28.jpg",
+      "area": "Noord",
+      "location": "Alto Vista 76, Noord, Aruba",
+      "askPrice": 1500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/alto-vista-condo-2/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-rooi-koochi-long-term-rental",
+      "name": "Rooi Koochi Long-Term Rental",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_9_Rooi-Koochi-62G-Picture-14.jpg",
+      "area": "Savaneta",
+      "location": "Rooi Kochi 62G, Savaneta, Aruba",
+      "askPrice": 3500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/rooi-koochi-long-term-rental/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-altos-del-prado-apartment-10",
+      "name": "Altos del Prado Apartment 10",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_8_Altos-del-Prado-Apt-10-14.jpg",
+      "area": "",
+      "location": "",
+      "askPrice": 1250,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/altos-del-prado-apartment-10/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1250
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-kamay-home-for-rent",
+      "name": "Kamay Home for Rent",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_21_kamay-19.jpg",
+      "area": "Noord",
+      "location": "Noord, Aruba",
+      "askPrice": 2200,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/kamay-home-for-rent/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2200
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-spacious-4-bedroom-home-for-rent",
+      "name": "Spacious 4-Bedroom Home for Rent",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_35_pavia-park-42-19.jpg",
+      "area": "Oranjestad",
+      "location": "Pavilla Park 40, Oranjestad, Aruba",
+      "askPrice": 3370,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/spacious-4-bedroom-home-for-rent/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3370
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-house-in-boroncana",
+      "name": "House in Boroncana",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_8_boroncana-238-21.jpg",
+      "area": "Noord",
+      "location": "Boroncana 238, Noord, Aruba",
+      "askPrice": 2000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/house-in-boroncana/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-home-in-turibana-for-rent",
+      "name": "Home in Turibana for Rent",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_42_turibana-38o-8-1024x768-1.jpg",
+      "area": "Noord",
+      "location": "Turibana 38-J, Noord, Aruba",
+      "askPrice": 3000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/home-in-turibana-for-rent/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-villa-paraiso-noord",
+      "name": "Villa Paraiso Noord",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_35_Villa-Paraiso-Noord-1-1024x682-1.jpg",
+      "area": "Noord",
+      "location": "Noord, Aruba",
+      "askPrice": 1685,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/villa-paraiso-noord/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1685
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-savaneta-house-1",
+      "name": "Savaneta House 1",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_28_Savaneta-apt-7-2-1024x682-1.jpg",
+      "area": "Savaneta",
+      "location": "Savaneta, Aruba",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/savaneta-house-1/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-savaneta-apartment-2",
+      "name": "Savaneta Apartment 2",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_12_Savaneta-Apt-3.jpg",
+      "area": "Savaneta",
+      "location": "Savaneta, Aruba",
+      "askPrice": 1404,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/savaneta-apartment-2/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1404
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-santa-lucia-ideal-family-home",
+      "name": "Santa Lucia – Ideal family home",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_23_santa-lucia-22.jpg",
+      "area": "Santa Cruz",
+      "location": "Santa Cruz, Aruba",
+      "askPrice": 2100,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/santa-lucia-ideal-family-home/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2100
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-altos-del-prado-apartment-1",
+      "name": "Altos del Prado – Apartment 1",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_5_altos-del-prado-1-4.jpg",
+      "area": "Noord",
+      "location": "Noord, Aruba",
+      "askPrice": 1000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/altos-del-prado-apartment-1/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-altos-del-prado-apartment-9",
+      "name": "Altos del Prado – Apartment 9",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_6_altos-del-prado-9-5.jpg",
+      "area": "Noord",
+      "location": "Noord, Aruba",
+      "askPrice": 1100,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/altos-del-prado-apartment-9/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1100
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-rental-opportunity-at-tanki-leendert",
+      "name": "Rental Opportunity at Tanki Leendert",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_7_tankilaander_main-8.jpg",
+      "area": "Oranjestad",
+      "location": "Tanki Leendert 5f, Oranjestad, Aruba",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "1815 m²",
+      "buildingSize": "1815 m²",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/rental-opportunity-at-tanki-leendert/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-rental-opportunity-apartment-studio-at-tanki-leendert",
+      "name": "Rental Opportunity: Apartment Studio at Tanki Leendert",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_3_tankileender-studio-1.jpg",
+      "area": "Oranjestad",
+      "location": "Tanki Leendert 5f, Oranjestad, Aruba",
+      "askPrice": 1000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/rental-opportunity-apartment-studio-at-tanki-leendert/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-exclusive-rental-opportunity-apartment-2",
+      "name": "Exclusive Rental Opportunity: Apartment 2",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_8_tankileender-studio2-7.jpg",
+      "area": "Oranjestad",
+      "location": "Tanki Leendert 5f, Oranjestad, Aruba",
+      "askPrice": 1250,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/exclusive-rental-opportunity-apartment-2/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1250
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-elegant-townhouse-in-gold-coast-aruba-diamante-30",
+      "name": "Elegant Townhouse in Gold Coast Aruba – Diamante 30",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_9_diamante-30-17.jpg",
+      "area": "Noord",
+      "location": "Diamante 300, Noord, Aruba",
+      "askPrice": 2600,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/elegant-townhouse-in-gold-coast-aruba-diamante-30/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2600
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-rent-a-2-bedroom-townhouse-in-gold-coast",
+      "name": "Rent a 2-Bedroom Townhouse in Gold Coast",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_5_diamante-52-5-2.jpg",
+      "area": "Noord",
+      "location": "Diamante 300, Noord, Aruba",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/rent-a-2-bedroom-townhouse-in-gold-coast/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2500
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-charming-4-bedroom-home-for-rent-alto-vista-53d",
+      "name": "Charming 4-Bedroom Home for Rent – Alto Vista 53D",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_9_Alto-Vista-53D-31.jpg",
+      "area": "Noord",
+      "location": "Alto Vista, Noord, Aruba",
+      "askPrice": 2528,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/charming-4-bedroom-home-for-rent-alto-vista-53d/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2528
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-for-rent-spacious-3-bedroom-home-in-boroncana-with-pool",
+      "name": "For Rent – Spacious 3-Bedroom Home in Boroncana with Pool",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_18_IMG_3981-1.jpg",
+      "area": "Noord",
+      "location": "Boroncana, Noord, Aruba",
+      "askPrice": 2250,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 4,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/for-rent-spacious-3-bedroom-home-in-boroncana-with-pool/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2250
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-for-rent-modern-family-home-with-terrace-at-diamante-195j-gold-coast-aruba",
+      "name": "For Rent – Modern Family Home with Terrace at Diamante 195J, Gold Coast, Aruba",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_52_DSC07251-1536x1152-1.jpg",
+      "area": "Noord",
+      "location": "Diamante 300, Noord, Aruba",
+      "askPrice": 3000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/for-rent-modern-family-home-with-terrace-at-diamante-195j-gold-coast-aruba/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-for-rent-1-bedroom-condo-at-the-pearl-aruba",
+      "name": "For Rent: 1-Bedroom Condo at The Pearl Aruba",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_3_Image-39.jpg",
+      "area": "Noord",
+      "location": "J.E. Irausquin Blvd 232-B, Noord, Aruba",
+      "askPrice": 1650,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/for-rent-1-bedroom-condo-at-the-pearl-aruba/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1650
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-for-rent-elegant-2-bedroom-townhouse-at-gold-coast-aruba-diamante-29",
+      "name": "For Rent: Elegant 2-Bedroom Townhouse at Gold Coast Aruba – Diamante 29",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_4_DSC09079-HDR.png",
+      "area": "Noord",
+      "location": "Diamante 300, Noord, Aruba",
+      "askPrice": 2300,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/for-rent-elegant-2-bedroom-townhouse-at-gold-coast-aruba-diamante-29/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2300
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-spacious-5-bedroom-home-for-rent-in-tanki-leendert",
+      "name": "Spacious 5-Bedroom Home for Rent in Tanki Leendert",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_97_Image-31-1536x1152-1.jpg",
+      "area": "Tanki Lender",
+      "location": "Tanki Lender, Aruba",
+      "askPrice": 3000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/spacious-5-bedroom-home-for-rent-in-tanki-leendert/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-for-rent-spacious-3-bedroom-home-in-turibana-comfort-convenience-combined",
+      "name": "For Rent: Spacious 3-Bedroom Home in Turibana – Comfort & Convenience Combined",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_2_DSC09388.png",
+      "area": "Noord",
+      "location": "Turibana, Noord, Aruba",
+      "askPrice": 3200,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/for-rent-spacious-3-bedroom-home-in-turibana-comfort-convenience-combined/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3200
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-new-rental-listing-bushiri",
+      "name": "New Rental Listing – Bushiri",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_29_DSC01152-1024x682-1.png",
+      "area": "Bushiri",
+      "location": "Bushiri, Aruba",
+      "askPrice": 2080,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/new-rental-listing-bushiri/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2080
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-new-rental-apartment-in-bubali",
+      "name": "New Rental Apartment in Bubali",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_6_DSC01486.png",
+      "area": "Noord",
+      "location": "Bubali, Noord, Aruba",
+      "askPrice": 1200,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/new-rental-apartment-in-bubali/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1200
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-for-rent-diamante-47-gold-coast-aruba",
+      "name": "For Rent – Diamante 47 | Gold Coast, Aruba",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_9_DSC01911.png",
+      "area": "Noord",
+      "location": "Diamante 300, Noord, Aruba",
+      "askPrice": 2300,
+      "pricePeriod": "monthly",
+      "size": "90 m²",
+      "buildingSize": "90 m²",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/for-rent-diamante-47-gold-coast-aruba/",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2300
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-one-bedroom-apartment-for-rent-available-now-cumana",
+      "name": "One-Bedroom Apartment for Rent – Available Now – Cumana",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_6_DSC01754-1.png",
+      "area": "Oranjestad",
+      "location": "Cumana, Oranjestad, Aruba",
+      "askPrice": 1000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/one-bedroom-apartment-for-rent-available-now-cumana/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1000
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hkg-ltr-exclusive-gold-coast-aruba-long-term-rental-diamante-102",
+      "name": "Exclusive Gold Coast Aruba Long-Term Rental – Diamante 102",
+      "type": "ltr",
+      "image": "https://hkgrealestatearuba.com/wp-content/uploads/2026/04/imgi_117_DSC01928-HDR-1536x1024-1.png",
+      "area": "Noord",
+      "location": "Diamante 300, Noord, Aruba",
+      "askPrice": 3000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "HKG Real Estate Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://hkgrealestatearuba.com/property/exclusive-gold-coast-aruba-long-term-rental-diamante-102/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3000
         }
       ],
       "notes": ""
