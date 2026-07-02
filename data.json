@@ -20731,9 +20731,9 @@
     }
   ],
   "agentMeta": {
-    "lastSync": "2026-07-02T09:17:49Z",
+    "lastSync": "2026-07-02T09:37:07Z",
     "agentActive": true,
-    "totalSyncCount": 100
+    "totalSyncCount": 102
   },
   "trackerItems": [],
   "monthlyData": [
@@ -33922,6 +33922,396 @@
         }
       ],
       "notes": "Ever wish you could open your front door and find yourself face-to-face with the blue horizon? Well, feast your eyes on this showstopping, jaw-dropping Ocean Front Villa, located right on the Malmok strip! This modern 8-bedroom, 7-bathroom dream home is dripping with sunlight and features a modern, clean, white interior designed to put your needs first. Now, enter a haven that you must see to believe! This unique 2-story white octagonal home provides optimal floor to ceiling panoramic views of stunning oceanic vistas, along with a gym, televisions in each room, plenty of poolside lounge chairs, a private backyard pool, and a separate apartment that comes equipped with two bedrooms. The kitchen is displayed in truly opulent fashion, with a bevy of useful appliances, a sea glass backsplash, and deluxe island that can double as a charming breakfast nook. Just a few feet away sits the beautiful banquet area with a gorgeous view, staged appropriately for a party of ten. Whether you’re looking to have a private candlelight dinner or large family celebration, this dining room is sure to please. Four of the bedrooms in the home feature a king-size bed, the fifth bedroom features a queen-size bed, and the sixth bedroom features 2 twin-size beds. The poolside apartment hosts 2 bedrooms that both feature queen-size beds and attached bathrooms. Meanwhile, the entire 2nd floor is devoted to the main bedroom suite. This lavish bedroom holds a bed in the middle of the room that faces the ocean, luring you to greet each morning with the alluring sights and stirring sounds of the ocean calling and end each night with the most beautiful view of the sunset. Head over to the home office, which is connected to the upstairs bedroom, the office is conveniently set up with a glass-top desk, rolling computer chair, a printer, and a black leather couch, which doubles as a sleeper sofa for extra guests. Now you can finally catch up on correspondence, finish that book you’ve been meaning to get around to or even have two extra guest join your party. Tranquility takes center stage as you withdraw to your private bathroom. Heavily influenced by contemporary spas, each room offers clean lines, commodious storage, stall glass walk-in showers, and fine fixtures throughout. Both the family room and den showcase an ultra-wide sectional, accommodating guest seating, and an impressive array of vibrant décor. No island vacation is complete without booking some valuable time outside on your own private veranda. Here, you will uncover a remarkable resort-worthy pool, surrounded by lounge chairs and landscaping. In addition, there is a dining area and bar with an outdoor sink. Just imagine how wonderful it would be to dine al fresco, as you splash away your days playing under the sun and retire each night with a late-night dip beneath the stars! Located just minutes from Ritz Carlton and the high-rise area, this luxurious getaway promises romantic sunset views over the water and a warm breeze to complement it. Out of all the ocean front homes on the market, this is the most prime location on the island. -Property Notes- UTILITIES: All utilities are INCLUDED. (Keep this in mind when comparing rentals as this cost is most often not included). TAXES: The following mandatory taxes are included: Government Tax: 12.5% Environmental Tax (as per Aruba tax code): $3 per night Taxes may be subject to change. CHECK-IN/ CHECK-OUT: Check-in time is 4:00 PM. Check-out time is 11:00 AM. Earlier check-ins and later check-out can be requested 24 hours before and will be granted depending on availability. A surcharge may apply. HOUSEKEEPING: This is a self catering vacation home and as such you are expected to do your own shopping and regular cleaning. We do offer the option of daily or mid-stay, hotel-style cleaning services. This is an extra service and a surcharge applies. Start-up supplies are provided and will be restocked if you request our optional daily or mid-stay hotel-style cleaning service. We provide 1 set bath linen per person max occupancy; extra sets are available at a surcharge. BEACH ESSENTIALS: We provide beach chairs (6), beach towels and a cooler. We do not provide snorkeling equipment or umbrellas. CONCIERGE SERVICE: Our Guest Relations Team can assist with making arrangements for transportation, private chefs, yachts, and other vacation activities. CAMERA(S): This home has a camera outside at the front of the home with a view of the entrance and street. NOTE: The spa shown in the pool picture is not a hot tub. NOTE: The ice dispenser shown in the picture is not operational. 194"
+    },
+    {
+      "id": "bca-ltr-turibana-41-b",
+      "name": "Turibana 41-B",
+      "type": "ltr",
+      "image": "https://bcarubarealty.com/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-03-at-8.36.27 AM-525x328.jpeg",
+      "area": "Turibana",
+      "location": "Turibana",
+      "askPrice": 2983,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Bon Choice Aruba Realty",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://bcarubarealty.com/properties/turibana-41-b/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2983
+        }
+      ],
+      "notes": "Experience the perfect blend of comfort and luxury in this beautifully designed, fully furnished 3-bedroom, 2-bathroom home located in the desirable Turibana area. Priced at just$3,000 per month(utilities excluded), this residence offers everything you need for an upscale living experience."
+    },
+    {
+      "id": "bca-ltr-esmeralda-55",
+      "name": "Esmeralda 55",
+      "type": "ltr",
+      "image": "https://bcarubarealty.com/wp-content/uploads/2024/07/Esmeralda-55-Bon-Choice-Rented-525x328.jpg",
+      "area": "Esmeralda",
+      "location": "Esmeralda",
+      "askPrice": 3492,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "agency": "Bon Choice Aruba Realty",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://bcarubarealty.com/properties/esmeralda-55/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 3492
+        }
+      ],
+      "notes": "Discover luxury living in this beautiful 4-bedroom, 2.5-bathroom house located in the prestigious Noord/Malmok area. Nestled close to the Gold Coast and the picturesque Saliña lake, this home offers the perfect blend of comfort and elegance."
+    },
+    {
+      "id": "bca-ltr-cunucu-abou-130",
+      "name": "Cunucu Abou 130",
+      "type": "ltr",
+      "image": "https://bcarubarealty.com/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-22-at-10.18.19-AM-1-525x328.jpeg",
+      "area": "Cunucu Abao",
+      "location": "Cunucu Abao",
+      "askPrice": 2884,
+      "pricePeriod": "monthly",
+      "size": "150 m²",
+      "buildingSize": "150 m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Bon Choice Aruba Realty",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://bcarubarealty.com/properties/cunucu-abou-130/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2884
+        }
+      ],
+      "notes": "Discover your dream rental in the heart of Cunucu Abou! This beautiful home boasts 150m² of living space on a spacious 467m² property, offering ample room for comfortable living. With well-designed bedrooms and bathrooms, this house is perfect for those looking for both coziness and space."
+    },
+    {
+      "id": "bca-ltr-victor-hugo-straat-3",
+      "name": "Victor Hugo Straat 3",
+      "type": "ltr",
+      "image": "https://bcarubarealty.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-17-at-12.24.44-PM-2-525x328.jpeg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 1369,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Bon Choice Aruba Realty",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://bcarubarealty.com/properties/victor-hugo-straat-3/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1369
+        }
+      ],
+      "notes": "This charming house is available for short-term rental, with a maximum lease duration of 3 months. All utilities and amenities are included in the rent price of Afl 2450,- per month. For more information, contact us to explore this comfortable short-term living opportunity."
+    },
+    {
+      "id": "bca-ltr-wayaca-365",
+      "name": "Wayaca 365",
+      "type": "ltr",
+      "image": "https://bcarubarealty.com/wp-content/uploads/2023/10/WhatsApp-Image-2023-10-09-at-1.12.15-PM-525x328.jpeg",
+      "area": "Wayaca",
+      "location": "Wayaca",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "462 m²",
+      "buildingSize": "462 m²",
+      "lotSize": "727 m²",
+      "bedrooms": 6,
+      "bathrooms": 3,
+      "agency": "Bon Choice Aruba Realty",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://bcarubarealty.com/properties/wayaca-365/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "A two-story house located in the neighborhood of Wayaca, with 6 bedrooms, 3 bathrooms, 1 Living room, 2 Storage, and an apartment in the aside with enough private space, 1 bathroom, and a plunge pool."
+    },
+    {
+      "id": "bca-ltr-papaya-18-w",
+      "name": "Papaya 18-W",
+      "type": "ltr",
+      "image": "https://bcarubarealty.com/wp-content/uploads/2023/10/Papaya-18W-WhatsApp-Image-2024-12-02-at-11.16.40 AM-525x328.jpg",
+      "area": "Papaya",
+      "location": "Papaya",
+      "askPrice": 1955,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Bon Choice Aruba Realty",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://bcarubarealty.com/properties/papaya-18-w/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1955
+        }
+      ],
+      "notes": "Bon Choice Aruba Realtyprimary goal is to help families sell their properties as fast as possible and get the most of the market as possible."
+    },
+    {
+      "id": "bca-ltr-paradera-104-b",
+      "name": "Paradera 104-B",
+      "type": "ltr",
+      "image": "https://bcarubarealty.com/wp-content/uploads/2023/10/WhatsApp-Image-2023-10-05-at-1.24.05-PM-525x328.jpeg",
+      "area": "Paradera",
+      "location": "Paradera",
+      "askPrice": 1676,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Bon Choice Aruba Realty",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://bcarubarealty.com/properties/paradera-104-b/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1676
+        }
+      ],
+      "notes": "Bon Choice Aruba Realtyprimary goal is to help families sell their properties as fast as possible and get the most of the market as possible."
+    },
+    {
+      "id": "bca-ltr-bakval",
+      "name": "Bakval",
+      "type": "ltr",
+      "image": "https://bcarubarealty.com/wp-content/uploads/2023/09/20230921_141207_resized-2-525x328.jpg",
+      "area": "Bakval",
+      "location": "Bakval",
+      "askPrice": 2235,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Bon Choice Aruba Realty",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://bcarubarealty.com/properties/bakval/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2235
+        }
+      ],
+      "notes": "Discover a charming rental opportunity in the sought-after Bakval area, just a stone’s throw away from the Aruba Racquet Club. This delightful house offers an ideal living space for you and your family."
+    },
+    {
+      "id": "bca-ltr-sero-janchi-115",
+      "name": "Sero Janchi 115",
+      "type": "ltr",
+      "image": "https://bcarubarealty.com/wp-content/uploads/2023/09/SJ-Bon-Choice-Rented-525x328.jpg",
+      "area": "Sero Janchi",
+      "location": "Sero Janchi",
+      "askPrice": 1117,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Bon Choice Aruba Realty",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://bcarubarealty.com/properties/sero-janchi-115/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1117
+        }
+      ],
+      "notes": "What sets this property apart is its welcoming policy for both kids and pets, making it an ideal choice for families. Enjoy the freedom and flexibility of living in a space that accommodates all your loved ones."
+    },
+    {
+      "id": "bca-ltr-savaneta-182-b",
+      "name": "Savaneta 182-B, Beach house",
+      "type": "ltr",
+      "image": "https://bcarubarealty.com/wp-content/uploads/2022/11/WhatsApp-Image-2023-09-13-at-2.48.42-PM-525x328.jpeg",
+      "area": "Savaneta",
+      "location": "Savaneta",
+      "askPrice": 1989,
+      "pricePeriod": "monthly",
+      "size": "337 m²",
+      "buildingSize": "",
+      "lotSize": "337 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "Bon Choice Aruba Realty",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://bcarubarealty.com/properties/savaneta-182-b/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1989
+        }
+      ],
+      "notes": "Situated on a generous 337m2 lot, the one-bedroom house is strategically elevated on a high foundation to provide an unobstructed panoramic view of the Caribbean ocean. Immerse yourself in the beauty of Aruba from the comfort of your own home."
+    },
+    {
+      "id": "bca-ltr-paradera-area",
+      "name": "Vigia 27",
+      "type": "ltr",
+      "image": "https://bcarubarealty.com/wp-content/uploads/2022/05/For-Rent-Paradera-area-1-525x328.jpg",
+      "area": "Paradera",
+      "location": "Paradera",
+      "askPrice": 1006,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "Bon Choice Aruba Realty",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://bcarubarealty.com/properties/paradera-area/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1006
+        }
+      ],
+      "notes": "Bon Choice Aruba Realtyprimary goal is to help families sell their properties as fast as possible and get the most of the market as possible."
+    },
+    {
+      "id": "bca-ltr-san-miguel-apartment-for-rent",
+      "name": "San Miguel",
+      "type": "ltr",
+      "image": "https://bcarubarealty.com/wp-content/uploads/2023/01/San-Miguel-59-A-Rented-525x328.jpg",
+      "area": "San Miguel",
+      "location": "San Miguel",
+      "askPrice": 698,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Bon Choice Aruba Realty",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://bcarubarealty.com/properties/san-miguel-apartment-for-rent/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 698
+        }
+      ],
+      "notes": "Bon Choice Aruba Realtyprimary goal is to help families sell their properties as fast as possible and get the most of the market as possible."
+    },
+    {
+      "id": "bca-ltr-seour-nicephora-23",
+      "name": "Caya Soeur Nicephora 23",
+      "type": "ltr",
+      "image": "https://bcarubarealty.com/wp-content/uploads/2021/08/Bon-Choice-Aruba-Realty-property-pic_Caya-Seour-Nicephora-23-00-525x328.jpg",
+      "area": "Bushiri",
+      "location": "Bushiri",
+      "askPrice": 2486,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Bon Choice Aruba Realty",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://bcarubarealty.com/properties/seour-nicephora-23/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2486
+        }
+      ],
+      "notes": "Smart home for rent in Bushiri with 2 bedrooms, 2 bathrooms, outside beach shower in the garden, warm water, solar panel, amazing indoor and outdoor spacious, lighting, Tv, and A/C through voice command."
+    },
+    {
+      "id": "bca-ltr-caya-maguey-29",
+      "name": "Caya Maguey 29",
+      "type": "ltr",
+      "image": "https://bcarubarealty.com/wp-content/uploads/2021/08/WhatsApp-Image-2023-12-06-at-12.02.59-PM-525x328.jpeg",
+      "area": "Ponton",
+      "location": "Ponton",
+      "askPrice": 2784,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Bon Choice Aruba Realty",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://bcarubarealty.com/properties/caya-maguey-29/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2784
+        }
+      ],
+      "notes": "Bon Choice Aruba Realtyprimary goal is to help families sell their properties as fast as possible and get the most of the market as possible."
+    },
+    {
+      "id": "bca-ltr-tierra-del-sol-mesa-vista",
+      "name": "Tierra del Sol, Mesa Vista 31",
+      "type": "ltr",
+      "image": "https://bcarubarealty.com/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-27-at-3.48.48-PM-525x328.jpeg",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 3480,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Bon Choice Aruba Realty",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://bcarubarealty.com/properties/tierra-del-sol-mesa-vista/",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 3480
+        }
+      ],
+      "notes": "Bon Choice Aruba Realtyprimary goal is to help families sell their properties as fast as possible and get the most of the market as possible."
     }
   ]
 }

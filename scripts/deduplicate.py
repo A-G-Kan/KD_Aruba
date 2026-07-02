@@ -153,6 +153,7 @@ def parse_two_sizes(text):
 
     building_size = (
         _m2(r"buil[dt][\s\-]?up\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")   or
+        _m2(r"property\s*size\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")                      or
         _m2(r"building\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")            or
         _m2(r"floor\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")               or
         _m2(r"interior\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")            or
