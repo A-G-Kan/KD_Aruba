@@ -20731,9 +20731,9 @@
     }
   ],
   "agentMeta": {
-    "lastSync": "2026-07-02T00:40:22Z",
+    "lastSync": "2026-07-02T01:48:29Z",
     "agentActive": true,
-    "totalSyncCount": 80
+    "totalSyncCount": 81
   },
   "trackerItems": [],
   "monthlyData": [
@@ -25888,6 +25888,812 @@
         }
       ],
       "notes": ""
+    },
+    {
+      "id": "kw-ltr-rooi-kochi-27-d",
+      "name": "Rooi Kochi 27-D",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/699/89e/add/thumb_62283_500_400_0_0_crop.jpg",
+      "area": "Savaneta",
+      "location": "Savaneta",
+      "askPrice": 3900,
+      "pricePeriod": "monthly",
+      "size": "207 m²",
+      "buildingSize": "207 m²",
+      "lotSize": "1008 m²",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/rooi-kochi-27-d",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3900
+        }
+      ],
+      "notes": "This spacious villa offers 4 bedrooms and 3.5 bathrooms, ideal for families, couples, or professionals who want comfort and style. The open-concept floorplan boasts a bright living area, dining space, and a fully equipped kitchen—perfect for hosting guests or enjoying cozy nights at home. Additional features include a veranda, corridor, and walk-in closet for extra convenience."
+    },
+    {
+      "id": "kw-ltr-tanki-leendert-117",
+      "name": "Tanki Leendert 117",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/69d/52b/0e9/thumb_64028_500_400_0_0_crop.jpg",
+      "area": "Tanki Leendert",
+      "location": "Tanki Leendert",
+      "askPrice": 2750,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/tanki-leendert-117",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2750
+        }
+      ],
+      "notes": "Discover this modernized cunucu house, where character and charm seamlessly blend with the convenience of modern living. The property has been carefully renovated, preserving its authentic appearance while offering comfort and finishes that are fully up to date."
+    },
+    {
+      "id": "kw-ltr-fully-furnished-2-bedroom-condo-oranjestad-unit-1",
+      "name": "Fully furnished 2-bedroom condo Oranjestad | Unit 1.",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/679/9f9/277/thumb_48806_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "125 m²",
+      "buildingSize": "125 m²",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/fully-furnished-2-bedroom-condo-oranjestad-unit-1",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2500
+        }
+      ],
+      "notes": "Live in style and comfort with this beautifully furnished 2-bedroom, 1-bathroom condominium located just a short walk from the beach. Very centrally located at prestigious Vondellaan, in one of the most sought-after neighborhoods in Aruba, this modern apartment offers a perfect blend of luxury, convenience, and tranquility."
+    },
+    {
+      "id": "kw-ltr-fully-furnished-2-bedroom-condo-oranjestad-unit-1-2",
+      "name": "Fully furnished 2-bedroom condo Oranjestad | Unit 2.",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/679/9f8/405/thumb_48758_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "125 m²",
+      "buildingSize": "125 m²",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": null,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/fully-furnished-2-bedroom-condo-oranjestad-unit-1-2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2500
+        }
+      ],
+      "notes": "Live in style and comfort with this beautifully furnished 2-bedroom, 1-bathroom condominium located just a short walk from the beach. Very centrally located at prestigious Vondellaan, in one of the most sought-after neighborhoods in Aruba, this modern apartment offers a perfect blend of luxury, convenience, and tranquility."
+    },
+    {
+      "id": "kw-ltr-fully-furnished-2-bedroom-condo-oranjestad-unit-1-2-2",
+      "name": "Fully furnished 2-bedroom condo Oranjestad | Unit 3.",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/679/9f7/53e/thumb_48737_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "125 m²",
+      "buildingSize": "125 m²",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": null,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/fully-furnished-2-bedroom-condo-oranjestad-unit-1-2-2",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2500
+        }
+      ],
+      "notes": "Live in style and comfort with this beautifully furnished 2-bedroom, 1-bathroom condominium located just a short walk from the beach. Very centrally located at prestigious Vondellaan, in one of the most sought-after neighborhoods in Aruba, this modern apartment offers a perfect blend of luxury, convenience, and tranquility."
+    },
+    {
+      "id": "kw-ltr-fully-furnished-2-bedroom-condo-oranjestad-unit-1-2-2-2",
+      "name": "Fully furnished 2-bedroom condo Oranjestad | Unit 4.",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/679/9f4/a1b/thumb_48643_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "125 m²",
+      "buildingSize": "125 m²",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": null,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/fully-furnished-2-bedroom-condo-oranjestad-unit-1-2-2-2",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2500
+        }
+      ],
+      "notes": "Live in style and comfort with this beautifully furnished 2-bedroom, 1-bathroom condominium located just a short walk from the beach. Very centrally located at prestigious Vondellaan, in one of the most sought-after neighborhoods in Aruba, this modern apartment offers a perfect blend of luxury, convenience, and tranquility."
+    },
+    {
+      "id": "kw-ltr-walishali-5",
+      "name": "Walishali 5",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/68a/8f9/482/thumb_55644_500_400_0_0_crop.jpg",
+      "area": "Tanki Leendert",
+      "location": "Tanki Leendert",
+      "askPrice": 2400,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/walishali-5",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2400
+        }
+      ],
+      "notes": "Additional features includeair conditioning, private parking, and a fully fenced yardfor privacy and security. The location is excellent — a quiet neighborhood just minutes from supermarkets, schools, restaurants, and main roads. For exact location please see the map in this listing."
+    },
+    {
+      "id": "kw-ltr-comfortable-family-home-rent-punto-di-oro-tanki-leendert-aruba",
+      "name": "Comfortable Family Home for Rent in Punto di Oro | Tanki Leendert, Aruba",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/6a2/705/765/thumb_66643_500_400_0_0_crop.jpg",
+      "area": "Tanki Leendert",
+      "location": "Tanki Leendert",
+      "askPrice": 2200,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/comfortable-family-home-rent-punto-di-oro-tanki-leendert-aruba",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2200
+        }
+      ],
+      "notes": "Outside, thefully fenced and low-maintenance gardenoffers a wonderful private outdoor space. Whether you envision a lounge area to unwind after a long day or choose to add a build-up pool, the garden provides the flexibility to make it your own. The community adds an extra layer of tranquility, giving families peace of mind in a neighborhood known for its friendly and welcoming character."
+    },
+    {
+      "id": "kw-ltr-solito-apartments",
+      "name": "Solito Apartments",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/693/c29/664/thumb_60183_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 1700,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/solito-apartments",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1700
+        }
+      ],
+      "notes": "Located in the centrally positioned neighborhood ofSolito, Oranjestad, this well-appointed one-bedroom apartment is now available for long-term rental. The unit offers a functional open-concept layout that seamlessly integrates the living and dining areas, creating an efficient and welcoming space. It is fully furnished and includes a modern, well-equipped kitchen designed for everyday convenience."
+    },
+    {
+      "id": "kw-ltr-buena-vista-2a",
+      "name": "Buena Vista 2A",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/69f/3a5/38d/thumb_65005_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 1601,
+      "pricePeriod": "monthly",
+      "size": "85 m²",
+      "buildingSize": "85 m²",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/buena-vista-2a",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1601
+        }
+      ],
+      "notes": "📲 If you are interested, feel free to contact me via WhatsApp at (+297) 565-0465📧 Or send an email to:niels.alderlieste@kw-aruba.com"
+    },
+    {
+      "id": "kw-ltr-diamantbergweg-59b",
+      "name": "Diamantbergweg 59B",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/69c/531/743/thumb_63839_500_400_0_0_crop.jpg",
+      "area": "San Nicolas",
+      "location": "San Nicolas",
+      "askPrice": 1335,
+      "pricePeriod": "monthly",
+      "size": "64 m²",
+      "buildingSize": "64 m²",
+      "lotSize": "679 m²",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/diamantbergweg-59b",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1335
+        }
+      ],
+      "notes": "Ideally located on the main road of Diamantbergweg, the property provides easy access to nearby supermarkets, schools, and daily conveniences. Just a short 10-minute drive away, you’ll find some of Aruba’s most beautiful destinations, including Baby Beach, Rogers Beach, and the newly opened Secrets Hotel. The vibrant San Nicolas Art District, known for its colorful murals, local dining, and welcoming atmosphere, is also within close reach. The home features a bright open-concept layout, seamlessly connecting the living area and kitchen, creating a relaxed and contemporary space—perfect for a single professional or a couple seeking comfort and convenience."
+    },
+    {
+      "id": "kw-ltr-studio-vondellaan",
+      "name": "Studio Vondellaan",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/67f/fbf/fd0/thumb_52258_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 1250,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/studio-vondellaan",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1250
+        }
+      ],
+      "notes": "Live in one of Aruba’s most desirable neighborhoods! This fully furnished, modern studio is located in prestigious Vondellaan, just a 5-minute walk to the beach."
+    },
+    {
+      "id": "kw-ltr-isla-bonita-penthouse-2",
+      "name": "Isla Bonita Penthouse",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/698/bb1/d95/thumb_62117_500_400_0_0_crop.jpg",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 4000,
+      "pricePeriod": "monthly",
+      "size": "210 m²",
+      "buildingSize": "210 m²",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/isla-bonita-penthouse-2",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 4000
+        }
+      ],
+      "notes": "Welcome to this breathtaking designer penthouse, where luxury and comfort blend seamlessly to create the ultimate island retreat. Perched above the vibrant surroundings, this exquisite residence boasts a one-of-a-kind second-floor terrace, offering panoramic 360-degree views of Aruba’s stunning landscapes.  This exceptional penthousecombines the ease of condominium living— 24/7 security, professional maintenance, and resort-style amenities — with an expansive private patio that delivers the comfort, space, and exclusivity of aprivate residence."
+    },
+    {
+      "id": "kw-ltr-rent-2br-apartment-aruba-fully-furnished-centrally-located-available-now",
+      "name": "For Rent: 2BR Apartment in Aruba | Fully Furnished | Centrally Located - Available Now",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/69e/2d2/b50/thumb_64676_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 2250,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/rent-2br-apartment-aruba-fully-furnished-centrally-located-available-now",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2250
+        }
+      ],
+      "notes": "Experience comfortable island living in thismodern, well-appointed 2-bedroom apartment, perfectly located for convenience and lifestyle in Aruba."
+    },
+    {
+      "id": "kw-ltr-rent-2br-apartment-aruba-fully-furnished-centrally-located-available-now-2",
+      "name": "En Alquiler: Apartamento de 2 Habitaciones en Aruba – A Minutos de trabajo, playa | Amueblado | Disponible Ya",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/69e/2d5/b29/thumb_64681_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 2250,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/rent-2br-apartment-aruba-fully-furnished-centrally-located-available-now-2",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2250
+        }
+      ],
+      "notes": "Disfruta de la vida en el Caribe en estemoderno y cómodo apartamento de 2 habitaciones, completamente equipado y estratégicamente ubicado en Aruba."
+    },
+    {
+      "id": "kw-ltr-3-bedroom-apartment-solito-apartments",
+      "name": "3 Bedroom Apartment | Solito Apartments",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/62f/a97/d07/thumb_17648_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 3000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/3-bedroom-apartment-solito-apartments",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 3000
+        }
+      ],
+      "notes": "This beautiful 3-bedroom / 3-bathroom apartment welcomes you in a beautiful open space concept living room and dining area. The apartment comes completely furnished and with a fully equipped and modern kitchen with wooden cabinets and stainless steel appliances."
+    },
+    {
+      "id": "kw-ltr-1-bedroom-apartment-solito-apartments",
+      "name": "1 Bedroom Apartment | Solito Apartments",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/62f/a92/13c/thumb_17621_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 1700,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/1-bedroom-apartment-solito-apartments",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1700
+        }
+      ],
+      "notes": "This beautiful 1-bedroom / 1-bathroom apartment welcomes you in a beautiful open space concept living room and dining area. The apartment comes completely furnished and with a fully equipped and modern kitchen with wooden cabinets and stainless steel appliances."
+    },
+    {
+      "id": "kw-ltr-noord-108m-2",
+      "name": "Noord 108M",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/6a1/395/9d7/thumb_65949_500_400_0_0_crop.jpg",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 830,
+      "pricePeriod": "monthly",
+      "size": "42 m²",
+      "buildingSize": "42 m²",
+      "lotSize": "50 m²",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/noord-108m-2",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 830
+        }
+      ],
+      "notes": "Welcome to this peaceful one-bedroom apartment, located in Noord near Alto Vista. Ideally situated just a 5-minute drive from the high-rise hotel area, this apartment offers both comfort and convenience.The apartment comes fully furnished and includes one parking space.Step into a cozy living and dining area with an open kitchen. The apartment features one bedroom and one bathroom.The property also offers a private patio with an outdoor seating area."
+    },
+    {
+      "id": "kw-ltr-commercial-office-space-rent",
+      "name": "2x Office Space - For Rent (Awg. 33,- p/m2)",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/684/9db/6b4/thumb_53626_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 10493,
+      "pricePeriod": "monthly",
+      "size": "566 m²",
+      "buildingSize": "566 m²",
+      "lotSize": "566 m²",
+      "bedrooms": 0,
+      "bathrooms": null,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/commercial-office-space-rent",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 10493
+        }
+      ],
+      "notes": "Positioned in the heart of Oranjestad, this three-story commercial property offers an exceptional opportunity for businesses seeking visibility, functionality, and central connectivity. Located on Caya Ernesto Petronia 21-C, this building is surrounded by key neighborhoods and boasts easy access to major roads — making it ideal for offices, service-based businesses, or a headquarters."
+    },
+    {
+      "id": "kw-ltr-paardenbaaistraat-office-rental",
+      "name": "Paardenbaaistraat Office Rental",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/675/d87/41b/thumb_46567_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 5898,
+      "pricePeriod": "monthly",
+      "size": "320 m²",
+      "buildingSize": "320 m²",
+      "lotSize": "320 m²",
+      "bedrooms": 0,
+      "bathrooms": 2,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/paardenbaaistraat-office-rental",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 5898
+        }
+      ],
+      "notes": "This well-maintained building features high-quality materials and energy-efficient designs, ensuring a comfortable and sustainable work environment. The spaces are fitted with luxurious granite floors, fully equipped kitchens, and modern bathrooms. With abundant natural light and open, spacious layouts, these offices offer an ideal setting for any business."
+    },
+    {
+      "id": "kw-ltr-caya-punta-brabo-200-2",
+      "name": "Commercial Space for Rent near Eagle Beach | Caya Punta Brabo 200",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/69d/863/458/thumb_64223_500_400_0_0_crop.jpg",
+      "area": "Eagle Beach",
+      "location": "Eagle Beach",
+      "askPrice": 4859,
+      "pricePeriod": "monthly",
+      "size": "346 m²",
+      "buildingSize": "346 m²",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": null,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/caya-punta-brabo-200-2",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 4859
+        }
+      ],
+      "notes": "Located in one of Aruba’s most strategic commercial areas, this versatile property offers a rare opportunity to position your business minutes from Eagle Beach. Centrally situated directly behind the hospital, with seamless access to Noord, Oranjestad, and the island’s main roads, this is a location that combines convenience, visibility, and consistent traffic."
+    },
+    {
+      "id": "kw-ltr-steenweg-19-botica-aruba",
+      "name": "Steenweg 19 (Botica Aruba)",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/65d/4c1/9ed/thumb_36678_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 4495,
+      "pricePeriod": "monthly",
+      "size": "205 m²",
+      "buildingSize": "205 m²",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": null,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/steenweg-19-botica-aruba",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 4495
+        }
+      ],
+      "notes": "Upon entering, you'll find a spacious open-concept layout, perfect for accommodating various business activities. The large kitchen corner provides ample space for preparing refreshments or catering to clients and customers.The property features multiple balcony/patio areas, providing additional outdoor space for relaxation or hosting events. The rear balcony offers convenient access from the backyard to the first floor, while the front balcony provides a covered outdoor area accessible from inside the space.This commercial space also includes a basement with additional storage space, offering versatility for your business operations.In the heart of a vibrant and lively neighborhood, this property offers a harmonious blend of practicality and accessibility, making it a compelling choice for businesses seeking a dynamic commercial setting."
+    },
+    {
+      "id": "kw-ltr-frankrijkstraat-9-for-rent",
+      "name": "Commercial Space for Rent in Oranjestad | Frankrijkstraat 9",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/69d/7e3/233/thumb_64150_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 2999,
+      "pricePeriod": "monthly",
+      "size": "300 m²",
+      "buildingSize": "300 m²",
+      "lotSize": "1470 m²",
+      "bedrooms": 0,
+      "bathrooms": 2,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/frankrijkstraat-9-for-rent",
+      "status": "price reduced",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2999
+        }
+      ],
+      "notes": "Position your business in one of Aruba’s most strategic locations with this well-appointed second-floor office space at Frankrijkstraat 9. Ideally situated between Oranjestad and Noord, this commercial space offers excellent accessibility, just minutes from major roads, government offices, and key business hubs."
+    },
+    {
+      "id": "kw-ltr-office-space-rent-dakota",
+      "name": "Office Space For Rent in Dakota",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/69d/d49/214/thumb_64289_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 2528,
+      "pricePeriod": "monthly",
+      "size": "160 m²",
+      "buildingSize": "160 m²",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": null,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/office-space-rent-dakota",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2528
+        }
+      ],
+      "notes": "Strategically located in the highly accessible area ofDakota, this versatile office space offers the perfect setting for businesses seeking convenience, visibility, and functionality. Positioned close to a public school, established companies, and various organizations, this location ensures excellent connectivity for both clients and staff."
+    },
+    {
+      "id": "kw-ltr-rumbastraat-office",
+      "name": "Rumbastraat Office",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/675/d8f/245/thumb_46571_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 2528,
+      "pricePeriod": "monthly",
+      "size": "150 m²",
+      "buildingSize": "",
+      "lotSize": "150 m²",
+      "bedrooms": 0,
+      "bathrooms": null,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/rumbastraat-office",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 2528
+        }
+      ],
+      "notes": "Available for rent: A 150m² office located on the first floor of a prestigious building within the Rumbastraat Office Park. This well-designed space is efficiently laid out with five smaller offices, offering room for at least six workstations and/or a separate conference room."
+    },
+    {
+      "id": "kw-ltr-food-court-units-aruba-airport-business-center",
+      "name": "Food Court Units - Aruba Airport Business Center",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/626/056/bed/thumb_14519_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "41 m²",
+      "buildingSize": "41 m²",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": null,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/food-court-units-aruba-airport-business-center",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": null
+        }
+      ],
+      "notes": "Casual restaurants are a natural fit for success in the food court, with options ranging from snack and drink vendors to mid-size dining options. The food court units feature fully built-out commercial kitchen space, retail and dine-in seating areas for clients. Situated within the established retail hub, the mixed-use building with ground-floor storefronts and upscale top floor offices have been designed with the modern client, shopper and visitor in mind."
+    },
+    {
+      "id": "kw-ltr-aruba-airport-business-center",
+      "name": "Office Space - Aruba Airport Business Center",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/626/17c/2c8/thumb_14576_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "57 m²",
+      "buildingSize": "57 m²",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": null,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/aruba-airport-business-center",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": null
+        }
+      ],
+      "notes": "AABC offers premium amenities from upscale conference rooms to client waiting areas, on-site common areas, ground floor food hall, premium storefronts, and more. A wide range of suite sizes boasting elegant finishes provide companies with the flexibility to find the right space to match their individual needs. The private units feature spacious layouts, natural light, modern interiors and vast views of the island and runway. Multiple amenities are on-site, serving to boost comfort and productivity. Take in the unique sights of daily flight landings from your workspace."
+    },
+    {
+      "id": "kw-ltr-aruba-airport-bus",
+      "name": "Retail Stores - Aruba Airport Business Center",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/626/2a6/a80/thumb_14621_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "25 m²",
+      "buildingSize": "25 m²",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": null,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/aruba-airport-bus",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": null
+        }
+      ],
+      "notes": "Retailers can occupy brand-new, chic suites, or work to design a unit that’s tailored to meet tenant specific needs. Situated within the established retail hub, the bespoke storefronts have been designed with the modern client in mind. Current tenants include a high-end boutique, local bank branch, photography studio, and medical center with ideal accommodations for national tenants, retailers, creative brands, and beyond."
+    },
+    {
+      "id": "kw-ltr-bernardstraat-107",
+      "name": "Bernardstraat 107",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/69c/2c9/568/thumb_63826_500_400_0_0_crop.jpg",
+      "area": "San Nicolas",
+      "location": "San Nicolas",
+      "askPrice": 1400,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/bernardstraat-107",
+      "status": "price reduced",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 1400
+        }
+      ],
+      "notes": "Discover a versatile commercial property in the heart ofSan Nicolaas. Located atBernardstraat 107, this space was previously used as a Tempo office and is well-suited for a variety of business types—includingoffice,restaurant,retail,studio, orshowroom."
+    },
+    {
+      "id": "kw-ltr-lg-smith-boulevard-offices-spaces",
+      "name": "L.G. Smith Boulevard Offices Spaces",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/679/66e/0bd/thumb_48446_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 0,
+      "pricePeriod": "monthly",
+      "size": "387 m²",
+      "buildingSize": "387 m²",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": null,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/lg-smith-boulevard-offices-spaces",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 0
+        }
+      ],
+      "notes": "The building itself is designed to reflect sophistication and functionality. It boasts a spacious parking area with plenty of spaces, making it easy for staff and clients to access the property. The presence of an elevator ensures smooth access to the office, enhancing the overall convenience and accessibility. Inside, the space is highly adaptable and can be configured to meet a variety of business requirements, from open collaborative areas to private offices. Large windows bring in ample natural light, creating a bright and energizing atmosphere that enhances productivity."
+    },
+    {
+      "id": "kw-ltr-vondellaan-office",
+      "name": "Vondellaan Office",
+      "type": "ltr",
+      "image": "https://kw-aruba.com/storage/app/uploads/public/67e/c2f/c55/thumb_51633_500_400_0_0_crop.jpg",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 0,
+      "pricePeriod": "monthly",
+      "size": "634 m²",
+      "buildingSize": "634 m²",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": null,
+      "agency": "Keller Williams Aruba",
+      "listedDate": "2026-07-01",
+      "sourceUrl": "https://kw-aruba.com/listings/vondellaan-office",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-01",
+          "price": 0
+        }
+      ],
+      "notes": "✔Prime Location– Situated in a high-demand business district with excellent visibility and access✔Modern Amenities– A contemporary office environment equipped with all essential facilities✔Ample Parking– Convenient on-site and nearby parking options for staff and visitors✔Easy Access– Close to major roads, public transport, and key commercial hubs✔Flexible Use– Suitable for corporate offices, professional services, or creative workspaces✔Well-Maintained & Comfortable– Fully air-conditioned for year-round comfort"
     }
   ]
 }

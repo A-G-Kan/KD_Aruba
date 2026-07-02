@@ -152,14 +152,14 @@ def parse_two_sizes(text):
     )
 
     building_size = (
-        _m2(r"built[\s\-]?up\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")     or
+        _m2(r"buil[dt][\s\-]?up\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")   or
         _m2(r"building\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")            or
         _m2(r"floor\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")               or
         _m2(r"interior\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")            or
         _m2(r"living\s*(?:area|space|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")        or
         _m2(r"house\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")               or
-        _m2(r"([0-9,.]+)\s*m[²2]\s+(?:interior|floor|living|built[\s\-]?up)")      or
-        _sqft(r"(?:built[\s\-]?up|floor|interior|living)\s*(?:area)?\s*[:\-]?\s*([0-9,.]+)\s*(?:sq\.?\s*ft|sqft)")
+        _m2(r"([0-9,.]+)\s*m[²2]\s+(?:interior|floor|living|buil[dt][\s\-]?up)")   or
+        _sqft(r"(?:buil[dt][\s\-]?up|floor|interior|living)\s*(?:area)?\s*[:\-]?\s*([0-9,.]+)\s*(?:sq\.?\s*ft|sqft)")
     )
 
     # Fallback: single unlabelled m² → treat as building_size.
