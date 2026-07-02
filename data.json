@@ -20731,9 +20731,9 @@
     }
   ],
   "agentMeta": {
-    "lastSync": "2026-07-02T04:43:43Z",
+    "lastSync": "2026-07-02T05:41:38Z",
     "agentActive": true,
-    "totalSyncCount": 88
+    "totalSyncCount": 96
   },
   "trackerItems": [],
   "monthlyData": [
@@ -28098,6 +28098,2008 @@
         }
       ],
       "notes": ""
+    },
+    {
+      "id": "remax-ltr-ponton-24-a-2",
+      "name": "Ponton 24-a",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/67e/2b5/8de/thumb_55156_800_500_0_0_crop.webp",
+      "area": "Eagle Beach",
+      "location": "Eagle Beach , Ponton 24-a",
+      "askPrice": 3600,
+      "pricePeriod": "monthly",
+      "size": "360 m²",
+      "buildingSize": "360 m²",
+      "lotSize": "636 m²",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/ponton-24-a-2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 3600
+        }
+      ],
+      "notes": "Discover this beautiful renovated two-story residence nestled in the prestigious Ponton neighborhood. Boasting a spacious lot of 636 m2 property land and an expansive 360 m2 built-up area, this home offers a harmonious blend of elegance and contemporary comfort. The ground floor features a generously designed living room, a dining room, a private retreat with 1 bedroom and 1.5 bathrooms and an office for work or study. The brand-new kitchen is a chef's delight, complemented by a practical laundry room. Step outside to a large patio and explore an additional play/loungeroom."
+    },
+    {
+      "id": "remax-ltr-available-wayaca-275",
+      "name": "RENTED - Wayaca 275",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/699/4cd/6b3/thumb_58465_800_500_0_0_crop.webp",
+      "area": "Eagle Beach",
+      "location": "Eagle Beach",
+      "askPrice": 3596,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/available-wayaca-275",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 3596
+        }
+      ],
+      "notes": "In addition to the main house, the property includes a separate ground-floor studio with its own bathroom and kitchenette. This space is ideal for guests, extended family members, or even as a private retreat. Above the studio, there is an additional room that can be used as a home office or creative workspace. This upper level also offers an outdoor area where you can unwind and relax."
+    },
+    {
+      "id": "remax-ltr-constantijn-huygenstraat-villa",
+      "name": "Constantijn Huygenstraat Villa",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/664/c09/3cc/thumb_49819_800_500_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad , Constantijn Huygenstraat # 13",
+      "askPrice": 3500,
+      "pricePeriod": "monthly",
+      "size": "170 m²",
+      "buildingSize": "170 m²",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/constantijn-huygenstraat-villa",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 3500
+        }
+      ],
+      "notes": "Ideal for a long-term stay, this villa offers everything you need for an unforgettable stay in Oranjestad."
+    },
+    {
+      "id": "remax-ltr-gold-coast-134",
+      "name": "RENTED - Gold Coast 134",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/699/de7/044/thumb_58578_800_500_0_0_crop.webp",
+      "area": "Malmok",
+      "location": "Malmok , Gold Coast 134",
+      "askPrice": 3000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/gold-coast-134",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 3000
+        }
+      ],
+      "notes": "Gold Coast offers resort-style amenities including three swimming pools, a clubhouse with restaurant and bar, a fitness center, and tennis courts. The community is just minutes away from Aruba’s High-Rise area, beaches, shopping malls, restaurants, and the golf course."
+    },
+    {
+      "id": "remax-ltr-Cuquisastraat%208D",
+      "name": "RENTED - Cuquisastraat",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/681/533/967/thumb_55790_800_500_0_0_crop.webp",
+      "area": "Eagle Beach",
+      "location": "Eagle Beach , Cuquisastraat 8-D",
+      "askPrice": 2584,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/Cuquisastraat%208D",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2584
+        }
+      ],
+      "notes": "Enjoy a fully equipped kitchen, private washing machine, a small back garden, and a quiet neighborhood just 10 minutes from Aruba’s high-rise area. Conveniently located near supermarkets, restaurants, and gas stations. Pet-friendly, too!"
+    },
+    {
+      "id": "remax-ltr-wayaka-residences-314",
+      "name": "Wayaka Residences # 314",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/653/6a5/39d/thumb_47379_800_500_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "275 m²",
+      "buildingSize": "275 m²",
+      "lotSize": "400 m²",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/wayaka-residences-314",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2500
+        }
+      ],
+      "notes": "Live in this awesome Rental Villa for at least one year, located in the safest residential area in Aruba, known as Wayaka Residences. This 3 bedroom with 2 bathroom comes completely furnished and with all new inverter AC's. Walk into the front door right into the dining, living area and on the left a well equipped kitchen. The corridor next to the kitchen will take to the 2 bedrooms that share a bathroom. On the right site of the entrance you can go directly into the complete private master bedroom with its own bathroom and a walk-in  closet. The big sliding door will take you to the beautiful landscaped garden with a nice swimming pool for your relaxation, and a well equipped bar where you can serve drinks for your guests and friends that visit you. The house has a Garage with remote control where you can also find a washer and dryer. The house is equipped with alarm system and cameras all around. On both sides of the house you will find an entrance for the pool service person so he can get in the backyard for his weekly upkeep. This house is being rented at $2500 per month and a 1 month deposit is to be paid with the first month Rental. Electricity, Water, Gas, Pool maintenance, Landscaping and Alarm system are not included in the monthly Rent. Wifi and cable are. Please be aware NO PETS are allowed. Viewing is available upon reservation through me cel # 5939693. Any other questions do not hesitate to call me."
+    },
+    {
+      "id": "remax-ltr-casabari",
+      "name": "RENTED - Casibari",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/668/310/758/thumb_50738_800_500_0_0_crop.webp",
+      "area": "Paradera",
+      "location": "Paradera",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/casabari",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2500
+        }
+      ],
+      "notes": "Discover this spacious 3-bedroom (2 with A/C), 2.5-bathroom house, perfect for long-term rental. The property features large bedrooms, including a large walk-in closet in the master bedroom."
+    },
+    {
+      "id": "remax-ltr-monte-verde",
+      "name": "AVAILABLE - Monte Verde 105",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/67e/433/c4e/thumb_55322_800_500_0_0_crop.webp",
+      "area": "Hooiberg",
+      "location": "Hooiberg",
+      "askPrice": 2416,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/monte-verde",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2416
+        }
+      ],
+      "notes": "This fantastic 4-bedroom, 3-bathroom home located in Monte Verde is in the heart of convenience. This villa has easy access to the airport, Oranjestad, and Santa Cruz."
+    },
+    {
+      "id": "remax-ltr-cudi-32-level-1",
+      "name": "RENTED | Cudi 32 - First Floor",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/68d/300/786/thumb_57108_800_500_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord , Cudi 32",
+      "askPrice": 2388,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/cudi-32-level-1",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2388
+        }
+      ],
+      "notes": "This fantastic3-bedroom, 2-bathroomfirst-floor home is located in the Cudi 32 Villa. This villa is conveniently located and close to the high-rise area and has easy access to the downtown area."
+    },
+    {
+      "id": "remax-ltr-tamarijn-24",
+      "name": "RENTED - Tamarijn 24",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/679/138/d55/thumb_54079_800_500_0_0_crop.webp",
+      "area": "Paradera",
+      "location": "Paradera",
+      "askPrice": 2360,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/tamarijn-24",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2360
+        }
+      ],
+      "notes": "$2360 including WiFi/cable, garden maintenance, and pest control. Excluding: Water, Electricity, Gas, Septic service, and A/C service."
+    },
+    {
+      "id": "remax-ltr-fuerte-3-2",
+      "name": "RENTED- Fuerte 3",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/689/9e6/f8b/thumb_56716_800_500_0_0_crop.webp",
+      "area": "Paradera",
+      "location": "Paradera , Fuerte 3",
+      "askPrice": 2332,
+      "pricePeriod": "monthly",
+      "size": "130 m²",
+      "buildingSize": "130 m²",
+      "lotSize": "322 m²",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/fuerte-3-2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2332
+        }
+      ],
+      "notes": "The spacious covered back porch provides an ideal space for outdoor living.  This home features a pool and a tropical garden. The fenced backyard ensures privacy, while the dedicated laundry and storage room add to the home’s functionality. At the front of the property, there is parking space for two cars."
+    },
+    {
+      "id": "remax-ltr-washington-168",
+      "name": "RENTED - Washington 168",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/605/507/b4a/thumb_34255_800_500_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord , Washington 168",
+      "askPrice": 2000,
+      "pricePeriod": "monthly",
+      "size": "95 m²",
+      "buildingSize": "95 m²",
+      "lotSize": "307 m²",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/washington-168",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2000
+        }
+      ],
+      "notes": "Cute 3-bedroom, 1.5-bathroom family home in Washington, Aruba. Located almost at the end of a cul-de-sac with pavers, but just walking distance to the Washington schools and just minutes driving from the Palm Beach area, gym, supermarkets, restaurants, gas station, and bank."
+    },
+    {
+      "id": "remax-ltr-move-in-ready-long-term-rental-in-san-nicolas-fully-furnished",
+      "name": "Move in ready long-term Rental in San Nicolas – fully furnished",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/695/587/b2e/thumb_57946_800_500_0_0_crop.webp",
+      "area": "San Nicolas",
+      "location": "San Nicolas , Willem de Zwijgerstraat 16-A",
+      "askPrice": 1966,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/move-in-ready-long-term-rental-in-san-nicolas-fully-furnished",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1966
+        }
+      ],
+      "notes": "Fully renovated and furnished 3-bedroom, 2-bathroom home, ideal for long-term living."
+    },
+    {
+      "id": "remax-ltr-charming-home-for-rent-in-tranquil-rooi-master",
+      "name": "Charming Home for Rent in Tranquil Rooi Master",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/675/5df/773/thumb_53559_800_500_0_0_crop.webp",
+      "area": "San Nicolas",
+      "location": "San Nicolas , Rooi Master 5-O",
+      "askPrice": 1700,
+      "pricePeriod": "monthly",
+      "size": "230 m²",
+      "buildingSize": "230 m²",
+      "lotSize": "739 m²",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/charming-home-for-rent-in-tranquil-rooi-master",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1700
+        }
+      ],
+      "notes": "Escape to this peaceful neighborhood just15 minutes from Baby Beach, and enjoy the comfort of this beautifully maintained home!"
+    },
+    {
+      "id": "remax-ltr-jucuri-6b",
+      "name": "Jucuri 6B",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/672/b55/c87/thumb_52849_800_500_0_0_crop.webp",
+      "area": "Santa Cruz",
+      "location": "Santa Cruz , Jucuri 6B",
+      "askPrice": 1687,
+      "pricePeriod": "monthly",
+      "size": "120 m²",
+      "buildingSize": "120 m²",
+      "lotSize": "592 m²",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/jucuri-6b",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1687
+        }
+      ],
+      "notes": "To Apply, please send me a message with Jucuri rental and your email address so we can discuss the tenancy."
+    },
+    {
+      "id": "remax-ltr-cura-cabay",
+      "name": "RENTED | Cura Cabay 124D",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/692/5ba/7f3/thumb_57646_800_500_0_0_crop.webp",
+      "area": "San Nicolas",
+      "location": "San Nicolas , Cura Cabay 124D",
+      "askPrice": 1601,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/cura-cabay",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1601
+        }
+      ],
+      "notes": "Discover this spacious and fully fenced two-story home located in the quiet and convenient neighborhood of Cura Cabay. Perfect for families or professionals seeking comfort."
+    },
+    {
+      "id": "remax-ltr-boroncana-3-farm-house",
+      "name": "RENTED - Boroncana 3 Farm House",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/661/58f/0fe/thumb_49218_800_500_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord , Boroncana 3",
+      "askPrice": 1500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/boroncana-3-farm-house",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1500
+        }
+      ],
+      "notes": "This Aruban-style 2-bedroom, 1-bathroom cunucu home is conveniently located in Noord. Just minutes away from the well-known Palm Beach area."
+    },
+    {
+      "id": "remax-ltr-villa-rooi-master",
+      "name": "Villa Rooi Master",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/666/8a0/f08/thumb_50219_800_500_0_0_crop.webp",
+      "area": "Savaneta",
+      "location": "Savaneta , Rooi Master 5Q",
+      "askPrice": 1405,
+      "pricePeriod": "monthly",
+      "size": "209 m²",
+      "buildingSize": "209 m²",
+      "lotSize": "703 m²",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/villa-rooi-master",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1405
+        }
+      ],
+      "notes": "This home boasts a large patio, perfect for outdoor relaxation and entertainment. Additionally, it includes a sizable laundry room for added convenience or it can be used as guest room."
+    },
+    {
+      "id": "remax-ltr-calbas-81h",
+      "name": "RENTED - Calabas 81H",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/661/433/10d/thumb_49135_800_500_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord , Calbas 81H",
+      "askPrice": 1404,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/calbas-81h",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1404
+        }
+      ],
+      "notes": "Spacious 2 bedroom, 2 bathroom home centrally located in Noord with easy access to both sides of the island."
+    },
+    {
+      "id": "remax-ltr-rooi-bosal-42d",
+      "name": "RENTED - Rooi Bosal 24D",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/65c/66d/241/thumb_48572_800_500_0_0_crop.webp",
+      "area": "Santa Cruz",
+      "location": "Santa Cruz , Rooi Bosal 24D",
+      "askPrice": 1278,
+      "pricePeriod": "monthly",
+      "size": "425 m²",
+      "buildingSize": "",
+      "lotSize": "425 m²",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/rooi-bosal-42d",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1278
+        }
+      ],
+      "notes": "Cozy 2-bedroom, 1-bathroom home for rent situated behind Santa Cruz, Aruba. Nearby The French Man’s Pass, Winston Baseball Field, and local convenience stores. Just minutes away from restaurants, a gym, a gas station, and a bank. Centrally located, it provides easy access to both sides of the island."
+    },
+    {
+      "id": "remax-ltr-boroncana-3-aloe-cottage",
+      "name": "AVAILABLE - Boroncana Aloe Cottage",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/660/d98/559/thumb_49057_800_500_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord , Boroncana 3",
+      "askPrice": 1096,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/boroncana-3-aloe-cottage",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1096
+        }
+      ],
+      "notes": "Spacious 1-bedroom, 1 bathroom cottage situated in the perfect location on Noord. Just minutes away from the Palm Beach area where you can find many restaurants, bars, gyms, convenience stores, and nightlife."
+    },
+    {
+      "id": "remax-ltr-sabana-liber-47l",
+      "name": "Sabana Liber 47L",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/660/d6e/f97/thumb_49036_800_500_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord , Sabana Liber 47L",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "576 m²",
+      "buildingSize": "",
+      "lotSize": "576 m²",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/sabana-liber-47l",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Spacious 3 bedroom, 2 bathroom home centrally located with easy access to both sides of the island."
+    },
+    {
+      "id": "remax-ltr-diamante-194g",
+      "name": "RENTED - Diamante 194G",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/656/e66/ae2/thumb_48032_800_500_0_0_crop.webp",
+      "area": "Malmok",
+      "location": "Malmok",
+      "askPrice": 4500,
+      "pricePeriod": "monthly",
+      "size": "123 m²",
+      "buildingSize": "123 m²",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/diamante-194g",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 4500
+        }
+      ],
+      "notes": "Experience unparalleled luxury and comfort in Aruba's Gold Coast community with this stunning, fully furnished two-story, four-bedroom condo. Nestled in the prestigious Gold Coast area, this rental offers a unique island living experience with exclusive amenities and a tropical lifestyle."
+    },
+    {
+      "id": "remax-ltr-tierra-del-sol",
+      "name": "Tierra del Sol 18 B",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/58b/46c/a73/thumb_10106_800_500_0_0_crop.webp",
+      "area": "Malmok",
+      "location": "Malmok , Costa Bravo 18 B",
+      "askPrice": 2600,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/tierra-del-sol",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2600
+        }
+      ],
+      "notes": "Be part of this beautiful Gated community with the only 18 hole Golf Course, designed by Robert Trent Jones, in Aruba. Enjoy the luxury of the environment, houses, condominiums and plantation that Tiera del Sol has to offer. Restaurants, Spa, Stores and much more right at your footstep. This 3 bedroom 2 bathroom, fully furnished, with AC, will allow you to enjoy your stay in Aruba at its fullest.We are renting this out only on Long term, minimum of 12 months, optional to renew, with two options: Not including electricity and water @ $ 2,600, monthly,  or including everything @ 3,000 monthly. The wifi, cable and garbage collection are included with any of the two options at No extra cost. Any other questions do Not hesitate to contact me. If you would like to view the Condominium, with No obligation, call me at 297 5939693 or email me atrichard@remaxaruba.com"
+    },
+    {
+      "id": "remax-ltr-palma-real-79",
+      "name": "Palma Real 79",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/67c/9c8/798/thumb_54716_800_500_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 2800,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/palma-real-79",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2800
+        }
+      ],
+      "notes": "The home comes fully furnished and with all the necessary kitchen supplies. Also, there is access to a community pool."
+    },
+    {
+      "id": "remax-ltr-palma-real-4",
+      "name": "AVAILABLE - Palma Real 4",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/684/306/3d0/thumb_56208_800_500_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 2600,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/palma-real-4",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2600
+        }
+      ],
+      "notes": "All three bathrooms have been upgraded to rain showers. The two bathrooms on the second floor have new tile flooring and new shower floors. All bathrooms now feature walk-in glass shower doors. Second-floor bedrooms were painted white."
+    },
+    {
+      "id": "remax-ltr-beatrixstraat",
+      "name": "RENTED - Beatrixstraat 26A",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/69d/e3b/42e/thumb_59077_800_500_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad , Beatrixstraat 26A",
+      "askPrice": 2250,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/beatrixstraat",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2250
+        }
+      ],
+      "notes": "Comfortable and well-maintained 2-bedroom, 1.5 bathroom apartment available for long-term rental (minimum 1 year). The apartment is offered fully furnished, making it move-in ready."
+    },
+    {
+      "id": "remax-ltr-palma-real-79a",
+      "name": "AVAILABLE - Palma Real 79A",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/67c/9a7/f55/thumb_54707_800_500_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 2200,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/palma-real-79a",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2200
+        }
+      ],
+      "notes": "The home comes fully furnished and with all the necessary kitchen supplies. Also, there is access to a community pool."
+    },
+    {
+      "id": "remax-ltr-luxury-resort-style-one-bedroom-apartment",
+      "name": "Luxury Resort-Style One-Bedroom Apartment",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/677/41f/081/thumb_53758_800_500_0_0_crop.webp",
+      "area": "Palm Beach",
+      "location": "Palm Beach",
+      "askPrice": 2000,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/luxury-resort-style-one-bedroom-apartment",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2000
+        }
+      ],
+      "notes": "Welcome to your dream luxury apartment! Nestled in a prime location just steps away from the Marriott Hotel, this stunning one-bedroom apartment offers a lifestyle of comfort, elegance, and convenience."
+    },
+    {
+      "id": "remax-ltr-happy-day-apartments-1",
+      "name": "Happy Day Apartments #1",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/699/d9e/5fc/thumb_58512_800_500_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord , Tanki Lender 279A",
+      "askPrice": 1300,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/happy-day-apartments-1",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1300
+        }
+      ],
+      "notes": "Enjoy comfortable island living in this furnished 1-bedroom apartment, ideally located just minutes from the High-Rise area. The property offers easy access to the main road and nearby bus stops, making it convenient to get around the island."
+    },
+    {
+      "id": "remax-ltr-happy-day-apartments-2",
+      "name": "Happy Day Apartments #2",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/699/d9f/f39/thumb_58524_800_500_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord , Tanki Lender 279A",
+      "askPrice": 1300,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/happy-day-apartments-2",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1300
+        }
+      ],
+      "notes": "Enjoy comfortable island living in this furnished 1-bedroom apartment, ideally located just minutes from the High-Rise area. The property offers easy access to the main road and nearby bus stops, making it convenient to get around the island."
+    },
+    {
+      "id": "remax-ltr-happy-day-apartments-3",
+      "name": "Happy Day Apartments #3",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/699/da0/6d3/thumb_58539_800_500_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord , Tanki Lender 279A",
+      "askPrice": 1300,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/happy-day-apartments-3",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1300
+        }
+      ],
+      "notes": "Enjoy comfortable island living in this furnished 1-bedroom apartment, ideally located just minutes from the High-Rise area. The property offers easy access to the main road and nearby bus stops, making it convenient to get around the island."
+    },
+    {
+      "id": "remax-ltr-happy-day-apartments-4",
+      "name": "Happy Day Apartments #4",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/699/da0/ec0/thumb_58551_800_500_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord , Tanki Lender 279A",
+      "askPrice": 1300,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/happy-day-apartments-4",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1300
+        }
+      ],
+      "notes": "Enjoy comfortable island living in this furnished 1-bedroom apartment, ideally located just minutes from the High-Rise area. The property offers easy access to the main road and nearby bus stops, making it convenient to get around the island."
+    },
+    {
+      "id": "remax-ltr-contemporary-1-bedroom-apartment-for-rent-oranjestad",
+      "name": "Contemporary 1- Bedroom Apartment for rent – Oranjestad",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/69d/1a5/0cb/thumb_58948_800_500_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad , San Barbola",
+      "askPrice": 1264,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/contemporary-1-bedroom-apartment-for-rent-oranjestad",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1264
+        }
+      ],
+      "notes": "Discover modern living in this beautifully designed1-bedroom, 1-bathroom apartment, centrally located in Oranjestad. Perfect for professionals or couples seeking comfort, convenience, and style."
+    },
+    {
+      "id": "remax-ltr-for-rent-cura-cabai-9-h",
+      "name": "For rent - Cura Cabai 9-H",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/694/8a5/cf9/thumb_57801_800_500_0_0_crop.webp",
+      "area": "Savaneta",
+      "location": "Savaneta , Cura Cabai 9-H",
+      "askPrice": 1236,
+      "pricePeriod": "monthly",
+      "size": "100 m²",
+      "buildingSize": "100 m²",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/for-rent-cura-cabai-9-h",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1236
+        }
+      ],
+      "notes": "Location:Situated in Cura Cabai 9-H, a peaceful and well-established residential area, with easy access to main roads, supermarkets, schools, and other everyday conveniences."
+    },
+    {
+      "id": "remax-ltr-exclusive-apartment-in-san-nicolas",
+      "name": "Exclusive Apartment in San Nicolas",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/698/df4/e65/thumb_58431_800_500_0_0_crop.webp",
+      "area": "San Nicolas",
+      "location": "San Nicolas , Mgr. M.J. Niewindtstraat 14",
+      "askPrice": 1124,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/exclusive-apartment-in-san-nicolas",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1124
+        }
+      ],
+      "notes": "Features:• 2 spacious bedrooms• 1 modern bathroom• Open-space living & kitchen area• Fully air-conditioned• Beautiful back porch – perfect for relaxing• Close to supermarket & daily amenities• Onlyminutes from Baby Beach"
+    },
+    {
+      "id": "remax-ltr-orcuyo-5m",
+      "name": "RENTED - Orcuyo 5M",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/65f/b49/95d/thumb_48972_800_500_0_0_crop.webp",
+      "area": "Hooiberg",
+      "location": "Hooiberg , Orcuyo 5M",
+      "askPrice": 983,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/orcuyo-5m",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 983
+        }
+      ],
+      "notes": "This fully furnished apartment is centrally located with easy access from and to the airport, the Rock Formation, and other side-seeing locations. A couple of minute’s drive to different restaurants and bars. Positioned for convenient access to every corner of the island."
+    },
+    {
+      "id": "remax-ltr-paradera-98-e-unit-1-and-2",
+      "name": "RENTED - Paradera 98 E Unit-2",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/61e/6d5/c6b/thumb_38726_800_500_0_0_crop.webp",
+      "area": "Paradera",
+      "location": "Paradera",
+      "askPrice": 815,
+      "pricePeriod": "monthly",
+      "size": "60 m²",
+      "buildingSize": "60 m²",
+      "lotSize": "240 m²",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/paradera-98-e-unit-1-and-2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 815
+        }
+      ],
+      "notes": "The apartment has everything you need and is good for one person or a couple. The bedrooms are on the 2nd floor, where, from the bedroom window of unit # 1, you have a gorgeous view of Hooiberg, and from the bedroom window of unit # 2, Casibari Rock Formation."
+    },
+    {
+      "id": "remax-ltr-available-paradera-115-f-lok-1",
+      "name": "RENTED - Paradera 115F Studio",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/68d/44a/ba7/thumb_57122_800_500_0_0_crop.webp",
+      "area": "Paradera",
+      "location": "Paradera",
+      "askPrice": 815,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/available-paradera-115-f-lok-1",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 815
+        }
+      ],
+      "notes": "Rent:Awg. 1,450 per monthIncluded:Waste disposal services, septic services, Wi-Fi, water, and electricity (Electricity is included up to AWG 150; after this amount, you will need to cover the difference.)Excluded:A/C servicing"
+    },
+    {
+      "id": "remax-ltr-alto-vista-26w-studio",
+      "name": "RENTED | Alto Vista 26W - Studio",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/677/ed4/94d/thumb_53787_800_500_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 731,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/alto-vista-26w-studio",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 731
+        }
+      ],
+      "notes": "This semi-furnished studio is located at Alto Vista. It is only minutes away from the local supermarket, restaurants, bank, and much more. Just a couple of minutes' driving distance from the Palm Beach area."
+    },
+    {
+      "id": "remax-ltr-available-boroncana-cactus-studio",
+      "name": "RENTED - Boroncana Cactus Studio",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/684/1f2/a18/thumb_56185_800_500_0_0_crop.webp",
+      "area": "Palm Beach",
+      "location": "Palm Beach",
+      "askPrice": 702,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/available-boroncana-cactus-studio",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 702
+        }
+      ],
+      "notes": "Cozy Cunucu Studio situated in Noord, perfect for one person! Just minutes away from the Palm Beach area, where you can find many restaurants, bars, gyms, convenience stores, and nightlife."
+    },
+    {
+      "id": "remax-ltr-SalinjaCerca-1",
+      "name": "Salinja Cerca",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/623/14d/ab4/thumb_39794_800_500_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 650,
+      "pricePeriod": "monthly",
+      "size": "50 m²",
+      "buildingSize": "50 m²",
+      "lotSize": "50 m²",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/SalinjaCerca-1",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 650
+        }
+      ],
+      "notes": "This is a well situated furnished,   and fully Air Conditioned apartment conveniently located close to the Hotel area, ideal for those working on a hotel industry. Also walking distance to supermarkets, Laundry and local bars and restaurants a d the best of all, close to the hotel area, beaches and shopping malls."
+    },
+    {
+      "id": "remax-ltr-paradera-98-e-studio",
+      "name": "RENTED - Paradera 98 E - Studio",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/623/8ab/078/thumb_39899_800_500_0_0_crop.webp",
+      "area": "Paradera",
+      "location": "Paradera , Paradera 98E",
+      "askPrice": 620,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/paradera-98-e-studio",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 620
+        }
+      ],
+      "notes": "This cute cunucu style house is located right off the road about 500 meters from the Paradera roundabout, with just a 5-minute drive to downtown or 10 minutes straight to Eagle Beach."
+    },
+    {
+      "id": "remax-ltr-the-harbor-boutiques-luxury-retail-space-for-rent",
+      "name": "The Harbor Boutiques Luxury Retail Space for Rent",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/66f/6f3/a96/thumb_52408_800_500_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad , L. G. Smith Blvd 90-92",
+      "askPrice": 8989,
+      "pricePeriod": "monthly",
+      "size": "130 m²",
+      "buildingSize": "130 m²",
+      "lotSize": "130 m²",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/the-harbor-boutiques-luxury-retail-space-for-rent",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 8989
+        }
+      ],
+      "notes": "The area attracts affluent tourists and locals, and is surrounded by luxury hotels, malls, casinos and restaurants. Upcoming developments like Casa Playa Residences will further boost traffic. This is an exceptional opportunity for any brand to secure this space and establish a flagship location in Aruba’s upscale retail district."
+    },
+    {
+      "id": "remax-ltr-caya-punta-brabo-commercial-property-for-rent",
+      "name": "Caya Punta Brabo Commercial Property For Rent",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/646/e18/dbf/thumb_45169_800_500_0_0_crop.webp",
+      "area": "Eagle Beach",
+      "location": "Eagle Beach",
+      "askPrice": 6180,
+      "pricePeriod": "monthly",
+      "size": "346 m²",
+      "buildingSize": "346 m²",
+      "lotSize": "346 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/caya-punta-brabo-commercial-property-for-rent",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 6180
+        }
+      ],
+      "notes": "Caya Punta Brabo 200 A Commercial Property For Rent!Great business opportunity in the prime location between Eagle Beach and Oranjestad.This commercial building is located near The Hospital of Aruba and other health department offices, making it the perfect space for a company in the health care industry.The building offers many rooms that are divided from the general area, making it easier to host separate office rooms, sitting areas and storage.You also have the option to divide the entire building into two separate offices with separate entrances.A spacious parking space is also available to provide clients and guests easy parking when visiting. The parking space is located in front of the building, easily accessible via the main road.You can also reach this building via the back of the building, since The parking lot of The Hospital of Aruba is directly connected. This means that there is easy walking-distance access from The Hospital to this office."
+    },
+    {
+      "id": "remax-ltr-flagship-cafe-bar-restaurant-or-concept-store-space-for-rent",
+      "name": "Cafe, Bar & Restaurant, or Concept Store Space For Rent",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/66f/ab9/c2a/thumb_52454_800_500_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad , LG Smith Blvd 15",
+      "askPrice": 4495,
+      "pricePeriod": "monthly",
+      "size": "180 m²",
+      "buildingSize": "180 m²",
+      "lotSize": "180 m²",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/flagship-cafe-bar-restaurant-or-concept-store-space-for-rent",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 4495
+        }
+      ],
+      "notes": "Thinking about opening your own business on Aruba? This unique 180+ m2 rental space, just steps away from Aruba’s cruise terminal, is available now! Located on the second floor above Little Europe Jewelers on LG Smith Blvd, this space is perfect for a trendy dining or retail venue. Previously home to the Hard Rock Café, it offers a vibrant atmosphere for downtown visitors."
+    },
+    {
+      "id": "remax-ltr-warehouse-d-barcadera-500-sqm",
+      "name": "RENTED - Warehouse D - Barcadera - 500 sqm",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/671/7fc/7a9/thumb_52778_800_500_0_0_crop.webp",
+      "area": "Pos Chikito",
+      "location": "Pos Chikito",
+      "askPrice": 4214,
+      "pricePeriod": "monthly",
+      "size": "500 m²",
+      "buildingSize": "",
+      "lotSize": "500 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/warehouse-d-barcadera-500-sqm",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 4214
+        }
+      ],
+      "notes": "Looking for the perfect space for your business? This 500 sqm warehouse in Barcadera offers an ideal solution for storage, distribution, or light manufacturing needs. It provides easy access to major transport routes, ensuring efficient logistics for your operations."
+    },
+    {
+      "id": "remax-ltr-de-la-sallestraat-20",
+      "name": "De La Sallestraat 26",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/621/633/5aa/thumb_39430_800_500_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad , De La Sallestraat 26 unit 4",
+      "askPrice": 3160,
+      "pricePeriod": "monthly",
+      "size": "225 m²",
+      "buildingSize": "225 m²",
+      "lotSize": "225 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/de-la-sallestraat-20",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 3160
+        }
+      ],
+      "notes": "The location of this property is ideal for any business ventures. Found on a busy road across from KFC, supermarkets, restaurants and a popular boutique hotel. Downtown Oranjestad is a short 2 minute drive while the high-rise hotel area is only 10 minutes away."
+    },
+    {
+      "id": "remax-ltr-warehouse-c-barcadera-375-sqm",
+      "name": "RENTED - Warehouse C Barcadera - 375 sqm",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/671/2aa/f1b/thumb_52759_800_500_0_0_crop.webp",
+      "area": "Pos Chikito",
+      "location": "Pos Chikito",
+      "askPrice": 3160,
+      "pricePeriod": "monthly",
+      "size": "375 m²",
+      "buildingSize": "375 m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/warehouse-c-barcadera-375-sqm",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 3160
+        }
+      ],
+      "notes": "Looking for the perfect space for your business? This 375 sqm warehouse in Barcadera offers an ideal solution for storage, distribution, or light manufacturing needs. It provides easy access to major transport routes, ensuring efficient logistics for your operations."
+    },
+    {
+      "id": "remax-ltr-office-space-rent-frankrijkstraat",
+      "name": "Office Space Frankrijkstraat",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/5e4/459/ecc/thumb_26171_800_500_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad , Frankrijkstraat 9",
+      "askPrice": 3000,
+      "pricePeriod": "monthly",
+      "size": "300 m²",
+      "buildingSize": "300 m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/office-space-rent-frankrijkstraat",
+      "status": "price reduced",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 3000
+        }
+      ],
+      "notes": "We are offering the entire space of Aruba Branch for rent: meeting rooms, offices, lecture rooms, kitchen, 2 bathrooms, server room, reception, and lounge area. Total of 9 spaces, fully furnished and ready to start working right away."
+    },
+    {
+      "id": "remax-ltr-office-space-caya-punta-brabo-120-sqm",
+      "name": "Office space - Caya Punta Brabo - 120 sqm",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/674/623/2cd/thumb_53496_800_500_0_0_crop.webp",
+      "area": "Eagle Beach",
+      "location": "Eagle Beach , Caya Punta Brabo",
+      "askPrice": 2705,
+      "pricePeriod": "monthly",
+      "size": "120 m²",
+      "buildingSize": "120 m²",
+      "lotSize": "120 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/office-space-caya-punta-brabo-120-sqm",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2705
+        }
+      ],
+      "notes": "Looking for the perfect space for your business? This 120 sqm office located at Caya Punta Brabo offers an ideal solution for a health care provider (4 kitchenettes, 2 restrooms, 1 reception, 2 consulting rooms, 1 vaccination post, 1 waiting room). It provides easy access to major transport routes, ensuring efficient logistics for your operations."
+    },
+    {
+      "id": "remax-ltr-athena-building-commerical-space",
+      "name": "Athena Building Office Space for rent",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/63a/1d2/e73/thumb_43697_800_500_0_0_crop.webp",
+      "area": "Eagle Beach",
+      "location": "Eagle Beach",
+      "askPrice": 1798,
+      "pricePeriod": "monthly",
+      "size": "112 m²",
+      "buildingSize": "112 m²",
+      "lotSize": "112 m²",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/athena-building-commerical-space",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1798
+        }
+      ],
+      "notes": "This contemporary office space is situated in a modern building right off Sasaki highway. With Johnson Notary, HBN Law, and RE/MAX Aruba located in the same building, it is a well-known and frequently visited place, making it ideal for emerging businesses seeking a modern, compact space to expand.The space measures 80m2 ft. and comprises 3 private offices, a spacious open work area, a kitchenette, and a meeting room.It is unfurnished, providing you with the flexibility to customize and furnish it according to your preferences. Keycard access, a communal garden area for lunch breaks, and ample parking space are among the amenities.The office space is conveniently located within walking distance of Gloria Cinema, pharmacies, restaurants, and cafes.The rental contract is based on a four-year lease. Price has room for negotiation.Contact us now for a viewing, and turn this fantastic office space into your new home!"
+    },
+    {
+      "id": "remax-ltr-versatile-commercial-space-in-emanstraat",
+      "name": "Versatile commercial space in J.G. Emanstraat 25",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/66b/e5b/673/thumb_51483_800_500_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad , J.G. Emanstraat 25",
+      "askPrice": 1690,
+      "pricePeriod": "monthly",
+      "size": "128 m²",
+      "buildingSize": "128 m²",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/versatile-commercial-space-in-emanstraat",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1690
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "remax-ltr-office-space-barcadera-66-sqm",
+      "name": "Office space - Barcadera - 66 sqm",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/671/801/ada/thumb_52782_800_500_0_0_crop.webp",
+      "area": "Pos Chikito",
+      "location": "Pos Chikito",
+      "askPrice": 927,
+      "pricePeriod": "monthly",
+      "size": "66 m²",
+      "buildingSize": "",
+      "lotSize": "66 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/office-space-barcadera-66-sqm",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 927
+        }
+      ],
+      "notes": "Don’t miss out on this opportunity to grow your business in one of Barcadera's most strategic locations. Contact us at +297 699 3799 or email us at rentals@ remaxaruba.com today for more information or to schedule a viewing!"
+    },
+    {
+      "id": "remax-ltr-barcadera-4-industrial-or-commercial-land-250-5000-m2",
+      "name": "RENTED - 4 - Industrial or Commercial Land",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/602/e91/555/thumb_33884_800_500_0_0_crop.webp",
+      "area": "Pos Chikito",
+      "location": "Pos Chikito",
+      "askPrice": 843,
+      "pricePeriod": "monthly",
+      "size": "5000 m²",
+      "buildingSize": "",
+      "lotSize": "5000 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/barcadera-4-industrial-or-commercial-land-250-5000-m2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 843
+        }
+      ],
+      "notes": "Industrial and/or commercial land for rent. Starting from a minimum of 250 m2 up to 5000 m2. AWG 6 per m2 per month."
+    },
+    {
+      "id": "remax-ltr-catharina-building",
+      "name": "Catharina Building office space for rent",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/653/bd0/98a/thumb_47409_800_500_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 702,
+      "pricePeriod": "monthly",
+      "size": "25 m²",
+      "buildingSize": "",
+      "lotSize": "25 m²",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/catharina-building",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 702
+        }
+      ],
+      "notes": "Introducing a prime commercial office rental ! Discover this exquisite 25 square meter modern luxury space thoughtfully designed with elegant glass walls that create a sense of openness and sophistication. Situated in a highly sought after location on Aruba, this office boasts ocean view and the vibrant L.G.Smith Blvd."
+    },
+    {
+      "id": "remax-ltr-commercial-building-offices-for-rent",
+      "name": "Downtown Aruba Commercial Building & Offices For Rent",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/625/f21/891/thumb_40250_800_500_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad , Caya G.F. Betico Croes 65 & 67",
+      "askPrice": 15,
+      "pricePeriod": "monthly",
+      "size": "2619 m²",
+      "buildingSize": "2619 m²",
+      "lotSize": "1408 m²",
+      "bedrooms": null,
+      "bathrooms": null,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/commercial-building-offices-for-rent",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 15
+        }
+      ],
+      "notes": "RENTED Business opportunity located in one of the most upscale locations in Aruba. This commercial building is a great place for your business to thrive. It is established in the heart of Aruba's busiest Mainstreet, Caya G.F. Betico Croes where there is high foot traffic on a daily basis whilst being just 5 minutes away from Aruba's Cruise Ship Terminal, restaurants, and supermarkets. This commercial building offers multiple units on different floors and different sizes."
+    },
+    {
+      "id": "remax-ltr-barcadera-4-commercial-space-150-m2",
+      "name": "RENTED - 4 - Commercial Space - 150 m2",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/602/e8f/a12/thumb_33881_800_500_0_0_crop.webp",
+      "area": "Pos Chikito",
+      "location": "Pos Chikito",
+      "askPrice": 14,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": null,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/barcadera-4-commercial-space-150-m2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 14
+        }
+      ],
+      "notes": "RENTED - Commercial space for rent, 150 m2. Endless possibilities with this property, for example, a gym."
+    },
+    {
+      "id": "remax-ltr-marisol-building-office-space-for-rent",
+      "name": "Marisol Building office space for rent",
+      "type": "ltr",
+      "image": "https://remaxaruba.com/storage/app/uploads/public/653/bd0/dc9/thumb_47411_800_500_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "100 m²",
+      "buildingSize": "100 m²",
+      "lotSize": "600 m²",
+      "bedrooms": null,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://remaxaruba.com/property/details/marisol-building-office-space-for-rent",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Introducing a prime commercial office rental ! Discover this exquisite 100 square meter modern luxury space. Situated in a highly sought after location on Aruba, this office boasts ocean view and the vibrant L.G.Smith Blvd."
+    },
+    {
+      "id": "remax-str-island-haven",
+      "name": "Island Haven",
+      "type": "str",
+      "image": "https://uc.orez.io/i/2ad5fe46d1954ba09fada5989d5cee5c-Medium",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 227,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/island-haven",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 227
+        }
+      ],
+      "notes": "Island Haven Escape to paradise in this newly renovated, modern villa located in the heart of Noord, just minutes from the world-famous Palm Beach and the vibrant high-rise hotel area. Whether you're seeking sun-soaked adventure or peaceful relaxation, this villa is your perfect home base on the “One Happy Island”. Step inside and feel instantly at ease. With 3 bedrooms, 2 bathrooms, and a fully fenced yard for complete privacy, this home offers both comfort and security. Outside, enjoy the brand-new private swimming pool, lounge under the spacious palapa, and soak up the tropical vibes all day long. Step into a bright, open living room that invites you to relax with its comfortable sitting area and large Smart TV—ideal for cozy evenings or lazy afternoons after the beach. The modern open kitchen is fully equipped with all the appliances and essentials you need to cook and dine at home, whether it’s a quick breakfast or a family dinner. The master bedroom is a peaceful retreat, featuring a king-size bed, ample closet space, a Smart TV, and a private ensuite bathroom complete with hot water. The second and third bedrooms are equally inviting, each offering a queen-size bed, their own Smart TV, and plenty of storage space. A second bathroom is conveniently located in the hallway and also includes hot water and modern fixtures. Outside, the villa truly shines! The spacious backyard features a brand-new swimming pool surrounded by sun loungers for soaking up the Aruban sun. There’s a shaded lounge area for relaxing in comfort, and a large palapa that’s perfect for outdoor dining. Also, there is a BBQ grill for delicious cookouts, and a laundry room equipped with a washer and dryer for your convenience. The entire property is fully fenced, offering privacy, safety, and peace of mind throughout your stay."
+    },
+    {
+      "id": "remax-str-kukwisa-retreat",
+      "name": "Kukwisa Retreat",
+      "type": "str",
+      "image": "https://uc.orez.io/i/133d8e1138714f38912df155a6310c8e-Medium",
+      "area": "",
+      "location": "",
+      "askPrice": 75,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/kukwisa-retreat",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 75
+        }
+      ],
+      "notes": "Kukwisa Retreat With its unbeatable location, just a short stroll from crystal-clear waters and white sandy beaches, this apartment is your gateway to the best of island living. Whether you’re here for adventure or relaxation, this hidden gem is your home away from home! This cozy and inviting two-bedroom, one-bathroom apartment offers all the comforts of home, just a few minutes’ walk from the breathtaking Mangel Halto Beach. Step inside to find a spacious living room with an open kitchen, fully equipped with modern appliances for all your culinary needs. The master bedroom features a queen bed, while the second bedroom offers both a queen bed and an additional single bed. Unwind in your private outdoor space, complete with a BBQ grill and a relaxing sitting area. Whether you are savoring a meal al fresco or enjoying the peaceful surroundings, this secluded area is perfect for making lasting memories. (Please note that there is no hot water available)"
+    },
+    {
+      "id": "remax-str-villa-martha",
+      "name": "Villa Martha - 3BR Villa",
+      "type": "str",
+      "image": "https://uc.orez.io/i/88cd44708ca0418b8a441bd7bc3b43f6-Medium",
+      "area": "",
+      "location": "",
+      "askPrice": 158,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/villa-martha",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 158
+        }
+      ],
+      "notes": "Villa Martha Escape to this charming 3-bedroom, 2-bathroom Aruban-style vacation home that perfectly blends comfort and traditional island architecture. With an open floor plan and a soaring cathedral ceiling, the interior feels bright and spacious. The cozy living room features an L-shaped sofa and a flat-screen TV, seamlessly extending to an outdoor sitting area where you can enjoy morning coffee. The fully equipped kitchen is designed for convenience, offering ample space and modern amenities. Adjacent to the kitchen, a dining area features a bar-style table with seating for four. The master bedroom offers a plush king-sized bed and an en-suite bathroom with a sink, shower, and toilet. The second and third bedrooms each have comfortable queen beds and share access to a second bathroom with a shower, sink, and toilet. The outdoor area is a highlight, boasting a spacious covered seating area perfect for dining or lounging in the shade. A BBQ grill is available for enjoying meals, while the sparkling new swimming pool, serves as the centerpiece of the backyard—a private oasis for cooling off after a day of exploring Aruba. Whether you're here for a family getaway or a relaxing retreat with friends, this house offers the perfect island escape."
+    },
+    {
+      "id": "remax-str-azure-for-jen",
+      "name": "Azure for Jen - Golf & Waterview Condo",
+      "type": "str",
+      "image": "https://uc.orez.io/i/ee238937257c4fe4b31cb677379ff4d9-Medium",
+      "area": "",
+      "location": "",
+      "askPrice": 211,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/azure-for-jen",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 211
+        }
+      ],
+      "notes": "Azure for Jen - Golf & Waterview Condo Welcome to your perfect island escape at our spacious Golf & Waterview Condo, located on the second floor of the beautiful Divi Village Golf & Beach Resort. Just across the street from the soft white sands of Druif Beach. Now under new ownership, the condo has been refreshed with your comfort in mind. It features a comfortable king-sized bed, along with two pull-out sofas in the living area, ideal to sleep 4. The open-plan layout includes a fully equipped kitchen, as well as the convenience of an in-unit washer and dryer. The condo is fully air-conditioned, offers complimentary Wi-Fi, and boasts a beautiful view over the lake, the resort’s lush gardens, and the pristine 9-hole course. The shower is recently renovated. Resort amenities for our guests: • 5 freshwater resort pools (including swim-up bar) • Poolside drink service at primary pools • Resort shuttle between properties and many resort areas • 11 (waterfront) restaurants & bars • Complimentary beach essentials • Free loungers & palapas (first come, first serve) • Rejuvenating spa • Nine-hole Golf course • E-mountain bicycles, children’s bicycles, and group tours • State-of-the-art oceanfront Fitness & Activity center • Tennis courts • Pickleball courts • Resort Casino • Sea Turtle Club for Resort guests 4-12 years • Additional cleaning service (upon request) • Start-up package • Convenient location • Close to Druif Beach, Eagle Beach, and Manchebo Beach As a guest at Divi Village, you have access to the facilities at ALL Divi Resorts across the island. Please note that Tamarijn Aruba is not included in the standard access. You can access Tamarijn Aruba by purchasing an access card at the front desk. Housekeeping services are also available upon request, offering additional amenities such as extra towels, sheets, blankets, toilet paper, and trash bags to ensure a comfortable stay. Guests can easily arrange this through the front desk. If you’re interested in renting a car during your stay, the Divi front desk can provide you with more information and assistance. Want to take your vacation to the next level? You can upgrade to an all-inclusive package at the front desk for an additional cost, giving you unlimited dining and drinks throughout your stay. Whether you're a couple looking for a romantic retreat or a small family in search of sunshine and adventure, our condo offers a warm, welcoming base to experience the very best of Aruba."
+    },
+    {
+      "id": "remax-str-Arubaislanderresidence2",
+      "name": "Aruba Islander Residence 2",
+      "type": "str",
+      "image": "https://uc.orez.io/i/9441193631d347e8ba886e95a335a82e-Medium",
+      "area": "",
+      "location": "",
+      "askPrice": 106,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/Arubaislanderresidence2",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 106
+        }
+      ],
+      "notes": "Aruba Islander Residence 2 This unit is a bright and stylish studio located on the ground floor within the peaceful Aruba Islander Residences in Oranjestad. Thoughtfully designed with a plush king-size bed, a cozy seating area, a well-equipped kitchen, and a newly installed water heater, this studio offers a comfortable retreat for couples or solo travelers looking to unwind. Guests can also enjoy a brick-built barbecue located next to the pool area, perfect for relaxed outdoor dining and soaking in the island atmosphere. Large windows fill the space with natural light, creating a fresh and relaxing atmosphere from the moment you arrive. Guests also have direct access to the shared pool, perfect for cooling off after a day exploring the island. Beach chairs and a cooler are provided to make your beach days even easier. Set in a quiet residential area, the location offers the ideal balance of tranquility and convenience. Within minutes, you can reach Aruba's most beloved beaches, including Eagle Beach and Palm Beach, famous for their soft white sands and turquoise waters. Nearby supermarkets such as Ling & Sons and Superfood Plaza make stocking up simple, while local bakeries, cafés, and casual dining spots give you a taste of true island living. Oranjestad’s colorful downtown—filled with Dutch-Caribbean charm, shops, and nightlife—is just a short drive away, and nature enthusiasts can easily explore Hooiberg or Arikok National Park for breathtaking views and outdoor adventures. Whether you're here to relax, explore, or enjoy a bit of both, this unit offers a comfortable, modern base."
+    },
+    {
+      "id": "remax-str-coco-cove-apartment",
+      "name": "Coco Cove",
+      "type": "str",
+      "image": "https://uc.orez.io/i/a76ac64117994e6f857aa3abe36289e0-Medium",
+      "area": "",
+      "location": "",
+      "askPrice": 75,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/coco-cove-apartment",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 75
+        }
+      ],
+      "notes": "Coco Cove Relax and recharge in our cozy studio, perfect for solo travelers or couples seeking comfort and convenience. This inviting space features a king-size bed for a restful night's sleep and a Smart TV so you can stream your favorite shows during a night in. Wake up to your day in the breakfast area, ideal for enjoying a morning coffee before heading out. The compact kitchenette comes equipped with essentials for light cooking, making it easy to prepare snacks or simple meals. The layout includes a convenient connecting space and ample closet storage, helping you stay organized throughout your stay. The modern bathroom offers everything you need, including a shower, with clean lines and functional design. Whether you're here for work, leisure, or a little of both, this studio has everything you need, all in one place."
+    },
+    {
+      "id": "remax-str-hidden-gem",
+      "name": "Hidden Gem",
+      "type": "str",
+      "image": "https://uc.orez.io/i/9cd3a02e66934454bcd330dfe1e6981b-Medium",
+      "area": "",
+      "location": "",
+      "askPrice": 100,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/hidden-gem",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 100
+        }
+      ],
+      "notes": "Hidden Gem Welcome to your perfect island getaway in the peaceful neighborhood of Noord, Aruba. This colorful and spacious 2-bedroom, 1.5-bathroom apartment is located on the second floor and offers everything you need for a comfortable and relaxing stay. Just a short drive from the high-rise hotel area, popular beaches, restaurants, and nightlife, it’s the ideal home base for exploring the island. Inside, you’ll find a bright living room with a cozy sleeping sofa, perfect for relaxing. There’s a smart TV and a dining area with seating for four, great for shared meals or movie nights. The fully equipped kitchen includes a breakfast bar with three bar stools, making it easy to enjoy casual meals or chat over drinks while cooking. Just off the living area, a private balcony with a small table offers a great spot to enjoy your morning coffee or unwind in the evening breeze. The apartment has two comfortable bedrooms, each with a king-size bed and plenty of closet space. The full bathroom includes two sinks, a shower, a relaxing tub, a bidet, and a toilet. There’s also a half bathroom conveniently located near the living area. Guests will also have access to a private parking space, and the quiet residential location makes it easy to relax while staying close to all the action. Whether you’re traveling as a couple, a family, or with friends, this Noord apartment offers the perfect blend of comfort, style, and convenience for your Aruba vacation."
+    },
+    {
+      "id": "remax-str-lincoln's-lagoon",
+      "name": "Lincoln's Lagoon - 3BR Villa",
+      "type": "str",
+      "image": "https://uc.orez.io/i/7ccef8e3f59641a68c2a99cf6569e5d9-Medium",
+      "area": "",
+      "location": "",
+      "askPrice": 158,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/lincoln's-lagoon",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 158
+        }
+      ],
+      "notes": "Lincoln's Lagoon Step into Lincoln’s Lagoon, a charming 3-bedroom, 2-bathroom villa designed for easy living and memorable moments. From the moment you arrive, you’ll notice a beautifully kept garden, secure gated parking, offering both privacy and convenience. The heart of the home is the open-plan kitchen, dining, and living area, thoughtfully arranged so each space flows naturally into the next. The living room opens to a sunroom-style space, perfect for morning coffee or a quiet read. The fully equipped kitchen makes it simple to prepare meals, while the indoor dining area gives you options for enjoying them. The master bedroom features its own en-suite bathroom, while the second bedroom offers a cozy retreat. The third bedroom includes fun and functional bunk beds. Ideal for families with younger children. A separate laundry room adds to the villa’s convenience. Outside, the private pool invites you to cool off, surrounded by the spacious garden that provides plenty of room to relax. In the evenings, gather at the outdoor dining area for leisurely meals under the night sky. Set in a peaceful residential neighborhood, Lincoln’s Lagoon is just minutes from local restaurants, supermarkets, and a gas station. Giving you the best of both tranquility and easy access to amenities. Whether you’re here for quality family time or a getaway with friends, this villa makes every stay feel effortless and inviting."
+    },
+    {
+      "id": "remax-str-sunny-side-villa",
+      "name": "Sunny Side Villa - 3BR",
+      "type": "str",
+      "image": "https://uc.orez.io/i/676cda8b2d0f4e1caf898bf44d7a0378-Medium",
+      "area": "",
+      "location": "",
+      "askPrice": 225,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/sunny-side-villa",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 225
+        }
+      ],
+      "notes": "Sunny Side Villa This beautifully appointed home features three comfortable bedrooms, three full bathrooms, and a generous living space that brings everyone together. Whether you're lounging by the sparkling private pool, grilling under the sun, or enjoying a quiet coffee on the balcony, this villa is your launchpad for unforgettable memories. Inside, you’ll find a bright and open living room with cozy seating and a large smart TV for movie nights. The fully equipped kitchen includes appliances and bar stools for casual bites, and the adjacent dining area is perfect for meals. The master bedroom features a plush king bed, direct access to a private balcony, and an ensuite bathroom. The second bedroom offers a cozy queen bed, while the third bedroom has two twin beds — perfect for kids or friends. The living room sofa easily converts into a bed. Three bathrooms, one with easy access to the backyard, make freshening up after a swim or day out super convenient. Step outside and discover your private paradise: a sun-drenched pool, a BBQ area for outdoor cooking, a covered dining space, and even your own bar to toast the good times. Nestled in a quiet neighborhood, the villa offers peace and privacy, while being close to local attractions, shops, and beaches. Whether you're planning a family getaway, a couple's retreat, or a friends’ escape, this villa is the perfect place to relax, recharge, and make lasting memories."
+    },
+    {
+      "id": "remax-str-tropical-oasis",
+      "name": "Tropical Oasis - Aracari 21",
+      "type": "str",
+      "image": "https://uc.orez.io/i/6df2e3dcc30c41b6be71b9e44ddcae05-Medium",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 142,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/tropical-oasis",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 142
+        }
+      ],
+      "notes": "Tropical Oasis - Aracari 21 Modern 2-BR Condo located in Aracari Residences in Noord, Aruba – Sleeps max 5 pax. Welcome to our modern and inviting condo, located on the third floor of our charming new property. As you step inside, you're greeted by a living room, adorned with stylish furnishings including a sofa bed, and featuring a Smart TV for your entertainment needs. Adjacent to the living room, a cozy balcony awaits, offering a serene space to unwind and soak in the surrounding ambiance. Our fully equipped kitchen offers induction cooking facilities, perfect for whipping up culinary delights. Complete with a convenient bar area, it's ideal for enjoying meals and socializing with friends and family. The master bedroom with a luxurious king-sized bed, Smart TV, and spacious closet space, ensures a restful and comfortable stay. You'll also find an en-suite bathroom, equipped with a refreshing shower, toilet, and sink, providing convenience and privacy. For additional guests or family members, the second bedroom features a queen-sized bed, Smart TV, and offers easy access to a separate bathroom in the hallway, complete with all the necessary amenities. Outside, guests can indulge in relaxation at the communal pool and sitting area, perfect for soaking up the sun or enjoying a refreshing dip. And for those seeking panoramic views and outdoor entertainment, our common rooftop area awaits, boasting two BBQs and seating for dining and social gatherings. Plus, you have access to our on-site gym facilities. Whether you're seeking a tranquil retreat or a vibrant urban escape, our condo offers the perfect blend of comfort, convenience, and luxury for your next getaway. Welcome to your home away from home."
+    },
+    {
+      "id": "remax-str-casa-al-mare",
+      "name": "Casa al Mare - 3BR Villa",
+      "type": "str",
+      "image": "https://uc.orez.io/i/2916b98d23ae42658d3fbd3b77c43e12-Medium",
+      "area": "",
+      "location": "",
+      "askPrice": 179,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/casa-al-mare",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 179
+        }
+      ],
+      "notes": "Casa al Mare Discover the ultimate retreat at our stunning three-bedroom, two-bathroom villa located in the conveniently located Monserat. Designed for relaxation and comfort, this exquisite villa is perfect for families, couples, and friends looking to create unforgettable memories. As you step into the villa, you’ll be greeted by a spacious living room and an open kitchen. The living room, adorned with two couches and a TV, invites you to unwind and enjoy your favorite shows and movies. The open kitchen, fully equipped with modern necessities, features a stylish five-seat bar – perfect for casual dining and entertainment. The master bedroom boasts a sumptuous king-sized bed, TV, ample closet space, and an en-suite bathroom complete with a washing sink, toilet, and a luxurious rainfall shower with hot water. The second (with TV) and third bedroom each offer a cozy queen-sized bed, ensuring everyone has a comfortable and private space. The second bathroom, conveniently located in the hallway, provides easy access for all guests. The highlight of this villa is its magnificent outdoor area. Enclosed by harmonica doors, this space includes a lounge area with a ten-seat dining table and a cozy sitting area. Whether you’re hosting a family dinner or enjoying a quiet evening under the stars, this area is perfect for any occasion. Adjacent to the dining area, you’ll find a charming bar with bar chairs, ideal for mixing cocktails and socializing. The centerpiece of our villa is the stunning outdoor pool, featuring a beautiful fountain that adds a touch of elegance and tranquility. Lounge by the pool, take a refreshing dip or fire up the BBQ for a delightful outdoor meal. Escape the everyday and immerse yourself in the serenity of our Monserat villa. Book your stay today and experience a vacation like no other. Whether you’re seeking relaxation or quality time with loved ones, our villa offers the perfect setting for your dream getaway. Don’t miss out on this exceptional vacation rental. Reserve your dates now and start planning your unforgettable Monserat escape. We look forward to welcoming you!"
+    },
+    {
+      "id": "remax-str-mesa-vista-29",
+      "name": "Mesa Vista",
+      "type": "str",
+      "image": "https://uc.orez.io/i/79015d4470e3417dbf637ce9b3758a39-Medium",
+      "area": "",
+      "location": "",
+      "askPrice": 447,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/mesa-vista-29",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 447
+        }
+      ],
+      "notes": "Mesa Vista 29 Welcome to your dream getaway in the exclusive Tierra del Sol Resort in Aruba. This stunning four-bedroom, three-and-a-half-bathroom villa offers the perfect combination of luxury, comfort, and breathtaking views over the beautifully landscaped 18-hole golf course. From the moment you arrive, you’ll be drawn to the villa’s serene outdoor living spaces. The spacious private swimming pool invites you to cool off under the Caribbean sun. At the same time, the stylish bar area with BBQ and multiple seating areas creates the perfect setting for relaxing afternoons and memorable evenings. Whether you're enjoying a quiet morning coffee or a sunset dinner, the outdoor space is designed for pure enjoyment. Inside, the villa is bright, open, and thoughtfully designed for both relaxation and entertaining. The main living room offers a comfortable seating area with a Smart TV and large patio doors that open directly to the outdoor terrace, creating a seamless indoor-outdoor experience. A second lounge area provides even more space to unwind, also with easy access to the pool area. The dining space flows effortlessly into a fully equipped, spacious kitchen complete with all necessary appliances and a convenient bar, making it ideal for gathering and socializing. On the ground floor, you will find two beautifully appointed bedrooms. The first bedroom features a king-size bed, a TV, and a private en-suite bathroom with a walk-in shower, double sinks, and a toilet. The second bedroom also offers a king-size bed and TV, along with its own en-suite bathroom equipped with a bathtub, sink, and toilet. Down the hall, there is a laundry room with a washer and dryer, as well as a convenient half bathroom. Upstairs, the spacious master bedroom serves as a private retreat, complete with a king-size bed, Smart TV, ample closet space, and access to a balcony overlooking the golf course. The fourth bedroom is ideal for families or additional guests, featuring a queen-size bed along with a single bed. Whether you spend your days lounging by the pool, enjoying the peaceful golf course scenery, or exploring everything Aruba has to offer, this villa provides the perfect setting for an unforgettable stay. Experience the ultimate in island living, where comfort, style, and relaxation come together effortlessly. About Tierra del Sol Resort & Golf Nestled along Aruba’s stunning northwest coastline, Tierra del Sol is the island’s premier gated resort community where luxury, privacy, and natural beauty come together. Set across nearly 600 acres, the resort offers breathtaking panoramic views of the Caribbean Sea, rugged coastline, and Aruba’s unique desert landscape. At the heart of the community lies a spectacular 18-hole championship golf course, consistently ranked among the Caribbean’s most scenic courses. Guests can enjoy access (via day pass) to a range of upscale amenities, including a full-service spa, modern fitness center, tennis courts, and a beautiful resort pool. The clubhouse restaurant and bar offer a relaxed yet refined dining experience with sweeping views. Just minutes away, you’ll find some of Aruba’s most pristine beaches. The lively Palm Beach area, with its restaurants, beach clubs, casinos, and nightlife, is only a short drive away, giving you the perfect balance between tranquility and entertainment. Tierra del Sol is more than a resort; it’s a complete Aruba experience."
+    },
+    {
+      "id": "remax-str-the-seahorse-residence",
+      "name": "The Seahorse Residence",
+      "type": "str",
+      "image": "https://uc.orez.io/i/911cb82130824c25a5e70baf8afae152-Medium",
+      "area": "",
+      "location": "",
+      "askPrice": 158,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/the-seahorse-residence",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 158
+        }
+      ],
+      "notes": "The Seahorse Residence The Seahorse Residence - 3BR Villa Welcome to The Seahorse Residence, a beautifully designed retreat that captures the peaceful charm of Aruba’s island life. Inspired by the gentle spirit of the seahorse, this home offers the perfect balance of relaxation, comfort, and playful touches, making it ideal for families and groups alike. Nestled in a quiet neighborhood surrounded by nature, the villa is conveniently located just minutes from the airport, supermarkets, and local amenities. Its central location means you’re only a short drive away from both the lively Palm Beach area and the serene shores of Baby Beach, allowing you to explore the best of the island with ease. ☀️ A separate apartment is available for larger groups. It features its own bathroom, kitchenette, and a cozy living area with a futon. The main house sleeps 6 guests, while the apartment can accommodate 2 additional guests, bringing the total capacity to 8. ✨ Please note that an additional fee applies for the apartment. ✨🌴 The main house features three thoughtfully appointed bedrooms. The master suite offers a calm and spacious escape with its private ensuite bathroom and a generous walk-in closet. The front bedroom is bright and welcoming, featuring a large window that fills the room with natural sunlight and offers a beautiful outdoor view. The third bedroom is a favorite among children, with a playful slide and fun play area designed to make their island stay unforgettable. The heart of the home lies in the open-concept living space, where the modern kitchen, dining, and living areas flow seamlessly together. The kitchen is fully equipped with modern appliances, a stylish island, and everything you need to prepare home-cooked meals or entertain guests. From the dining area, large sliding glass doors open completely to the back garden, inviting the fresh island breeze and a lovely view of the pool into your space. This easy indoor-outdoor flow creates the perfect setting for both relaxation and social gatherings. For larger groups, a separate apartment on the property provides extra space and privacy. This cozy unit includes its own bathroom, a small living room with a futon, and a kitchenette with a mini-fridge. The apartment can be booked for an additional fee, ensuring flexibility based on your group’s needs. Outside, you’ll find a private pool area surrounded by lush greenery — a peaceful oasis for sunbathing, swimming, or simply unwinding after a day of exploring the island. The spacious patio area is perfect for enjoying a BBQ under the stars or relaxing with a cool drink in hand as you take in the warm Aruban breeze. The Seahorse Residence combines the comforts of home with the charm of island living. Whether you’re traveling with family, friends, or as a couple seeking a relaxing getaway, this property offers the ideal setting to create lasting memories. Its thoughtful design, family-friendly features, and peaceful location make it a true gem for anyone looking to experience the best of Aruba in comfort and style. Book your stay at The Seahorse Residence and discover the tranquility, convenience, and unique charm that make this home a one-of-a-kind retreat on the island."
+    },
+    {
+      "id": "remax-str-beach-in-my-backyard",
+      "name": "Beach in my Backyard - Ocean Front Villa",
+      "type": "str",
+      "image": "https://uc.orez.io/i/f473a1ff29b2446c98f98c9798b39538-Medium",
+      "area": "",
+      "location": "",
+      "askPrice": 343,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/beach-in-my-backyard",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 343
+        }
+      ],
+      "notes": "Beach in my Backyard Discover Paradise at Beach in My Backyard - Your Ultimate Seaside Retreat Welcome to \"Beach in My Backyard,\" a magnificent beachfront villa that epitomizes the dream of living by the sea. This stunning property promises an escape where every moment feels like a scene from a postcard, set against the backdrop of Aruba's breathtaking coastline. Luxurious Living Space From the moment you step through the front door, the villa opens up into a spacious living room, elegantly furnished with two comfortable couches and a flat-screen TV, creating the perfect sanctuary to unwind after a day of exploration and sun. A convenient guest toilet is available for both residents and visitors, ensuring comfort and convenience at every turn. Culinary Haven with Ocean Views At the heart of this tropical oasis is the expansive dining area, complete with a large table and eight chairs, inviting guests to gather for memorable meals. The open-concept, fully equipped kitchen is a chef's delight, offering not just the tools to create delicious cuisine but also uninterrupted views of the azure ocean beyond, making every cooking experience a pleasure. Serene Bedrooms The master bedroom is a tranquil retreat, featuring a king-sized bed, patio doors that open directly to the backyard, a walk-in closet, and an ensuite bathroom equipped with modern amenities. Three additional bedrooms—one with a queen-sized bed and the other two with king-sized beds—ensure that every guest finds their perfect spot to rest and rejuvenate. A well-appointed hallway bathroom, complete with essential facilities, serves these rooms, guaranteeing comfort and privacy for all. Indoor-Outdoor Bliss True to the spirit of island living, the kitchen leads to a backyard oasis where a cozy sitting area and BBQ await, setting the stage for unforgettable al fresco dining under the stars. The lush garden extends to a deck with mesmerizing ocean views, offering a peaceful haven for relaxation and contemplation. Convenience and Proximity to Nature With a carport for two vehicles, the villa emphasizes convenience, ensuring ease of exploration for guests. Moreover, the proximity to the famous Mangel Halto Beach, just a 3-minute stroll away, invites endless opportunities for seaside adventures, snorkeling, and soaking up the sun on pristine sands. Your Seaside Escape Awaits Booking \"Beach in My Backyard\" opens the door to a world of luxury, tranquility, and natural beauty. Here, every day is an invitation to indulge in seaside bliss and embrace the laid-back elegance of Aruba. Your paradise awaits at this beachfront villa, where every detail is curated for your ultimate comfort and enjoyment. Note : At this time, hot water is only available in the master bathroom."
+    },
+    {
+      "id": "remax-str-mango-gardens",
+      "name": "Mango Gardens - Condo in Oranjestad",
+      "type": "str",
+      "image": "https://uc.orez.io/i/efbb8387c5b840e9932e4da64371a854-Medium",
+      "area": "",
+      "location": "",
+      "askPrice": 79,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/mango-gardens",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 79
+        }
+      ],
+      "notes": "Mango Gardens Welcome to Mango Gardens 🥭, a cozy and inviting studio tucked away in a peaceful condo complex just minutes from Oranjestad. Named after the beautiful mango tree beside the porch, this space offers a relaxed island feel and a true sense of being on vacation the moment you arrive. Guests can enjoy a shared, beautifully maintained pool, perfect for starting your morning with a refreshing swim or unwinding after a day of exploring Aruba. The unit is ideal for solo travelers or couples looking for comfort and convenience. Inside, you’ll find a comfortable king-size bed, a small sofa for relaxing, and a spacious closet for all your essentials. The fully equipped kitchen makes it easy to prepare meals, and the intimate dining area for two is perfect for enjoying breakfast or a quiet dinner in. The location is perfect for guests who want to be close to everything, while still enjoying a peaceful place to unwind. You’re just minutes from Oranjestad, where you’ll find local restaurants, shopping malls, and lively streets full of character. The popular high-rise hotel area and beaches are only about a 10-minute drive away. Whether you’re visiting Aruba to relax, explore, or a bit of both, Mango Gardens offers a comfortable and charming home base for your island getaway."
+    },
+    {
+      "id": "remax-str-paradera-breeze-",
+      "name": "Paradera Breeze",
+      "type": "str",
+      "image": "https://uc.orez.io/i/7ba5025e876a46c694cbc7a98bfb90d5-Medium",
+      "area": "",
+      "location": "",
+      "askPrice": 158,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/paradera-breeze-",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 158
+        }
+      ],
+      "notes": "Paradera Breeze Welcome to Paradera Breeze, your private tropical escape designed for laid-back island living. This charming 2-bedroom home is located in the quiet neighborhood of Paradera, just a 15-minute drive from Aruba’s high-rise area, beaches, restaurants, and nightlife. Inside, the home feels light, airy, and inviting, with an open living space that flows effortlessly into a fully equipped kitchen — perfect for slow mornings and easy evenings. Both bedrooms offer comfortable sleeping arrangements, ideal for a small family or couples traveling together. Step outside and the real vacation begins. The spacious garden is your personal oasis, featuring a beautiful private pool, lush tropical surroundings, and an outdoor dining area made for long meals, laughter, and warm island nights. Whether you’re enjoying a morning swim, an afternoon under the sun, or dinner beneath the stars, Paradera Breeze delivers true tropical-vibe relaxation. Peaceful and perfectly located, Paradera Breeze is the kind of place where days slow down, and memories are made."
+    },
+    {
+      "id": "remax-str-butterfly-gardens",
+      "name": "Butterfly Gardens - Condo",
+      "type": "str",
+      "image": "https://uc.orez.io/i/66b5e85863bb44a39576aacb86d391a9-Medium",
+      "area": "",
+      "location": "",
+      "askPrice": 75,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/butterfly-gardens",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 75
+        }
+      ],
+      "notes": "Butterfly Gardens Discover Butterfly Gardens, a stylish studio located on the second floor of the Aruba Islander Residences, perfect for travelers seeking both comfort and convenience. This thoughtfully designed unit features a modern interior, an open layout, and a fully equipped kitchen with all the appliances you need to prepare meals during your stay. Natural light fills the space through large windows, and the private balcony is ideal for enjoying your morning coffee, an afternoon drink, or simply taking in the calm surroundings. Step outside and find a beautifully maintained garden where loungers invite you to relax, soak up the sun, or enjoy a quiet moment in the shade. The shared pool adds another layer of enjoyment, perfect for cooling off after a day exploring Aruba’s beaches or city sights. Located in a peaceful yet accessible area of Oranjestad, Butterfly Gardens is just minutes from supermarkets, restaurants, and Aruba’s most famous beaches. The vibrant downtown area is also within easy reach, offering shops, cafés, and cultural experiences. Whether you’re here to unwind, explore, or both, this condo provides a comfortable base that combines relaxation, convenience, and the opportunity to experience the best of the island. (Please note: the unit currently does not have a water heater.)"
+    },
+    {
+      "id": "remax-str-casa-afour",
+      "name": "Casa Afour",
+      "type": "str",
+      "image": "https://uc.orez.io/i/f81072ea7b324df6a6eab623653dc75d-Medium",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 897,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 5,
+      "bathrooms": 5,
+      "agency": "RE/MAX Aruba",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://www.arubaivr.com/rentals/casa-afour",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 897
+        }
+      ],
+      "notes": "Casa Afour Welcome to Casa Afour: An Opulent Escape in the Heart of Oranjestad Immerse yourself in luxury at Casa Afour, an exquisite villa offering an unparalleled vacation experience in Aruba. This stunning property, nestled in the vibrant heart of Oranjestad, combines modern elegance with the pinnacle of comfort, promising a lavish retreat for those seeking an opulent getaway. Elegant Interiors and Luxurious Comfort Upon entering the villa, the expansive living room unfolds in a display of chic décor and sophisticated charm. The space is anchored by a large dining table for eight, inviting shared meals and unforgettable gatherings. Relax on the plush L-shaped sofa, perfect for movie nights on the smart TV, with sliding doors that reveal serene sitting areas and direct access to the beautiful outdoors. The gourmet kitchen is a culinary dream, equipped with high-end appliances, including a built-in oven, microwave, dishwasher, and a large fridge. It’s a haven for those who love to cook and entertain. Sumptuous Sleeping Quarters The master bedroom is a sanctuary of luxury, featuring a king-sized bed, a cozy sitting area, and a large TV. The en-suite bathroom offers a spa-like experience with a soothing bath, a spacious dual-head shower, double sinks, and a separate toilet, complemented by a colossal walk-in closet. Two additional bedrooms provide queen-sized beds, individual TVs, ample closet space, and workspaces, with one offering direct outdoor access. A well-appointed hallway bathroom serves these rooms, ensuring convenience for all guests. Private Outdoor Paradise The villa’s outdoor area is a true paradise, featuring a large, covered patio with a dining table for 10 and an L-shaped bench overlooking the pool. The highlight is the expansive pool area, complete with a hot tub, outdoor shower, toilet, and an inviting bar area with stools, a BBQ, wine cooler, and TV for memorable evenings. Secluded Studio and Additional Bedroom For guests seeking extra privacy, an upstairs studio with a king-sized bed, a pull-out bed, and an en-suite bathroom offers a secluded retreat. Additionally, a cozy downstairs bedroom adjacent to the pool provides a full-sized bed and en-suite facilities. Unbeatable Location Casa Afour is ideally situated just a short stroll from Oranjestad’s beach, restaurants, bars, shops, a casino, and a cinema, placing the best of Aruba’s entertainment and leisure activities at your doorstep. Experience the Ultimate in Luxury and Convenience Casa Afour invites you to experience the perfect blend of luxury, comfort, and convenience for an unforgettable escape in Aruba. Book your stay at this magnificent villa and step into a world where relaxation meets excitement, and every moment is a treasure."
     }
   ]
 }
