@@ -143,8 +143,8 @@ def parse_two_sizes(text):
             return ""
 
     lot_size = (
-        _m2(r"lot\s*(?:size|area)\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")      or
-        _m2(r"land\s*(?:size|area)\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")     or
+        _m2(r"lot\s*(?:size|area)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")     or
+        _m2(r"land\s*(?:size|area)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")    or
         _m2(r"parcel\s*(?:size|area)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")  or
         _m2(r"plot\s*(?:size|area)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")    or
         _m2(r"([0-9,.]+)\s*m[²2]\s+(?:of\s+)?(?:lot|land|parcel|plot)\b") or
@@ -156,6 +156,7 @@ def parse_two_sizes(text):
         _m2(r"building\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")            or
         _m2(r"floor\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")               or
         _m2(r"interior\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")            or
+        _m2(r"l\.?\s*space\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")                         or
         _m2(r"living\s*(?:area|space|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")        or
         _m2(r"house\s*(?:area|size)?\s*[:\-]?\s*([0-9,.]+)\s*m[²2]")               or
         _m2(r"([0-9,.]+)\s*m[²2]\s+(?:interior|floor|living|buil[dt][\s\-]?up)")   or
