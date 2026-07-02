@@ -20731,9 +20731,9 @@
     }
   ],
   "agentMeta": {
-    "lastSync": "2026-07-02T05:41:38Z",
+    "lastSync": "2026-07-02T06:26:48Z",
     "agentActive": true,
-    "totalSyncCount": 96
+    "totalSyncCount": 99
   },
   "trackerItems": [],
   "monthlyData": [
@@ -30100,6 +30100,1280 @@
         }
       ],
       "notes": "Casa Afour Welcome to Casa Afour: An Opulent Escape in the Heart of Oranjestad Immerse yourself in luxury at Casa Afour, an exquisite villa offering an unparalleled vacation experience in Aruba. This stunning property, nestled in the vibrant heart of Oranjestad, combines modern elegance with the pinnacle of comfort, promising a lavish retreat for those seeking an opulent getaway. Elegant Interiors and Luxurious Comfort Upon entering the villa, the expansive living room unfolds in a display of chic décor and sophisticated charm. The space is anchored by a large dining table for eight, inviting shared meals and unforgettable gatherings. Relax on the plush L-shaped sofa, perfect for movie nights on the smart TV, with sliding doors that reveal serene sitting areas and direct access to the beautiful outdoors. The gourmet kitchen is a culinary dream, equipped with high-end appliances, including a built-in oven, microwave, dishwasher, and a large fridge. It’s a haven for those who love to cook and entertain. Sumptuous Sleeping Quarters The master bedroom is a sanctuary of luxury, featuring a king-sized bed, a cozy sitting area, and a large TV. The en-suite bathroom offers a spa-like experience with a soothing bath, a spacious dual-head shower, double sinks, and a separate toilet, complemented by a colossal walk-in closet. Two additional bedrooms provide queen-sized beds, individual TVs, ample closet space, and workspaces, with one offering direct outdoor access. A well-appointed hallway bathroom serves these rooms, ensuring convenience for all guests. Private Outdoor Paradise The villa’s outdoor area is a true paradise, featuring a large, covered patio with a dining table for 10 and an L-shaped bench overlooking the pool. The highlight is the expansive pool area, complete with a hot tub, outdoor shower, toilet, and an inviting bar area with stools, a BBQ, wine cooler, and TV for memorable evenings. Secluded Studio and Additional Bedroom For guests seeking extra privacy, an upstairs studio with a king-sized bed, a pull-out bed, and an en-suite bathroom offers a secluded retreat. Additionally, a cozy downstairs bedroom adjacent to the pool provides a full-sized bed and en-suite facilities. Unbeatable Location Casa Afour is ideally situated just a short stroll from Oranjestad’s beach, restaurants, bars, shops, a casino, and a cinema, placing the best of Aruba’s entertainment and leisure activities at your doorstep. Experience the Ultimate in Luxury and Convenience Casa Afour invites you to experience the perfect blend of luxury, comfort, and convenience for an unforgettable escape in Aruba. Book your stay at this magnificent villa and step into a world where relaxation meets excitement, and every moment is a treasure."
+    },
+    {
+      "id": "primacasa-ltr-casa-salina",
+      "name": "Casa Saliña",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/68b/8a6/5ec/thumb_3976_0_0_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-salina",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Casa Saliña is built formodern living and convenience, offering afully equipped kitchen,office space, and multiple living areas. Stay active with afull-equipped gym, enjoy peace of mind withbulletproof glass, and never worry about power outages thanks to thebackup generator. The property also includes agarageand ample storage throughout."
+    },
+    {
+      "id": "primacasa-ltr-casa-harbour-view",
+      "name": "CASA Harbour View",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/681/10d/149/thumb_2712_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-harbour-view",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Enjoy views of the harbor and of the down town area of our Happy Island!This condo has everything you need to unwind and just relax to the max! The building also provides private parking, lovely infinity pool and gym! Fine dining is just a stroll away, as are casino's, cinema's and upscale shopping! The condo consists of 2 bedrooms with spectacular views of Oranjestad. Each bedroom also has an en-suite.The kitchen is open concept en walk out to the living room and dining area where you can admire views of the yachting harbor."
+    },
+    {
+      "id": "primacasa-ltr-casa-bushiri-unit-1-2",
+      "name": "CASA Bushiri unit 1 + 2",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/697/3c5/c4d/thumb_4492_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 5350,
+      "pricePeriod": "monthly",
+      "size": "340 m²",
+      "buildingSize": "340 m²",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-bushiri-unit-1-2",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 5350
+        }
+      ],
+      "notes": "Located in the heart of Oranjestad’s industrial zone, the property offers excellent access to major transportation routes, business centers, and essential services. Whether you are expanding your operations, starting a new business, or looking for a strategically located industrial space, this property is a strong option."
+    },
+    {
+      "id": "primacasa-ltr-casa-mainstreet-unit-1",
+      "name": "CASA Mainstreet Unit 1",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/681/241/fd7/thumb_2737_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 5340,
+      "pricePeriod": "monthly",
+      "size": "210 m²",
+      "buildingSize": "210 m²",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-mainstreet-unit-1",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 5340
+        }
+      ],
+      "notes": "An exceptional opportunity to rent a210 m² ground-floor commercial unitin one of the most desirablemain streetlocations. Surrounded by established retail stores, this spacious unit offers maximum visibility and branding potential for your business."
+    },
+    {
+      "id": "primacasa-ltr-casa-vida-larga",
+      "name": "CASA Vida Larga",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/681/25c/72a/thumb_2820_0_0_0_0_crop.webp",
+      "area": "Santa Cruz",
+      "location": "Santa Cruz",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-vida-larga",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Set in the heart of nature, this property offers easy access to the pristine beauty of Arikok National Park, just 4 minutes away by car. Residents can enjoy nearby hiking trails, hidden beaches, and the untouched natural beauty of Aruba's countryside. Despite its serene location, the property remains conveniently close to the airport (only a 10-minute drive), grocery stores, schools, and essential amenities."
+    },
+    {
+      "id": "primacasa-ltr-casa-mainstreet-unit-2",
+      "name": "CASA Mainstreet Unit 2",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/681/237/bb2/thumb_2725_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "154 m²",
+      "buildingSize": "154 m²",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-mainstreet-unit-2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Now available: a spacious155 m² retail/commercial unitlocated directly on themain street, surrounded by popular shops. This high-visibility space is ideal for retail, showroom, service, or office use."
+    },
+    {
+      "id": "primacasa-ltr-casa-bushiri-warehouse",
+      "name": "CASA Bushiri Warehouse",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/69b/d7f/cb7/thumb_4709_0_0_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "340 m²",
+      "buildingSize": "340 m²",
+      "lotSize": "340 m²",
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-bushiri-warehouse",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "The property features a clean and organized layout, ideal for storage, distribution, or other commercial operations. Its strategic location ensures easy accessibility and convenience, adding significant value for any growing business."
+    },
+    {
+      "id": "primacasa-ltr-casa-bushiri-warehouse-2",
+      "name": "CASA Bushiri Warehouse #2",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/6a3/1b8/1c3/thumb_4996_0_0_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 3400,
+      "pricePeriod": "monthly",
+      "size": "340 m²",
+      "buildingSize": "340 m²",
+      "lotSize": "340 m²",
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-bushiri-warehouse-2",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 3400
+        }
+      ],
+      "notes": "The property features a clean and organized layout, ideal for storage, distribution, or other commercial operations. Its strategic location ensures easy accessibility and convenience, adding significant value for any growing business."
+    },
+    {
+      "id": "primacasa-ltr-casa-bushiri-unit-1",
+      "name": "CASA Bushiri unit #1",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/697/3c2/5b9/thumb_4479_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 3100,
+      "pricePeriod": "monthly",
+      "size": "170 m²",
+      "buildingSize": "170 m²",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-bushiri-unit-1",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 3100
+        }
+      ],
+      "notes": "Strategically located in the heart of Oranjestad's industrial zone, this property offers excellent connectivity to major transportation routes, business centers, and essential services. Whether you are looking to expand your operations, establish a new hub, or invest in a high-potential industrial space, this property is an outstanding option."
+    },
+    {
+      "id": "primacasa-ltr-casa-bushiri-unit-2",
+      "name": "CASA Bushiri unit #2",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/697/3c3/53a/thumb_4482_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 3100,
+      "pricePeriod": "monthly",
+      "size": "170 m²",
+      "buildingSize": "170 m²",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-bushiri-unit-2",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 3100
+        }
+      ],
+      "notes": "Strategically located in the heart of Oranjestad's industrial zone, this property offers excellent connectivity to major transportation routes, business centers, and essential services. Whether you are looking to expand your operations, establish a new hub, or invest in a high-potential industrial space, this property is an outstanding option."
+    },
+    {
+      "id": "primacasa-ltr-casa-modern-long-term-rental",
+      "name": "CASA Modern - Long Term Rental",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/67b/e1a/e2e/thumb_2068_0_0_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-modern-long-term-rental",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "This newly build accommodation is absolutely modern. The accommodation is fully furnished and has a fabulous flow for everyday living and entertaining. The appliances in the house are brand new and are all connected to Alexa, so go ahead and turn on your A/C in this fully Air-conditioned house before you arrive home."
+    },
+    {
+      "id": "primacasa-ltr-casa-wilhelmina",
+      "name": "CASA Wilhelmina",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/681/258/59d/thumb_2785_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": null,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-wilhelmina",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Your New Home Awaits:Don't miss the chance to call CASA Wilhelmina your home. Whether you're a family looking for spacious living or individuals seeking a stylish abode, this rental checks all the boxes. Schedule a viewing today and embrace a lifestyle of ease and sophistication in the heart of Oranjestad!"
+    },
+    {
+      "id": "primacasa-ltr-casa-vondellaan-c-5",
+      "name": "CASA Vondellaan (C-5)",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/67a/f6e/50b/thumb_1532_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-vondellaan-c-5",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "This luxurious 2-bedroom, 2-bathroom condominium is available for rent, locate din the hart or Town (Oranjestad), Aruba. This beautifully furnished apartment is located on the Vondellaan, just a short walk from the beach and offers a perfect PRIMA Location."
+    },
+    {
+      "id": "primacasa-ltr-casa-vondellaan-c-7",
+      "name": "CASA Vondellaan (C-7)",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/67a/f7a/b12/thumb_1533_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-vondellaan-c-7",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "This luxurious 2-bedroom, 2-bathroom condominium is available for rent, locate din the hart or Town (Oranjestad), Aruba. This beautifully furnished apartment is located on the Vondellaan, just a short walk from the beach and offers a perfect PRIMA Location."
+    },
+    {
+      "id": "primacasa-ltr-casa-vondellaan-c-1",
+      "name": "CASA Vondellaan (C-1)",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/67a/f7b/c5a/thumb_1580_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-vondellaan-c-1",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "This luxurious 2-bedroom, 2-bathroom condominium is available for rent, locate din the hart or Town (Oranjestad), Aruba. This beautifully furnished apartment is located on the Vondellaan, just a short walk from the beach and offers a perfect PRIMA Location."
+    },
+    {
+      "id": "primacasa-ltr-casa-bushiri-unit-3",
+      "name": "CASA Bushiri unit #3",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/681/244/013/thumb_2752_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "169 m²",
+      "buildingSize": "169 m²",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-bushiri-unit-3",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Strategically located in the heart of Oranjestad's industrial zone, this property offers excellent connectivity to major transportation routes, business centers, and essential services. Whether you are looking to expand your operations, establish a new hub, or invest in a high-potential industrial space, this property is an outstanding option."
+    },
+    {
+      "id": "primacasa-ltr-casa-serene",
+      "name": "CASA Serene",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/684/9ef/b93/thumb_3513_0_0_0_0_crop.webp",
+      "area": "Paradera",
+      "location": "Paradera",
+      "askPrice": 2500,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-serene",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 2500
+        }
+      ],
+      "notes": "Welcome toCASA Serene, where island living meets comfort and tranquility. This beautifully maintained3-bedroom, 3-bathroomproperty offers the perfect blend of privacy, space, and tropical charm—ideal for long-term living in sunny Aruba."
+    },
+    {
+      "id": "primacasa-ltr-casa-aluma",
+      "name": "Casa Aluma",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/695/c0a/9cb/thumb_4440_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-aluma",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "This beautiful home features three bedrooms, a large and inviting kitchen, and a bright living room with plenty of space to relax and unwind. With two bathrooms, including an en suite with both a bathtub and a shower, comfort and privacy are guaranteed. The second bathroom includes a shower, perfect for family or guests."
+    },
+    {
+      "id": "primacasa-ltr-casa-flor-kerkstraat-4",
+      "name": "CASA Flor Kerkstraat 4",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/67b/8b4/060/thumb_1994_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-flor-kerkstraat-4",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "This versatile space is ready to be revived as a bar or reimagined into something entirely new. With its prime location near cultural landmarks and a bustling neighborhood, it’s perfect for those looking to create a vibrant gathering spot or a one-of-a-kind residence."
+    },
+    {
+      "id": "primacasa-ltr-casa-does",
+      "name": "CASA Does",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/67a/b87/4a0/thumb_1297_0_0_0_0_crop.webp",
+      "area": "Paradera",
+      "location": "Paradera",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-does",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "• Fully Furnished for Effortless Living: Move right in and enjoy a home that’s already equipped with everything you need. From stylish furniture to tasteful decor, every room has been meticulously curated to create a harmonious living environment. The kitchen is fully equipped for all your culinary needs, while the living and dining areas provide comfort and sophistication."
+    },
+    {
+      "id": "primacasa-ltr-casa-landslake-d4",
+      "name": "Casa Landslake D4",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/6a2/9ab/164/thumb_4984_0_0_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 1825,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-landslake-d4",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1825
+        }
+      ],
+      "notes": "The property features two spacious bedrooms and one well designed bathroom, making it an ideal home for a small family, couple, or working professionals seeking convenience and quality living. The apartment is fully furnished, allowing tenants to move in with ease and immediately enjoy a ready to live in space without the hassle of additional setup or furnishing."
+    },
+    {
+      "id": "primacasa-ltr-casa-musica",
+      "name": "Casa Musica",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/685/95a/e2f/thumb_3519_0_0_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "85 m²",
+      "buildingSize": "85 m²",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-musica",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "🌴Welcome to your island retreat in Noord!🌴Thisrecently renovated, fullyfurnished 2-bedroom, 1-bathroom apartmentoffers the perfect balance of comfort, style, and practicality — ideal for long-term living in sunny Aruba."
+    },
+    {
+      "id": "primacasa-ltr-casa-vela",
+      "name": "Casa Vela",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/69f/a93/5e1/thumb_4924_0_0_0_0_crop.webp",
+      "area": "Wayaca",
+      "location": "Wayaca",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-vela",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "One of the standout features of this property is its amazing location. Situated in Wayaca, you’ll find yourself just minutes away from some of Aruba’s most beautiful beaches, popular dining spots, shopping areas, and everyday conveniences. Whether you're looking to enjoy the vibrant local scene or simply relax in a accessible neighborhood, this location offers the best of both worlds."
+    },
+    {
+      "id": "primacasa-ltr-casa-regents-park",
+      "name": "CASA Regent's Park",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/682/4de/c56/thumb_3472_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-regents-park",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Experience the epitome of island living in this expansive 2-bedroom, 2-bathroom apartment—the crown jewel of Regency Park Residence. Thoughtfully designed for comfort and convenience, this home offers a seamless blend of modern amenities and tropical charm."
+    },
+    {
+      "id": "primacasa-ltr-casa-alma",
+      "name": "Casa Alma",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/68d/6be/003/thumb_4189_0_0_0_0_crop.webp",
+      "area": "Santa Cruz",
+      "location": "Santa Cruz",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-alma",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Welcome toSeroe Compa #2 in Santa Cruz,a rare rental opportunity that combines space, comfort, and location all in one. This property features2 bedrooms and 2 bathrooms, alarge open layout, and an impressiveoutdoor area with plenty of garden space,perfect for relaxation, gatherings, or creating your own oasis."
+    },
+    {
+      "id": "primacasa-ltr-casa-toscana-apt",
+      "name": "Casa Toscana Apt",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/69e/7aa/3f8/thumb_4841_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-toscana-apt",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "What makes Casa Toscana truly exceptional is its unbeatable location on Beatrixstraat. In less than a minute, you can walk to the beach and enjoy Aruba’s crystal-clear waters. Restaurants, cafés, shops, and entertainment are all within walking distance, and the famous Renaissance area is just around the corner, placing you right in the center of everything Oranjestad has to offer."
+    },
+    {
+      "id": "primacasa-ltr-casa-toscana-studio",
+      "name": "Casa Toscana Studio",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/69e/7c3/b8b/thumb_4862_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-toscana-studio",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Experience comfortable island living at Casa Toscana, offering stylish studio apartments available for long term rental up to 6 months, right in the heart of Oranjestad. Designed for ease, comfort, and practicality, these modern studios are ideal for anyone looking to stay longer on the island while enjoying a relaxed and convenient lifestyle."
+    },
+    {
+      "id": "primacasa-ltr-casa-de-baron-5",
+      "name": "CASA de Baron 5",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/688/3bc/70c/thumb_3734_0_0_0_0_crop.webp",
+      "area": "Eagle Beach",
+      "location": "Eagle Beach",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-de-baron-5",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Thiscozy, fully furnished 1-bedroom apartmentoffers everything you need for comfortable island living. Whether you're a student attending the nearbymedical university(just a block away), a healthcare professional, or simply someone who enjoys being close to it all, this location is hard to beat.Hospitals, supermarkets, shops, and the vibrantLow Rise hotel district—with its beaches, restaurants, and entertainment—are all just around the corner."
+    },
+    {
+      "id": "primacasa-ltr-casa-calbas-6",
+      "name": "Casa Calbas #6",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/68b/1f4/dd6/thumb_3954_0_0_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-calbas-6",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Discover comfort and privacy in this charming1-bedroom, 1-bathroom ground floor apartment, ideally located in the desirable area ofCalbas, Noord. Set within a peaceful and private complex, this apartment offers convenience and tranquility while being just minutes away from Aruba’s beautiful beaches, shopping, dining, and entertainment."
+    },
+    {
+      "id": "primacasa-ltr-casa-calbas-7",
+      "name": "Casa Calbas #7",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/694/43d/92a/thumb_4409_0_0_0_0_crop.webp",
+      "area": "Calbas",
+      "location": "Calbas",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-calbas-7",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "This charming one bedroom, one bathroom apartment is now available for rent forUSD 1,000 per monthand ready for immediate move in.Designed with comfort and functionality in mind, the apartment features a bright living room with an open kitchen concept, creating a spacious and modern feel."
+    },
+    {
+      "id": "primacasa-ltr-casa-de-baron-3",
+      "name": "CASA de Baron 3",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/69d/3cf/e42/thumb_4806_0_0_0_0_crop.webp",
+      "area": "Eagle Beach",
+      "location": "Eagle Beach",
+      "askPrice": 1000,
+      "pricePeriod": "monthly",
+      "size": "35 m²",
+      "buildingSize": "35 m²",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-de-baron-3",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 1000
+        }
+      ],
+      "notes": "Thiscozy, fully furnished 1-bedroom apartmentoffers everything you need for comfortable island living. Whether you're a student attending the nearbymedical university(just a block away), a healthcare professional, or simply someone who enjoys being close to it all, this location is hard to beat.Hospitals, supermarkets, shops, and the vibrantLow Rise hotel district—with its beaches, restaurants, and entertainment—are all just around the corner."
+    },
+    {
+      "id": "primacasa-ltr-casa-suave",
+      "name": "Casa Suave",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/68d/ebe/ae9/thumb_4238_0_0_0_0_crop.webp",
+      "area": "Savaneta",
+      "location": "Savaneta",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-suave",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "What truly makes this apartment special is its location. Savaneta is known for its serene atmosphere, friendly community, and direct connection to the island’s coastal charm. Here, you’re only minutes away from local seafood restaurants, quiet beaches, and snorkeling spots where the Caribbean Sea reveals its true beauty. Unlike the busier parts of Aruba, Savaneta offers a relaxed and authentic lifestyle, while still being within easy reach of Oranjestad and other central areas of the island."
+    },
+    {
+      "id": "primacasa-ltr-casa-twin-2",
+      "name": "Casa twin #2",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/694/aed/08a/thumb_4432_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": null,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-twin-2",
+      "status": "rented",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": null
+        }
+      ],
+      "notes": "Casa Twin is a newly available studio apartment designed to offer comfort and functionality. The unit features one modern bathroom, an electric stove, and a brand new air conditioning system to ensure a pleasant living environment throughout the year."
+    },
+    {
+      "id": "primacasa-ltr-casa-axis",
+      "name": "Casa Axis",
+      "type": "ltr",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/68d/6f7/277/thumb_4195_0_0_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 422,
+      "pricePeriod": "monthly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-axis",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 422
+        }
+      ],
+      "notes": "Looking for a professional and comfortable workspace in Aruba?Axis Office Unitsoffer the perfect blend of convenience, functionality, and style for small businesses, entrepreneurs, and remote professionals. Situated in the central area ofBushiri, these office units are designed to support focus, productivity, and a polished business presence."
+    },
+    {
+      "id": "primacasa-str-casa-magnificent-house-apt",
+      "name": "CASA Magnificent House + Apt",
+      "type": "str",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/679/b80/6ac/thumb_781_0_0_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 475,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-magnificent-house-apt",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 475
+        }
+      ],
+      "notes": "Welcome to this exquisite 5-bedroom retreat in the heart of Aruba, where unparalleled luxury seamlessly blends with ultimate comfort. This exceptional property consists of a stunning 4-bedroom main residence paired with a separate 1-bedroom apartment, offering an ideal layout for both private living and hosting guests. Featuring two private pools, two fully-equipped kitchens, three elegant bathrooms, and two spacious living rooms, this home provides the perfect combination of functionality and opulence."
+    },
+    {
+      "id": "primacasa-str-casa-traill",
+      "name": "CASA Traill",
+      "type": "str",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/67b/362/291/thumb_1634_0_0_0_0_crop.webp",
+      "area": "Malmok",
+      "location": "Malmok",
+      "askPrice": 400,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 5,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-traill",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 400
+        }
+      ],
+      "notes": "Welcome to Your Luxurious Retreat in Tierra del Sol, Aruba!Discover an elegant 4-bedroom, 4.5-bathroom villa in the stunning Tierra del Sol Community, thoughtfully decorated. This exquisite home offers modern amenities in a serene, private setting, perfect for a peaceful getaway or a fun family vacation. Create unforgettable memories in this beautiful space.- Stylish DesignAs you step through the entrance, you will be welcomed by natural light and chic finishes. The spacious, open-plan design combines contemporary elegance with cozy warmth, setting the tone for your stay. The kitchen, featuring a big island with wine fridges, beautiful cabinetry, and stainless steel appliances, is a culinary haven for your cooking adventures.-Relaxation and Entertainment SpacesThe living room is designed for both comfort and entertainment. Sink into the sofa's while enjoying your favorite shows on the large flat-screen TV. Families will love the theatre on the second floor for fun for all ages during movie nights or your the match of your favorite sports team.- Spacious and Inviting BedroomsEach of the four bedrooms offers its own unique charm, providing comfort and privacy. The master suite features a king-sized bed and an airconditioned spa-like ensuite bathroom, creating a peaceful retreat after a day of adventure. Ample space allows you to unpack and unwind in style.- Outdoor Tropical OasisStep outside to experience your own tropical paradise. Relax by the private pool under the Caribbean sun or enjoy a refreshing evening swim. The spacious porch is perfect for lounging, and the outdoor grill sets the stage for memorable barbecues.- Prime Location in Tierra del SolSituated in the prestigious Tierra del Sol Golf Community, this villa offers complete privacy while being just minutes away from some of Aruba’s most stunning beaches, including the famous Palm Beach. Enjoy the tranquility of the neighborhood alongside easy access to local attractions.- Nearby Attractions and ActivitiesBeyond the peaceful surroundings, you’ll find pristine white sands and inviting waters just a short drive away. For the adventurous traveler, Arashi Beach and the nearby National Park provide unforgettable experiences in nature.The popular \"Palm Beach strip' with a lot of restaurants and shops is a short 5 minute drive from your doorstep.- Plan Your Ideal GetawayWhether you’re seeking a quiet getaway or an action-packed vacation with friends or family, this elegant 4 bedroom home in Tierra del Sol is the perfect choice. Book your stay today and enjoy all that Aruba has to offer, from its beautiful beaches to the luxury and comfort of this stunning villa.We do recommend renting a vehicle during your stay, we would be happy to assist you with this."
+    },
+    {
+      "id": "primacasa-str-casa-magnificent-house",
+      "name": "CASA Magnificent House",
+      "type": "str",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/679/cd4/66a/thumb_803_0_0_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 350,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-magnificent-house",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 350
+        }
+      ],
+      "notes": "Welcome to this exquisite retreat in the heart of Aruba, where luxury and comfort come together to create the perfect island oasis. This stunning property features a spacious 5 bedroom home, offering ample living space and a seamless blend of elegance and functionality. With a peaceful private pool, fully-equipped kitchens, three beautifully designed bathrooms, and a very inviting living rooms, this residence is tailored for both relaxation and entertaining."
+    },
+    {
+      "id": "primacasa-str-casa-orlea-vacation-rental",
+      "name": "CASA Orléa - Vacation Rental",
+      "type": "str",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/681/b96/b03/thumb_2915_0_0_0_0_crop.webp",
+      "area": "Malmok",
+      "location": "Malmok",
+      "askPrice": 350,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-orlea-vacation-rental",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 350
+        }
+      ],
+      "notes": "Set in the upscale and serene area of Noord, this home offers more than just comfort, it delivers a lifestyle. Casa Orlea places you in the center of everything that makes Aruba magical. Spend your days at nearby beaches, indulge in fine dining, explore boutique shopping, or enjoy world-class golf at Tierra del Sol, all just minutes from your doorstep. Whether you're seeking serenity or adventure, this location gives you both."
+    },
+    {
+      "id": "primacasa-str-casa-tumba-pearl",
+      "name": "CASA Tumba Pearl",
+      "type": "str",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/67b/382/2ee/thumb_1911_0_0_0_0_crop.webp",
+      "area": "Eagle Beach",
+      "location": "Eagle Beach",
+      "askPrice": 295,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-tumba-pearl",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 295
+        }
+      ],
+      "notes": "This nice house with its Caribbean flair is located in Eagle Beach. A nice an up scaled friendly neighborhood and close to everything. Just 10 minutes walk to low rise hotel area with the wide beaches and the Caribbean Blue ocean of Eagle Beach. 5 minutes drive to Palm Beach, the high rise hotel area, with all its entertainment, shops, restaurants, casino's, supermarket (Superfood), bars, shopping mals (Paseo Herencia and Palm Beach Plaza).A prime location to have a wonderful vacation."
+    },
+    {
+      "id": "primacasa-str-casa-aruba-beach-chalet-5",
+      "name": "CASA Aruba Beach Chalet #5",
+      "type": "str",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/6a2/2fe/ac5/thumb_4956_0_0_0_0_crop.webp",
+      "area": "Savaneta",
+      "location": "Savaneta",
+      "askPrice": 185,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 3,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-aruba-beach-chalet-5",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 185
+        }
+      ],
+      "notes": "Aruba Beach Chalets is located on the beach of Savaneta. Just 5 meters from the Caribbean ocean were you can swim, dive and snorkel. Just sit on your porch and enjoy the magnificent sunsets. It is an amazing spot for a romantic vacation. All the chalets are double storey houses and are very stylish decorated."
+    },
+    {
+      "id": "primacasa-str-casa-magnificent-apartment",
+      "name": "CASA Magnificent Apartment",
+      "type": "str",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/679/cd1/92a/thumb_800_0_0_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 145,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-magnificent-apartment",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 145
+        }
+      ],
+      "notes": "Located just a short distance from Aruba’s pristine beaches and the vibrant Palm Beach area, you’ll have easy access to some of the island’s best attractions, including fine dining, shopping, and entertainment. This apartment offers the perfect combination of comfort and convenience, whether you're seeking a peaceful getaway or an investment opportunity in one of the Caribbean’s most sought-after destinations."
+    },
+    {
+      "id": "primacasa-str-casa-wanglo",
+      "name": "CASA Wanglo",
+      "type": "str",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/67b/367/3d5/thumb_1731_0_0_0_0_crop.webp",
+      "area": "Noord",
+      "location": "Noord",
+      "askPrice": 145,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-wanglo",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 145
+        }
+      ],
+      "notes": "Ideally located just minutes from Aruba’s most beautiful beaches and the vibrant hotel strip, our apartment offers the perfect combination of convenience and tranquility. Whether you're looking to spend your days soaking up the sun on pristine beaches, exploring local attractions, or enjoying the island's lively nightlife, you’ll find everything you need right at your doorstep."
+    },
+    {
+      "id": "primacasa-str-casa-toscana-apt-1",
+      "name": "Casa Toscana Apt #1",
+      "type": "str",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/69c/1aa/9bd/thumb_4716_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 125,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-toscana-apt-1",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 125
+        }
+      ],
+      "notes": "What truly sets Casa Toscana apart is its exceptional location on Beatrixstraat. Within less than a minute’s walk, you’ll find yourself at the beach, surrounded by some of Aruba’s most popular spots for dining, shopping, and entertainment. The renowned Renaissance area is also just a short stroll away, placing the very best of the island right at your doorstep."
+    },
+    {
+      "id": "primacasa-str-casa-toscana-apt-2",
+      "name": "Casa Toscana Apt #2",
+      "type": "str",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/69c/1b1/87c/thumb_4736_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 125,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-toscana-apt-2",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 125
+        }
+      ],
+      "notes": "What truly sets Casa Toscana apart is its exceptional location on Beatrixstraat. Within less than a minute’s walk, you’ll find yourself at the beach, surrounded by some of Aruba’s most popular spots for dining, shopping, and entertainment. The renowned Renaissance area is also just a short stroll away, placing the very best of the island right at your doorstep."
+    },
+    {
+      "id": "primacasa-str-casa-toscana-apt-3",
+      "name": "Casa Toscana Apt #3",
+      "type": "str",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/69c/1b8/f4a/thumb_4774_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 125,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-toscana-apt-3",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 125
+        }
+      ],
+      "notes": "What truly sets Casa Toscana apart is its exceptional location on Beatrixstraat. Within less than a minute’s walk, you’ll find yourself at the beach, surrounded by some of Aruba’s most popular spots for dining, shopping, and entertainment. The renowned Renaissance area is also just a short stroll away, placing the very best of the island right at your doorstep."
+    },
+    {
+      "id": "primacasa-str-casa-toscana-studio-1",
+      "name": "Casa Toscana Studio #1",
+      "type": "str",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/69c/1b5/ca3/thumb_4773_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 115,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-toscana-studio-1",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 115
+        }
+      ],
+      "notes": "Situated on Beatrixstraat, Casa Toscana places you just steps away from the beach, less than a minute’s walk depending on your pace. You’ll also be surrounded by some of Aruba’s most vibrant attractions, with the popular Renaissance area just minutes away."
+    },
+    {
+      "id": "primacasa-str-casa-toscana-studio-2",
+      "name": "Casa Toscana Studio #2",
+      "type": "str",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/69c/1ba/73e/thumb_4790_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 115,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-toscana-studio-2",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 115
+        }
+      ],
+      "notes": "Situated on Beatrixstraat, Casa Toscana places you just steps away from the beach, less than a minute’s walk depending on your pace. You’ll also be surrounded by some of Aruba’s most vibrant attractions, with the popular Renaissance area just minutes away."
+    },
+    {
+      "id": "primacasa-str-casa-toscana-studio-3",
+      "name": "Casa Toscana Studio #3",
+      "type": "str",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/69c/1bb/baa/thumb_4803_0_0_0_0_crop.webp",
+      "area": "Oranjestad",
+      "location": "Oranjestad",
+      "askPrice": 115,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-toscana-studio-3",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 115
+        }
+      ],
+      "notes": "Situated on Beatrixstraat, Casa Toscana places you just steps away from the beach, less than a minute’s walk depending on your pace. You’ll also be surrounded by some of Aruba’s most vibrant attractions, with the popular Renaissance area just minutes away."
+    },
+    {
+      "id": "primacasa-str-casa-jewel",
+      "name": "CASA Jewel",
+      "type": "str",
+      "image": "https://aruba-realty.com/storage/app/uploads/public/67b/36c/ede/thumb_1771_0_0_0_0_crop.webp",
+      "area": "Malmok",
+      "location": "Malmok",
+      "askPrice": 110,
+      "pricePeriod": "nightly",
+      "size": "",
+      "buildingSize": "",
+      "lotSize": "",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "agency": "Prima Casa Real Estate",
+      "listedDate": "2026-07-02",
+      "sourceUrl": "https://aruba-realty.com/property/casa-jewel",
+      "status": "active",
+      "priceHistory": [
+        {
+          "date": "2026-07-02",
+          "price": 110
+        }
+      ],
+      "notes": "At CASA Jewel you have your own designated parking space in front of the condo. The apartment is located on the second floor, and accessible via a private stair. The condo is fully furnished, with 2 bedrooms and 2 bathrooms, a living/dining room and a fully equipped kitchen. Via the master bedroom and the living room you have access to a private balcony. Near the second bedroom are the washing machine and dryer, for your personal use only."
     }
   ]
 }
